@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I received my B.S. and M.S. degrees from <a href="https://seu.edu.cn/">Southeast University (SEU)</a> in 2021 and 2024, respectively. In February 2025, I joined <a href="https://cetxue.people.ust.hk/">the Computational Mechanics & Scientific Learning (CMSL) Lab</a> at The Hong Kong University of Science and Technology (HKUST). I am now a PhD student in Civil Engineering at HKUST.
+I received my B.S. and M.S. degrees from <a href="https://www.seu.edu.cn/">Southeast University (SEU)</a> in 2021 and 2024, respectively. In February 2025, I joined <a href="https://cetxue.people.ust.hk/">the Computational Mechanics & Scientific Learning (CMSL) Lab</a> at The Hong Kong University of Science and Technology (HKUST). I am now a PhD student in Civil Engineering at HKUST.
 
 My research interests lie in metal additive manufacturing, with a focus on process simulation, manufacturing process-related problems, and computational acceleration techniques for efficient numerical modeling.
