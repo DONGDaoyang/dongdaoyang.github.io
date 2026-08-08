@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-12-20 07:59:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+1st Place in *CHAL-AMB2025-04-BD* (Baseplate Deflection prediction for laser hot-wire DED of alloy 718)
+by Daoyang Dong (Ph.D. Student of Prof. Tianju Xue), Shuheng Liao (Collaborator from CUHK) and Tianju Xue (Corresponding Author)
