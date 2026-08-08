@@ -6,7 +6,7 @@ subtitle: <a href="https://hkust.edu.hk/">The Hong Kong University of Science an
 
 profile:
   align: right
-  image: ddy21.jpg
+  image: ddy22.jpg
   image_circular: false # crops the image to make it circular
   more_info: ""
 
