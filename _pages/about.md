@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>The Hong Kong University of Science and Technology (HKUST)
+subtitle: <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology (HKUST)
 
 profile:
   align: right
