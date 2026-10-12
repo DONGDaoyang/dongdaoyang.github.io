@@ -5,7 +5,7 @@
 继续使用当前域名。网站采用主题优先的研究资源定位，不以个人照片、履历或个人新闻作为首页内容。
 
 - `/`：Hub 首页，介绍范围和栏目入口。
-- `/benchmarks/`：Benchmarks 算例库，使用 `/benchmarks/`，不再作为个人 Project 展示；旧 `/projects/` 保留兼容跳转。
+- `/benchmarks/`：Benchmarks 算例库，使用 `/benchmarks/`，不再作为个人 Project 展示；旧 `/projects/` 直接展示同一份算例列表，不经过跳转页。
 - `/methods/`：编辑性的案例报告指南，不宣称是官方标准。
 - `/resources/`：有来源归属的外部参考资源、代码和数据，不再设置全站论文栏目。
 - 原 `/publications/` 页面设为 `published: false`，保留源码但不发布，也不放进导航。
@@ -17,6 +17,8 @@
 ## 统一导航与简洁页面
 
 所有页面共享核心主题的一套顶部导航：**Home / Benchmarks / Methods / Resources**。不新增 Publications，也不为单个算例添加全站导航按钮。
+
+站内链接直接指向 `/benchmarks/`。`_pages/projects_legacy.md` 仅兼容旧入口，正文与 `_pages/projects.md` 的列表保持一致；修改列表结构时需要同步这两个文件。它不显示过渡文案，也不设置 `redirect`。
 
 Benchmarks 页面只显示一段简介、算例卡片或简短空状态；报告指南集中放在 Methods，不在 Benchmarks 底部再堆一组说明卡片。算例详情页保留返回 Benchmarks 的文字链接和正文，不添加第二排按钮、章节导航或侧栏目录。
 
@@ -147,7 +149,7 @@ papers:
 
 ## 导航和旧页面排查
 
-Benchmarks 使用 `/benchmarks/` 地址，详情页应是 `/benchmarks/your-case/`；旧 `/projects/` 自动跳转到新列表。当前个人域名仍作为 Hub 的域名使用，地址中出现 GitHub 用户名不代表页面跳回个人介绍。
+Benchmarks 使用 `/benchmarks/` 地址，详情页应是 `/benchmarks/your-case/`；旧 `/projects/` 直接显示相同列表，不需要等待跳转或再次点击。当前个人域名仍作为 Hub 的域名使用，地址中出现 GitHub 用户名不代表页面跳回个人介绍。
 
 全站品牌由 `_config.yml` 的 `title` 控制；核心主题还会使用 `first_name` / `last_name` 生成页脚及作者元数据，因此这些字段也使用 Hub 名称。研究成果中的真实作者署名不受影响。
 
