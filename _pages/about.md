@@ -24,8 +24,8 @@ nav_order: 0
       <p class="rsh-status"><span aria-hidden="true">●</span> {{ hub.status }}</p>
     </div>
     <figure class="rsh-visual">
-      <div class="rsh-visual-label"><span>PROCESS / MODEL / RESPONSE</span><span aria-hidden="true">01</span></div>
-      <img src="{{ '/assets/img/residual-stress-hub/mesh.svg' | relative_url }}" alt="Conceptual illustration of layered geometry and a computational mesh, not a stress result." width="720" height="560" fetchpriority="high">
+      <div class="rsh-visual-label"><span>MATERIAL / INTERNAL VARIATION</span><span aria-hidden="true">01</span></div>
+      <img src="{{ '/assets/img/residual-stress-hub/mesh.svg' | relative_url }}" alt="Conceptual illustration of a gray layered solid with orange internal accents, not a computed stress field." width="720" height="560" fetchpriority="high">
       <figcaption>Concept illustration — not measured or simulated stress data.</figcaption>
     </figure>
   </section>
@@ -45,20 +45,20 @@ nav_order: 0
   </section>
 
   <section class="rsh-section" aria-labelledby="cases-title">
-    <div class="rsh-heading rsh-heading-row"><div><p class="rsh-eyebrow">BENCHMARK LIBRARY</p><h2 id="cases-title">Simulation, one case at a time.</h2></div><a href="{{ '/benchmarks/' | relative_url }}">All benchmarks <span aria-hidden="true">→</span></a></div>
+    <div class="rsh-heading rsh-heading-row"><div><p class="rsh-eyebrow">BENCHMARK LIBRARY</p><h2 id="cases-title">From problem setup to results.</h2></div><a href="{{ '/benchmarks/' | relative_url }}">All benchmarks <span aria-hidden="true">→</span></a></div>
     {% if cases.size > 0 %}
     <div class="rsh-grid">
       {% for case in cases limit: 3 %}
       <article class="rsh-card">
         {% if case.img and case.img != empty %}<a class="rsh-case-cover" href="{{ case.url | relative_url }}"><img class="rsh-case-image" src="{{ case.img | relative_url }}" alt="{{ case.image_alt | default: case.title | escape }}" loading="lazy"></a>{% endif %}
-        <p class="rsh-eyebrow">{{ case.case_type | default: "COMPUTATIONAL CASE" }}</p>
+        <p class="rsh-eyebrow">{{ case.case_type | default: "Computational case" }}</p>
         <h3><a href="{{ case.url | relative_url }}">{{ case.title | escape }}</a></h3>
         <p>{{ case.description }}</p>
       </article>
       {% endfor %}
     </div>
     {% else %}
-    <div class="rsh-empty"><div><p class="rsh-eyebrow">CASE MATERIALS IN PREPARATION</p><h3>The library is being assembled.</h3><p>No case results have been published here yet. Each entry will document a computational problem, model settings, and result figures, with related papers at the bottom of its page.</p></div><a href="{{ '/methods/' | relative_url }}">Case documentation guide <span aria-hidden="true">→</span></a></div>
+    <div class="rsh-empty"><div><p class="rsh-eyebrow">CASE MATERIALS IN PREPARATION</p><h3>The library is being assembled.</h3><p>No case results have been published yet. Each case will include an overview, problem specification, parameter values, and results, with an original-article link at the bottom.</p></div><a href="{{ '/methods/' | relative_url }}">Case documentation guide <span aria-hidden="true">→</span></a></div>
     {% endif %}
   </section>
 

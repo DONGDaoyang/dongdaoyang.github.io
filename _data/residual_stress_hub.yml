@@ -6,7 +6,7 @@ status: Independent research resource · Initial release
 scope:
   - number: "01"
     title: Benchmarks
-    description: Browse computational problems, model setups, result figures, and related papers.
+    description: Explore residual stress cases, from problem specifications and parameter values to results and original sources.
     url: /benchmarks/
     action: Browse benchmarks
   - number: "02"
@@ -20,14 +20,14 @@ scope:
     url: /resources/
     action: Explore the resources
 case_fields:
-  - title: Problem specification
-    detail: State the computational problem, geometry, material, process, and intended output. Explain the scope and what is not modeled.
-  - title: Model & assumptions
-    detail: Document model equations, material inputs, boundary conditions, software, and numerical settings. Identify simplifications.
-  - title: Results & comparison
-    detail: Include labeled figures, stress components, coordinate conventions, units, and comparison conditions. State limitations alongside conclusions.
-  - title: Reproducibility & sources
-    detail: Document input files, versions, licenses, and access restrictions. List related papers at the bottom of each case page, crediting their original authors.
+  - title: Overview
+    detail: Introduce the background, objectives, quantities of interest, and scope in English.
+  - title: Problem set
+    detail: Specify geometry, materials, loading, boundary and initial conditions, and model assumptions.
+  - title: Parameter values
+    detail: List parameter names, values, units, and sources; document discretization and solver settings.
+  - title: Results
+    detail: Present results and comparisons with components, units, conditions, sources, and limitations. Link the original article at the bottom of the page.
 resources:
   - type: EXTERNAL BENCHMARK RESOURCE
     title: NIST AM-Bench

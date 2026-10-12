@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Benchmarks
-description: Computational examples, benchmark specifications, and related sources.
+description: "Residual stress cases: problem setup, parameter values, results, and original sources."
 permalink: /benchmarks/
 nav: true
 nav_order: 1
@@ -13,21 +13,21 @@ toc: false
 
 <div class="rsh">
   <p class="rsh-eyebrow">RESIDUAL STRESS / BENCHMARK LIBRARY</p>
-  <p class="rsh-readable">Computational examples for residual stress modeling. Select an entry to see its setup, figures, and sources. Illustrative samples are labeled separately from validated benchmarks.</p>
+  <p class="rsh-readable">Select a case to explore its problem setup, parameter values, results, and original source. Illustrative page samples are clearly labeled and are not validated benchmarks.</p>
   {% if cases.size > 0 %}
   <div class="rsh-grid rsh-section">
     {% for case in cases %}
     <article class="rsh-card">
       {% if case.img and case.img != empty %}<a class="rsh-case-cover" href="{{ case.url | relative_url }}"><img class="rsh-case-image" src="{{ case.img | relative_url }}" alt="{{ case.image_alt | default: case.title | escape }}" loading="lazy"></a>{% endif %}
-      <p class="rsh-eyebrow">{{ case.case_type | default: "COMPUTATIONAL CASE" }}</p>
+      <p class="rsh-eyebrow">{{ case.case_type | default: "Computational case" }}</p>
       <h2><a href="{{ case.url | relative_url }}">{{ case.title | escape }}</a></h2>
       <p>{{ case.description }}</p>
-      <a href="{{ case.url | relative_url }}">Open benchmark <span aria-hidden="true">→</span></a>
+      <a href="{{ case.url | relative_url }}">View case <span aria-hidden="true">→</span></a>
     </article>
     {% endfor %}
   </div>
   {% else %}
-  <div class="rsh-empty rsh-section"><div><p class="rsh-eyebrow">NOT YET PUBLISHED</p><h2>Case materials are being prepared.</h2><p>The first computational cases are being prepared.</p></div></div>
+  <div class="rsh-empty rsh-section"><div><p class="rsh-eyebrow">NOT YET PUBLISHED</p><h2>The library is being assembled.</h2><p>Cases will appear here when their materials are ready.</p></div></div>
   {% endif %}
 
 </div>
