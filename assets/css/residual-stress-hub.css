@@ -165,9 +165,6 @@ html[data-theme="dark"] .rsh,
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
-.rsh .rsh-grid-two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
 .rsh .rsh-card {
   display: flex;
   flex-direction: column;
@@ -195,25 +192,6 @@ html[data-theme="dark"] .rsh,
   color: var(--hub-accent);
   font-family: ui-monospace, monospace;
   font-size: 0.73rem;
-}
-.rsh .rsh-empty {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 1.7rem;
-  border: 1px dashed var(--hub-line);
-  border-radius: 8px;
-}
-.rsh .rsh-empty p:last-child {
-  max-width: 36rem;
-  margin-bottom: 0;
-  color: var(--hub-muted);
-  font-size: 0.88rem;
-}
-.rsh .rsh-empty > a {
-  flex-shrink: 0;
-  font-size: 0.8rem;
 }
 .rsh .rsh-band {
   display: flex;
@@ -244,15 +222,20 @@ html[data-theme="dark"] .rsh,
   color: var(--hub-muted);
   font-size: 0.8rem;
 }
-.rsh .rsh-section-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem 1.7rem;
-  padding: 1.3rem 0;
-  border-bottom: 1px solid var(--hub-line);
+.rsh a.rsh-case-cover {
+  display: block;
+  margin: 0 0 1.2rem;
+  padding: 0;
 }
-.rsh .rsh-section-nav a {
-  font-size: 0.78rem;
+.rsh .rsh-case-cover .rsh-case-image {
+  margin-bottom: 0;
+}
+.rsh .rsh-case-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.2rem;
+  border-radius: 4px;
 }
 .rsh .rsh-guide-section {
   margin-top: 2.3rem;
@@ -303,11 +286,10 @@ html[data-theme="dark"] .rsh,
     max-width: 450px;
     width: 100%;
   }
-  .rsh .rsh-grid,
-  .rsh .rsh-grid-two {
+  .rsh .rsh-grid {
     grid-template-columns: 1fr;
   }
-  .rsh .rsh-empty,
+  
   .rsh .rsh-band {
     align-items: flex-start;
     flex-direction: column;
