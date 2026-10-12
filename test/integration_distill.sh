@@ -10,6 +10,12 @@ cleanup() {
 }
 trap cleanup EXIT
 
+# Use temporary test pages, not removable demo content from the public site.
+source "$(dirname "${BASH_SOURCE[0]}")/integration_fixture_helpers.sh"
+tmp_source="${tmp_dir}/source"
+prepare_plugin_fixture "${tmp_source}" "distill"
+fixture_config="${tmp_source}/_config.yml"
+
 cat >"${tmp_override}" <<'YAML'
 giscus:
   repo: alshedivat/al-folio
@@ -18,7 +24,8 @@ giscus:
   category_id: DIC_kwDOExample
 YAML
 
-bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
+bundle exec jekyll build --source "${tmp_source}" \
+  --config "_config.yml,${fixture_config},${tmp_override}" -d "${tmp_site}" >/dev/null
 
 distill_page="${tmp_site}/blog/2021/distill/index.html"
 
