@@ -1,11 +1,9 @@
 ---
 layout: page
 permalink: /publications/
-title: Research outputs
-description: Publications associated with Residual Stress Hub cases.
+title: Related literature
 nav: false
+published: false # Retired standalone page; references belong to each computational case.
 ---
 
-The Hub's case-associated publications are listed under [Resources]({{ "/resources/#publications" | relative_url }}).
-
-Demo bibliography entries are not presented as Hub research.
+This standalone page is retired. Related papers are listed at the bottom of each computational case page.

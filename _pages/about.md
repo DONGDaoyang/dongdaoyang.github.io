@@ -18,7 +18,7 @@ nav_order: 0
       <p class="rsh-tagline">{{ hub.tagline }}</p>
       <p class="rsh-lead">{{ hub.intro }}</p>
       <div class="rsh-actions">
-        <a class="rsh-button" href="{{ '/projects/' | relative_url }}">Explore cases <span aria-hidden="true">↗</span></a>
+        <a class="rsh-button" href="{{ '/benchmarks/' | relative_url }}">Explore benchmarks <span aria-hidden="true">↗</span></a>
         <a class="rsh-secondary" href="{{ '/methods/' | relative_url }}">Start with the guide <span aria-hidden="true">→</span></a>
       </div>
       <p class="rsh-status"><span aria-hidden="true">●</span> {{ hub.status }}</p>
@@ -45,20 +45,20 @@ nav_order: 0
   </section>
 
   <section class="rsh-section" aria-labelledby="cases-title">
-    <div class="rsh-heading rsh-heading-row"><div><p class="rsh-eyebrow">CASE LIBRARY</p><h2 id="cases-title">Research, one case at a time.</h2></div><a href="{{ '/projects/' | relative_url }}">All cases <span aria-hidden="true">→</span></a></div>
+    <div class="rsh-heading rsh-heading-row"><div><p class="rsh-eyebrow">BENCHMARK LIBRARY</p><h2 id="cases-title">Simulation, one case at a time.</h2></div><a href="{{ '/benchmarks/' | relative_url }}">All benchmarks <span aria-hidden="true">→</span></a></div>
     {% if cases.size > 0 %}
     <div class="rsh-grid">
       {% for case in cases limit: 3 %}
       <article class="rsh-card">
-        {% if case.img %}<img class="rsh-case-image" src="{{ case.img | relative_url }}" alt="{{ case.image_alt | default: case.title | escape }}" loading="lazy">{% endif %}
-        <p class="rsh-eyebrow">{{ case.case_type | default: "RESEARCH CASE" }}</p>
-        <h3><a href="{{ case.url | relative_url }}">{{ case.title }}</a></h3>
+        {% if case.img and case.img != empty %}<a class="rsh-case-cover" href="{{ case.url | relative_url }}"><img class="rsh-case-image" src="{{ case.img | relative_url }}" alt="{{ case.image_alt | default: case.title | escape }}" loading="lazy"></a>{% endif %}
+        <p class="rsh-eyebrow">{{ case.case_type | default: "COMPUTATIONAL CASE" }}</p>
+        <h3><a href="{{ case.url | relative_url }}">{{ case.title | escape }}</a></h3>
         <p>{{ case.description }}</p>
       </article>
       {% endfor %}
     </div>
     {% else %}
-    <div class="rsh-empty"><div><p class="rsh-eyebrow">CASE MATERIALS IN PREPARATION</p><h3>The library is being assembled.</h3><p>No case results have been published here yet. Each entry will pair its problem specification with figures, evidence, and source details.</p></div><a href="{{ '/projects/#case-specification' | relative_url }}">See the case format <span aria-hidden="true">→</span></a></div>
+    <div class="rsh-empty"><div><p class="rsh-eyebrow">CASE MATERIALS IN PREPARATION</p><h3>The library is being assembled.</h3><p>No case results have been published here yet. Each entry will document a computational problem, model settings, and result figures, with related papers at the bottom of its page.</p></div><a href="{{ '/methods/' | relative_url }}">Case documentation guide <span aria-hidden="true">→</span></a></div>
     {% endif %}
   </section>
 
@@ -69,7 +69,7 @@ nav_order: 0
 
   <section class="rsh-section" aria-labelledby="scope-title">
     <div class="rsh-heading"><p class="rsh-eyebrow">ABOUT THIS HUB</p><h2 id="scope-title">A subject-first space for research.</h2></div>
-    <p class="rsh-readable">This Hub organizes residual stress research around cases, methods, and supporting resources. Its initial scope is metal additive manufacturing and numerical modeling. It is independently maintained; it is not an official university, laboratory, or standards-body platform.</p>
-    <p class="rsh-note">External references are attributed to their original sources. A research case is not described as a validated benchmark unless its specification and evidence support that claim.</p>
+    <p class="rsh-readable">This Hub organizes residual stress computational cases, not a personal project portfolio. Each case brings together its problem definition, model setup, results, and related literature. Its initial scope is metal additive manufacturing and numerical modeling. It is independently maintained; it is not an official university, laboratory, or standards-body platform.</p>
+    <p class="rsh-note">External references are attributed to their original sources. A computational case is not described as a validated benchmark unless its specification and evidence support that claim.</p>
   </section>
 </div>

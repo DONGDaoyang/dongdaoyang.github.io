@@ -1,14 +1,14 @@
-# Shared hub content. Publish only verified case studies and research outputs.
+# Shared hub content. Computational cases are not a personal project portfolio.
 name: Residual Stress Hub
-tagline: Cases, methods & research resources.
-intro: A focused home for residual stress research, with an initial emphasis on metal additive manufacturing and computational modeling.
+tagline: Computational cases, methods & related literature.
+intro: A library of residual stress computational cases, connecting problem definitions, model setups, and results to their original sources.
 status: Independent research resource · Initial release
 scope:
   - number: "01"
-    title: Cases
-    description: Explore a research problem through its specification, method, figures, and evidence.
-    url: /projects/
-    action: Browse the case library
+    title: Benchmarks
+    description: Browse computational problems, model setups, result figures, and related papers.
+    url: /benchmarks/
+    action: Browse benchmarks
   - number: "02"
     title: Methods
     description: A practical reporting guide for documenting assumptions, numerical settings, and comparisons.
@@ -21,13 +21,13 @@ scope:
     action: Explore the resources
 case_fields:
   - title: Problem specification
-    detail: State the research question, geometry, material, process, and intended output. Explain the scope and what is not modeled.
+    detail: State the computational problem, geometry, material, process, and intended output. Explain the scope and what is not modeled.
   - title: Model & assumptions
     detail: Document model equations, material inputs, boundary conditions, software, and numerical settings. Identify simplifications.
   - title: Results & comparison
     detail: Include labeled figures, stress components, coordinate conventions, units, and comparison conditions. State limitations alongside conclusions.
   - title: Reproducibility & sources
-    detail: Link supporting papers and available files. Record versions, licenses, and access restrictions; distinguish public resources from unavailable materials.
+    detail: Document input files, versions, licenses, and access restrictions. List related papers at the bottom of each case page, crediting their original authors.
 resources:
   - type: EXTERNAL BENCHMARK RESOURCE
     title: NIST AM-Bench
@@ -39,7 +39,5 @@ resources:
     description: The Phase Field Community Hub. An information-architecture reference for this site, not a residual stress dataset or a partner of this Hub.
     url: https://pages.nist.gov/pfhub/
     source: PFHub · NIST-hosted website
-# Add real papers only. Required fields: title, citation, url.
-publications: []
 # Add available code/data only. Required fields: title, description, url.
 research_resources: []

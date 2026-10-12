@@ -244,22 +244,20 @@ html[data-theme="dark"] .rsh,
   color: var(--hub-muted);
   font-size: 0.8rem;
 }
+.rsh a.rsh-case-cover {
+  display: block;
+  margin: 0 0 1.2rem;
+  padding: 0;
+}
+.rsh .rsh-case-cover .rsh-case-image {
+  margin-bottom: 0;
+}
 .rsh .rsh-case-image {
   display: block;
   width: 100%;
   height: auto;
   margin-bottom: 1.2rem;
   border-radius: 4px;
-}
-.rsh .rsh-section-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem 1.7rem;
-  padding: 1.3rem 0;
-  border-bottom: 1px solid var(--hub-line);
-}
-.rsh .rsh-section-nav a {
-  font-size: 0.78rem;
 }
 .rsh .rsh-guide-section {
   margin-top: 2.3rem;
@@ -294,14 +292,14 @@ html[data-theme="dark"] .rsh,
 .rsh .rsh-resource p:last-child {
   margin-bottom: 0;
 }
-.rsh .rsh-publications {
+.rsh .rsh-references {
   padding-left: 1.4rem;
 }
-.rsh .rsh-publications li {
+.rsh .rsh-references li {
   margin-bottom: 1.5rem;
   padding-left: 0.3rem;
 }
-.rsh .rsh-publications p {
+.rsh .rsh-references p {
   color: var(--hub-muted);
   font-size: 0.88rem;
 }
