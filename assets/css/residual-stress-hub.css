@@ -1,0 +1,342 @@
+/* Hub-specific content presentation. No theme overrides or build pipeline. */
+.rsh {
+  --hub-text: var(--global-text-color, #203344);
+  --hub-muted: #536676;
+  --hub-line: var(--global-divider-color, #dce4e9);
+  --hub-panel: var(--global-card-bg-color, #f7f9fa);
+  --hub-accent: #086d68;
+  color: var(--hub-text);
+  line-height: 1.7;
+}
+html[data-theme="dark"] .rsh,
+.dark .rsh {
+  --hub-text: #e3ebf2;
+  --hub-muted: #acbdcc;
+  --hub-line: #36495a;
+  --hub-panel: #182735;
+  --hub-accent: #8adecf;
+}
+.rsh a {
+  color: var(--hub-accent);
+}
+.rsh a:focus-visible {
+  outline: 3px solid var(--hub-accent);
+  outline-offset: 5px;
+}
+.rsh .rsh-eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--hub-accent);
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.14em;
+}
+.rsh .rsh-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem 0 2.8rem;
+  border-bottom: 1px solid var(--hub-line);
+}
+.rsh .rsh-hero h1 {
+  margin: 0 0 1.2rem;
+  font-size: clamp(2.8rem, 5vw, 4.1rem);
+  font-weight: 650;
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+}
+.rsh .rsh-hero h1 span {
+  display: block;
+  color: var(--hub-accent);
+}
+.rsh .rsh-tagline {
+  margin-bottom: 0.75rem;
+  font-size: 1.16rem;
+  font-weight: 500;
+}
+.rsh .rsh-lead {
+  max-width: 32rem;
+  color: var(--hub-muted);
+  font-size: 0.96rem;
+}
+.rsh .rsh-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.1rem;
+  margin: 1.8rem 0 1.3rem;
+}
+.rsh a.rsh-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+  padding: 0.72rem 1rem;
+  border: 1px solid #086d68;
+  border-radius: 5px;
+  background: #086d68;
+  color: #fff;
+  font-size: 0.83rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.rsh a.rsh-button:hover {
+  background: #075d59;
+  border-color: #075d59;
+}
+.rsh .rsh-secondary {
+  font-size: 0.83rem;
+  font-weight: 600;
+}
+.rsh .rsh-status {
+  margin-bottom: 0;
+  color: var(--hub-muted);
+  font-size: 0.67rem;
+}
+.rsh .rsh-status span {
+  margin-right: 0.35rem;
+  color: var(--hub-accent);
+}
+.rsh .rsh-visual {
+  min-width: 0;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid #345268;
+  border-radius: 12px;
+  background: #112336;
+  color: #d3e2ed;
+}
+.rsh .rsh-visual-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: ui-monospace, monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+}
+.rsh .rsh-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.rsh .rsh-visual figcaption {
+  color: #b3c5d6;
+  font-size: 0.6rem;
+  text-align: center;
+}
+.rsh .rsh-section {
+  margin-top: 3rem;
+  scroll-margin-top: 6rem;
+}
+.rsh .rsh-heading {
+  max-width: 45rem;
+  margin-bottom: 1.4rem;
+}
+.rsh h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+.rsh h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.rsh .rsh-heading p:not(.rsh-eyebrow) {
+  color: var(--hub-muted);
+}
+.rsh .rsh-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: none;
+}
+.rsh .rsh-heading-row > a {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+}
+.rsh .rsh-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.rsh .rsh-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.rsh .rsh-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--hub-line);
+  border-radius: 8px;
+  background: var(--hub-panel);
+}
+.rsh .rsh-card p:not(.rsh-eyebrow) {
+  color: var(--hub-muted);
+  font-size: 0.87rem;
+}
+.rsh .rsh-card > a {
+  margin-top: auto;
+  padding-top: 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.rsh .rsh-card h2 {
+  font-size: 1.2rem;
+}
+.rsh .rsh-number {
+  margin-bottom: 1.6rem;
+  color: var(--hub-accent);
+  font-family: ui-monospace, monospace;
+  font-size: 0.73rem;
+}
+.rsh .rsh-empty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.7rem;
+  border: 1px dashed var(--hub-line);
+  border-radius: 8px;
+}
+.rsh .rsh-empty p:last-child {
+  max-width: 36rem;
+  margin-bottom: 0;
+  color: var(--hub-muted);
+  font-size: 0.88rem;
+}
+.rsh .rsh-empty > a {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+}
+.rsh .rsh-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--hub-line);
+  border-radius: 8px;
+  background: var(--hub-panel);
+}
+.rsh .rsh-band > div {
+  max-width: 33rem;
+}
+.rsh .rsh-band p:last-child {
+  margin-bottom: 0;
+  color: var(--hub-muted);
+  font-size: 0.9rem;
+}
+.rsh .rsh-band > a {
+  flex-shrink: 0;
+}
+.rsh .rsh-readable {
+  max-width: 47rem;
+  color: var(--hub-muted);
+}
+.rsh .rsh-note {
+  color: var(--hub-muted);
+  font-size: 0.8rem;
+}
+.rsh .rsh-case-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.2rem;
+  border-radius: 4px;
+}
+.rsh .rsh-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.7rem;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid var(--hub-line);
+}
+.rsh .rsh-section-nav a {
+  font-size: 0.78rem;
+}
+.rsh .rsh-guide-section {
+  margin-top: 2.3rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid var(--hub-line);
+  scroll-margin-top: 6rem;
+}
+.rsh .rsh-guide-section ul {
+  padding-left: 1.2rem;
+  color: var(--hub-muted);
+  font-size: 0.93rem;
+}
+.rsh .rsh-guide-section li {
+  margin-bottom: 0.7rem;
+  padding-left: 0.35rem;
+}
+.rsh .rsh-resource-list {
+  display: grid;
+  gap: 1rem;
+}
+.rsh .rsh-resource {
+  padding: 1.6rem;
+  border: 1px solid var(--hub-line);
+  border-radius: 8px;
+}
+.rsh .rsh-resource h2 {
+  font-size: 1.3rem;
+}
+.rsh .rsh-resource p:not(.rsh-eyebrow) {
+  color: var(--hub-muted);
+}
+.rsh .rsh-resource p:last-child {
+  margin-bottom: 0;
+}
+.rsh .rsh-publications {
+  padding-left: 1.4rem;
+}
+.rsh .rsh-publications li {
+  margin-bottom: 1.5rem;
+  padding-left: 0.3rem;
+}
+.rsh .rsh-publications p {
+  color: var(--hub-muted);
+  font-size: 0.88rem;
+}
+.rsh .rsh-bottom-link {
+  margin-top: 2rem;
+  font-size: 0.87rem;
+}
+@media (max-width: 760px) {
+  .rsh .rsh-hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .rsh .rsh-hero h1 span {
+    display: inline;
+  }
+  .rsh .rsh-visual {
+    max-width: 450px;
+    width: 100%;
+  }
+  .rsh .rsh-grid,
+  .rsh .rsh-grid-two {
+    grid-template-columns: 1fr;
+  }
+  .rsh .rsh-empty,
+  .rsh .rsh-band {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  .rsh .rsh-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .rsh .rsh-section {
+    margin-top: 2.5rem;
+  }
+}

@@ -2,18 +2,18 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Residual Stress Hub # subject-first site identity
 first_name: Daoyang
 middle_name:
 last_name: DONG
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Daoyang Dong
+  Residual stress research cases, reporting guides, and resources for metal additive manufacturing and computational modeling.
 footer_text: >
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+  Residual Stress Hub · Independently maintained research resource.
+keywords: residual stress, metal additive manufacturing, computational mechanics, process simulation, research cases
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🔬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: "https://dongdaoyang.github.io" # the base hostname & protocol for your site

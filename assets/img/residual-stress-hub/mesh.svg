@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560" fill="none">
+  <title>Layered geometry and computational mesh</title>
+  <desc>A conceptual isometric layered block. This is not a measured or simulated stress field.</desc>
+  <defs>
+    <linearGradient id="front" x1="190" y1="210" x2="400" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#214B59" />
+      <stop offset="1" stop-color="#142D41" />
+    </linearGradient>
+    <linearGradient id="top" x1="240" y1="170" x2="500" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#84DDD0" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#84DDD0" stop-opacity="0.08" />
+    </linearGradient>
+  </defs>
+  <g stroke="#365468" stroke-opacity="0.6">
+    <path d="m80 335 290-157 272 147M80 370l290-157 272 147M80 405l290-157 272 147M80 440l290-157 272 147" />
+    <path d="m110 319 272 147m-219-176 272 147m-219-175 272 147m-219-176 272 147m-219-175 272 147m-219-176 272 147" />
+  </g>
+  <path d="m155 349 195-105 222 120-195 105Z" fill="#142B3D" stroke="#527789" stroke-width="1.5" />
+  <path d="M155 349v16l222 120v-16Zm222 120 195-105v16L377 485Z" fill="#102334" stroke="#527789" stroke-width="1.5" />
+  <path d="m221 236 136-73 151 81-136 73Z" fill="url(#top)" stroke="#83D7C9" stroke-width="1.5" />
+  <path d="M221 236v122l151 82V317Z" fill="url(#front)" stroke="#6EB5B7" stroke-width="1.5" />
+  <path d="m372 317 136-73v122l-136 74Z" fill="#173749" stroke="#6EB5B7" stroke-width="1.5" />
+  <g stroke="#82CCBF" stroke-opacity="0.65">
+    <path d="m221 253 151 82 136-73m-287 9 151 82 136-73m-287 9 151 82 136-73m-287 9 151 82 136-73m-287 9 151 82 136-73m-287 9 151 82 136-73" />
+    <path d="M246 250v122m25-108v122m25-108v122m25-108v122m25-108v122m49-121v122m22-134v122m22-134v122m23-134v122m23-134v122" stroke-opacity="0.3" />
+    <path
+      d="m247 222 151 82m-126-95 151 82m-126-95 151 82m-126-95 151 82m-176-95-136 73m161-60-136 73m161-59-136 73m161-60-136 73"
+      stroke-opacity="0.3"
+    />
+  </g>
+  <path d="m221 305 151 82 136-73" stroke="#F0BB99" stroke-width="2.5" />
+  <g stroke="#81ABA9" stroke-dasharray="4 5"><path d="M357 163v-53h130m21 205h58v-76h53m-373 162-62 33H92" /></g>
+  <g fill="#C4D6E3" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">
+    <text x="365" y="95">LAYERED GEOMETRY</text>
+    <text x="540" y="225">MESH</text>
+    <text x="92" y="458">PROCESS MODEL</text>
+  </g>
+  <g fill="#9FE2D7">
+    <circle cx="357" cy="163" r="4" />
+    <circle cx="508" cy="315" r="4" />
+    <circle cx="246" cy="401" r="4" />
+  </g>
+</svg>

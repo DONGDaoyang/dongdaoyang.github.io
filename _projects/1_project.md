@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false # Archived template example; not a Hub research case.
 title: project 1
 description: with background image
 img: assets/img/12.jpg

@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false # Archived template example; not a Hub research case.
 title: project 2
 description: a project with a background image and giscus comments
 img: assets/img/3.jpg

@@ -1,29 +1,75 @@
 ---
-layout: about
-title: about
+layout: default
+title: Home
 permalink: /
-subtitle: <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology (HKUST)
-
-profile:
-  align: right
-  image: ddy22.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: ""
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+nav: false # The core navbar adds the homepage automatically.
+nav_order: 0
 ---
 
-I received my B.S. and M.S. degrees from <a href="https://www.seu.edu.cn/">Southeast University (SEU)</a> in 2021 and 2024, respectively. In February 2025, I joined the Computational Mechanics & Scientific Learning (CMSL) Lab at The Hong Kong University of Science and Technology (HKUST). I am now a PhD student in Civil Engineering at HKUST.
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url }}">
+{% assign hub = site.data.residual_stress_hub %}
+{% assign cases = site.projects | where: "hub_case", true | where_exp: "case", "case.published != false" | sort: "importance" %}
 
-My research interests lie in metal additive manufacturing, with a focus on process simulation, manufacturing process-related problems, and computational acceleration techniques for efficient numerical modeling.
+<div class="rsh" id="hub-home">
+  <section class="rsh-hero" aria-labelledby="hub-title">
+    <div class="rsh-hero-copy">
+      <p class="rsh-eyebrow">A FOCUSED RESEARCH RESOURCE</p>
+      <h1 id="hub-title">Residual Stress <span>Hub.</span></h1>
+      <p class="rsh-tagline">{{ hub.tagline }}</p>
+      <p class="rsh-lead">{{ hub.intro }}</p>
+      <div class="rsh-actions">
+        <a class="rsh-button" href="{{ '/projects/' | relative_url }}">Explore cases <span aria-hidden="true">↗</span></a>
+        <a class="rsh-secondary" href="{{ '/methods/' | relative_url }}">Start with the guide <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="rsh-status"><span aria-hidden="true">●</span> {{ hub.status }}</p>
+    </div>
+    <figure class="rsh-visual">
+      <div class="rsh-visual-label"><span>PROCESS / MODEL / RESPONSE</span><span aria-hidden="true">01</span></div>
+      <img src="{{ '/assets/img/residual-stress-hub/mesh.svg' | relative_url }}" alt="Conceptual illustration of layered geometry and a computational mesh, not a stress result." width="720" height="560" fetchpriority="high">
+      <figcaption>Concept illustration — not measured or simulated stress data.</figcaption>
+    </figure>
+  </section>
+
+  <section class="rsh-section" aria-labelledby="explore-title">
+    <div class="rsh-heading"><p class="rsh-eyebrow">EXPLORE THE HUB</p><h2 id="explore-title">From a question to the evidence.</h2></div>
+    <div class="rsh-grid">
+      {% for item in hub.scope %}
+      <article class="rsh-card">
+        <span class="rsh-number" aria-hidden="true">{{ item.number }}</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <a href="{{ item.url | relative_url }}">{{ item.action }} <span aria-hidden="true">→</span></a>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="rsh-section" aria-labelledby="cases-title">
+    <div class="rsh-heading rsh-heading-row"><div><p class="rsh-eyebrow">CASE LIBRARY</p><h2 id="cases-title">Research, one case at a time.</h2></div><a href="{{ '/projects/' | relative_url }}">All cases <span aria-hidden="true">→</span></a></div>
+    {% if cases.size > 0 %}
+    <div class="rsh-grid">
+      {% for case in cases limit: 3 %}
+      <article class="rsh-card">
+        {% if case.img %}<img class="rsh-case-image" src="{{ case.img | relative_url }}" alt="{{ case.image_alt | default: case.title | escape }}" loading="lazy">{% endif %}
+        <p class="rsh-eyebrow">{{ case.case_type | default: "RESEARCH CASE" }}</p>
+        <h3><a href="{{ case.url | relative_url }}">{{ case.title }}</a></h3>
+        <p>{{ case.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="rsh-empty"><div><p class="rsh-eyebrow">CASE MATERIALS IN PREPARATION</p><h3>The library is being assembled.</h3><p>No case results have been published here yet. Each entry will pair its problem specification with figures, evidence, and source details.</p></div><a href="{{ '/projects/#case-specification' | relative_url }}">See the case format <span aria-hidden="true">→</span></a></div>
+    {% endif %}
+  </section>
+
+  <section class="rsh-section rsh-band" aria-labelledby="guide-title">
+    <div><p class="rsh-eyebrow">METHODS & DOCUMENTATION</p><h2 id="guide-title">Make the comparison interpretable.</h2><p>A useful result needs more than a contour plot. Document what was modeled, what was compared, and which evidence supports the conclusion.</p></div>
+    <a class="rsh-button" href="{{ '/methods/' | relative_url }}">Use the reporting guide <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="rsh-section" aria-labelledby="scope-title">
+    <div class="rsh-heading"><p class="rsh-eyebrow">ABOUT THIS HUB</p><h2 id="scope-title">A subject-first space for research.</h2></div>
+    <p class="rsh-readable">This Hub organizes residual stress research around cases, methods, and supporting resources. Its initial scope is metal additive manufacturing and numerical modeling. It is independently maintained; it is not an official university, laboratory, or standards-body platform.</p>
+    <p class="rsh-note">External references are attributed to their original sources. A research case is not described as a validated benchmark unless its specification and evidence support that claim.</p>
+  </section>
+</div>
