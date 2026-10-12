@@ -8,9 +8,9 @@
 - `/benchmarks/`：Benchmarks 算例库，使用 `/benchmarks/`，不再作为个人 Project 展示；旧 `/projects/` 直接展示同一份算例列表，不经过跳转页。
 - `/methods/`：编辑性的案例报告指南，不宣称是官方标准。
 - `/resources/`：有来源归属的外部参考资源、代码和数据，不再设置全站论文栏目。
-- 原 `/publications/` 页面设为 `published: false`，保留源码但不发布，也不放进导航。
+- 不设置独立 `/publications/` 页面；原入口源码只保留在不发布的归档目录。
 
-原首页及原论文列表入口备份在 `docs/archive/`。`docs/` 在站点配置中被排除，不会发布成网页。旧模板项目设为 `published: false`，保留源码，不作为真实研究案例发布。
+原首页、个人简介及原论文列表入口备份在 `docs/archive/`。`docs/` 在站点配置中被排除，不会发布成网页。无关模板页面和模板项目已删除，不作为真实研究案例发布。
 
 参考 PFHub 的案例规范、方法和资源组织方式，不复制其文本、标识、赞助商信息或官方身份。本站是独立维护的研究资源，不宣称获得学校、实验室、NIST 或其他机构背书。
 
@@ -50,7 +50,7 @@ hub_case: true
 published: false # 材料确认后才改为 true
 importance: 1
 case_type: Computational case
-img: assets/img/research/your-figure.png
+img: /assets/img/cases/your-case/cover.png
 image_alt: "Describe the objects and comparison shown in the real figure."
 ---
 ```
@@ -176,3 +176,17 @@ Benchmarks 使用 `/benchmarks/` 地址，详情页应是 `/benchmarks/your-case
 `test/integration_fixture_helpers.sh` 在各测试的临时目录生成最小测试页面；评论、Distill 和新插件测试通过 `--source` 构建这些临时页面，仍使用真实站点的主题和插件配置。生产部署不调用这个辅助脚本，因此不会恢复博客或把测试页面发布到 Hub。
 
 如果 Actions 报错 `site/blog/.../index.html: No such file or directory`，应检查对应的测试输入与生成路径，而不是把示例博客重新加入网站或关闭全部测试。时区弃用提示和 notebook 高亮提示与此缺页错误不同。
+
+## 已完成的模板清理
+
+保留的公开页面只有首页、Benchmarks、Methods、Resources、旧 `/projects/` 兼容入口和 404 页面。保留 Example 1 与未发布的新算例模板。
+
+已删除模板博客入口、教学、书籍、个人 CV、人员列表、Repositories、插件展示、Publications 和占位项目；移除了爱因斯坦的头像、论文条目、引文统计、简历数据/PDF，以及模板图片、音频、视频、Notebook、Plotly 演示和 README 示例截图。外部示例博客导入与简历 JSON 导入已清空，社交/合作者/期刊数据为空映射，不包含虚假身份信息。`_bibliography/papers.bib` 保留空文件接口，未来可添加经过核实的真实文献，但不生成独立论文栏目。
+
+你的照片 `assets/img/ddy.jpg`、`assets/img/ddy22.jpg` 和真实获奖记录 `_news/announcement_3.md` 没有删除；当前 news 集合 `output: false`，不会发布独立新闻网页。原个人简介的精确副本在 `docs/archive/personal-bio.md`。
+
+Example 1 的图片与视频目录已准备好：`assets/img/cases/case-1/`、`assets/video/cases/case-1/`。其中 README 只说明用法，不是假素材，且被排除在部署之外。添加其他算例时按同样方式建立新目录。
+
+简历生成、示例引文更新、模板仓库 star 图、README 截图、模板发布和旧模板 Lighthouse 报告任务已移除，避免自动恢复无关内容。部署、格式检查、插件测试与升级工具仍保留。`test/visual/hub.spec.js` 改为检查实际 Hub 路由、统一导航、直达算例、四段结构和图片加载，不再对比上游个人主页模板。浏览器检查默认跟随本站空 `baseurl`，不再强制 `/al-folio`。
+
+保留主题与数学、图表、图片等插件的现有依赖，以便后续算例使用；不在此次内容清理中重构插件。上游架构和功能文档保留作技术参考，其中通用模板示例不代表本站已发布内容。
