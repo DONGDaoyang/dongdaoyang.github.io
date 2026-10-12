@@ -168,3 +168,11 @@ Benchmarks 使用 `/benchmarks/` 地址，详情页应是 `/benchmarks/your-case
 配色采用橙色与中性灰色：灰色作为材料、结构和网格的视觉底色，橙色作为内部变化与重点信息的视觉强调。浅色模式使用深橙色文字以保持可读性，深色模式使用浅橙色强调。概念图的橙色带只是视觉隐喻，不表示已计算的应力分量、数值或拉压符号；实际结果图应另外提供真实色标、单位和坐标约定。首页和样本页保留非真实结果说明。
 
 保持现有 `url` / `baseurl`，内部链接使用 `relative_url`。运行时归属仍遵循 [架构说明](ARCHITECTURE.md)。
+
+## CI 与模板博客示例
+
+本网站已移除模板的 `_posts` 博客目录。评论、Distill、RTL 和 Marimo 的集成测试不应再依赖公开网站中的示例文章。
+
+`test/integration_fixture_helpers.sh` 在各测试的临时目录生成最小测试页面；评论、Distill 和新插件测试通过 `--source` 构建这些临时页面，仍使用真实站点的主题和插件配置。生产部署不调用这个辅助脚本，因此不会恢复博客或把测试页面发布到 Hub。
+
+如果 Actions 报错 `site/blog/.../index.html: No such file or directory`，应检查对应的测试输入与生成路径，而不是把示例博客重新加入网站或关闭全部测试。时区弃用提示和 notebook 高亮提示与此缺页错误不同。
