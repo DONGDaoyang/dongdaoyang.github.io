@@ -1,27 +1,85 @@
 ---
 layout: page
 title: Resources
-description: Original-source references and available research materials.
+description: My GitHub profile and available project repositories.
 permalink: /resources/
 nav: true
 nav_order: 3
 ---
 
+{% assign hub = site.data.residual_stress_hub %}
+
+<div class="rsh rsh-page-brand">
+<section class="rsh-hero rsh-hero-with-background" aria-label="Residual Stress Hub">
+<img class="rsh-hero-background" src="{{ hub.hero_background | relative_url }}" alt="" aria-hidden="true">
+<a class="rsh-hero-brand rsh-site-title" href="{{ '/' | relative_url }}" aria-label="Residual Stress Hub home">
+<img class="rsh-logo" src="{{ hub.logo | relative_url }}" alt="" aria-hidden="true" width="200" height="160">
+<span class="rsh-brand-name"><span class="rsh-stress-name">Residual Stress</span> <span class="rsh-hub-name">Hub</span></span>
+</a>
+</section>
+</div>
+
+<!-- Edit headings, paragraphs, and lists in Markdown. Containers retain the page layout. -->
+
 <link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url }}">
 {% assign hub = site.data.residual_stress_hub %}
 
-<div class="rsh">
-  <p class="rsh-eyebrow">RESOURCES / ORIGINAL SOURCES</p>
-  <p class="rsh-readable">External resources remain owned and maintained by their original providers. Inclusion here does not imply affiliation, endorsement, or compatibility with every residual stress case.</p>
-  <div class="rsh-resource-list rsh-section">
-    {% for resource in hub.resources %}
-    <article class="rsh-resource"><div><p class="rsh-eyebrow">{{ resource.type }}</p><h2><a href="{{ resource.url }}">{{ resource.title }} <span aria-hidden="true">↗</span></a></h2><p>{{ resource.description }}</p><p class="rsh-note">Source: {{ resource.source }}</p></div></article>
-    {% endfor %}
-  </div>
+<div class="rsh" markdown="1">
 
-  <section class="rsh-section" aria-labelledby="materials-title"><div class="rsh-heading"><p class="rsh-eyebrow">CODE & DATA</p><h2 id="materials-title">Available research materials.</h2></div>
-    {% if hub.research_resources.size > 0 %}
-    <div class="rsh-resource-list">{% for resource in hub.research_resources %}<article class="rsh-resource"><h3><a href="{{ resource.url }}">{{ resource.title }}</a></h3><p>{{ resource.description }}</p></article>{% endfor %}</div>
-    {% else %}<p class="rsh-note">No case-specific code or datasets are published by this Hub yet. Public benchmark information is available from the original sources above.</p>{% endif %}
-  </section>
+Visit my GitHub profile to explore my public repositories and follow project updates.
+{: .rsh-readable}
+
+<div class="rsh-resource-list rsh-section" markdown="1">
+
+{% for resource in hub.resources %}
+
+<article class="rsh-resource" markdown="1">
+
+<div markdown="1">
+
+## [{{ resource.title }} <span aria-hidden="true">↗</span>]({{ resource.url }})
+
+{{ resource.description }}
+
+{{ resource.source }}
+{: .rsh-note}
+
+</div>
+
+</article>
+
+{% endfor %}
+
+</div>
+
+{% if hub.research_resources.size > 0 %}
+
+<section class="rsh-section" aria-labelledby="materials-title" markdown="1">
+
+<div class="rsh-heading" markdown="1">
+
+## Available research materials. {#materials-title}
+
+</div>
+
+<div class="rsh-resource-list" markdown="1">
+
+{% for resource in hub.research_resources %}
+
+<article class="rsh-resource" markdown="1">
+
+### [{{ resource.title }}]({{ resource.url }})
+
+{{ resource.description }}
+
+</article>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+{% endif %}
+
 </div>

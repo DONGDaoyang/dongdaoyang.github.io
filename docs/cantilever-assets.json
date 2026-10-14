@@ -1,0 +1,199 @@
+{
+  "case": "Cantilever",
+  "assets": [
+    {
+      "label": "Saved local thermal/mechanical history",
+      "source_sha256": "80eb25931fcd50227b432983d7c0cb0ad0298ae7511b197d7609a59f21130971",
+      "website_file": "assets/img/cases/cantilever/thermal-history.png",
+      "operation": "Full PDF page 1 rasterized at 180 dpi; no cropping or curve editing",
+      "website_sha256": "41e83a09cabaf2aca0cde22d27106dae1b39d42a914014d2cd230ee6c0477054"
+    },
+    {
+      "label": "Saved local thermal/mechanical history",
+      "source_sha256": "80eb25931fcd50227b432983d7c0cb0ad0298ae7511b197d7609a59f21130971",
+      "website_file": "assets/pdf/cases/cantilever/thermal-history.pdf",
+      "operation": "Unmodified PDF copy",
+      "website_sha256": "80eb25931fcd50227b432983d7c0cb0ad0298ae7511b197d7609a59f21130971"
+    },
+    {
+      "label": "Selected optimization: paired stress and elastic strain",
+      "source_sha256": "d8fd4f6d49a9e850e67dc8a18785f34ccfdeb34847080e0f0134e6e667a9a68f",
+      "website_file": "assets/img/cases/cantilever/optimization-agreement.png",
+      "operation": "Full PDF page 1 rasterized at 160 dpi; no cropping or curve editing",
+      "website_sha256": "383a3a8dde88831e2c0f7f95950d103a2bb045e9f51dbb9a910bd5260a2f7ec5"
+    },
+    {
+      "label": "Selected optimization: paired stress and elastic strain",
+      "source_sha256": "d8fd4f6d49a9e850e67dc8a18785f34ccfdeb34847080e0f0134e6e667a9a68f",
+      "website_file": "assets/pdf/cases/cantilever/optimization-agreement.pdf",
+      "operation": "Unmodified PDF copy",
+      "website_sha256": "d8fd4f6d49a9e850e67dc8a18785f34ccfdeb34847080e0f0134e6e667a9a68f"
+    },
+    {
+      "label": "Archived macro comparison: x2p2",
+      "source_sha256": "ae50a34238c0ef38793851e53e189ef9c1c16f17c9db9c85fab36ac4e51fcb8a",
+      "website_file": "assets/img/cases/cantilever/x2p2.png",
+      "operation": "Full PDF page 1 rasterized at 180 dpi; no cropping or curve editing",
+      "website_sha256": "82b23ddc3e23cb26bb34c83e312becbb4e01b819a1568db58012f41ebfa95f22"
+    },
+    {
+      "label": "Archived macro comparison: x2p2",
+      "source_sha256": "ae50a34238c0ef38793851e53e189ef9c1c16f17c9db9c85fab36ac4e51fcb8a",
+      "website_file": "assets/pdf/cases/cantilever/x2p2.pdf",
+      "operation": "Unmodified PDF copy",
+      "website_sha256": "ae50a34238c0ef38793851e53e189ef9c1c16f17c9db9c85fab36ac4e51fcb8a"
+    },
+    {
+      "label": "Archived macro comparison: z2p2",
+      "source_sha256": "d35b7317f9f4493b421a645762379bbbae29d7670240f647199ee7e9831974a0",
+      "website_file": "assets/img/cases/cantilever/z2p2.png",
+      "operation": "Full PDF page 1 rasterized at 180 dpi; no cropping or curve editing",
+      "website_sha256": "23b2dafa21cf2d1523c0247603e13eceaeb830dc1c953537e94ea15eed5b117f"
+    },
+    {
+      "label": "Archived macro comparison: z2p2",
+      "source_sha256": "d35b7317f9f4493b421a645762379bbbae29d7670240f647199ee7e9831974a0",
+      "website_file": "assets/pdf/cases/cantilever/z2p2.pdf",
+      "operation": "Unmodified PDF copy",
+      "website_sha256": "d35b7317f9f4493b421a645762379bbbae29d7670240f647199ee7e9831974a0"
+    },
+    {
+      "label": "Archived macro comparison: x9p5",
+      "source_sha256": "e0e26cb2297241e92764de302253c5c32a2376f067dc1f5892f7b21b45b0177e",
+      "website_file": "assets/img/cases/cantilever/x9p5.png",
+      "operation": "Full PDF page 1 rasterized at 180 dpi; no cropping or curve editing",
+      "website_sha256": "8b871ef4a41a68077754ffbd3b4a3bb00e3a5e61e7a507d64365e0226b2dc202"
+    },
+    {
+      "label": "Archived macro comparison: x9p5",
+      "source_sha256": "e0e26cb2297241e92764de302253c5c32a2376f067dc1f5892f7b21b45b0177e",
+      "website_file": "assets/pdf/cases/cantilever/x9p5.pdf",
+      "operation": "Unmodified PDF copy",
+      "website_sha256": "e0e26cb2297241e92764de302253c5c32a2376f067dc1f5892f7b21b45b0177e"
+    },
+    {
+      "label": "Archived macro comparison: z9p5",
+      "source_sha256": "9e394feab3e54e72e54b9987503826d1aa93a57ca0e7ad6bed63b587739c584a",
+      "website_file": "assets/img/cases/cantilever/z9p5.png",
+      "operation": "Full PDF page 1 rasterized at 180 dpi; no cropping or curve editing",
+      "website_sha256": "d0a1d3231bc5f5ef2f0c065efa6e8854e71ed1ace7d7a1f3fceb269ecb742b55"
+    },
+    {
+      "label": "Archived macro comparison: z9p5",
+      "source_sha256": "9e394feab3e54e72e54b9987503826d1aa93a57ca0e7ad6bed63b587739c584a",
+      "website_file": "assets/pdf/cases/cantilever/z9p5.pdf",
+      "operation": "Unmodified PDF copy",
+      "website_sha256": "9e394feab3e54e72e54b9987503826d1aa93a57ca0e7ad6bed63b587739c584a"
+    },
+    {
+      "label": "Archived macro comparison: x11",
+      "source_sha256": "f38737d32ff823e153ba22a1548aaded4b74202dab5ac38a973c7ab17038eac4",
+      "website_file": "assets/img/cases/cantilever/x11.png",
+      "operation": "Full PDF page 1 rasterized at 180 dpi; no cropping or curve editing",
+      "website_sha256": "9b1bf884ffe2274111ccfe371172a15085197bda9169b96d355c3e4150ad4f55"
+    },
+    {
+      "label": "Archived macro comparison: x11",
+      "source_sha256": "f38737d32ff823e153ba22a1548aaded4b74202dab5ac38a973c7ab17038eac4",
+      "website_file": "assets/pdf/cases/cantilever/x11.pdf",
+      "operation": "Unmodified PDF copy",
+      "website_sha256": "f38737d32ff823e153ba22a1548aaded4b74202dab5ac38a973c7ab17038eac4"
+    },
+    {
+      "label": "Archived macro comparison: z11",
+      "source_sha256": "baa32c5ff1198080e985e0873b7d62f26dd21766c737ae4a0a2c4238ec7527cb",
+      "website_file": "assets/img/cases/cantilever/z11.png",
+      "operation": "Full PDF page 1 rasterized at 180 dpi; no cropping or curve editing",
+      "website_sha256": "da723c57d6622cd605db68be3f0e590ff24a958a8b1619c89c8d4e25fa98d819"
+    },
+    {
+      "label": "Archived macro comparison: z11",
+      "source_sha256": "baa32c5ff1198080e985e0873b7d62f26dd21766c737ae4a0a2c4238ec7527cb",
+      "website_file": "assets/pdf/cases/cantilever/z11.pdf",
+      "operation": "Unmodified PDF copy",
+      "website_sha256": "baa32c5ff1198080e985e0873b7d62f26dd21766c737ae4a0a2c4238ec7527cb"
+    },
+    {
+      "label": "Archived macro comparison: warpage",
+      "source_sha256": "3bdf7c664e319acfb6a33960cd0fa20dd8845037093949c178706809e5cb12ba",
+      "website_file": "assets/img/cases/cantilever/warpage.png",
+      "operation": "Full PDF page 1 rasterized at 180 dpi; no cropping or curve editing",
+      "website_sha256": "6d61ddd8bde0c098981dc08c39e04075718ce84bfe8922fe7fba7ee92c2b5ca7"
+    },
+    {
+      "label": "Archived macro comparison: warpage",
+      "source_sha256": "3bdf7c664e319acfb6a33960cd0fa20dd8845037093949c178706809e5cb12ba",
+      "website_file": "assets/pdf/cases/cantilever/warpage.pdf",
+      "operation": "Unmodified PDF copy",
+      "website_sha256": "3bdf7c664e319acfb6a33960cd0fa20dd8845037093949c178706809e5cb12ba"
+    },
+    {
+      "label": "Saved numeric output",
+      "source_sha256": "f221f3284054e5dc44c2514352ca6d5668f42571a77c1d81a18c0d284bb6dbcd",
+      "website_file": "assets/data/cases/cantilever/optimization-metrics.csv",
+      "operation": "Unmodified numeric CSV copy",
+      "website_sha256": "f221f3284054e5dc44c2514352ca6d5668f42571a77c1d81a18c0d284bb6dbcd"
+    },
+    {
+      "label": "Saved numeric output",
+      "source_sha256": "20711e5d8ccb1cb7d80fe5347ea7dbed63dd2195be7e2d0e3eeb60276260c631",
+      "website_file": "assets/data/cases/cantilever/warpage-25-layer.csv",
+      "operation": "Unmodified numeric CSV copy",
+      "website_sha256": "20711e5d8ccb1cb7d80fe5347ea7dbed63dd2195be7e2d0e3eeb60276260c631"
+    },
+    {
+      "label": "Saved numeric output",
+      "source_sha256": "bc777eb35050fc18a0086bc3c249c9b44dcb8316fc52f86ff0d5b3499e60ffde",
+      "website_file": "assets/data/cases/cantilever/warpage-50-layer.csv",
+      "operation": "Unmodified numeric CSV copy",
+      "website_sha256": "bc777eb35050fc18a0086bc3c249c9b44dcb8316fc52f86ff0d5b3499e60ffde"
+    },
+    {
+      "label": "Undeformed macro mesh cross-section",
+      "source_sha256": "acca43ad40b40fdc29aa99531b552381d95d5ce6cf2a4d119756a32aa10d12c2",
+      "website_file": "assets/img/cases/cantilever/geometry.svg",
+      "operation": "Y=0 native HEX8 faces; mm input coordinates; uniform geometry colors, not stress values",
+      "website_sha256": "20cee5bcdbbf8b44f1a4876166d6f20b45142f9b849e7e80b45909cbe683991d"
+    },
+    {
+      "label": "Undeformed macro mesh cross-section",
+      "source_sha256": "acca43ad40b40fdc29aa99531b552381d95d5ce6cf2a4d119756a32aa10d12c2",
+      "website_file": "assets/pdf/cases/cantilever/geometry.pdf",
+      "operation": "Y=0 native HEX8 faces; mm input coordinates; uniform geometry colors, not stress values",
+      "website_sha256": "cc878ed79e5933de2173243f70c014a9416e7b8bb3612226c0d5d26442634585"
+    }
+  ],
+  "figure_policy": "Existing numerical figures are reused without altering data, curves, labels or legends. New geometry is an undeformed mesh cross-section.",
+  "local_history_config_hash_matches_current": false,
+  "limitations": [
+    "The currently available AM configuration differs from the history provenance hash; printing settings are current configured inputs, not a verified immutable snapshot of the archived run.",
+    "Selected optimization and archived macro comparisons use different inherent-strain vectors; neither is relabeled as the other.",
+    "Paired DNS fields are optimization/calibration data, not held-out experimental validation.",
+    "The archived macro figure labels and experimental point sets are retained. No fabrication, smoothing or digitization.",
+    "The original AM-Bench experimental article is cited; curve-by-curve attribution and matched measurement conditions for the archived comparisons have not been independently verified.",
+    "Manual visual QA was unavailable to the agent. Browser image loading and rendered structure are tested separately."
+  ],
+  "geometry": {
+    "input_units": "mm",
+    "plane_y_mm": 0,
+    "points": 73805,
+    "hexahedra": 64212,
+    "bounds_mm": [
+      [-10.0, -5.0, -25.2000008],
+      [90.0, 5.0, 0.0]
+    ],
+    "cross_section_faces": 2558,
+    "alignment": "Not applicable: one axes panel",
+    "automated_text_qa": {
+      "text_bounds_within_page": true,
+      "overlapping_text_bounds": 0,
+      "manual_visual_review": false
+    }
+  },
+  "original_article": {
+    "doi": "10.1007/s40192-019-00149-0",
+    "citation": "Phan et al. (2019), Integrating Materials and Manufacturing Innovation 8, 318–334.",
+    "source": "User-supplied reference; bibliographic metadata checked against Crossref.",
+    "scope": "Original AM-Bench experimental article; archived curve-by-curve attribution has not been independently verified."
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "animations": [
+    {
+      "source_filename": "point.avi",
+      "source_sha256": "5892c1f8d51e45c3f5a0a610e29567b863c4fbdb629011c297b12ad9c55a20a7",
+      "original": "assets/video/cases/point/point.avi",
+      "animation": "assets/img/cases/point/point-animation.webp",
+      "animation_sha256": "09ae02c4fbc7ad5f26dc9a6cc0869620ba0f01fb8d06b6a3800b984c510460bb",
+      "poster": "assets/img/cases/point/point-animation-poster.png",
+      "source_frame_count": 16,
+      "source_frame_rate": 1.0,
+      "sampled_frame_count": 16,
+      "frame_count": 16,
+      "frame_duration_ms": 1000,
+      "duration_ms": 16000,
+      "dimensions": [1164, 656],
+      "loop": "infinite",
+      "hidden_overlays": {
+        "coordinate_axes": [0, 1000, 270, 1312],
+        "color_legend": [1980, 0, 2328, 1312]
+      },
+      "overlay_background": "#ffffff",
+      "display_crop": [88, 28, 2144, 1188],
+      "model_bounds_all_frames": [572, 104, 1660, 1112],
+      "conversion": "Motion JPEG AVI sampled every 1 frame(s), resized proportionally to half the original dimensions, and encoded as animated WebP. Coordinate axes and the color legend covered with the white export background for homepage display. Empty margins trimmed to a fixed viewport enclosing the model throughout all source frames, with approximately 7% margin per side, then fitted to the existing card dimensions. Original duration preserved; no added motion. Original AVI retained unchanged. Identical consecutive frames may be merged by the encoder."
+    },
+    {
+      "source_filename": "single_track.avi",
+      "source_sha256": "6386f79c54a7dbea0f520e92a5892478a2a65af636b89390645bca10fca4eb58",
+      "original": "assets/video/cases/single_track/single_track.avi",
+      "animation": "assets/img/cases/single_track/single-track-animation.webp",
+      "animation_sha256": "6a897886281c4d5a8989fb99788ebfc4a4bff16de7bfa7719b8e795b98b953c7",
+      "poster": "assets/img/cases/single_track/single-track-animation-poster.png",
+      "source_frame_count": 205,
+      "source_frame_rate": 20.0,
+      "sampled_frame_count": 205,
+      "frame_count": 205,
+      "frame_duration_ms": 50,
+      "duration_ms": 10250,
+      "dimensions": [1164, 656],
+      "loop": "infinite",
+      "hidden_overlays": {
+        "coordinate_axes": [0, 1000, 270, 1312],
+        "color_legend": [1980, 0, 2328, 1312]
+      },
+      "overlay_background": "#ffffff",
+      "display_crop": [264, 245, 1948, 1195],
+      "model_bounds_all_frames": [412, 308, 1800, 1132],
+      "conversion": "Motion JPEG AVI sampled every 1 frame(s), resized proportionally to half the original dimensions, and encoded as animated WebP. Coordinate axes and the color legend covered with the white export background for homepage display. Empty margins trimmed to a fixed viewport enclosing the model throughout all source frames, with approximately 7% margin per side, then fitted to the existing card dimensions. Original duration preserved; no added motion. Original AVI retained unchanged. Identical consecutive frames may be merged by the encoder."
+    },
+    {
+      "source_filename": "thin-wall.avi",
+      "source_sha256": "e669b39a0151c6bca8dd85ebbcc2fd3ca3597d2ff90a8d858a413d2c980fb45a",
+      "original": "assets/video/cases/thin_wall/thin-wall.avi",
+      "animation": "assets/img/cases/thin_wall/thin-wall-animation.webp",
+      "animation_sha256": "b6576e9bb99d98713a84f5a15827e2f554f14b3532903d7c89bee5b8bc25b9b8",
+      "poster": "assets/img/cases/thin_wall/thin-wall-animation-poster.png",
+      "source_frame_count": 2200,
+      "source_frame_rate": 100.0,
+      "sampled_frame_count": 440,
+      "frame_count": 440,
+      "frame_duration_ms": 50,
+      "duration_ms": 22000,
+      "dimensions": [1164, 656],
+      "loop": "infinite",
+      "hidden_overlays": {
+        "coordinate_axes": [0, 1000, 270, 1312],
+        "color_legend": [1980, 0, 2328, 1312]
+      },
+      "overlay_background": "#ffffff",
+      "display_crop": [256, 144, 2072, 1168],
+      "model_bounds_all_frames": [372, 336, 1956, 976],
+      "conversion": "Motion JPEG AVI sampled every 5 frame(s), resized proportionally to half the original dimensions, and encoded as animated WebP. Coordinate axes and the color legend covered with the white export background for homepage display. Empty margins trimmed to a fixed viewport enclosing the model throughout all source frames, with approximately 7% margin per side, then fitted to the existing card dimensions. Original duration preserved; no added motion. Original AVI retained unchanged. Identical consecutive frames may be merged by the encoder."
+    },
+    {
+      "source_filename": "scan-2.avi",
+      "source_sha256": "9c5ef969b5495c79faee6066bbd06b9ec2559405a4fa536eb49fc5335712e112",
+      "original": "assets/video/cases/scan/scan-2.avi",
+      "animation": "assets/img/cases/scan/scan-animation.webp",
+      "animation_sha256": "e81ad1f1ecc76d65e36d7e8eff2d9d27e5fbd004ce55260378d34870409ed923",
+      "poster": "assets/img/cases/scan/scan-animation-poster.png",
+      "source_frame_count": 364,
+      "source_frame_rate": 20.0,
+      "sampled_frame_count": 364,
+      "frame_count": 361,
+      "frame_duration_ms": 50,
+      "duration_ms": 18200,
+      "dimensions": [1164, 656],
+      "loop": "infinite",
+      "hidden_overlays": {
+        "coordinate_axes": [0, 1000, 270, 1312],
+        "color_legend": [1980, 0, 2328, 1312]
+      },
+      "overlay_background": "#ffffff",
+      "display_crop": [255, 187, 2125, 1241],
+      "model_bounds_all_frames": [640, 256, 1740, 1172],
+      "conversion": "Motion JPEG AVI sampled every 1 frame(s), resized proportionally to half the original dimensions, and encoded as animated WebP. Coordinate axes and the color legend covered with the white export background for homepage display. Empty margins trimmed to a fixed viewport enclosing the model throughout all source frames, with approximately 7% margin per side, then fitted to the existing card dimensions. Original duration preserved; no added motion. Original AVI retained unchanged. Identical consecutive frames may be merged by the encoder."
+    },
+    {
+      "source_filename": "bridge.avi",
+      "source_sha256": "1b074eaf626b299a490140313c37f716754354dd1889a6670eefa167d0803a04",
+      "original": "assets/video/cases/bridge/bridge.avi",
+      "animation": "assets/img/cases/bridge/bridge-animation.webp",
+      "animation_sha256": "6e8ce79ce573bafbc30da5bf3bbf597a806cb99708d7fd8d4acccccc36d7e853",
+      "poster": "assets/img/cases/bridge/bridge-animation-poster.png",
+      "source_frame_count": 36,
+      "source_frame_rate": 2.0,
+      "sampled_frame_count": 36,
+      "frame_count": 36,
+      "frame_duration_ms": 500,
+      "duration_ms": 18000,
+      "dimensions": [1164, 656],
+      "loop": "infinite",
+      "hidden_overlays": {
+        "coordinate_axes": [0, 1000, 270, 1312],
+        "color_legend": [1980, 0, 2328, 1312]
+      },
+      "overlay_background": "#ffffff",
+      "display_crop": [362, 284, 1966, 1188],
+      "model_bounds_all_frames": [556, 344, 1772, 1128],
+      "conversion": "Motion JPEG AVI sampled every 1 frame(s), resized proportionally to half the original dimensions, and encoded as animated WebP. Coordinate axes and the color legend covered with the white export background for homepage display. Empty margins trimmed to a fixed viewport enclosing the model throughout all source frames, with approximately 7% margin per side, then fitted to the existing card dimensions. Original duration preserved; no added motion. Original AVI retained unchanged. Identical consecutive frames may be merged by the encoder."
+    },
+    {
+      "source_filename": "cantilever.avi",
+      "source_sha256": "beec5a3711da292f848e27267c763f4ca26220fd7a51a6f662ca123d8923587f",
+      "original": "assets/video/cases/cantilever/cantilever.avi",
+      "animation": "assets/img/cases/cantilever/cantilever-animation.webp",
+      "animation_sha256": "ba6e823a47def018f686d357f41c5b0099c7687ce81638e20cb6c1d1a3194efb",
+      "poster": "assets/img/cases/cantilever/cantilever-animation-poster.png",
+      "source_frame_count": 50,
+      "source_frame_rate": 10.0,
+      "sampled_frame_count": 50,
+      "frame_count": 50,
+      "frame_duration_ms": 100,
+      "duration_ms": 5000,
+      "dimensions": [1164, 656],
+      "loop": "infinite",
+      "hidden_overlays": {
+        "coordinate_axes": [0, 1000, 270, 1312],
+        "color_legend": [1980, 0, 2328, 1312]
+      },
+      "overlay_background": "#ffffff",
+      "display_crop": [159, 182, 2053, 1250],
+      "model_bounds_all_frames": [316, 252, 1896, 1180],
+      "conversion": "Motion JPEG AVI sampled every 1 frame(s), resized proportionally to half the original dimensions, and encoded as animated WebP. Coordinate axes and the color legend covered with the white export background for homepage display. Empty margins trimmed to a fixed viewport enclosing the model throughout all source frames, with approximately 7% margin per side, then fitted to the existing card dimensions. Original duration preserved; no added motion. Original AVI retained unchanged. Identical consecutive frames may be merged by the encoder."
+    },
+    {
+      "source_filename": "double_cantilever.avi",
+      "source_sha256": "17905612417bda620d058b2e545fedeb74cbaafcd25dedb9dbd7db213ec58dfb",
+      "original": "assets/video/cases/double_cantilever/double_cantilever.avi",
+      "animation": "assets/img/cases/double_cantilever/double-cantilever-animation.webp",
+      "animation_sha256": "2f39efc88ab533a7fe44b6aca3aca28e947ab88b829a193b02aede4292b0a4a8",
+      "poster": "assets/img/cases/double_cantilever/double-cantilever-animation-poster.png",
+      "source_frame_count": 18,
+      "source_frame_rate": 2.0,
+      "sampled_frame_count": 18,
+      "frame_count": 18,
+      "frame_duration_ms": 500,
+      "duration_ms": 9000,
+      "dimensions": [1164, 656],
+      "loop": "infinite",
+      "hidden_overlays": {
+        "coordinate_axes": [0, 1000, 270, 1312],
+        "color_legend": [1980, 0, 2328, 1312]
+      },
+      "overlay_background": "#ffffff",
+      "display_crop": [347, 267, 1925, 1157],
+      "model_bounds_all_frames": [448, 400, 1824, 1024],
+      "conversion": "Motion JPEG AVI sampled every 1 frame(s), resized proportionally to half the original dimensions, and encoded as animated WebP. Coordinate axes and the color legend covered with the white export background for homepage display. Empty margins trimmed to a fixed viewport enclosing the model throughout all source frames, with approximately 7% margin per side, then fitted to the existing card dimensions. Original duration preserved; no added motion. Original AVI retained unchanged. Identical consecutive frames may be merged by the encoder."
+    }
+  ]
+}

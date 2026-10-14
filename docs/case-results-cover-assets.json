@@ -1,0 +1,60 @@
+{
+  "assets": [
+    {
+      "case": "Thin-wall",
+      "source_filename": "thin_wall_results.pdf",
+      "source_sha256": "cc4b55d5c227d9a1e2e79cb1ee307a8136128d3c1850015498cf5126f79d31d8",
+      "image": "assets/img/cases/thin-wall/results-cover.png",
+      "image_sha256": "f1afc73e661d72586582b26f2d992d88b31d21befb5c1d901c8a266aa3e630f8",
+      "original_pdf": "assets/pdf/cases/thin-wall/results-cover.pdf",
+      "pages": 1,
+      "preview_pixels": [1020, 504],
+      "operation": "Entire supplied results PDF page rendered at 3 pixels per PDF point without cropping or editing."
+    },
+    {
+      "case": "Bridge",
+      "source_filename": "bridge_results.pdf",
+      "source_sha256": "417b05e89e50bdfe83263a210d48ba6249c0fb82ca913f71b4da1f0b2746bc50",
+      "image": "assets/img/cases/bridge/results-cover.png",
+      "image_sha256": "21931f5eab15d6eadc1a4c644ed64e821f555bf56a371d5389f98497963646f9",
+      "original_pdf": "assets/pdf/cases/bridge/results-cover.pdf",
+      "pages": 1,
+      "preview_pixels": [720, 498],
+      "operation": "Entire supplied results PDF page rendered at 3 pixels per PDF point without cropping or editing."
+    },
+    {
+      "case": "Cantilever",
+      "source_filename": "cantilever_results.pdf",
+      "source_sha256": "419123796628e5b9e39263012c98e09cd74edefc9e7bdd68f622edded1dad8d2",
+      "image": "assets/img/cases/cantilever/results-cover.png",
+      "image_sha256": "b6b1af42a36f563977f1a44fd1c6db89be664cd0a6652817d96a3f952676f368",
+      "original_pdf": "assets/pdf/cases/cantilever/results-cover.pdf",
+      "pages": 1,
+      "preview_pixels": [1836, 1152],
+      "operation": "Entire supplied results PDF page rendered at 3 pixels per PDF point without cropping or editing."
+    },
+    {
+      "case": "Double-cantilever",
+      "source_filename": "dc_results.pdf",
+      "source_sha256": "09a7ed8bc01503c0f0695127adca1a637344c7bca67a7d25e4e3a405cfece591",
+      "image": "assets/img/cases/double_cantilever/results-cover.png",
+      "image_sha256": "906e32b33a24c25b6e0b24656062bb76522794a15501b1105a7101fedab1cbc1",
+      "original_pdf": "assets/pdf/cases/double_cantilever/results-cover.pdf",
+      "pages": 1,
+      "preview_pixels": [1167, 669],
+      "operation": "Entire supplied results PDF page rendered at 3 pixels per PDF point without cropping or editing."
+    },
+    {
+      "case": "Single Track",
+      "source_filename": "single_track_results.pdf",
+      "source_sha256": "dc42d0bbe1a2bd790ffb592e3006fdca5bdd52c589107f99e034c2b28767d636",
+      "image": "assets/img/cases/single_track/single-track-results.png",
+      "image_sha256": "bc443dc64c1ac15e96d4818c0f487d69e7c2c0eb88c6b44576da21eddd87f6f0",
+      "original_pdf": "assets/pdf/cases/single_track/single-track-results.pdf",
+      "pages": 1,
+      "preview_pixels": [999, 561],
+      "operation": "Entire supplied results PDF page rendered at 3 pixels per PDF point without cropping or editing."
+    }
+  ],
+  "missing_result_cover": []
+}

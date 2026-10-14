@@ -1,0 +1,111 @@
+{
+  "latest": {
+    "inherent_strain": {
+      "xx": -0.004339315963597324,
+      "yy": -0.004339315963597324,
+      "zz": 0.019647141658521924
+    },
+    "parameterization": {
+      "tie_xy": true,
+      "variables": ["eps_xx_yy", "eps_zz"]
+    },
+    "optimization": {
+      "success": true,
+      "status": 0,
+      "message": "converged by objective stagnation: relative loss spread 4.018e-07 <= 1.000e-05 over 3 accepted iterations",
+      "loss": 1.5048668129267722,
+      "iterations": 9,
+      "function_evaluations": 18
+    },
+    "objective": {
+      "stress": 0.2472834265841605,
+      "vm": 0.19079327777075433,
+      "uz": 0.8195066819876968,
+      "stress_xx": 0.10365937118334877,
+      "stress_yy": 0.10515874436470143,
+      "stress_zz": 0.03846531103611027,
+      "component_rms_stress": 1.7489840146158209,
+      "component_rms_original_total": 4.5082679889900925,
+      "contraction": 0.0,
+      "weighted_stress": 0.494566853168321,
+      "weighted_vm": 0.19079327777075433,
+      "weighted_uz": 0.8195066819876968,
+      "weighted_contraction": 0.0,
+      "original_total": 1.5048668129267722,
+      "total": 1.5048668129267722
+    },
+    "stress_normalization": {
+      "mode": "material_yield",
+      "units": "MPa",
+      "floor_mpa": 1.0,
+      "scales_mpa": {
+        "xx": 1172.0,
+        "yy": 1172.0,
+        "zz": 1172.0
+      },
+      "legacy_component_scales_mpa": {
+        "xx": 676.3930852513927,
+        "yy": 677.6773032597366,
+        "zz": 216.88314614374409
+      },
+      "reference_component_rms_mpa": {
+        "xx": 676.3930852513927,
+        "yy": 677.6773032597366,
+        "zz": 216.88314614374409
+      },
+      "active_roi_cells": 1452,
+      "shared_formula": "sqrt(mean_active_cells((sxx^2+syy^2+szz^2)/3))",
+      "vm_normalization_changed": false,
+      "initial_yield_stress_mpa": 1172.0,
+      "scale_source": "material.initial_yield_stress_pa / 1e6 (fixed)"
+    },
+    "reference_vtu": "opt_output/dc/am/vtk/step_00363.vtu",
+    "material": {
+      "elastic_modulus_pa": "2.08e11",
+      "poisson_ratio": 0.3,
+      "initial_yield_stress_pa": "1.172e9",
+      "hardening_modulus_pa": 0.0,
+      "maximum_yield_stress_pa": "1.172e9"
+    },
+    "relative_contraction": {
+      "definition": "positive shrinkage: -mean(u_high-u_low)/span",
+      "reduction": "xy_mean",
+      "penalty": "under_only",
+      "normalization_scale": 0.0013369936204981059,
+      "target_factor": 1.4,
+      "axes": {
+        "x": {
+          "reference": 0.000767404621001333,
+          "raw_reference": 0.000767404621001333,
+          "target": 0.0010743664694018661,
+          "simulated": 0.0028810427079741727,
+          "paired_nodes": 23,
+          "span_m": 0.0005500000120000001
+        },
+        "y": {
+          "reference": 0.0019065826199948788,
+          "raw_reference": 0.0019065826199948788,
+          "target": 0.0026692156679928303,
+          "simulated": 0.0028808837273836905,
+          "paired_nodes": 23,
+          "span_m": 0.0005500000120000001
+        }
+      },
+      "raw_reference_xy_mean": 0.0013369936204981059,
+      "reference_expansion_clamped": false,
+      "reference_xy_mean": 0.0013369936204981059,
+      "target_xy_mean": 0.0018717910686973482,
+      "simulated_xy_mean": 0.0028809632176789316,
+      "normalized_penalty": 0.0,
+      "weight": 1.0
+    }
+  },
+  "displayed_comparison": {
+    "inherent_strain": {
+      "xx": -0.004672144129191556,
+      "yy": -0.004672144129191556,
+      "zz": 0.015520309717393634
+    },
+    "reference": "dc/am/vtk/step_00189.vtu"
+  }
+}

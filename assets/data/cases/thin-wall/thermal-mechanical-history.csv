@@ -1,0 +1,2 @@
+file,time_s,active_cells,probe_temperature_c,total_strain_xx,total_strain_yy,total_strain_zz,elastic_strain_xx,elastic_strain_yy,elastic_strain_zz,plastic_strain_xx,plastic_strain_yy,plastic_strain_zz
+step_00000.vtu,0.12004803866147995,17931,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

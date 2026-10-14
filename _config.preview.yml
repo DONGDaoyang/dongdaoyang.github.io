@@ -1,0 +1,13 @@
+# Merge after _config.yml for local editing only. Never used by Deploy site.
+url: http://localhost:4000
+baseurl: ""
+last_updated: false
+# Preview original uploaded images; avoid requiring ImageMagick locally.
+imagemagick:
+  enabled: false
+external_sources: []
+jekyll_get_json: []
+related_blog_posts:
+  enabled: false
+pagination:
+  enabled: false

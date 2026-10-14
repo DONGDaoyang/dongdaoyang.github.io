@@ -1,0 +1,31 @@
+# Local preview only; production deployment still uses the normal site config.
+services:
+  preview:
+    build:
+      context: .
+      dockerfile: Dockerfile.preview
+    init: true
+    working_dir: /srv/jekyll
+    command:
+      - bundle
+      - exec
+      - jekyll
+      - serve
+      - --config
+      - _config.yml,_config.preview.yml
+      - --host
+      - 0.0.0.0
+      - --port
+      - "4000"
+      - --livereload
+      - --livereload-port
+      - "35729"
+      - --force_polling
+      - --disable-disk-cache
+      - --destination
+      - /tmp/_site
+    ports:
+      - "127.0.0.1:4000:4000"
+      - "127.0.0.1:35729:35729"
+    volumes:
+      - .:/srv/jekyll:ro

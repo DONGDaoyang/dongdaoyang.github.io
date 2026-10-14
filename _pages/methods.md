@@ -1,25 +1,49 @@
 ---
 layout: page
 title: Methods
-description: A reporting guide for clear, reproducible residual stress computational cases.
+description: Full thermal-mechanical analysis and inherent strain analysis for residual stress and deformation.
 permalink: /methods/
 nav: true
 nav_order: 2
 ---
 
+{% assign hub = site.data.residual_stress_hub %}
+
+<div class="rsh rsh-page-brand">
+<section class="rsh-hero rsh-hero-with-background" aria-label="Residual Stress Hub">
+<img class="rsh-hero-background" src="{{ hub.hero_background | relative_url }}" alt="" aria-hidden="true">
+<a class="rsh-hero-brand rsh-site-title" href="{{ '/' | relative_url }}" aria-label="Residual Stress Hub home">
+<img class="rsh-logo" src="{{ hub.logo | relative_url }}" alt="" aria-hidden="true" width="200" height="160">
+<span class="rsh-brand-name"><span class="rsh-stress-name">Residual Stress</span> <span class="rsh-hub-name">Hub</span></span>
+</a>
+</section>
+</div>
+
 <link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url }}">
 
-<div class="rsh">
-  <p class="rsh-eyebrow">METHODS / REPORTING GUIDE</p>
-  <p class="rsh-readable">Use this checklist to document a computational case before sharing its results. This is the Hub's editorial guide, not an official standard or a claim that any particular model has been validated.</p>
+<div class="rsh" markdown="1">
 
-  <section class="rsh-guide-section" id="define" aria-labelledby="define-title"><p class="rsh-eyebrow">01 / DEFINE THE PROBLEM</p><h2 id="define-title">Start with the quantity of interest.</h2><ul><li>State the computational problem and the intended outputs.</li><li>Specify geometry, material, manufacturing process, and the state at which results are evaluated.</li><li>For each stress output, identify the component, coordinate system, sign convention, location, and unit.</li><li>Describe the scope of the case and the conditions to which its conclusions apply.</li></ul></section>
+We study residual stress and deformation using two computational approaches.
+{: .rsh-readable}
 
-  <section class="rsh-guide-section" id="document" aria-labelledby="document-title"><p class="rsh-eyebrow">02 / DOCUMENT THE MODEL</p><h2 id="document-title">Make assumptions visible.</h2><ul><li>Record the model formulation, constitutive assumptions, and material-property sources.</li><li>Describe loading, constraints, initial conditions, process inputs, and relevant coupling choices.</li><li>Report mesh or discretization, time increments, solver settings, software, and version.</li><li>Explain simplifications and document available convergence or numerical sensitivity checks.</li></ul></section>
+<section class="rsh-guide-section" id="thermo-mechanical" aria-labelledby="thermo-mechanical-title" markdown="1">
 
-  <section class="rsh-guide-section" id="compare" aria-labelledby="compare-title"><p class="rsh-eyebrow">03 / PRESENT THE COMPARISON</p><h2 id="compare-title">Keep the evidence next to the claim.</h2><ul><li>Label axes, color scales, units, and the state represented by every figure.</li><li>Identify the source and conditions of measurements or reference simulations.</li><li>Explain how comparison locations, quantities, and conditions are matched; note differences.</li><li>Define error or performance metrics and identify the baseline before quoting an improvement.</li><li>For timing comparisons, report hardware, problem size, solver settings, and which stages are timed.</li><li>Include uncertainty where available and state limitations where it is not.</li></ul></section>
+## Full thermal-mechanical analysis {#thermo-mechanical-title}
 
-  <section class="rsh-guide-section" id="share" aria-labelledby="share-title"><p class="rsh-eyebrow">04 / SHARE RESPONSIBLY</p><h2 id="share-title">Give readers a route to the source.</h2><ul><li>Link the original article at the bottom of the case page. Credit its authors and identify which problem specifications, methods, or reference results are taken from that source.</li><li>Link available code, input files, and datasets; record their versions and licenses.</li><li>Describe files needed to reproduce the case and what cannot currently be shared.</li><li>Confirm permission to reuse figures and to publish collaborator or unpublished materials.</li></ul></section>
+This approach follows the thermal and mechanical response throughout the manufacturing process. The temperature history, thermal expansion, and temperature-dependent material behaviour are used to resolve how residual stress and deformation develop during heating and cooling.
 
-  <div class="rsh-bottom-link"><a href="{{ '/resources/' | relative_url }}">Explore original-source resources <span aria-hidden="true">→</span></a></div>
+The model describes the heat source, material properties, process sequence, and mechanical constraints explicitly. It provides a detailed view of the process history, including the response after support removal.
+
+</section>
+
+<section class="rsh-guide-section" id="inherent-strain" aria-labelledby="inherent-strain-title" markdown="1">
+
+## Inherent strain analysis {#inherent-strain-title}
+
+This approach represents the accumulated irreversible deformation through an inherent strain field. The identified strain values are applied to a structural model to calculate residual stress and deformation without resolving every thermal cycle at the part scale.
+
+Inherent strain values can be identified from local thermal-mechanical simulations or experimental measurements. Their calibration conditions and applicability are central to interpreting predictions for a complete part and its deformation after release.
+
+</section>
+
 </div>

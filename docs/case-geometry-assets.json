@@ -1,0 +1,64 @@
+{
+  "assets": [
+    {
+      "case": "Single Track",
+      "source_filename": "single_track_geo.pdf",
+      "source_sha256": "e313f7ed56e8a0d45bfc332a453825e226c04511e1fda35b516226eb8a9eb80b",
+      "image": "assets/img/cases/single_track/geometry-overview.png",
+      "image_sha256": "00d307cf3e092ca817fda7756adcdc0dc7859bd2d51b027b93845a4ec8d3e0d7",
+      "original_pdf": "assets/pdf/cases/single_track/geometry-overview.pdf",
+      "pages": 1,
+      "preview_pixels": [1167, 525],
+      "operation": "Entire PDF page rendered with macOS PDFKit at 3 pixels per PDF point; no cropping, labeling, or content edits."
+    },
+    {
+      "case": "Thin-wall",
+      "source_filename": "thin-wall_geo.pdf",
+      "source_sha256": "b4997ca431b65f48e3fa5dfbe34a30276455d8ca984d6f46aed0f2c6518f4b91",
+      "image": "assets/img/cases/thin-wall/geometry-overview.png",
+      "image_sha256": "b8cee695c687d406aaab6f1cf03ddfe7fd5de8eabf899ffdeeb3b76c0c6818a4",
+      "original_pdf": "assets/pdf/cases/thin-wall/geometry-overview.pdf",
+      "pages": 1,
+      "preview_pixels": [1428, 507],
+      "operation": "Entire PDF page rendered with macOS PDFKit at 3 pixels per PDF point; no cropping, labeling, or content edits."
+    },
+    {
+      "case": "Bridge",
+      "source_filename": "bridge_geo.pdf",
+      "source_sha256": "f98cc8532b109aebd966ecc9891b8d04079d9c964f5dbf74d553bc967c685c53",
+      "image": "assets/img/cases/bridge/geometry-overview.png",
+      "image_sha256": "d4ce81a9cf1dd9b4fdba4eba876551b6049dba09a330309e264da3fc3740f21a",
+      "original_pdf": "assets/pdf/cases/bridge/geometry-overview.pdf",
+      "pages": 1,
+      "preview_pixels": [873, 504],
+      "operation": "Entire PDF page rendered with macOS PDFKit at 3 pixels per PDF point; no cropping, labeling, or content edits."
+    },
+    {
+      "case": "Cantilever",
+      "source_filename": "cantilever.pdf",
+      "source_sha256": "325321d57aff9d0d0e11b1e65e700d31ead04335f5daaf0905d156e4f1dd58f4",
+      "image": "assets/img/cases/cantilever/geometry-overview.png",
+      "image_sha256": "2c49ecc719647fde1d8a7ff2605d75c4154b77b5d24e8ada099345e8f1a135ac",
+      "original_pdf": "assets/pdf/cases/cantilever/geometry-overview.pdf",
+      "pages": 1,
+      "preview_pixels": [1056, 534],
+      "operation": "Entire PDF page rendered with macOS PDFKit at 3 pixels per PDF point; no cropping, labeling, or content edits."
+    },
+    {
+      "case": "Double-cantilever",
+      "source_filename": "double_cantilever.pdf",
+      "source_sha256": "0b0e70590afbed1dc2df0401a9e8fffe49f27cc8b116b3c04b10e69d93060a4b",
+      "image": "assets/img/cases/double_cantilever/geometry-overview.png",
+      "image_sha256": "6da5d75d90a67b1a8efaf753a0e2c91a69ecf21cf15a62834fba07d3aeb40980",
+      "original_pdf": "assets/pdf/cases/double_cantilever/geometry-overview.pdf",
+      "pages": 1,
+      "preview_pixels": [1050, 468],
+      "operation": "Entire PDF page rendered with macOS PDFKit at 3 pixels per PDF point; no cropping, labeling, or content edits."
+    }
+  ],
+  "not_imported": [
+    "cantilever_exp.pdf (additional experimental reference; not identified as a geometry drawing)",
+    "vm-am-003_results.png, vm-am-004_results.png, vm-am-005_results.png (existing Double-cantilever result plots, not geometry drawings)"
+  ],
+  "missing_overview_geometry": []
+}

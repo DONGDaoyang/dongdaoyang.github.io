@@ -1,0 +1,275 @@
+{
+  "assets": [
+    {
+      "case": "Single Track",
+      "configuration_source": "opt_IS/am_solver/cases/track1/track1.yaml",
+      "configuration_sha256": "9c348e60be5e71c96c57a6d1b6d4b6a9051d3aac6bd4e1d4422fb07ec3613a46",
+      "temperature_table_records": 160,
+      "data_policy": "All configured temperature nodes preserved; no invented measurements or inherent strain."
+    },
+    {
+      "source": "opt_output/plot/plot_figures/solver_diagnostics/am_solver/thin_wall/postprocess/temperature_history.png",
+      "source_sha256": "33fa871189ef05d3d77440082820e06ef61bf6de55a66957f8ad8ab1894c6d1d",
+      "website_file": "assets/img/cases/thin-wall/temperature-history.png",
+      "website_sha256": "33fa871189ef05d3d77440082820e06ef61bf6de55a66957f8ad8ab1894c6d1d",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/solver_diagnostics/am_solver/thin_wall/postprocess/strain_xx_history.png",
+      "source_sha256": "892c4df8c12ddc78e1ecc9614e96562ff0276b5a536e84e7864e4e30455d9b56",
+      "website_file": "assets/img/cases/thin-wall/strain-xx-history.png",
+      "website_sha256": "892c4df8c12ddc78e1ecc9614e96562ff0276b5a536e84e7864e4e30455d9b56",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/solver_diagnostics/am_solver/thin_wall/postprocess/strain_yy_history.png",
+      "source_sha256": "892c4df8c12ddc78e1ecc9614e96562ff0276b5a536e84e7864e4e30455d9b56",
+      "website_file": "assets/img/cases/thin-wall/strain-yy-history.png",
+      "website_sha256": "892c4df8c12ddc78e1ecc9614e96562ff0276b5a536e84e7864e4e30455d9b56",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/solver_diagnostics/am_solver/thin_wall/postprocess/strain_zz_history.png",
+      "source_sha256": "892c4df8c12ddc78e1ecc9614e96562ff0276b5a536e84e7864e4e30455d9b56",
+      "website_file": "assets/img/cases/thin-wall/strain-zz-history.png",
+      "website_sha256": "892c4df8c12ddc78e1ecc9614e96562ff0276b5a536e84e7864e4e30455d9b56",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/am_solver/thin_wall/postprocess/history.csv",
+      "source_sha256": "389715fe924c644df21e8876c050f6ff2d1ef8116eead0cd58563127746213ec",
+      "website_file": "assets/data/cases/thin-wall/thermal-mechanical-history.csv",
+      "website_sha256": "31b45e0394995646e66f50c384feb63891d38ded1f0b2a658e46047330354cd3",
+      "operation": "Unmodified CSV values"
+    },
+    {
+      "source": "opt_output/am_solver/thin_wall/springback_summary.csv",
+      "source_sha256": "d786d09c801088e9f28abe95fd989347cbfd2719681a549577ad3014ba75e9ca",
+      "website_file": "assets/data/cases/thin-wall/springback-summary.csv",
+      "website_sha256": "f3687220f49abbfe6f65b176eea0837645234c65037a88aded053f2d82fc3ab4",
+      "operation": "Unmodified CSV values"
+    },
+    {
+      "case": "Thin-wall",
+      "configuration_source": "opt_IS/am_solver/cases/thin_wall/thin_wall.yaml",
+      "configuration_sha256": "0b3cfece9597a4172421bd1142b58fd87784196744f2b517cfa6ed4046a91a4b",
+      "temperature_table_records": 140,
+      "data_policy": "All configured temperature nodes preserved; no invented measurements or inherent strain."
+    },
+    {
+      "source": "opt_output/data/optimization_dns/bridge_metrics.csv",
+      "source_sha256": "a8931b75a751ecbc6a99d6b1309b3909f46ced30994d2bc5ce26781c3b3933cd",
+      "website_file": "assets/data/cases/bridge/optimization-metrics.csv",
+      "website_sha256": "4850de8cf126085c09735c88d0f5ddc45e5067f3ab7fa7bcfb0ef4cdd4501eab",
+      "operation": "Unmodified CSV values"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/am_history/bridge/bridge_am_bottom_centre_history.pdf",
+      "source_sha256": "d69b7e166d03dc4e5160b54fc1fbf9328786db4c2c0afb3e64972f56ae613128",
+      "website_file": "assets/pdf/cases/bridge/thermal-history.pdf",
+      "website_sha256": "d69b7e166d03dc4e5160b54fc1fbf9328786db4c2c0afb3e64972f56ae613128",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/am_history/bridge/bridge_am_bottom_centre_history.pdf",
+      "source_sha256": "d69b7e166d03dc4e5160b54fc1fbf9328786db4c2c0afb3e64972f56ae613128",
+      "website_file": "assets/img/cases/bridge/thermal-history.png",
+      "website_sha256": "6a280038eec4e8c702ab3f6ac9e85d35dc636fc90d30a5c247fd3c4ae517a474",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/data/bridge/am_history/bridge_am_bottom_centre_history.csv",
+      "source_sha256": "55967c208c77f533f3511e37c0b78692b60d6d884dcb4a912c45a5ae4abfdcb1",
+      "website_file": "assets/data/cases/bridge/thermal-mechanical-history.csv",
+      "website_sha256": "73253b63104206234c5a23013c3c7d8dbaffccce8ef0fb019eb972f46a68b967",
+      "operation": "CSV values retained; source paths made relative"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/optimization_dns/bridge_optimization_vs_dns.pdf",
+      "source_sha256": "8f0f04856a321788e1467fa2e652baa17f47c1ea406ceb4188b1f98e6adc795c",
+      "website_file": "assets/pdf/cases/bridge/optimization-agreement.pdf",
+      "website_sha256": "8f0f04856a321788e1467fa2e652baa17f47c1ea406ceb4188b1f98e6adc795c",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/optimization_dns/bridge_optimization_vs_dns.pdf",
+      "source_sha256": "8f0f04856a321788e1467fa2e652baa17f47c1ea406ceb4188b1f98e6adc795c",
+      "website_file": "assets/img/cases/bridge/optimization-agreement.png",
+      "website_sha256": "6aee09c0103f7651397cd0b42d64026291d1c61dd91858fdc234447acafc5f73",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/optimization_dns/bridge_optimization_vs_dns.pdf",
+      "source_sha256": "8f0f04856a321788e1467fa2e652baa17f47c1ea406ceb4188b1f98e6adc795c",
+      "website_file": "assets/img/cases/bridge/optimization-agreement-page-2.png",
+      "website_sha256": "1f1a2b824a785a4ebf31c238639695ad4c20681a986dee1afab1251baa52f91c",
+      "operation": "Full PDF page 2 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/x3p75.pdf",
+      "source_sha256": "84883854824b2532743d428945024784deddfc0bd345ffa3e8998b762df75303",
+      "website_file": "assets/pdf/cases/bridge/x3p75.pdf",
+      "website_sha256": "84883854824b2532743d428945024784deddfc0bd345ffa3e8998b762df75303",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/x3p75.pdf",
+      "source_sha256": "84883854824b2532743d428945024784deddfc0bd345ffa3e8998b762df75303",
+      "website_file": "assets/img/cases/bridge/x3p75.png",
+      "website_sha256": "d9f72ce5279b18cb1fff0810ecd82f93684e9a2dbfd0bdbb5be18ffa38ede9bf",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/y3p75.pdf",
+      "source_sha256": "57d125c02618fd33d9a20ad4ebed94be73d36c57bad9b092c8a7ac510117b8ee",
+      "website_file": "assets/pdf/cases/bridge/y3p75.pdf",
+      "website_sha256": "57d125c02618fd33d9a20ad4ebed94be73d36c57bad9b092c8a7ac510117b8ee",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/y3p75.pdf",
+      "source_sha256": "57d125c02618fd33d9a20ad4ebed94be73d36c57bad9b092c8a7ac510117b8ee",
+      "website_file": "assets/img/cases/bridge/y3p75.png",
+      "website_sha256": "8457e471cb10a58370ce277a2d4ae2708bb5db9f9c5bd7c558c56f7f646ed751",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/z3p75.pdf",
+      "source_sha256": "566463ab37e8d54ee97f0359ee63e195ed370849107ca12cbd6814ccf9d733a3",
+      "website_file": "assets/pdf/cases/bridge/z3p75.pdf",
+      "website_sha256": "566463ab37e8d54ee97f0359ee63e195ed370849107ca12cbd6814ccf9d733a3",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/z3p75.pdf",
+      "source_sha256": "566463ab37e8d54ee97f0359ee63e195ed370849107ca12cbd6814ccf9d733a3",
+      "website_file": "assets/img/cases/bridge/z3p75.png",
+      "website_sha256": "1d2d3233f3f2bbe38c88f983b6b226a932188f05bad0b4a6c35630cb83b9d99e",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/x7p75.pdf",
+      "source_sha256": "656aa162fae83ccd12e3ed1af87209f094e0839913617f8fbc7e3699125e3618",
+      "website_file": "assets/pdf/cases/bridge/x7p75.pdf",
+      "website_sha256": "656aa162fae83ccd12e3ed1af87209f094e0839913617f8fbc7e3699125e3618",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/x7p75.pdf",
+      "source_sha256": "656aa162fae83ccd12e3ed1af87209f094e0839913617f8fbc7e3699125e3618",
+      "website_file": "assets/img/cases/bridge/x7p75.png",
+      "website_sha256": "e5896091f52ed46e4e3c6b0b9a32ff9ca83ee0e170de43e9ab2f9888b2869e05",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/y7p75.pdf",
+      "source_sha256": "3ce5f5996c1e15ca25dae28b4859f4051b3d25d587935e73a95ecce90c28661e",
+      "website_file": "assets/pdf/cases/bridge/y7p75.pdf",
+      "website_sha256": "3ce5f5996c1e15ca25dae28b4859f4051b3d25d587935e73a95ecce90c28661e",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/y7p75.pdf",
+      "source_sha256": "3ce5f5996c1e15ca25dae28b4859f4051b3d25d587935e73a95ecce90c28661e",
+      "website_file": "assets/img/cases/bridge/y7p75.png",
+      "website_sha256": "f2bb3b22fe0635e6c668bc332cfc47abd79f3a0b24f4502ab4084cf6490da869",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/z7p75.pdf",
+      "source_sha256": "c8bc2ede4249ae6a176c7bc3664273505d9f7a20a69e71e8c42edcaea7a52531",
+      "website_file": "assets/pdf/cases/bridge/z7p75.pdf",
+      "website_sha256": "c8bc2ede4249ae6a176c7bc3664273505d9f7a20a69e71e8c42edcaea7a52531",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/bridge/z7p75.pdf",
+      "source_sha256": "c8bc2ede4249ae6a176c7bc3664273505d9f7a20a69e71e8c42edcaea7a52531",
+      "website_file": "assets/img/cases/bridge/z7p75.png",
+      "website_sha256": "483b2c166b2d884039ebbd8dd8ffafd8945461426ce7a5714c8b5a0ab65f55c3",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "case": "Bridge",
+      "configuration_source": "opt_output/bridge/generated_configs/am.yaml",
+      "configuration_sha256": "3f9174e44e9a2b6a02c7f80c9aefc05adaf3c059bcfe3658c023fadc842f3309",
+      "temperature_table_records": 84,
+      "data_policy": "All configured temperature nodes preserved; no invented measurements or inherent strain."
+    },
+    {
+      "source": "opt_output/data/optimization_dns/dc_metrics.csv",
+      "source_sha256": "273c928c1d3032d64c94ee7296107e9e4ebf5acec6a487e83eff1af46ea7f55f",
+      "website_file": "assets/data/cases/double_cantilever/optimization-metrics.csv",
+      "website_sha256": "802b5373c2ab373d220fba553aa004ea04f27d8498a0137cad7b043b6b977b34",
+      "operation": "Unmodified CSV values"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/am_history/dc/flow_plastic/am_strain_history.pdf",
+      "source_sha256": "2846cd7cb0efe9d6b7a8df9a0e3f88c3778b991c87fc9f3b31bef132f1a53c48",
+      "website_file": "assets/pdf/cases/double_cantilever/thermal-history.pdf",
+      "website_sha256": "2846cd7cb0efe9d6b7a8df9a0e3f88c3778b991c87fc9f3b31bef132f1a53c48",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/am_history/dc/flow_plastic/am_strain_history.pdf",
+      "source_sha256": "2846cd7cb0efe9d6b7a8df9a0e3f88c3778b991c87fc9f3b31bef132f1a53c48",
+      "website_file": "assets/img/cases/double_cantilever/thermal-history.png",
+      "website_sha256": "27ca9e3a25117b8f89d281c4526729ebeb5c969999b6bb992b09f3ff480e6346",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/optimization_dns/dc_optimization_vs_dns.pdf",
+      "source_sha256": "00ee32fdcf1651d681b20580763435d1e4a62d5fdf8785e0ffd9935b443b0532",
+      "website_file": "assets/pdf/cases/double_cantilever/optimization-agreement.pdf",
+      "website_sha256": "00ee32fdcf1651d681b20580763435d1e4a62d5fdf8785e0ffd9935b443b0532",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/optimization_dns/dc_optimization_vs_dns.pdf",
+      "source_sha256": "00ee32fdcf1651d681b20580763435d1e4a62d5fdf8785e0ffd9935b443b0532",
+      "website_file": "assets/img/cases/double_cantilever/optimization-agreement.png",
+      "website_sha256": "4a11d66113cb09d4ee068549769419a1dd023086c5885c595ce66894338a38e9",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/optimization_dns/dc_optimization_vs_dns.pdf",
+      "source_sha256": "00ee32fdcf1651d681b20580763435d1e4a62d5fdf8785e0ffd9935b443b0532",
+      "website_file": "assets/img/cases/double_cantilever/optimization-agreement-page-2.png",
+      "website_sha256": "bea2e150de934a3c4b599fe586c525a8280ad28cae60d4959189d732e935869d",
+      "operation": "Full PDF page 2 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/dc/warpage_disp2.pdf",
+      "source_sha256": "136844d00254418076a9ce4a2f04ed559598ca8078c92687a60c2bae221b5445",
+      "website_file": "assets/pdf/cases/double_cantilever/warpage.pdf",
+      "website_sha256": "136844d00254418076a9ce4a2f04ed559598ca8078c92687a60c2bae221b5445",
+      "operation": "Unmodified copy"
+    },
+    {
+      "source": "opt_output/plot/plot_figures/postprocessed/dc/warpage_disp2.pdf",
+      "source_sha256": "136844d00254418076a9ce4a2f04ed559598ca8078c92687a60c2bae221b5445",
+      "website_file": "assets/img/cases/double_cantilever/warpage.png",
+      "website_sha256": "423ce4ecf32fa093f98fcb1d495ef2c5bf8fbcf964957cfaae3e92be4c38012b",
+      "operation": "Full PDF page 1 rendered at 180 dpi; no cropping or curve edits"
+    },
+    {
+      "source": "opt_output/data/dc/output_dc_plot_disp2.csv",
+      "source_sha256": "abc0ef2f044d31f8ef7519bce2193d7f0bec839463db1cce29ff92183727d826",
+      "website_file": "assets/data/cases/double_cantilever/warpage.csv",
+      "website_sha256": "13095374c0e57b9d9044d5e9a24d7c4a347202ba10a57f5b9ee657dcb6ac6819",
+      "operation": "Unmodified CSV values"
+    },
+    {
+      "case": "Double-cantilever",
+      "configuration_source": "opt_output/dc/generated_configs/am.yaml",
+      "configuration_sha256": "4ff38e0e78fbb1e7ffefbf6226df28a30ca00c56fca4bf3b74c4c7b6190a84a2",
+      "temperature_table_records": 98,
+      "data_policy": "All configured temperature nodes preserved; no invented measurements or inherent strain."
+    }
+  ],
+  "notes": [
+    "Current identification results and archived figure vectors are distinguished.",
+    "Single Track final stresses are rendered separately from native VTK.",
+    "Public parameter snapshots omit machine-local paths and runtime outputs."
+  ]
+}
