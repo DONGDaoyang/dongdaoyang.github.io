@@ -244,7 +244,9 @@ for (const theme of ["light", "dark"]) {
       await parameters.locator("summary").click();
       await expect(parameters.locator("table").first()).toBeHidden();
       await expect(page.locator(".rsh-case-figures img")).toHaveCount(6);
-      await expect(page.locator(".post > article > p").last()).toContainText("Original article:");
+      await expect(page.locator(".post > article")).toContainText("Reference:");
+      await expect(page.locator("#reference-1")).toHaveCount(1);
+      await expect(page.locator("#reference-2")).toHaveCount(1);
       await expect(page.locator("#overview + p")).toContainText("neutron diffraction and the contour method");
       await expect(page.locator('.post > article a[href="https://doi.org/10.1007/s40192-019-00149-0"]')).toBeVisible();
       await expect(page.locator('.post > article a[href="/benchmarks/"]')).toBeVisible();
@@ -292,11 +294,16 @@ for (const theme of ["light", "dark"]) {
         const downloads = await article.locator('a[href^="/assets/"]').evaluateAll((links) => links.map((link) => link.getAttribute("href")));
         expect(downloads.some((url) => url.endsWith("simulation-parameters.yaml"))).toBe(true);
         for (const url of new Set(downloads)) expect((await request.get(url)).ok(), url).toBe(true);
-        await expect(article.locator(":scope > p").last()).toContainText("Data sources:");
+        await expect(article).toContainText("Reference:");
+        await expect(article.locator("#reference-1")).toHaveCount(1);
         if (["bridge", "double_cantilever"].includes(folder)) {
           const identification = await (await request.get(`/assets/data/cases/${folder}/identification-results.json`)).json();
           expect(identification.latest.inherent_strain.zz).not.toBe(identification.displayed_comparison.inherent_strain.zz);
-          await expect(article).toContainText("Inherent strain in the displayed archived comparison");
+          await expect(article).not.toContainText("Inherent strain in the displayed archived comparison");
+          const strainRows = article.locator(":scope > table tbody tr").filter({ hasText: "Identified inherent strain," });
+          await expect(strainRows).toHaveCount(2);
+          const displayedZ = (await strainRows.last().locator("td").nth(1).innerText()).replace("−", "-");
+          expect(Number(displayedZ)).toBe(Number((identification.latest.inherent_strain.zz * 1000).toFixed(3)));
           if (folder === "double_cantilever") {
             expect(data.materials.upper_region.name).toBe("IN718");
             expect(identification.latest.inherent_strain.zz).toBe(0.019647141658521924);
