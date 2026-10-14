@@ -1,0 +1,40 @@
+{
+  "assets": [
+    {
+      "case": "single_track",
+      "source": "_metadata/single_track_thin_wall/single_track_stress_xx_comparison.png",
+      "asset": "assets/img/cases/single_track/single_track_stress_xx_comparison.png",
+      "sha256": "20df8276736a4c3482e788f3ab9f90b3806e8194a391a114ccfd7a3ce387f74c"
+    },
+    {
+      "case": "single_track",
+      "source": "single_track/single_track_stress_xx_comparison.pdf",
+      "asset": "assets/pdf/cases/single_track/single_track_stress_xx_comparison.pdf",
+      "sha256": "f2fd0586f5fd12b22a0f17070ca7ee2501647f3a52edb45be558897048f7aeb3"
+    },
+    {
+      "case": "single_track",
+      "source": "_metadata/single_track_thin_wall/single_track_stress_zz_comparison.png",
+      "asset": "assets/img/cases/single_track/single_track_stress_zz_comparison.png",
+      "sha256": "c5212cb76553373df4fc536931436a2fc1897a64da3791a5a7cad2428d0cc64f"
+    },
+    {
+      "case": "single_track",
+      "source": "single_track/single_track_stress_zz_comparison.pdf",
+      "asset": "assets/pdf/cases/single_track/single_track_stress_zz_comparison.pdf",
+      "sha256": "9439bd8bf8048709d518d6fb8f21651f335cf7bdda6b0a42e075a1b3905a5fce"
+    },
+    {
+      "case": "thin-wall",
+      "source": "_metadata/single_track_thin_wall/thin_wall_displacement_comparison.png",
+      "asset": "assets/img/cases/thin-wall/thin_wall_displacement_comparison.png",
+      "sha256": "71ab55f09e5e071e311195d57a5d03d72e73c7b59327fecd4ad1c758c03f8f3a"
+    },
+    {
+      "case": "thin-wall",
+      "source": "thin_wall/thin_wall_displacement_comparison.pdf",
+      "asset": "assets/pdf/cases/thin-wall/thin_wall_displacement_comparison.pdf",
+      "sha256": "1ed307b4220e71488d8d61e8f649dfc7c5dde0aefba66a964e4703da74ece4ad"
+    }
+  ]
+}

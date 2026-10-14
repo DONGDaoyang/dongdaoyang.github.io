@@ -29,7 +29,7 @@ image_alt: Bridge saved simulation stress result.
 
 ## Overview
 
-This is a Ti-6Al-4V bridge model. A local thermal–mechanical simulation is used to identify inherent strain, which is then applied to the full bridge model to calculate residual elastic strain.
+This is a Ti-6Al-4V bridge model. A local thermal–mechanical simulation is used to identify inherent strain, which is then applied to the full bridge model to calculate residual elastic strain. <a href="#reference-1">[1]</a>
 
 <div class="rsh-case-figures" markdown="1">
 
@@ -65,29 +65,27 @@ _Figure 1. Geometry and dimensions._
 | Goldak heat-source dimensions (front / rear / transverse / depth) | 54 / 54 / 54 / 30 | µm   |
 | Cooling interval (after each deposited layer)                     | 200               | s    |
 
-_Printing and heat-source values describe the supplied simulation configuration._
-
 ### Simulation parameters
 
-| Parameter                                                                                         | Value / setting                                                                       | Unit              |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------- |
-| Ambient temperature                                                                               | 25                                                                                    | °C                |
-| High-temperature material model                                                                   | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                 |
-| Macro elastic parameters (room temperature, constant)                                             | $E$ = 114.58<br>$\nu$ = 0.3                                                           | GPa<br>—          |
-| Macro plastic parameters (room temperature, constant)                                             | $\sigma_{\mathrm{y}}$ = 1151<br>$H$ = 1.8139<br>$\sigma_{\mathrm{max}}$ = 1310        | MPa<br>GPa<br>MPa |
-| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | -2.820                                                                                | ‰                 |
-| Identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | 2.879                                                                                 | ‰                 |
-| Macro layer activation                                                                            | 36 × 0.25                                                                             | Layers × mm       |
-| Macro constraints and release                                                                     | macro fixed plane $Z$ = 0 mm; no macro release                                        | —                 |
-| Thermal strain reference temperature                                                              | 25                                                                                    | °C                |
-| Thermal strain cutoff                                                                             | solidus                                                                               | —                 |
+| Parameter                                                                                         | Value / setting                                                                | Unit              |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------- |
+| Ambient temperature                                                                               | 25                                                                             | °C                |
+| High-temperature material model                                                                   | See tables below                                                               | —                 |
+| Elastic parameters (room temperature, constant)                                                   | $E$ = 114.58<br>$\nu$ = 0.3                                                    | GPa<br>—          |
+| Plastic parameters (room temperature, constant)                                                   | $\sigma_{\mathrm{y}}$ = 1151<br>$H$ = 1.8139<br>$\sigma_{\mathrm{max}}$ = 1310 | MPa<br>GPa<br>MPa |
+| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | -2.820                                                                         | ‰                 |
+| Identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | 2.879                                                                          | ‰                 |
+| Layer activation                                                                                  | 36 × 0.25                                                                      | Layers × mm       |
+| Constraints and release                                                                           | fixed plane $Z$ = 0 mm; no release                                             | —                 |
+| Thermal strain reference temperature                                                              | 25                                                                             | °C                |
+| Thermal strain cutoff                                                                             | solidus                                                                        | —                 |
 
-The physical print layer is 30 µm. The 250 µm layer pitch used in the macro model is a separate coarse activation setting.
+The physical print layer is 30 µm. The 250 µm layer pitch used in the model is a separate coarse activation setting.
 
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>
 
-Every configured temperature node is listed below, with exact conversion from K to °C. Each property is linearly interpolated within its own table and held at its nearest endpoint outside that range.
+The high-temperature material parameters used in the local scan model for inherent-strain identification are listed below.
 
 #### Ti-6Al-4V — upper region and lower region
 
@@ -101,80 +99,80 @@ Every configured temperature node is listed below, with exact conversion from K 
 
 ##### Thermal conductivity, $k$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Thermal conductivity, $k$ (W/(m·K)) |
-| --------------------- | -------------------- | ----------------------------------- |
-| -0.15                 | 273                  | 6.18                                |
-| 980.85                | 1254                 | 19                                  |
-| 990.85                | 1264                 | 19.2                                |
-| 1639.85               | 1913                 | 27.7                                |
-| 1649.85               | 1923                 | 33.4                                |
-| 3276.85               | 3550                 | 36.8                                |
+| $T$ (K) | $T$ (°C) | Thermal conductivity, $k$ (W/(m·K)) |
+| ------- | -------- | ----------------------------------- |
+| 273     | -0.15    | 6.18                                |
+| 1254    | 980.85   | 19                                  |
+| 1264    | 990.85   | 19.2                                |
+| 1913    | 1639.85  | 27.7                                |
+| 1923    | 1649.85  | 33.4                                |
+| 3550    | 3276.85  | 36.8                                |
 
 ##### Specific heat capacity, $C_{\mathrm{p}}$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Specific heat capacity, $C_{\mathrm{p}}$ (J/(kg·K)) |
-| --------------------- | -------------------- | --------------------------------------------------- |
-| -0.15                 | 273                  | 517                                                 |
-| 980.85                | 1254                 | 881                                                 |
-| 990.85                | 1264                 | 707                                                 |
-| 1639.85               | 1913                 | 756                                                 |
-| 1649.85               | 1923                 | 829                                                 |
-| 3276.85               | 3550                 | 829                                                 |
+| $T$ (K) | $T$ (°C) | Specific heat capacity, $C_{\mathrm{p}}$ (J/(kg·K)) |
+| ------- | -------- | --------------------------------------------------- |
+| 273     | -0.15    | 517                                                 |
+| 1254    | 980.85   | 881                                                 |
+| 1264    | 990.85   | 707                                                 |
+| 1913    | 1639.85  | 756                                                 |
+| 1923    | 1649.85  | 829                                                 |
+| 3550    | 3276.85  | 829                                                 |
 
 ##### Young’s modulus, $E$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Young’s modulus, $E$ (GPa) |
-| --------------------- | -------------------- | -------------------------- |
-| 19.85                 | 293                  | 115                        |
-| 687.85                | 961                  | 60.7                       |
-| 699.85                | 973                  | 59.8                       |
-| 899.85                | 1173                 | 24                         |
-| 990.85                | 1264                 | 16.7                       |
-| 1264.85               | 1538                 | 11                         |
+| $T$ (K) | $T$ (°C) | Young’s modulus, $E$ (GPa) |
+| ------- | -------- | -------------------------- |
+| 293     | 19.85    | 115                        |
+| 961     | 687.85   | 60.7                       |
+| 973     | 699.85   | 59.8                       |
+| 1173    | 899.85   | 24                         |
+| 1264    | 990.85   | 16.7                       |
+| 1538    | 1264.85  | 11                         |
 
 ##### Thermal expansion coefficient, $\alpha$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Thermal expansion coefficient, $\alpha$ (µm/(m·K)) |
-| --------------------- | -------------------- | -------------------------------------------------- |
-| -0.15                 | 273                  | 8.85                                               |
-| 980.85                | 1254                 | 10.72                                              |
-| 990.85                | 1264                 | 10.74                                              |
-| 1639.85               | 1913                 | 11.97                                              |
-| 1649.85               | 1923                 | 20.17                                              |
-| 3276.85               | 3550                 | 0                                                  |
+| $T$ (K) | $T$ (°C) | Thermal expansion coefficient, $\alpha$ (µm/(m·K)) |
+| ------- | -------- | -------------------------------------------------- |
+| 273     | -0.15    | 8.85                                               |
+| 1254    | 980.85   | 10.72                                              |
+| 1264    | 990.85   | 10.74                                              |
+| 1913    | 1639.85  | 11.97                                              |
+| 1923    | 1649.85  | 20.17                                              |
+| 3550    | 3276.85  | 0                                                  |
 
 ##### Poisson ratio, $\nu$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (—) |
-| --------------------- | -------------------- | ------------------------ |
-| 19.85                 | 293                  | 0.3                      |
-| 687.85                | 961                  | 0.3                      |
-| 699.85                | 973                  | 0.3                      |
-| 899.85                | 1173                 | 0.3                      |
-| 990.85                | 1264                 | 0.3                      |
-| 1264.85               | 1538                 | 0.3                      |
+| $T$ (K) | $T$ (°C) | Poisson ratio, $\nu$ (—) |
+| ------- | -------- | ------------------------ |
+| 293     | 19.85    | 0.3                      |
+| 961     | 687.85   | 0.3                      |
+| 973     | 699.85   | 0.3                      |
+| 1173    | 899.85   | 0.3                      |
+| 1264    | 990.85   | 0.3                      |
+| 1538    | 1264.85  | 0.3                      |
 
 ##### Initial yield stress, $\sigma_{\mathrm{y}}$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Initial yield stress, $\sigma_{\mathrm{y}}$ (MPa) |
-| --------------------- | -------------------- | ------------------------------------------------- |
-| 19.85                 | 293                  | 1151                                              |
-| 687.85                | 961                  | 365.8                                             |
-| 699.85                | 973                  | 257.6                                             |
-| 899.85                | 1173                 | 69                                                |
-| 990.85                | 1264                 | 69                                                |
-| 1264.85               | 1538                 | 69                                                |
+| $T$ (K) | $T$ (°C) | Initial yield stress, $\sigma_{\mathrm{y}}$ (MPa) |
+| ------- | -------- | ------------------------------------------------- |
+| 293     | 19.85    | 1151                                              |
+| 961     | 687.85   | 365.8                                             |
+| 973     | 699.85   | 257.6                                             |
+| 1173    | 899.85   | 69                                                |
+| 1264    | 990.85   | 69                                                |
+| 1538    | 1264.85  | 69                                                |
 
 ##### Hardening modulus, $H$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Hardening modulus, $H$ (GPa) |
-| --------------------- | -------------------- | ---------------------------- |
-| 19.85                 | 293                  | 1.828                        |
-| 687.85                | 961                  | 1                            |
-| 699.85                | 973                  | 1                            |
-| 899.85                | 1173                 | 1                            |
-| 990.85                | 1264                 | 1                            |
-| 1264.85               | 1538                 | 1                            |
+| $T$ (K) | $T$ (°C) | Hardening modulus, $H$ (GPa) |
+| ------- | -------- | ---------------------------- |
+| 293     | 19.85    | 1.828                        |
+| 961     | 687.85   | 1                            |
+| 973     | 699.85   | 1                            |
+| 1173    | 899.85   | 1                            |
+| 1264    | 990.85   | 1                            |
+| 1538    | 1264.85  | 1                            |
 
 Maximum yield stress, $\sigma_{\mathrm{max}}$, is $1.2\,\sigma_{\mathrm{y}}$ at each interpolated temperature.
 
@@ -182,7 +180,7 @@ Maximum yield stress, $\sigma_{\mathrm{max}}$, is $1.2\,\sigma_{\mathrm{y}}$ at 
 
 [Download full parameter JSON](/assets/data/cases/bridge/thermal-parameters.json) · [Download temperature-dependent CSV](/assets/data/cases/bridge/temperature-dependent-properties.csv) · [Download simulation YAML](/assets/data/cases/bridge/simulation-parameters.yaml)
 
-[Download macro configuration](/assets/data/cases/bridge/macro-parameters.yaml) · [Download identification results](/assets/data/cases/bridge/identification-results.json)
+[Download simulation configuration](/assets/data/cases/bridge/macro-parameters.yaml) · [Download identification results](/assets/data/cases/bridge/identification-results.json)
 
 ## Results
 
@@ -280,6 +278,8 @@ Additional profiles: [3.75 mm, $Y$-direction](/assets/img/cases/bridge/y3p75.png
 
 ---
 
-**Original article:** Ganeriwala, R.K., Strantza, M., King, W.E., Clausen, B., Phan, T.Q., Levine, L.E., Brown, D.W., Hodge, N.E. (2019). Evaluation of a thermomechanical model for prediction of residual stress during laser powder bed fusion of Ti-6Al-4V. _Additive Manufacturing_, **27**, 489–502. [https://doi.org/10.1016/j.addma.2019.03.034](https://doi.org/10.1016/j.addma.2019.03.034).
+**Reference:**
 
-**Data sources:** Supplied simulation inputs and saved solver outputs. Complete physical settings and temperature-dependent values are available in the YAML, JSON, and CSV downloads above.
+<span id="reference-1"></span>
+
+[1] Ganeriwala, R.K., Strantza, M., King, W.E., Clausen, B., Phan, T.Q., Levine, L.E., Brown, D.W., Hodge, N.E. (2019). Evaluation of a thermomechanical model for prediction of residual stress during laser powder bed fusion of Ti-6Al-4V. _Additive Manufacturing_, **27**, 489–502. [https://doi.org/10.1016/j.addma.2019.03.034](https://doi.org/10.1016/j.addma.2019.03.034).

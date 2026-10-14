@@ -28,7 +28,7 @@ image_alt: "Supplied Cantilever simulation result used as the benchmark card cov
 
 ## Overview
 
-This is the AM-Bench 2018-1 IN625 cantilever model. After printing, residual stresses were measured using neutron diffraction and the contour method. Warpage displacement was measured after separating the cantilever from its supports.
+This is the AM-Bench 2018-1 IN625 cantilever model. After printing, residual stresses were measured using neutron diffraction and the contour method. Warpage displacement was measured after separating the cantilever from its supports. <a href="#reference-1">[1]</a>
 
 <div class="rsh-case-figures" markdown="1">
 
@@ -64,27 +64,25 @@ _Figure 1. Geometry and dimensions._
 | Goldak heat-source dimensions (front / rear / transverse / depth) | 50 / 50 / 50 / 50 | µm   |
 | Cooling interval (after each simulated layer)                     | 200               | s    |
 
-_Printing and heat-source values describe the current simulation configuration._
-
 ### Simulation parameters
 
-| Parameter                                                                                         | Value / setting                                                                   | Unit              |
-| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ----------------- |
-| Ambient temperature                                                                               | 25                                                                                | °C                |
-| High-temperature material model                                                                   | Full temperature-dependent tables below; linear interpolation with endpoint holds | —                 |
-| Elastic parameters (20 °C, constant)                                                              | $E$ = 208<br>$\nu$ = 0.277                                                        | GPa<br>—          |
-| Plastic parameters (20 °C, constant)                                                              | $\sigma_{\mathrm{y}}$ = 725<br>$H$ = 0.75714<br>$\sigma_{\mathrm{max}}$ = 990     | MPa<br>GPa<br>MPa |
-| Elastic parameters (saved local identification)                                                   | $E$ = 156.3<br>$\nu$ = 0.300                                                      | GPa<br>—          |
-| Plastic parameters (saved local identification)                                                   | $\sigma_{\mathrm{y}}$ = 308.9<br>$H$ = 1.000<br>$\sigma_{\mathrm{max}}$ = 370.68  | MPa<br>GPa<br>MPa |
-| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | −3.655                                                                            | ‰                 |
-| Identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | +9.504                                                                            | ‰                 |
-| Macro layer activation                                                                            | 25 × 0.5; an additional 50-layer run is shown for warpage                         | Layers × mm       |
-| Macro constraints and release                                                                     | Fixed substrate bottom; release the interface over $X$ = 0–55 mm                  | —                 |
+| Parameter                                                                                         | Value / setting                                                                  | Unit              |
+| ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------- |
+| Ambient temperature                                                                               | 25                                                                               | °C                |
+| High-temperature material model                                                                   | See tables below                                                                 | —                 |
+| Elastic parameters (20 °C, constant)                                                              | $E$ = 208<br>$\nu$ = 0.277                                                       | GPa<br>—          |
+| Plastic parameters (20 °C, constant)                                                              | $\sigma_{\mathrm{y}}$ = 725<br>$H$ = 0.75714<br>$\sigma_{\mathrm{max}}$ = 990    | MPa<br>GPa<br>MPa |
+| Elastic parameters (saved local identification)                                                   | $E$ = 156.3<br>$\nu$ = 0.300                                                     | GPa<br>—          |
+| Plastic parameters (saved local identification)                                                   | $\sigma_{\mathrm{y}}$ = 308.9<br>$H$ = 1.000<br>$\sigma_{\mathrm{max}}$ = 370.68 | MPa<br>GPa<br>MPa |
+| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | −3.655                                                                           | ‰                 |
+| Identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | +9.504                                                                           | ‰                 |
+| Layer activation                                                                                  | 25 × 0.5; an additional 50-layer run is shown for warpage                        | Layers × mm       |
+| Constraints and release                                                                           | Fixed substrate bottom; release the interface over $X$ = 0–55 mm                 | —                 |
 
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>
 
-These tables list every configured temperature point. Temperatures are shown in both °C and K; all material tables apply to both the build and the substrate.
+The temperature-dependent conductivity, elastic, thermal-expansion and plastic parameters used in the local scan model for inherent-strain identification are taken from Table S6 of Qi et al. <a href="#reference-2">[2]</a>.
 
 #### Material constants
 
@@ -93,57 +91,55 @@ These tables list every configured temperature point. Temperatures are shown in 
 | Material regions                                | Build and substrate use the same IN625 tables | —        |
 | Density, $\rho$                                 | 8190                                          | kg/m³    |
 | Latent heat, $L$                                | 286000                                        | J/kg     |
-| Solidus temperature, $T_{\mathrm{s}}$           | 1533 K / 1259.85 °C                           | —        |
-| Liquidus temperature, $T_{\mathrm{l}}$          | 1609 K / 1335.85 °C                           | —        |
+| Solidus temperature, $T_{\mathrm{s}}$           | 1533                                          | K        |
+| Liquidus temperature, $T_{\mathrm{l}}$          | 1609                                          | K        |
 | Volumetric heat capacity, $\rho C_{\mathrm{p}}$ | $\rho C_{\mathrm{p}}(T)$                      | J/(m³·K) |
 
 _Density, latent heat, solidus/liquidus temperatures, and specific heat are retained configuration inputs whose material-source validation is still pending._
 
 #### Conductivity, elasticity, and thermal expansion
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Thermal conductivity, $k$ (W/(m·K)) | Young’s modulus, $E$ (GPa) | Poisson ratio, $\nu$ | Thermal expansion coefficient, $\alpha$ (10⁻⁶ K⁻¹) |
-| --------------------- | -------------------- | ----------------------------------- | -------------------------- | -------------------- | -------------------------------------------------- |
-| 20                    | 293.15               | 9.8                                 | 208                        | 0.277                | —                                                  |
-| 100                   | 373.15               | 10.7                                | 204                        | 0.28                 | 5.56                                               |
-| 200                   | 473.15               | 12.5                                | 198                        | 0.286                | 6.28                                               |
-| 300                   | 573.15               | 14.1                                | 192                        | 0.29                 | 6.61                                               |
-| 400                   | 673.15               | 15.6                                | 186                        | 0.295                | 7.38                                               |
-| 550                   | 823.15               | 17.4                                | 179                        | 0.305                | 7.93                                               |
-| 650                   | 923.15               | 18.9                                | 170                        | 0.321                | 9.47                                               |
-| 750                   | 1023.15              | 20.1                                | 161                        | 0.34                 | 10.5                                               |
-| 870                   | 1143.15              | 22.7                                | 148                        | 0.336                | 11.6                                               |
+| $T$ (°C) | Thermal conductivity, $k$ (W/(m·K)) | Young’s modulus, $E$ (GPa) | Poisson ratio, $\nu$ | Thermal expansion coefficient, $\alpha$ (10⁻⁶ K⁻¹) |
+| -------- | ----------------------------------- | -------------------------- | -------------------- | -------------------------------------------------- |
+| 20       | 9.8                                 | 208                        | 0.277                | —                                                  |
+| 100      | 10.7                                | 204                        | 0.28                 | 5.56                                               |
+| 200      | 12.5                                | 198                        | 0.286                | 6.28                                               |
+| 300      | 14.1                                | 192                        | 0.29                 | 6.61                                               |
+| 400      | 15.6                                | 186                        | 0.295                | 7.38                                               |
+| 550      | 17.4                                | 179                        | 0.305                | 7.93                                               |
+| 650      | 18.9                                | 170                        | 0.321                | 9.47                                               |
+| 750      | 20.1                                | 161                        | 0.34                 | 10.5                                               |
+| 870      | 22.7                                | 148                        | 0.336                | 11.6                                               |
 
 _The dash means no value is tabulated at that temperature. For $\alpha$ below 100 °C, the solver holds the first value, 5.56 × 10⁻⁶ K⁻¹._
 
 #### Specific heat, $C_{\mathrm{p}}$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Specific heat capacity, $C_{\mathrm{p}}$ (J/(kg·K)) |
-| --------------------- | -------------------- | --------------------------------------------------- |
-| 24.85                 | 298                  | 435                                                 |
-| 99.85                 | 373                  | 455                                                 |
-| 199.85                | 473                  | 479                                                 |
-| 299.85                | 573                  | 497                                                 |
-| 399.85                | 673                  | 515                                                 |
-| 499.85                | 773                  | 527                                                 |
-| 599.85                | 873                  | 558                                                 |
-| 699.85                | 973                  | 568                                                 |
-| 799.85                | 1073                 | 680                                                 |
-| 899.85                | 1173                 | 640                                                 |
-| 999.85                | 1273                 | 620                                                 |
-| 1099.85               | 1373                 | 640                                                 |
-| 1169.85               | 1443                 | 650                                                 |
-| 1335.85               | 1609                 | 720                                                 |
-
-_These are the complete configured specific-heat values. Their temperatures are converted from the original Kelvin nodes without rounding to nominal 25 °C or 100 °C intervals._
+| $T$ (K) | $T$ (°C) | Specific heat capacity, $C_{\mathrm{p}}$ (J/(kg·K)) |
+| ------- | -------- | --------------------------------------------------- |
+| 298     | 24.85    | 435                                                 |
+| 373     | 99.85    | 455                                                 |
+| 473     | 199.85   | 479                                                 |
+| 573     | 299.85   | 497                                                 |
+| 673     | 399.85   | 515                                                 |
+| 773     | 499.85   | 527                                                 |
+| 873     | 599.85   | 558                                                 |
+| 973     | 699.85   | 568                                                 |
+| 1073    | 799.85   | 680                                                 |
+| 1173    | 899.85   | 640                                                 |
+| 1273    | 999.85   | 620                                                 |
+| 1373    | 1099.85  | 640                                                 |
+| 1443    | 1169.85  | 650                                                 |
+| 1609    | 1335.85  | 720                                                 |
 
 #### Temperature-dependent plasticity
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Initial yield stress, $\sigma_{\mathrm{y}}$ (MPa) | Hardening modulus, $H$ (GPa) | Maximum yield stress, $\sigma_{\mathrm{max}}$ (MPa) |
-| --------------------- | -------------------- | ------------------------------------------------- | ---------------------------- | --------------------------------------------------- |
-| 20                    | 293.15               | 725                                               | 0.7571428571428572           | 990                                                 |
-| 300                   | 573.15               | 610                                               | 0.14285714285714285          | 660                                                 |
-| 600                   | 873.15               | 515                                               | 0.1285714285714286           | 560                                                 |
-| 800                   | 1073.15              | 100                                               | 0.05714285714285715          | 120                                                 |
+| $T$ (°C) | Initial yield stress, $\sigma_{\mathrm{y}}$ (MPa) | Hardening modulus, $H$ (GPa) | Maximum yield stress, $\sigma_{\mathrm{max}}$ (MPa) |
+| -------- | ------------------------------------------------- | ---------------------------- | --------------------------------------------------- |
+| 20       | 725                                               | 0.7571428571428572           | 990                                                 |
+| 300      | 610                                               | 0.14285714285714285          | 660                                                 |
+| 600      | 515                                               | 0.1285714285714286           | 560                                                 |
+| 800      | 100                                               | 0.05714285714285715          | 120                                                 |
 
 Between tabulated temperatures, properties are linearly interpolated. Outside each property's own temperature range, the nearest endpoint is held constant. Maximum yield stress corresponds to the configured cap at equivalent plastic strain 0.35. These settings do not establish a validated melting-temperature material model.
 
@@ -231,4 +227,12 @@ _Figure 6. Vertical displacement after release._
 
 ---
 
-**Original article:** Phan, T.Q., Strantza, M., Hill, M.R., Gnaupel-Herold, T.H., Heigel, J., D’Elia, C.R., DeWald, A.T., Clausen, B., Pagan, D.C., Peter Ko, J.Y., Brown, D.W., Levine, L.E. (2019). Elastic Residual Strain and Stress Measurements and Corresponding Part Deflections of 3D Additive Manufacturing Builds of IN625 AM-Bench Artifacts Using Neutron Diffraction, Synchrotron X-Ray Diffraction, and Contour Method. _Integrating Materials and Manufacturing Innovation_, **8**, 318–334. [https://doi.org/10.1007/s40192-019-00149-0](https://doi.org/10.1007/s40192-019-00149-0).
+**Reference:**
+
+<span id="reference-1"></span>
+
+[1] Phan, T.Q., Strantza, M., Hill, M.R., Gnaupel-Herold, T.H., Heigel, J., D’Elia, C.R., DeWald, A.T., Clausen, B., Pagan, D.C., Peter Ko, J.Y., Brown, D.W., Levine, L.E. (2019). Elastic Residual Strain and Stress Measurements and Corresponding Part Deflections of 3D Additive Manufacturing Builds of IN625 AM-Bench Artifacts Using Neutron Diffraction, Synchrotron X-Ray Diffraction, and Contour Method. _Integrating Materials and Manufacturing Innovation_, **8**, 318–334. [https://doi.org/10.1007/s40192-019-00149-0](https://doi.org/10.1007/s40192-019-00149-0).
+
+<span id="reference-2"></span>
+
+[2] Qi, J., Liu, X., Dong, P., Li, Q., Yang, Y. (2025). An improved dynamic inherent strain method for efficient prediction of residual stresses and deformations in metal additive manufacturing. _Additive Manufacturing_, **114**, 105025. [https://doi.org/10.1016/j.addma.2025.105025](https://doi.org/10.1016/j.addma.2025.105025).

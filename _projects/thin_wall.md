@@ -3,7 +3,7 @@ layout: page
 title: Thin-wall (WAAM)
 card_title: "Thin-wall (WAAM · S355)"
 description: This is a four-layer S355 steel thin-wall model. The thermal–mechanical analysis follows successive line scans and cooling stages, then
-  releases the specified anchors to calculate springback. A separate 20-layer configuration is also available.
+  releases the specified anchors to calculate springback.
 permalink: /benchmarks/thin-wall/
 hub_case: true
 published: true
@@ -29,7 +29,7 @@ image_alt: Thin-wall saved simulation stress result.
 
 ## Overview
 
-This is a four-layer S355 steel thin-wall model. The thermal–mechanical analysis follows successive line scans and cooling stages, then releases the specified anchors to calculate springback. A separate 20-layer configuration is also available.
+This is a four-layer S355 steel thin-wall model. The thermal–mechanical analysis follows successive line scans and cooling stages, then releases the specified anchors to calculate springback.
 
 <div class="rsh-case-figures" markdown="1">
 
@@ -65,26 +65,22 @@ _Figure 1. Geometry and dimensions._
 | Goldak heat-source dimensions (front / rear / transverse / depth) | 2 / 6 / 2.5 / 3 | mm   |
 | Cooling interval (after each deposited layer)                     | 400             | s    |
 
-_Printing and heat-source values describe the supplied simulation configuration._
-
 ### Simulation parameters
 
-| Parameter                            | Value / setting                                                                       | Unit              |
-| ------------------------------------ | ------------------------------------------------------------------------------------- | ----------------- |
-| Ambient temperature                  | 25                                                                                    | °C                |
-| High-temperature material model      | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                 |
-| S355 elastic parameters (20 °C)      | $E$ = 206<br>$\nu$ = 0.29                                                             | GPa<br>—          |
-| S355 plastic parameters (20 °C)      | $\sigma_{\mathrm{y}}$ = 450<br>$H$ = 7<br>$\sigma_{\mathrm{max}}$ = 520               | MPa<br>GPa<br>MPa |
-| Identified inherent strain           | Not used — this case uses full thermal–mechanical analysis                            | —                 |
-| Thermal strain reference temperature | 20                                                                                    | °C                |
-| Thermal strain cutoff                | No explicit cutoff configured                                                         | —                 |
-
-The material grade is S355. The supplied configuration identifies this material as `thin_wall_steel`.
+| Parameter                            | Value / setting                                                         | Unit              |
+| ------------------------------------ | ----------------------------------------------------------------------- | ----------------- |
+| Ambient temperature                  | 25                                                                      | °C                |
+| High-temperature material model      | See tables below                                                        | —                 |
+| S355 elastic parameters (20 °C)      | $E$ = 206<br>$\nu$ = 0.29                                               | GPa<br>—          |
+| S355 plastic parameters (20 °C)      | $\sigma_{\mathrm{y}}$ = 450<br>$H$ = 7<br>$\sigma_{\mathrm{max}}$ = 520 | MPa<br>GPa<br>MPa |
+| Identified inherent strain           | Not used — this case uses full thermal–mechanical analysis              | —                 |
+| Thermal strain reference temperature | 20                                                                      | °C                |
+| Thermal strain cutoff                | No explicit cutoff configured                                           | —                 |
 
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>
 
-Every configured temperature node is listed below, with exact conversion from K to °C. Each property is linearly interpolated within its own table and held at its nearest endpoint outside that range.
+The S355 thermal and temperature-dependent mechanical parameters used in this simulation are adapted from Qi et al., supplementary Tables S2–S3 <a href="#reference-1">[1]</a>.
 
 #### S355 — upper region and lower region
 
@@ -98,113 +94,113 @@ Every configured temperature node is listed below, with exact conversion from K 
 
 ##### Thermal conductivity, $k$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Thermal conductivity, $k$ (W/(m·K)) |
-| --------------------- | -------------------- | ----------------------------------- |
-| 0                     | 273.15               | 48.6                                |
-| 700                   | 973.15               | 48.6                                |
+| $T$ (°C) | Thermal conductivity, $k$ (W/(m·K)) |
+| -------- | ----------------------------------- |
+| 0        | 48.6                                |
+| 700      | 48.6                                |
 
 ##### Specific heat capacity, $C_{\mathrm{p}}$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Specific heat capacity, $C_{\mathrm{p}}$ (J/(kg·K)) |
-| --------------------- | -------------------- | --------------------------------------------------- |
-| 0                     | 273.15               | 496                                                 |
-| 700                   | 973.15               | 496                                                 |
+| $T$ (°C) | Specific heat capacity, $C_{\mathrm{p}}$ (J/(kg·K)) |
+| -------- | --------------------------------------------------- |
+| 0        | 496                                                 |
+| 700      | 496                                                 |
 
 ##### Young’s modulus, $E$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Young’s modulus, $E$ (GPa) |
-| --------------------- | -------------------- | -------------------------- |
-| 20                    | 293.15               | 206                        |
-| 100                   | 373.15               | 203                        |
-| 200                   | 473.15               | 201                        |
-| 300                   | 573.15               | 200                        |
-| 400                   | 673.15               | 165                        |
-| 500                   | 773.15               | 100                        |
-| 600                   | 873.15               | 60                         |
-| 700                   | 973.15               | 40                         |
-| 800                   | 1073.15              | 30                         |
-| 900                   | 1173.15              | 20                         |
-| 1000                  | 1273.15              | 10                         |
+| $T$ (°C) | Young’s modulus, $E$ (GPa) |
+| -------- | -------------------------- |
+| 20       | 206                        |
+| 100      | 203                        |
+| 200      | 201                        |
+| 300      | 200                        |
+| 400      | 165                        |
+| 500      | 100                        |
+| 600      | 60                         |
+| 700      | 40                         |
+| 800      | 30                         |
+| 900      | 20                         |
+| 1000     | 10                         |
 
 ##### Thermal expansion coefficient, $\alpha$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Thermal expansion coefficient, $\alpha$ (µm/(m·K)) |
-| --------------------- | -------------------- | -------------------------------------------------- |
-| 20                    | 293.15               | 12                                                 |
-| 100                   | 373.15               | 12                                                 |
-| 200                   | 473.15               | 12                                                 |
-| 300                   | 573.15               | 12                                                 |
-| 400                   | 673.15               | 12                                                 |
-| 500                   | 773.15               | 12                                                 |
-| 600                   | 873.15               | 12                                                 |
-| 700                   | 973.15               | 12                                                 |
-| 800                   | 1073.15              | 12                                                 |
-| 900                   | 1173.15              | 12                                                 |
-| 1000                  | 1273.15              | 15                                                 |
+| $T$ (°C) | Thermal expansion coefficient, $\alpha$ (µm/(m·K)) |
+| -------- | -------------------------------------------------- |
+| 20       | 12                                                 |
+| 100      | 12                                                 |
+| 200      | 12                                                 |
+| 300      | 12                                                 |
+| 400      | 12                                                 |
+| 500      | 12                                                 |
+| 600      | 12                                                 |
+| 700      | 12                                                 |
+| 800      | 12                                                 |
+| 900      | 12                                                 |
+| 1000     | 15                                                 |
 
 ##### Poisson ratio, $\nu$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (—) |
-| --------------------- | -------------------- | ------------------------ |
-| 20                    | 293.15               | 0.29                     |
-| 100                   | 373.15               | 0.29                     |
-| 200                   | 473.15               | 0.295                    |
-| 300                   | 573.15               | 0.295                    |
-| 400                   | 673.15               | 0.3                      |
-| 500                   | 773.15               | 0.3                      |
-| 600                   | 873.15               | 0.32                     |
-| 700                   | 973.15               | 0.32                     |
-| 800                   | 1073.15              | 0.35                     |
-| 900                   | 1173.15              | 0.35                     |
-| 1000                  | 1273.15              | 0.39                     |
+| $T$ (°C) | Poisson ratio, $\nu$ (—) |
+| -------- | ------------------------ |
+| 20       | 0.29                     |
+| 100      | 0.29                     |
+| 200      | 0.295                    |
+| 300      | 0.295                    |
+| 400      | 0.3                      |
+| 500      | 0.3                      |
+| 600      | 0.32                     |
+| 700      | 0.32                     |
+| 800      | 0.35                     |
+| 900      | 0.35                     |
+| 1000     | 0.39                     |
 
 ##### Initial yield stress, $\sigma_{\mathrm{y}}$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Initial yield stress, $\sigma_{\mathrm{y}}$ (MPa) |
-| --------------------- | -------------------- | ------------------------------------------------- |
-| 20                    | 293.15               | 450                                               |
-| 100                   | 373.15               | 450                                               |
-| 200                   | 473.15               | 420                                               |
-| 300                   | 573.15               | 390                                               |
-| 400                   | 673.15               | 320                                               |
-| 500                   | 773.15               | 260                                               |
-| 600                   | 873.15               | 170                                               |
-| 700                   | 973.15               | 60                                                |
-| 800                   | 1073.15              | 50                                                |
-| 900                   | 1173.15              | 50                                                |
-| 1000                  | 1273.15              | 50                                                |
+| $T$ (°C) | Initial yield stress, $\sigma_{\mathrm{y}}$ (MPa) |
+| -------- | ------------------------------------------------- |
+| 20       | 450                                               |
+| 100      | 450                                               |
+| 200      | 420                                               |
+| 300      | 390                                               |
+| 400      | 320                                               |
+| 500      | 260                                               |
+| 600      | 170                                               |
+| 700      | 60                                                |
+| 800      | 50                                                |
+| 900      | 50                                                |
+| 1000     | 50                                                |
 
 ##### Hardening modulus, $H$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Hardening modulus, $H$ (GPa) |
-| --------------------- | -------------------- | ---------------------------- |
-| 20                    | 293.15               | 7                            |
-| 100                   | 373.15               | 7                            |
-| 200                   | 473.15               | 8                            |
-| 300                   | 573.15               | 6                            |
-| 400                   | 673.15               | 5                            |
-| 500                   | 773.15               | 4                            |
-| 600                   | 873.15               | 4.5                          |
-| 700                   | 973.15               | 4                            |
-| 800                   | 1073.15              | 3                            |
-| 900                   | 1173.15              | 0                            |
-| 1000                  | 1273.15              | 0                            |
+| $T$ (°C) | Hardening modulus, $H$ (GPa) |
+| -------- | ---------------------------- |
+| 20       | 7                            |
+| 100      | 7                            |
+| 200      | 8                            |
+| 300      | 6                            |
+| 400      | 5                            |
+| 500      | 4                            |
+| 600      | 4.5                          |
+| 700      | 4                            |
+| 800      | 3                            |
+| 900      | 0                            |
+| 1000     | 0                            |
 
 ##### Maximum yield stress, $\sigma_{\mathrm{max}}$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Maximum yield stress, $\sigma_{\mathrm{max}}$ (MPa) |
-| --------------------- | -------------------- | --------------------------------------------------- |
-| 20                    | 293.15               | 520                                                 |
-| 100                   | 373.15               | 520                                                 |
-| 200                   | 473.15               | 500                                                 |
-| 300                   | 573.15               | 420                                                 |
-| 400                   | 673.15               | 370                                                 |
-| 500                   | 773.15               | 300                                                 |
-| 600                   | 873.15               | 215                                                 |
-| 700                   | 973.15               | 100                                                 |
-| 800                   | 1073.15              | 80                                                  |
-| 900                   | 1173.15              | 50                                                  |
-| 1000                  | 1273.15              | 50                                                  |
+| $T$ (°C) | Maximum yield stress, $\sigma_{\mathrm{max}}$ (MPa) |
+| -------- | --------------------------------------------------- |
+| 20       | 520                                                 |
+| 100      | 520                                                 |
+| 200      | 500                                                 |
+| 300      | 420                                                 |
+| 400      | 370                                                 |
+| 500      | 300                                                 |
+| 600      | 215                                                 |
+| 700      | 100                                                 |
+| 800      | 80                                                  |
+| 900      | 50                                                  |
+| 1000     | 50                                                  |
 
 The phase-change settings are numerical model inputs: latent heat is zero and the configured solidus / liquidus are 1273.15 / 1274.15 K. They are not claimed as measured steel melting temperatures.
 
@@ -262,14 +258,34 @@ _Figure 4. $X$-direction strain histories._
 
 </figure>
 
+<figure class="rsh-case-figure" markdown="1">
+
+### Vertical displacement after release
+
+<div class="rsh-case-figure-content" markdown="1">
+
+![Vertical displacement after release.](/assets/img/cases/thin-wall/thin_wall_displacement_comparison.png?v=71ab55f09e5e)
+
+_Figure 5. Vertical displacement after release._
+
+[Download the figure PDF](/assets/pdf/cases/thin-wall/thin_wall_displacement_comparison.pdf)
+
+</div>
+
+</figure>
+
 </div>
 
 ### Springback after release
 
-The saved maximum springback magnitude is **3.246338 mm**. At that node, the vertical component is **3.242710 mm**. This is a numerical springback result after releasing the configured anchors.
+The maximum springback magnitude is **3.246338 mm**, with a vertical component of **3.242710 mm** at that node.
 
 [Download springback samples](/assets/data/cases/thin-wall/springback-summary.csv)
 
 ---
 
-**Data sources:** Supplied simulation inputs and saved solver outputs. Complete physical settings and temperature-dependent values are available in the YAML, JSON, and CSV downloads above.
+**Reference:**
+
+<span id="reference-1"></span>
+
+[1] Qi, J., Liu, X., Dong, P., Li, Q., Yang, Y. (2025). An improved dynamic inherent strain method for efficient prediction of residual stresses and deformations in metal additive manufacturing. _Additive Manufacturing_, **114**, 105025. [https://doi.org/10.1016/j.addma.2025.105025](https://doi.org/10.1016/j.addma.2025.105025).
