@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cantilever (LPBF)
+title: "Cantilever (LPBF · IN625)"
 description: "A printed cantilever: local thermal–mechanical response, inherent-strain calibration, residual elastic strain, and distortion after release."
 permalink: /benchmarks/example-1/
 nav: false

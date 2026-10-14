@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Double-cantilever (LPBF)
+title: "Double-cantilever (LPBF · IN718)"
 card_title: "Double-cantilever (LPBF · IN718)"
 description: This is the IN718 double-cantilever model. A local thermal–mechanical simulation is used to identify inherent strain, and the
   model calculates residual stress and warpage after releasing the left and right interfaces.

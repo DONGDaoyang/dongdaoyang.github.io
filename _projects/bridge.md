@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bridge (LPBF)
+title: "Bridge (LPBF · Ti-6Al-4V)"
 card_title: "Bridge (LPBF · Ti-6Al-4V)"
 description: This is a Ti-6Al-4V bridge model. A local thermal–mechanical simulation is used to identify inherent strain, which is then applied
   to the full bridge model to calculate residual elastic strain.
@@ -85,7 +85,7 @@ The physical print layer is 30 µm. The 250 µm layer pitch used in the model is
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>
 
-The high-temperature material parameters used in the local scan model for inherent-strain identification are listed below.
+The temperature-dependent thermal and mechanical parameters used in the local scan model for inherent-strain identification are adapted from Ganeriwala et al. (Tables 1 and 2). <a href="#reference-1">[1]</a>
 
 #### Ti-6Al-4V — upper region and lower region
 

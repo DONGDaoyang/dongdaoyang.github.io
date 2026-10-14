@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Single track (DED)
+title: "Single track (DED · IN718 / Ti-6Al-4V)"
 card_title: "Single track (DED · IN718 / Ti-6Al-4V)"
 description: This is a single-track laser-deposition model with an IN718 track on a Ti-6Al-4V substrate. The thermal–mechanical analysis follows
   one 40 mm scan and the subsequent cooling stage to calculate residual stress.

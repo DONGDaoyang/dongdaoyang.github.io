@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cantilever (LPBF)
+title: "Cantilever (LPBF · IN625)"
 card_title: "Cantilever (LPBF · IN625)"
 description: "AM-Bench 2018-1 IN625 cantilever: residual stress measurements, inherent-strain identification, and release distortion."
 permalink: /benchmarks/cantilever/

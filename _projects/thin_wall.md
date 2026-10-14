@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Thin-wall (WAAM)
+title: "Thin-wall (WAAM · S355)"
 card_title: "Thin-wall (WAAM · S355)"
 description: This is a four-layer S355 steel thin-wall model. The thermal–mechanical analysis follows successive line scans and cooling stages, then
   releases the specified anchors to calculate springback.

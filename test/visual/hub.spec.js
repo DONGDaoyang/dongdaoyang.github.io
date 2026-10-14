@@ -320,7 +320,7 @@ for (const theme of ["light", "dark"]) {
       const content = await page.locator(".post > article").innerText();
       await openPage(page, "/benchmarks/example-1/");
       await expect(page).toHaveURL(/\/benchmarks\/example-1\/$/);
-      await expect(page.locator(".post h1")).toHaveText("Cantilever (LPBF)");
+      await expect(page.locator(".post h1")).toHaveText("Cantilever (LPBF · IN625)");
       expect(await page.locator(".post > article").innerText()).toBe(content);
     });
 
