@@ -53,35 +53,35 @@ _Figure 1. Geometry and dimensions._
 
 ### Printing parameters
 
-| Parameter                           | Value                   | Unit / description                    |
-| ----------------------------------- | ----------------------- | ------------------------------------- |
-| Manufacturing process               | LPBF                    | —                                     |
-| Material                            | IN718                   | Deposit / substrate if different      |
-| Heat-source power, $P$              | 285                     | W                                     |
-| Scan speed, $V$                     | 960                     | mm/s                                  |
-| Physical deposition layer thickness | 40                      | µm                                    |
-| Hatch spacing                       | 110                     | µm                                    |
-| Absorption efficiency               | 0.4                     | Dimensionless                         |
-| Heat-source model                   | Goldak double ellipsoid | Volumetric heat source                |
-| Heat-source radii                   | 50 / 50 / 50 / 125      | µm; front / rear / transverse / depth |
-| Cooling interval                    | 200                     | s after each deposited layer          |
+| Parameter                                                         | Value              | Unit |
+| ----------------------------------------------------------------- | ------------------ | ---- |
+| Manufacturing process                                             | LPBF               | —    |
+| Material                                                          | IN718              | —    |
+| Heat-source power, $P$                                            | 285                | W    |
+| Scan speed, $V$                                                   | 960                | mm/s |
+| Physical deposition layer thickness                               | 40                 | µm   |
+| Hatch spacing                                                     | 110                | µm   |
+| Absorption efficiency                                             | 0.4                | —    |
+| Goldak heat-source dimensions (front / rear / transverse / depth) | 50 / 50 / 50 / 125 | µm   |
+| Cooling interval (after each deposited layer)                     | 200                | s    |
 
 _Printing and heat-source values describe the supplied simulation configuration._
 
 ### Simulation parameters
 
-| Parameter                                                                                                | Value / setting                                                                                                                  | Unit / description  |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| Initial / ambient temperature                                                                            | 25 / 25                                                                                                                          | °C                  |
-| High-temperature material model                                                                          | Complete temperature-dependent tables below; linear interpolation with endpoint holds                                            | —                   |
-| Room-temperature macro material model                                                                    | $E$ = 208 GPa; $\nu$ = 0.3; $\sigma_{\mathrm{y}}$ = 1172 MPa; $H$ = 0 GPa; $\sigma_{\mathrm{max}}$ = 1172 MPa                    | Constant properties |
-| Latest identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | -4.339                                                                                                                           | ‰                   |
-| Latest identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | 19.647                                                                                                                           | ‰                   |
-| Inherent strain in the displayed archived comparison                                                     | $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast} = -4.672\,;\quad \varepsilon_{\mathrm{zz}}^{\ast} = 15.520$ | ‰                   |
-| Macro layer activation                                                                                   | 36 × 0.515                                                                                                                       | Layers × mm         |
-| Macro constraints and release                                                                            | macro fixed plane $Z$ = 10 mm; release left and right interfaces at $Z$ = 32.2 mm                                                | —                   |
-| Thermal strain reference temperature                                                                     | 25                                                                                                                               | °C                  |
-| Thermal strain cutoff                                                                                    | solidus                                                                                                                          | —                   |
+| Parameter                                                                                                | Value / setting                                                                                                                  | Unit              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Initial / ambient temperature                                                                            | 25 / 25                                                                                                                          | °C                |
+| High-temperature material model                                                                          | Complete temperature-dependent tables below; linear interpolation with endpoint holds                                            | —                 |
+| Macro elastic parameters (room temperature, constant)                                                    | $E$ = 208<br>$\nu$ = 0.3                                                                                                         | GPa<br>—          |
+| Macro plastic parameters (room temperature, constant)                                                    | $\sigma_{\mathrm{y}}$ = 1172<br>$H$ = 0<br>$\sigma_{\mathrm{max}}$ = 1172                                                        | MPa<br>GPa<br>MPa |
+| Latest identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | -4.339                                                                                                                           | ‰                 |
+| Latest identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | 19.647                                                                                                                           | ‰                 |
+| Inherent strain in the displayed archived comparison                                                     | $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast} = -4.672\,;\quad \varepsilon_{\mathrm{zz}}^{\ast} = 15.520$ | ‰                 |
+| Macro layer activation                                                                                   | 36 × 0.515                                                                                                                       | Layers × mm       |
+| Macro constraints and release                                                                            | macro fixed plane $Z$ = 10 mm; release left and right interfaces at $Z$ = 32.2 mm                                                | —                 |
+| Thermal strain reference temperature                                                                     | 25                                                                                                                               | °C                |
+| Thermal strain cutoff                                                                                    | solidus                                                                                                                          | —                 |
 
 This page uses the IN718 dc case. The separate Ti-6Al-4V dc2 case is not combined with this geometry. The physical print layer is 40 µm; macro activation uses a 515 µm pitch.
 
@@ -94,13 +94,13 @@ Every configured temperature node is listed below, with exact conversion from K 
 
 #### IN718 — upper region and lower region
 
-| Parameter                              | Value  | Unit          |
-| -------------------------------------- | ------ | ------------- |
-| Density, $\rho$                        | 8146   | kg/m³         |
-| Latent heat, $L$                       | 286000 | J/kg          |
-| Solidus temperature, $T_{\mathrm{s}}$  | 1533   | K             |
-| Liquidus temperature, $T_{\mathrm{l}}$ | 1609   | K             |
-| Maximum yield factor                   | 1      | Dimensionless |
+| Parameter                              | Value  | Unit  |
+| -------------------------------------- | ------ | ----- |
+| Density, $\rho$                        | 8146   | kg/m³ |
+| Latent heat, $L$                       | 286000 | J/kg  |
+| Solidus temperature, $T_{\mathrm{s}}$  | 1533   | K     |
+| Liquidus temperature, $T_{\mathrm{l}}$ | 1609   | K     |
+| Maximum yield factor                   | 1      | —     |
 
 ##### Thermal conductivity, $k$
 
@@ -155,10 +155,10 @@ Every configured temperature node is listed below, with exact conversion from K 
 
 ##### Poisson ratio, $\nu$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (Dimensionless) |
-| --------------------- | -------------------- | ------------------------------------ |
-| 21                    | 294.15               | 0.3                                  |
-| 1350                  | 1623.15              | 0.3                                  |
+| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (—) |
+| --------------------- | -------------------- | ------------------------ |
+| 21                    | 294.15               | 0.3                      |
+| 1350                  | 1623.15              | 0.3                      |
 
 ##### Initial yield stress, $\sigma_{\mathrm{y}}$
 

@@ -52,34 +52,35 @@ _Figure 1. Geometry and dimensions._
 
 ### Printing parameters
 
-| Parameter             | Value                   | Unit / description                    |
-| --------------------- | ----------------------- | ------------------------------------- |
-| Manufacturing process | LPBF                    | —                                     |
-| Material              | IN625                   | Nickel-based alloy                    |
-| Laser power, $P$      | 195                     | W                                     |
-| Scan speed, $V$       | 800                     | mm/s                                  |
-| Layer thickness       | 20                      | µm                                    |
-| Hatch spacing         | 100                     | µm                                    |
-| Absorption efficiency | 0.37                    | Dimensionless                         |
-| Heat-source model     | Goldak double ellipsoid | Volumetric heat source                |
-| Heat-source radii     | 50 / 50 / 50 / 50       | µm; front / rear / transverse / depth |
-| Cooling interval      | 200                     | s after each simulated layer          |
+| Parameter                                                         | Value             | Unit |
+| ----------------------------------------------------------------- | ----------------- | ---- |
+| Manufacturing process                                             | LPBF              | —    |
+| Material                                                          | IN625             | —    |
+| Laser power, $P$                                                  | 195               | W    |
+| Scan speed, $V$                                                   | 800               | mm/s |
+| Layer thickness                                                   | 20                | µm   |
+| Hatch spacing                                                     | 100               | µm   |
+| Absorption efficiency                                             | 0.37              | —    |
+| Goldak heat-source dimensions (front / rear / transverse / depth) | 50 / 50 / 50 / 50 | µm   |
+| Cooling interval (after each simulated layer)                     | 200               | s    |
 
 _Printing and heat-source values describe the current simulation configuration._
 
 ### Simulation parameters
 
-| Parameter                                                                                         | Value / setting                                                                                                                                   | Unit        |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| Initial / ambient temperature                                                                     | 25 / 25                                                                                                                                           | °C          |
-| High-temperature material model                                                                   | Full temperature-dependent tables below; linear interpolation with endpoint holds                                                                 | —           |
-| Room-temperature material model                                                                   | Constant properties at 20 °C: $E$ = 208 GPa, $\nu$ = 0.277, $\sigma_{\mathrm{y}}$ = 725 MPa, $H$ = 0.75714 GPa, $\sigma_{\mathrm{max}}$ = 990 MPa | —           |
-| Material settings for the saved local identification                                              | $E$ = 156.3 GPa, $\nu$ = 0.300, $\sigma_{\mathrm{y}}$ = 308.9 MPa, $H$ = 1.000 GPa, $\sigma_{\mathrm{max}}$ = 370.68 MPa                          | —           |
-| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | −3.655                                                                                                                                            | ‰           |
-| Identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | +9.504                                                                                                                                            | ‰           |
-| Inherent strain in the archived macro configuration                                               | $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast} = −2.867\,;\quad \varepsilon_{\mathrm{zz}}^{\ast} = +17.244$                 | ‰           |
-| Macro layer activation                                                                            | 25 × 0.5; an additional 50-layer run is shown for warpage                                                                                         | Layers × mm |
-| Macro constraints and release                                                                     | Fixed substrate bottom; release the interface over $X$ = 0–55 mm                                                                                  | —           |
+| Parameter                                                                                         | Value / setting                                                                                                                   | Unit              |
+| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Initial / ambient temperature                                                                     | 25 / 25                                                                                                                           | °C                |
+| High-temperature material model                                                                   | Full temperature-dependent tables below; linear interpolation with endpoint holds                                                 | —                 |
+| Elastic parameters (20 °C, constant)                                                              | $E$ = 208<br>$\nu$ = 0.277                                                                                                        | GPa<br>—          |
+| Plastic parameters (20 °C, constant)                                                              | $\sigma_{\mathrm{y}}$ = 725<br>$H$ = 0.75714<br>$\sigma_{\mathrm{max}}$ = 990                                                     | MPa<br>GPa<br>MPa |
+| Elastic parameters (saved local identification)                                                   | $E$ = 156.3<br>$\nu$ = 0.300                                                                                                      | GPa<br>—          |
+| Plastic parameters (saved local identification)                                                   | $\sigma_{\mathrm{y}}$ = 308.9<br>$H$ = 1.000<br>$\sigma_{\mathrm{max}}$ = 370.68                                                  | MPa<br>GPa<br>MPa |
+| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | −3.655                                                                                                                            | ‰                 |
+| Identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | +9.504                                                                                                                            | ‰                 |
+| Inherent strain in the archived macro configuration                                               | $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast} = −2.867\,;\quad \varepsilon_{\mathrm{zz}}^{\ast} = +17.244$ | ‰                 |
+| Macro layer activation                                                                            | 25 × 0.5; an additional 50-layer run is shown for warpage                                                                         | Layers × mm       |
+| Macro constraints and release                                                                     | Fixed substrate bottom; release the interface over $X$ = 0–55 mm                                                                  | —                 |
 
 _The selected identification and archived macro figures use different parameter versions; the existing figures are retained from the saved outputs._
 

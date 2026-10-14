@@ -53,31 +53,31 @@ _Figure 1. Geometry and dimensions._
 
 ### Printing parameters
 
-| Parameter                           | Value                                | Unit / description                    |
-| ----------------------------------- | ------------------------------------ | ------------------------------------- |
-| Manufacturing process               | WAAM                                 | —                                     |
-| Material                            | S355                                 | Deposit / substrate if different      |
-| Heat-source power, $P$              | 2245                                 | W                                     |
-| Scan speed, $V$                     | 8.33                                 | mm/s                                  |
-| Physical deposition layer thickness | 2                                    | mm                                    |
-| Hatch spacing                       | Not applicable — one track per layer | —                                     |
-| Absorption efficiency               | 0.78                                 | Dimensionless                         |
-| Heat-source model                   | Goldak double ellipsoid              | Volumetric heat source                |
-| Heat-source radii                   | 2 / 6 / 2.5 / 3                      | mm; front / rear / transverse / depth |
-| Cooling interval                    | 400                                  | s after each deposited layer          |
+| Parameter                                                         | Value           | Unit |
+| ----------------------------------------------------------------- | --------------- | ---- |
+| Manufacturing process                                             | WAAM            | —    |
+| Material                                                          | S355            | —    |
+| Heat-source power, $P$                                            | 2245            | W    |
+| Scan speed, $V$                                                   | 8.33            | mm/s |
+| Physical deposition layer thickness                               | 2               | mm   |
+| Hatch spacing                                                     | N/A             | —    |
+| Absorption efficiency                                             | 0.78            | —    |
+| Goldak heat-source dimensions (front / rear / transverse / depth) | 2 / 6 / 2.5 / 3 | mm   |
+| Cooling interval (after each deposited layer)                     | 400             | s    |
 
 _Printing and heat-source values describe the supplied simulation configuration._
 
 ### Simulation parameters
 
-| Parameter                            | Value / setting                                                                                              | Unit / description                      |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
-| Initial / ambient temperature        | 25 / 25                                                                                                      | °C                                      |
-| High-temperature material model      | Complete temperature-dependent tables below; linear interpolation with endpoint holds                        | —                                       |
-| S355 properties evaluated at 20 °C   | $E$ = 206 GPa; $\nu$ = 0.29; $\sigma_{\mathrm{y}}$ = 450 MPa; $H$ = 7 GPa; $\sigma_{\mathrm{max}}$ = 520 MPa | From the same thermal–mechanical tables |
-| Identified inherent strain           | Not used — this case uses full thermal–mechanical analysis                                                   | —                                       |
-| Thermal strain reference temperature | 20                                                                                                           | °C                                      |
-| Thermal strain cutoff                | No explicit cutoff configured                                                                                | —                                       |
+| Parameter                            | Value / setting                                                                       | Unit              |
+| ------------------------------------ | ------------------------------------------------------------------------------------- | ----------------- |
+| Initial / ambient temperature        | 25 / 25                                                                               | °C                |
+| High-temperature material model      | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                 |
+| S355 elastic parameters (20 °C)      | $E$ = 206<br>$\nu$ = 0.29                                                             | GPa<br>—          |
+| S355 plastic parameters (20 °C)      | $\sigma_{\mathrm{y}}$ = 450<br>$H$ = 7<br>$\sigma_{\mathrm{max}}$ = 520               | MPa<br>GPa<br>MPa |
+| Identified inherent strain           | Not used — this case uses full thermal–mechanical analysis                            | —                 |
+| Thermal strain reference temperature | 20                                                                                    | °C                |
+| Thermal strain cutoff                | No explicit cutoff configured                                                         | —                 |
 
 The material grade is S355. The supplied configuration identifies this material as `thin_wall_steel`.
 
@@ -88,13 +88,13 @@ Every configured temperature node is listed below, with exact conversion from K 
 
 #### S355 — upper region and lower region
 
-| Parameter                              | Value   | Unit          |
-| -------------------------------------- | ------- | ------------- |
-| Density, $\rho$                        | 7860    | kg/m³         |
-| Latent heat, $L$                       | 0       | J/kg          |
-| Solidus temperature, $T_{\mathrm{s}}$  | 1273.15 | K             |
-| Liquidus temperature, $T_{\mathrm{l}}$ | 1274.15 | K             |
-| Maximum yield factor                   | 1       | Dimensionless |
+| Parameter                              | Value   | Unit  |
+| -------------------------------------- | ------- | ----- |
+| Density, $\rho$                        | 7860    | kg/m³ |
+| Latent heat, $L$                       | 0       | J/kg  |
+| Solidus temperature, $T_{\mathrm{s}}$  | 1273.15 | K     |
+| Liquidus temperature, $T_{\mathrm{l}}$ | 1274.15 | K     |
+| Maximum yield factor                   | 1       | —     |
 
 ##### Thermal conductivity, $k$
 
@@ -144,19 +144,19 @@ Every configured temperature node is listed below, with exact conversion from K 
 
 ##### Poisson ratio, $\nu$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (Dimensionless) |
-| --------------------- | -------------------- | ------------------------------------ |
-| 20                    | 293.15               | 0.29                                 |
-| 100                   | 373.15               | 0.29                                 |
-| 200                   | 473.15               | 0.295                                |
-| 300                   | 573.15               | 0.295                                |
-| 400                   | 673.15               | 0.3                                  |
-| 500                   | 773.15               | 0.3                                  |
-| 600                   | 873.15               | 0.32                                 |
-| 700                   | 973.15               | 0.32                                 |
-| 800                   | 1073.15              | 0.35                                 |
-| 900                   | 1173.15              | 0.35                                 |
-| 1000                  | 1273.15              | 0.39                                 |
+| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (—) |
+| --------------------- | -------------------- | ------------------------ |
+| 20                    | 293.15               | 0.29                     |
+| 100                   | 373.15               | 0.29                     |
+| 200                   | 473.15               | 0.295                    |
+| 300                   | 573.15               | 0.295                    |
+| 400                   | 673.15               | 0.3                      |
+| 500                   | 773.15               | 0.3                      |
+| 600                   | 873.15               | 0.32                     |
+| 700                   | 973.15               | 0.32                     |
+| 800                   | 1073.15              | 0.35                     |
+| 900                   | 1173.15              | 0.35                     |
+| 1000                  | 1273.15              | 0.39                     |
 
 ##### Initial yield stress, $\sigma_{\mathrm{y}}$
 

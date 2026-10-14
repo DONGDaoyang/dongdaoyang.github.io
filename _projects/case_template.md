@@ -53,22 +53,25 @@ Append the manufacturing process in parentheses to the case title, such as `Cant
 
 Describe the geometry, material, printing or loading conditions, initial state, and boundary conditions. Explain layer activation and release if applicable. Distinguish physical process conditions from numerical assumptions and make the evaluation locations explicit.
 
+Keep the last column for units (use — for dimensionless values). Put qualifiers such as cooling timing and heat-source dimension order in the parameter label. Name Goldak dimensions directly without a separate heat-source-model row. Group room-temperature elastic and plastic parameters into separate rows; put one property and its matching unit on each line using `<br>`.
+
 ### Printing parameters
 
-| Parameter                                             | Value          | Unit / source           |
-| ----------------------------------------------------- | -------------- | ----------------------- |
-| Process and material                                  | To be supplied | Configuration / article |
-| Power, $P$; scan speed, $V$; physical layer thickness | To be supplied | W, mm/s, µm             |
-| Hatch spacing and heat-source dimensions              | To be supplied | µm                      |
+| Parameter                                             | Value          | Unit        |
+| ----------------------------------------------------- | -------------- | ----------- |
+| Process and material                                  | To be supplied | —           |
+| Power, $P$; scan speed, $V$; physical layer thickness | To be supplied | W, mm/s, µm |
+| Hatch spacing and Goldak heat-source dimensions       | To be supplied | µm          |
 
 ### Simulation parameters
 
-| Parameter                                                                                                                              | Value / setting | Unit / source                       |
-| -------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------------------------- |
-| High-temperature material model                                                                                                        | To be supplied  | Full temperature-dependent tables   |
-| Room-temperature material model                                                                                                        | To be supplied  | Constant or interpolated properties |
-| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast}$, $\varepsilon_{\mathrm{yy}}^{\ast}$, $\varepsilon_{\mathrm{zz}}^{\ast}$ | To be supplied  | Dimensionless / ‰                   |
-| Macro layer activation, if used                                                                                                        | To be supplied  | Layers × mm                         |
+| Parameter                                                                                                                              | Value / setting                                                                                            | Unit              |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------- |
+| High-temperature material model (temperature-dependent tables)                                                                         | To be supplied                                                                                             | —                 |
+| Room-temperature elastic parameters                                                                                                    | $E$ = To be supplied<br>$\nu$ = To be supplied                                                             | GPa<br>—          |
+| Room-temperature plastic parameters                                                                                                    | $\sigma_{\mathrm{y}}$ = To be supplied<br>$H$ = To be supplied<br>$\sigma_{\mathrm{max}}$ = To be supplied | MPa<br>GPa<br>MPa |
+| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast}$, $\varepsilon_{\mathrm{yy}}^{\ast}$, $\varepsilon_{\mathrm{zz}}^{\ast}$ | To be supplied                                                                                             | ‰                 |
+| Macro layer activation, if used                                                                                                        | To be supplied                                                                                             | Layers × mm       |
 
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>

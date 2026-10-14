@@ -53,32 +53,33 @@ _Figure 1. Geometry and dimensions._
 
 ### Printing parameters
 
-| Parameter                           | Value                                | Unit / description                    |
-| ----------------------------------- | ------------------------------------ | ------------------------------------- |
-| Manufacturing process               | DED                                  | —                                     |
-| Material                            | IN718 / Ti-6Al-4V                    | Deposit / substrate if different      |
-| Heat-source power, $P$              | 600                                  | W                                     |
-| Scan speed, $V$                     | 6                                    | mm/s                                  |
-| Physical deposition layer thickness | 0.67                                 | mm                                    |
-| Hatch spacing                       | Not applicable — one track per layer | —                                     |
-| Absorption efficiency               | 0.4                                  | Dimensionless                         |
-| Heat-source model                   | Goldak double ellipsoid              | Volumetric heat source                |
-| Heat-source radii                   | 0.8 / 0.8 / 0.8 / 0.8                | mm; front / rear / transverse / depth |
-| Cooling interval                    | 200                                  | s after each deposited layer          |
+| Parameter                                                         | Value                 | Unit |
+| ----------------------------------------------------------------- | --------------------- | ---- |
+| Manufacturing process                                             | DED                   | —    |
+| Material (deposit / substrate)                                    | IN718 / Ti-6Al-4V     | —    |
+| Heat-source power, $P$                                            | 600                   | W    |
+| Scan speed, $V$                                                   | 6                     | mm/s |
+| Physical deposition layer thickness                               | 0.67                  | mm   |
+| Hatch spacing                                                     | N/A                   | —    |
+| Absorption efficiency                                             | 0.4                   | —    |
+| Goldak heat-source dimensions (front / rear / transverse / depth) | 0.8 / 0.8 / 0.8 / 0.8 | mm   |
+| Cooling interval (after each deposited layer)                     | 200                   | s    |
 
 _Printing and heat-source values describe the supplied simulation configuration._
 
 ### Simulation parameters
 
-| Parameter                               | Value / setting                                                                                                    | Unit / description                      |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
-| Initial / ambient temperature           | 25 / 25                                                                                                            | °C                                      |
-| High-temperature material model         | Complete temperature-dependent tables below; linear interpolation with endpoint holds                              | —                                       |
-| IN718 properties evaluated at 20 °C     | $E$ = 156.3 GPa; $\nu$ = 0.3; $\sigma_{\mathrm{y}}$ = 308.9 MPa; $H$ = 1 GPa; $\sigma_{\mathrm{max}}$ = 370.68 MPa | From the same thermal–mechanical tables |
-| Ti-6Al-4V properties evaluated at 20 °C | $E$ = 125 GPa; $\nu$ = 0.34; $\sigma_{\mathrm{y}}$ = 955 MPa; $H$ = 0 GPa; $\sigma_{\mathrm{max}}$ = 1146 MPa      | From the same thermal–mechanical tables |
-| Identified inherent strain              | Not used — this case uses full thermal–mechanical analysis                                                         | —                                       |
-| Thermal strain reference temperature    | 20                                                                                                                 | °C                                      |
-| Thermal strain cutoff                   | No explicit cutoff configured                                                                                      | —                                       |
+| Parameter                            | Value / setting                                                                       | Unit              |
+| ------------------------------------ | ------------------------------------------------------------------------------------- | ----------------- |
+| Initial / ambient temperature        | 25 / 25                                                                               | °C                |
+| High-temperature material model      | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                 |
+| IN718 elastic parameters (20 °C)     | $E$ = 156.3<br>$\nu$ = 0.3                                                            | GPa<br>—          |
+| IN718 plastic parameters (20 °C)     | $\sigma_{\mathrm{y}}$ = 308.9<br>$H$ = 1<br>$\sigma_{\mathrm{max}}$ = 370.68          | MPa<br>GPa<br>MPa |
+| Ti-6Al-4V elastic parameters (20 °C) | $E$ = 125<br>$\nu$ = 0.34                                                             | GPa<br>—          |
+| Ti-6Al-4V plastic parameters (20 °C) | $\sigma_{\mathrm{y}}$ = 955<br>$H$ = 0<br>$\sigma_{\mathrm{max}}$ = 1146              | MPa<br>GPa<br>MPa |
+| Identified inherent strain           | Not used — this case uses full thermal–mechanical analysis                            | —                 |
+| Thermal strain reference temperature | 20                                                                                    | °C                |
+| Thermal strain cutoff                | No explicit cutoff configured                                                         | —                 |
 
 The supplied drawing shows a 30 mm substrate width; the saved FE mesh spans 10 mm across $Y$. The result below uses the saved mesh.
 
@@ -89,13 +90,13 @@ Every configured temperature node is listed below, with exact conversion from K 
 
 #### IN718 — upper region
 
-| Parameter                              | Value  | Unit          |
-| -------------------------------------- | ------ | ------------- |
-| Density, $\rho$                        | 8190   | kg/m³         |
-| Latent heat, $L$                       | 286000 | J/kg          |
-| Solidus temperature, $T_{\mathrm{s}}$  | 1533   | K             |
-| Liquidus temperature, $T_{\mathrm{l}}$ | 1609   | K             |
-| Maximum yield factor                   | 1.2    | Dimensionless |
+| Parameter                              | Value  | Unit  |
+| -------------------------------------- | ------ | ----- |
+| Density, $\rho$                        | 8190   | kg/m³ |
+| Latent heat, $L$                       | 286000 | J/kg  |
+| Solidus temperature, $T_{\mathrm{s}}$  | 1533   | K     |
+| Liquidus temperature, $T_{\mathrm{l}}$ | 1609   | K     |
+| Maximum yield factor                   | 1.2    | —     |
 
 ##### Thermal conductivity, $k$
 
@@ -167,20 +168,20 @@ Every configured temperature node is listed below, with exact conversion from K 
 
 ##### Poisson ratio, $\nu$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (Dimensionless) |
-| --------------------- | -------------------- | ------------------------------------ |
-| 26.85                 | 300                  | 0.3                                  |
-| 93.85                 | 367                  | 0.3                                  |
-| 204.85                | 478                  | 0.3                                  |
-| 315.85                | 589                  | 0.3                                  |
-| 426.85                | 700                  | 0.3                                  |
-| 537.85                | 811                  | 0.3                                  |
-| 649.85                | 923                  | 0.3                                  |
-| 759.85                | 1033                 | 0.3                                  |
-| 870.85                | 1144                 | 0.3                                  |
-| 981.85                | 1255                 | 0.3                                  |
-| 1093.85               | 1367                 | 0.3                                  |
-| 1398.85               | 1672                 | 0.3                                  |
+| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (—) |
+| --------------------- | -------------------- | ------------------------ |
+| 26.85                 | 300                  | 0.3                      |
+| 93.85                 | 367                  | 0.3                      |
+| 204.85                | 478                  | 0.3                      |
+| 315.85                | 589                  | 0.3                      |
+| 426.85                | 700                  | 0.3                      |
+| 537.85                | 811                  | 0.3                      |
+| 649.85                | 923                  | 0.3                      |
+| 759.85                | 1033                 | 0.3                      |
+| 870.85                | 1144                 | 0.3                      |
+| 981.85                | 1255                 | 0.3                      |
+| 1093.85               | 1367                 | 0.3                      |
+| 1398.85               | 1672                 | 0.3                      |
 
 ##### Initial yield stress, $\sigma_{\mathrm{y}}$
 
@@ -206,13 +207,13 @@ Maximum yield stress, $\sigma_{\mathrm{max}}$, is $1.2\,\sigma_{\mathrm{y}}$ at 
 
 #### Ti-6Al-4V — lower region
 
-| Parameter                              | Value  | Unit          |
-| -------------------------------------- | ------ | ------------- |
-| Density, $\rho$                        | 4400   | kg/m³         |
-| Latent heat, $L$                       | 270000 | J/kg          |
-| Solidus temperature, $T_{\mathrm{s}}$  | 1878   | K             |
-| Liquidus temperature, $T_{\mathrm{l}}$ | 1928   | K             |
-| Maximum yield factor                   | 1.2    | Dimensionless |
+| Parameter                              | Value  | Unit  |
+| -------------------------------------- | ------ | ----- |
+| Density, $\rho$                        | 4400   | kg/m³ |
+| Latent heat, $L$                       | 270000 | J/kg  |
+| Solidus temperature, $T_{\mathrm{s}}$  | 1878   | K     |
+| Liquidus temperature, $T_{\mathrm{l}}$ | 1928   | K     |
+| Maximum yield factor                   | 1.2    | —     |
 
 ##### Thermal conductivity, $k$
 
@@ -298,20 +299,20 @@ Maximum yield stress, $\sigma_{\mathrm{max}}$, is $1.2\,\sigma_{\mathrm{y}}$ at 
 
 ##### Poisson ratio, $\nu$
 
-| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (Dimensionless) |
-| --------------------- | -------------------- | ------------------------------------ |
-| 26.85                 | 300                  | 0.34                                 |
-| 259.85                | 533                  | 0.34                                 |
-| 315.85                | 589                  | 0.34                                 |
-| 426.85                | 700                  | 0.34                                 |
-| 481.85                | 755                  | 0.34                                 |
-| 537.85                | 811                  | 0.34                                 |
-| 649.85                | 923                  | 0.34                                 |
-| 799.85                | 1073                 | 0.34                                 |
-| 824.85                | 1098                 | 0.34                                 |
-| 849.85                | 1123                 | 0.34                                 |
-| 1299.85               | 1573                 | 0.34                                 |
-| 1599.85               | 1873                 | 0.34                                 |
+| Temperature, $T$ (°C) | Temperature, $T$ (K) | Poisson ratio, $\nu$ (—) |
+| --------------------- | -------------------- | ------------------------ |
+| 26.85                 | 300                  | 0.34                     |
+| 259.85                | 533                  | 0.34                     |
+| 315.85                | 589                  | 0.34                     |
+| 426.85                | 700                  | 0.34                     |
+| 481.85                | 755                  | 0.34                     |
+| 537.85                | 811                  | 0.34                     |
+| 649.85                | 923                  | 0.34                     |
+| 799.85                | 1073                 | 0.34                     |
+| 824.85                | 1098                 | 0.34                     |
+| 849.85                | 1123                 | 0.34                     |
+| 1299.85               | 1573                 | 0.34                     |
+| 1599.85               | 1873                 | 0.34                     |
 
 ##### Initial yield stress, $\sigma_{\mathrm{y}}$
 
