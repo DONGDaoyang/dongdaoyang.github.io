@@ -69,17 +69,17 @@ _Printing and heat-source values describe the current simulation configuration._
 
 ### Simulation parameters
 
-| Parameter                                            | Value / setting                                                                                     | Unit        |
-| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------- |
-| Initial / ambient temperature                        | 25 / 25                                                                                             | °C          |
-| High-temperature material model                      | Full temperature-dependent tables below; linear interpolation with endpoint holds                   | —           |
-| Room-temperature material model                      | Constant properties at 20 °C: E = 208 GPa, ν = 0.277, σᵧ = 725 MPa, H = 0.75714 GPa, σₘₐₓ = 990 MPa | —           |
-| Material settings for the saved local identification | E = 156.3 GPa, ν = 0.300, σᵧ = 308.9 MPa, H = 1.000 GPa, σₘₐₓ = 370.68 MPa                          | —           |
-| Identified inherent strain, ε*ₓₓ = ε*ᵧᵧ              | −3.655369                                                                                           | ‰           |
-| Identified inherent strain, ε\*zz                    | +9.504349                                                                                           | ‰           |
-| Inherent strain in the archived macro configuration  | ε*ₓₓ = ε*ᵧᵧ = −2.867190; ε\*zz = +17.244139                                                         | ‰           |
-| Macro layer activation                               | 25 × 0.5; an additional 50-layer run is shown for warpage                                           | Layers × mm |
-| Macro constraints and release                        | Fixed substrate bottom; release the interface over X = 0–55 mm                                      | —           |
+| Parameter                                                                       | Value / setting                                                                                                                   | Unit        |
+| ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| Initial / ambient temperature                                                   | 25 / 25                                                                                                                           | °C          |
+| High-temperature material model                                                 | Full temperature-dependent tables below; linear interpolation with endpoint holds                                                 | —           |
+| Room-temperature material model                                                 | Constant properties at 20 °C: E = 208 GPa, ν = 0.277, $\sigma_{\mathrm{y}}$ = 725 MPa, H = 0.75714 GPa, $\sigma_{\max}$ = 990 MPa | —           |
+| Material settings for the saved local identification                            | E = 156.3 GPa, ν = 0.300, $\sigma_{\mathrm{y}}$ = 308.9 MPa, H = 1.000 GPa, $\sigma_{\max}$ = 370.68 MPa                          | —           |
+| Identified inherent strain, $\varepsilon_{xx}^{\ast} = \varepsilon_{yy}^{\ast}$ | −3.655369                                                                                                                         | ‰           |
+| Identified inherent strain, $\varepsilon_{zz}$                                  | +9.504349                                                                                                                         | ‰           |
+| Inherent strain in the archived macro configuration                             | $\varepsilon_{xx}^{\ast} = \varepsilon_{yy}^{\ast} = −2.867190\,;\quad \varepsilon_{zz} = +17.244139$                             | ‰           |
+| Macro layer activation                                                          | 25 × 0.5; an additional 50-layer run is shown for warpage                                                                         | Layers × mm |
+| Macro constraints and release                                                   | Fixed substrate bottom; release the interface over X = 0–55 mm                                                                    | —           |
 
 _The selected identification and archived macro figures use different parameter versions; the existing figures are retained from the saved outputs._
 

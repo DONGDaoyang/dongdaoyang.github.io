@@ -70,14 +70,14 @@ _Printing and heat-source values describe the supplied simulation configuration.
 
 ### Simulation parameters
 
-| Parameter                            | Value / setting                                                                       | Unit / description                      |
-| ------------------------------------ | ------------------------------------------------------------------------------------- | --------------------------------------- |
-| Initial / ambient temperature        | 25 / 25                                                                               | °C                                      |
-| High-temperature material model      | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                                       |
-| S355 properties evaluated at 20 °C   | E = 206 GPa; ν = 0.29; σᵧ = 450 MPa; H = 7 GPa; σₘₐₓ = 520 MPa                        | From the same thermal–mechanical tables |
-| Identified inherent strain           | Not used — this case uses full thermal–mechanical analysis                            | —                                       |
-| Thermal strain reference temperature | 20                                                                                    | °C                                      |
-| Thermal strain cutoff                | No explicit cutoff configured                                                         | —                                       |
+| Parameter                            | Value / setting                                                                              | Unit / description                      |
+| ------------------------------------ | -------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Initial / ambient temperature        | 25 / 25                                                                                      | °C                                      |
+| High-temperature material model      | Complete temperature-dependent tables below; linear interpolation with endpoint holds        | —                                       |
+| S355 properties evaluated at 20 °C   | E = 206 GPa; ν = 0.29; $\sigma_{\mathrm{y}}$ = 450 MPa; H = 7 GPa; $\sigma_{\max}$ = 520 MPa | From the same thermal–mechanical tables |
+| Identified inherent strain           | Not used — this case uses full thermal–mechanical analysis                                   | —                                       |
+| Thermal strain reference temperature | 20                                                                                           | °C                                      |
+| Thermal strain cutoff                | No explicit cutoff configured                                                                | —                                       |
 
 The material grade is S355. The supplied configuration identifies this material as `thin_wall_steel`.
 

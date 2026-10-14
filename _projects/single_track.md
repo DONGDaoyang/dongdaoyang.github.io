@@ -70,15 +70,15 @@ _Printing and heat-source values describe the supplied simulation configuration.
 
 ### Simulation parameters
 
-| Parameter                               | Value / setting                                                                       | Unit / description                      |
-| --------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------- |
-| Initial / ambient temperature           | 25 / 25                                                                               | °C                                      |
-| High-temperature material model         | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                                       |
-| IN718 properties evaluated at 20 °C     | E = 156.3 GPa; ν = 0.3; σᵧ = 308.9 MPa; H = 1 GPa; σₘₐₓ = 370.68 MPa                  | From the same thermal–mechanical tables |
-| Ti-6Al-4V properties evaluated at 20 °C | E = 125 GPa; ν = 0.34; σᵧ = 955 MPa; H = 0 GPa; σₘₐₓ = 1146 MPa                       | From the same thermal–mechanical tables |
-| Identified inherent strain              | Not used — this case uses full thermal–mechanical analysis                            | —                                       |
-| Thermal strain reference temperature    | 20                                                                                    | °C                                      |
-| Thermal strain cutoff                   | No explicit cutoff configured                                                         | —                                       |
+| Parameter                               | Value / setting                                                                                    | Unit / description                      |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Initial / ambient temperature           | 25 / 25                                                                                            | °C                                      |
+| High-temperature material model         | Complete temperature-dependent tables below; linear interpolation with endpoint holds              | —                                       |
+| IN718 properties evaluated at 20 °C     | E = 156.3 GPa; ν = 0.3; $\sigma_{\mathrm{y}}$ = 308.9 MPa; H = 1 GPa; $\sigma_{\max}$ = 370.68 MPa | From the same thermal–mechanical tables |
+| Ti-6Al-4V properties evaluated at 20 °C | E = 125 GPa; ν = 0.34; $\sigma_{\mathrm{y}}$ = 955 MPa; H = 0 GPa; $\sigma_{\max}$ = 1146 MPa      | From the same thermal–mechanical tables |
+| Identified inherent strain              | Not used — this case uses full thermal–mechanical analysis                                         | —                                       |
+| Thermal strain reference temperature    | 20                                                                                                 | °C                                      |
+| Thermal strain cutoff                   | No explicit cutoff configured                                                                      | —                                       |
 
 The supplied drawing shows a 30 mm substrate width; the saved FE mesh spans 10 mm across Y. The result below uses the saved mesh.
 
@@ -370,5 +370,7 @@ _Figure 2. Von Mises stress at Y = 0 mm._
 </div>
 
 ---
+
+**Original article:** Liao, S., Golgoon, A., Mozaffar, M., Cao, J. (2023). Efficient GPU-accelerated thermomechanical solver for residual stress prediction in additive manufacturing. _Computational Mechanics_, **71**, 879–893. [https://doi.org/10.1007/s00466-023-02273-3](https://doi.org/10.1007/s00466-023-02273-3).
 
 **Data sources:** Supplied simulation inputs and saved solver outputs. Complete physical settings and temperature-dependent values are available in the YAML, JSON, and CSV downloads above.

@@ -70,18 +70,18 @@ _Printing and heat-source values describe the supplied simulation configuration.
 
 ### Simulation parameters
 
-| Parameter                                            | Value / setting                                                                       | Unit / description  |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------- |
-| Initial / ambient temperature                        | 25 / 25                                                                               | °C                  |
-| High-temperature material model                      | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                   |
-| Room-temperature macro material model                | E = 114.58 GPa; ν = 0.3; σᵧ = 1151 MPa; H = 1.8139 GPa; σₘₐₓ = 1310 MPa               | Constant properties |
-| Latest identified inherent strain, ε*xx = ε*yy       | -2.81975284744                                                                        | ‰                   |
-| Latest identified inherent strain, ε\*zz             | 2.87907102926                                                                         | ‰                   |
-| Inherent strain in the displayed archived comparison | ε*xx = ε*yy = -2.8197511106; ε\*zz = 2.87906875325                                    | ‰                   |
-| Macro layer activation                               | 36 × 0.25                                                                             | Layers × mm         |
-| Macro constraints and release                        | macro fixed plane Z = 0 mm; no macro release                                          | —                   |
-| Thermal strain reference temperature                 | 25                                                                                    | °C                  |
-| Thermal strain cutoff                                | solidus                                                                               | —                   |
+| Parameter                                                                              | Value / setting                                                                                              | Unit / description  |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------- |
+| Initial / ambient temperature                                                          | 25 / 25                                                                                                      | °C                  |
+| High-temperature material model                                                        | Complete temperature-dependent tables below; linear interpolation with endpoint holds                        | —                   |
+| Room-temperature macro material model                                                  | E = 114.58 GPa; ν = 0.3; $\sigma_{\mathrm{y}}$ = 1151 MPa; H = 1.8139 GPa; $\sigma_{\max}$ = 1310 MPa        | Constant properties |
+| Latest identified inherent strain, $\varepsilon_{xx}^{\ast} = \varepsilon_{yy}^{\ast}$ | -2.81975284744                                                                                               | ‰                   |
+| Latest identified inherent strain, $\varepsilon_{zz}$                                  | 2.87907102926                                                                                                | ‰                   |
+| Inherent strain in the displayed archived comparison                                   | $\varepsilon_{xx}^{\ast} = \varepsilon_{yy}^{\ast} = -2.8197511106\,;\quad \varepsilon_{zz} = 2.87906875325$ | ‰                   |
+| Macro layer activation                                                                 | 36 × 0.25                                                                                                    | Layers × mm         |
+| Macro constraints and release                                                          | macro fixed plane Z = 0 mm; no macro release                                                                 | —                   |
+| Thermal strain reference temperature                                                   | 25                                                                                                           | °C                  |
+| Thermal strain cutoff                                                                  | solidus                                                                                                      | —                   |
 
 The physical print layer is 30 µm. The 250 µm layer pitch used in the macro model is a separate coarse activation setting.
 
@@ -282,5 +282,7 @@ Additional profiles: [3.75 mm, YY](/assets/img/cases/bridge/y3p75.png) · [7.75 
 </div>
 
 ---
+
+**Original article:** Ganeriwala, R.K., Strantza, M., King, W.E., Clausen, B., Phan, T.Q., Levine, L.E., Brown, D.W., Hodge, N.E. (2019). Evaluation of a thermomechanical model for prediction of residual stress during laser powder bed fusion of Ti-6Al-4V. _Additive Manufacturing_, **27**, 489–502. [https://doi.org/10.1016/j.addma.2019.03.034](https://doi.org/10.1016/j.addma.2019.03.034).
 
 **Data sources:** Supplied simulation inputs and saved solver outputs. Complete physical settings and temperature-dependent values are available in the YAML, JSON, and CSV downloads above.
