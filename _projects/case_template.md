@@ -55,31 +55,31 @@ Describe the geometry, material, printing or loading conditions, initial state, 
 
 ### Printing parameters
 
-| Parameter                                   | Value          | Unit / source           |
-| ------------------------------------------- | -------------- | ----------------------- |
-| Process and material                        | To be supplied | Configuration / article |
-| Power, scan speed, physical layer thickness | To be supplied | W, mm/s, µm             |
-| Hatch spacing and heat-source dimensions    | To be supplied | µm                      |
+| Parameter                                             | Value          | Unit / source           |
+| ----------------------------------------------------- | -------------- | ----------------------- |
+| Process and material                                  | To be supplied | Configuration / article |
+| Power, $P$; scan speed, $V$; physical layer thickness | To be supplied | W, mm/s, µm             |
+| Hatch spacing and heat-source dimensions              | To be supplied | µm                      |
 
 ### Simulation parameters
 
-| Parameter                           | Value / setting | Unit / source                       |
-| ----------------------------------- | --------------- | ----------------------------------- |
-| High-temperature material model     | To be supplied  | Full temperature-dependent tables   |
-| Room-temperature material model     | To be supplied  | Constant or interpolated properties |
-| Identified inherent strain, if used | To be supplied  | Dimensionless / ‰                   |
-| Macro layer activation, if used     | To be supplied  | Layers × mm                         |
+| Parameter                                                                                                                              | Value / setting | Unit / source                       |
+| -------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------------------------- |
+| High-temperature material model                                                                                                        | To be supplied  | Full temperature-dependent tables   |
+| Room-temperature material model                                                                                                        | To be supplied  | Constant or interpolated properties |
+| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast}$, $\varepsilon_{\mathrm{yy}}^{\ast}$, $\varepsilon_{\mathrm{zz}}^{\ast}$ | To be supplied  | Dimensionless / ‰                   |
+| Macro layer activation, if used                                                                                                        | To be supplied  | Layers × mm                         |
 
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>
 
-List only material constants and complete temperature-dependent material tables here. Keep process settings, ambient temperature, thermal boundaries, heat-source inputs and numerical controls in the printing/simulation summary tables and full configuration downloads. Preserve every temperature node and provide matching YAML, JSON and CSV downloads.
+List only material constants and complete temperature-dependent material tables here. Keep process settings, ambient temperature, thermal boundaries, heat-source inputs and numerical controls in the printing/simulation summary tables and full configuration downloads. Preserve every temperature node and provide matching YAML, JSON and CSV downloads. Label material properties with $C_{\mathrm{p}}$, $k$, $\alpha$, $E$, $\nu$, $\sigma_{\mathrm{y}}$, $H$, and $\sigma_{\mathrm{max}}$. Use mathematical notation for variables wherever they occur, with upright subscripts. Display inherent strains with superscript stars and three decimal places; preserve full precision in the downloadable data.
 
 </details>
 
 ## Results
 
-Keep figure captions short: name the result, direction and location, for example “X-direction stress at X = 7.5 mm.” State calibration/validation scope and parameter versions in the surrounding text or downloadable metadata.
+Keep figure captions short: name the result, direction and location, for example “$X$-direction stress at $X$ = 7.5 mm.” State calibration/validation scope and parameter versions in the surrounding text or downloadable metadata.
 
 <!-- Example result image:
 <div class="rsh-case-figures" markdown="1">
@@ -90,7 +90,7 @@ Keep figure captions short: name the result, direction and location, for example
 
 ![Describe the stress component, units, and comparison.](/assets/img/cases/your-case/stress.png)
 
-_Figure 2. X-direction stress at X = 7.5 mm._
+_Figure 2. $X$-direction stress at $X$ = 7.5 mm._
 
 </div>
 
