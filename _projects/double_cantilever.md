@@ -69,23 +69,20 @@ _Printing and heat-source values describe the supplied simulation configuration.
 
 ### Simulation parameters
 
-| Parameter                                                                                                | Value / setting                                                                                                                  | Unit              |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| Ambient temperature                                                                                      | 25                                                                                                                               | °C                |
-| High-temperature material model                                                                          | Complete temperature-dependent tables below; linear interpolation with endpoint holds                                            | —                 |
-| Macro elastic parameters (room temperature, constant)                                                    | $E$ = 208<br>$\nu$ = 0.3                                                                                                         | GPa<br>—          |
-| Macro plastic parameters (room temperature, constant)                                                    | $\sigma_{\mathrm{y}}$ = 1172<br>$H$ = 0<br>$\sigma_{\mathrm{max}}$ = 1172                                                        | MPa<br>GPa<br>MPa |
-| Latest identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | -4.339                                                                                                                           | ‰                 |
-| Latest identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | 19.647                                                                                                                           | ‰                 |
-| Inherent strain in the displayed archived comparison                                                     | $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast} = -4.672\,;\quad \varepsilon_{\mathrm{zz}}^{\ast} = 15.520$ | ‰                 |
-| Macro layer activation                                                                                   | 36 × 0.515                                                                                                                       | Layers × mm       |
-| Macro constraints and release                                                                            | macro fixed plane $Z$ = 10 mm; release left and right interfaces at $Z$ = 32.2 mm                                                | —                 |
-| Thermal strain reference temperature                                                                     | 25                                                                                                                               | °C                |
-| Thermal strain cutoff                                                                                    | solidus                                                                                                                          | —                 |
+| Parameter                                                                                         | Value / setting                                                                       | Unit              |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------- |
+| Ambient temperature                                                                               | 25                                                                                    | °C                |
+| High-temperature material model                                                                   | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                 |
+| Macro elastic parameters (room temperature, constant)                                             | $E$ = 208<br>$\nu$ = 0.3                                                              | GPa<br>—          |
+| Macro plastic parameters (room temperature, constant)                                             | $\sigma_{\mathrm{y}}$ = 1172<br>$H$ = 0<br>$\sigma_{\mathrm{max}}$ = 1172             | MPa<br>GPa<br>MPa |
+| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | -4.339                                                                                | ‰                 |
+| Identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | 19.647                                                                                | ‰                 |
+| Macro layer activation                                                                            | 36 × 0.515                                                                            | Layers × mm       |
+| Macro constraints and release                                                                     | macro fixed plane $Z$ = 10 mm; release left and right interfaces at $Z$ = 32.2 mm     | —                 |
+| Thermal strain reference temperature                                                              | 25                                                                                    | °C                |
+| Thermal strain cutoff                                                                             | solidus                                                                               | —                 |
 
 This page uses the IN718 dc case. The separate Ti-6Al-4V dc2 case is not combined with this geometry. The physical print layer is 40 µm; macro activation uses a 515 µm pitch.
-
-The latest saved identification and the displayed archived comparison are listed separately. The plotted curves and their reference frames are retained from the saved figures.
 
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>

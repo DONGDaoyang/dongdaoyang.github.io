@@ -68,21 +68,18 @@ _Printing and heat-source values describe the current simulation configuration._
 
 ### Simulation parameters
 
-| Parameter                                                                                         | Value / setting                                                                                                                   | Unit              |
-| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| Ambient temperature                                                                               | 25                                                                                                                                | °C                |
-| High-temperature material model                                                                   | Full temperature-dependent tables below; linear interpolation with endpoint holds                                                 | —                 |
-| Elastic parameters (20 °C, constant)                                                              | $E$ = 208<br>$\nu$ = 0.277                                                                                                        | GPa<br>—          |
-| Plastic parameters (20 °C, constant)                                                              | $\sigma_{\mathrm{y}}$ = 725<br>$H$ = 0.75714<br>$\sigma_{\mathrm{max}}$ = 990                                                     | MPa<br>GPa<br>MPa |
-| Elastic parameters (saved local identification)                                                   | $E$ = 156.3<br>$\nu$ = 0.300                                                                                                      | GPa<br>—          |
-| Plastic parameters (saved local identification)                                                   | $\sigma_{\mathrm{y}}$ = 308.9<br>$H$ = 1.000<br>$\sigma_{\mathrm{max}}$ = 370.68                                                  | MPa<br>GPa<br>MPa |
-| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | −3.655                                                                                                                            | ‰                 |
-| Identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | +9.504                                                                                                                            | ‰                 |
-| Inherent strain in the archived macro configuration                                               | $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast} = −2.867\,;\quad \varepsilon_{\mathrm{zz}}^{\ast} = +17.244$ | ‰                 |
-| Macro layer activation                                                                            | 25 × 0.5; an additional 50-layer run is shown for warpage                                                                         | Layers × mm       |
-| Macro constraints and release                                                                     | Fixed substrate bottom; release the interface over $X$ = 0–55 mm                                                                  | —                 |
-
-_The selected identification and archived macro figures use different parameter versions; the existing figures are retained from the saved outputs._
+| Parameter                                                                                         | Value / setting                                                                   | Unit              |
+| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ----------------- |
+| Ambient temperature                                                                               | 25                                                                                | °C                |
+| High-temperature material model                                                                   | Full temperature-dependent tables below; linear interpolation with endpoint holds | —                 |
+| Elastic parameters (20 °C, constant)                                                              | $E$ = 208<br>$\nu$ = 0.277                                                        | GPa<br>—          |
+| Plastic parameters (20 °C, constant)                                                              | $\sigma_{\mathrm{y}}$ = 725<br>$H$ = 0.75714<br>$\sigma_{\mathrm{max}}$ = 990     | MPa<br>GPa<br>MPa |
+| Elastic parameters (saved local identification)                                                   | $E$ = 156.3<br>$\nu$ = 0.300                                                      | GPa<br>—          |
+| Plastic parameters (saved local identification)                                                   | $\sigma_{\mathrm{y}}$ = 308.9<br>$H$ = 1.000<br>$\sigma_{\mathrm{max}}$ = 370.68  | MPa<br>GPa<br>MPa |
+| Identified inherent strain, $\varepsilon_{\mathrm{xx}}^{\ast} = \varepsilon_{\mathrm{yy}}^{\ast}$ | −3.655                                                                            | ‰                 |
+| Identified inherent strain, $\varepsilon_{\mathrm{zz}}^{\ast}$                                    | +9.504                                                                            | ‰                 |
+| Macro layer activation                                                                            | 25 × 0.5; an additional 50-layer run is shown for warpage                         | Layers × mm       |
+| Macro constraints and release                                                                     | Fixed substrate bottom; release the interface over $X$ = 0–55 mm                  | —                 |
 
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>

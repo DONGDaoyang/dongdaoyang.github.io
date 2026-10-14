@@ -76,7 +76,7 @@ Keep the last column for units (use — for dimensionless values). Put qualifier
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>
 
-List only material constants and complete temperature-dependent material tables here. Keep process settings, ambient temperature, thermal boundaries, heat-source inputs and numerical controls in the printing/simulation summary tables and full configuration downloads. Preserve every temperature node and provide matching YAML, JSON and CSV downloads. Label material properties with $C_{\mathrm{p}}$, $k$, $\alpha$, $E$, $\nu$, $\sigma_{\mathrm{y}}$, $H$, and $\sigma_{\mathrm{max}}$. Use mathematical notation for variables wherever they occur, with upright subscripts. Display inherent strains with superscript stars and three decimal places; preserve full precision in the downloadable data.
+List only material constants and complete temperature-dependent material tables here. Keep process settings, ambient temperature, thermal boundaries, heat-source inputs and numerical controls in the printing/simulation summary tables and full configuration downloads. Preserve every temperature node and provide matching YAML, JSON and CSV downloads. Label material properties with $C_{\mathrm{p}}$, $k$, $\alpha$, $E$, $\nu$, $\sigma_{\mathrm{y}}$, $H$, and $\sigma_{\mathrm{max}}$. Use mathematical notation for variables wherever they occur, with upright subscripts. Display only the current identified inherent strains in one or two compact rows, without “Latest” labels or archived comparison values. Use superscript stars and three decimal places; preserve full precision and result provenance in the downloadable data.
 
 </details>
 
