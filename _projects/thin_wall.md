@@ -71,7 +71,7 @@ _Printing and heat-source values describe the supplied simulation configuration.
 
 | Parameter                            | Value / setting                                                                       | Unit              |
 | ------------------------------------ | ------------------------------------------------------------------------------------- | ----------------- |
-| Initial / ambient temperature        | 25 / 25                                                                               | °C                |
+| Ambient temperature                  | 25                                                                                    | °C                |
 | High-temperature material model      | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                 |
 | S355 elastic parameters (20 °C)      | $E$ = 206<br>$\nu$ = 0.29                                                             | GPa<br>—          |
 | S355 plastic parameters (20 °C)      | $\sigma_{\mathrm{y}}$ = 450<br>$H$ = 7<br>$\sigma_{\mathrm{max}}$ = 520               | MPa<br>GPa<br>MPa |

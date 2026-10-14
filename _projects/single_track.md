@@ -71,7 +71,7 @@ _Printing and heat-source values describe the supplied simulation configuration.
 
 | Parameter                            | Value / setting                                                                       | Unit              |
 | ------------------------------------ | ------------------------------------------------------------------------------------- | ----------------- |
-| Initial / ambient temperature        | 25 / 25                                                                               | °C                |
+| Ambient temperature                  | 25                                                                                    | °C                |
 | High-temperature material model      | Complete temperature-dependent tables below; linear interpolation with endpoint holds | —                 |
 | IN718 elastic parameters (20 °C)     | $E$ = 156.3<br>$\nu$ = 0.3                                                            | GPa<br>—          |
 | IN718 plastic parameters (20 °C)     | $\sigma_{\mathrm{y}}$ = 308.9<br>$H$ = 1<br>$\sigma_{\mathrm{max}}$ = 370.68          | MPa<br>GPa<br>MPa |
