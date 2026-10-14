@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="440" viewBox="0 0 1600 440" fill="none">
+  <title>Layered additive manufacturing build and mesh</title>
+  <desc>Decorative triangular mesh, a build plate and a comb-shaped printed component. No numerical stress values are represented.</desc>
+  <defs>
+    <linearGradient id="plate" x1="450" y1="160" x2="1320" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9CADA" />
+      <stop offset="1" stop-color="#7C9CAC" />
+    </linearGradient>
+    <linearGradient id="layer" x1="780" y1="150" x2="1300" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#87A8BD" />
+      <stop offset="0.6" stop-color="#A5C3C9" />
+      <stop offset="1" stop-color="#E7AA76" />
+    </linearGradient>
+    <pattern id="mesh" width="112" height="96" patternUnits="userSpaceOnUse">
+      <path d="M0 0h112L56 96H0Zm0 0L56 96 112 0v96H56" stroke="#7F9CB0" stroke-width="1" stroke-opacity="0.4" />
+      <path d="M0 0h112L56 96Z" fill="#95B8CE" fill-opacity="0.12" />
+    </pattern>
+    <pattern id="deposition" width="16" height="9" patternUnits="userSpaceOnUse">
+      <path d="M0 8h16" stroke="#537C95" stroke-width="1" stroke-opacity="0.45" />
+    </pattern>
+  </defs>
+  <path d="M0 70 480 10 1600 55v385H0Z" fill="url(#mesh)" />
+  <g transform="translate(100 8)">
+    <path d="m375 300 400-145 685 133-400 145Z" fill="url(#plate)" fill-opacity="0.52" stroke="#7394A8" stroke-width="1.5" />
+    <path d="m375 300 685 133v13L375 313Zm685 133 400-145v13l-400 145Z" fill="#6B8A9A" fill-opacity="0.45" />
+
+    <path d="m435 312.0 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m487 322.1 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m539 332.2 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m591 342.3 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m643 352.4 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m695 362.4 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m747 372.5 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m799 382.6 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m851 392.7 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m903 402.8 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m955 412.9 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m1007 423.0 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <path d="m1059 433.1 350-127" stroke="#63899F" stroke-opacity="0.25" />
+    <g transform="matrix(1 0.195 -0.58 0.28 800 125)">
+      <path
+        d="M0 180V0h68v136h38V0h68v136h38V0h68v136h38V0h68v136h38V0h68v180Z"
+        transform="translate(25 -35)"
+        fill="#8FACBC"
+        fill-opacity="0.5"
+        stroke="#63889F"
+        stroke-width="2"
+      />
+      <path d="m0 0 25-35h68l-25 35Z" fill="#B2CCDA" stroke="#739CB3" stroke-width="1.5" />
+      <path d="m106 0 25-35h68l-25 35Z" fill="#B2CCDA" stroke="#739CB3" stroke-width="1.5" />
+      <path d="m212 0 25-35h68l-25 35Z" fill="#B2CCDA" stroke="#739CB3" stroke-width="1.5" />
+      <path d="m318 0 25-35h68l-25 35Z" fill="#B2CCDA" stroke="#739CB3" stroke-width="1.5" />
+      <path d="m424 0 25-35h68l-25 35Z" fill="#B2CCDA" stroke="#739CB3" stroke-width="1.5" />
+      <path d="M0 180V0h68v136h38V0h68v136h38V0h68v136h38V0h68v136h38V0h68v180Z" fill="url(#layer)" stroke="#63889F" stroke-width="2.5" />
+      <path d="M0 180V0h68v136h38V0h68v136h38V0h68v136h38V0h68v136h38V0h68v180Z" fill="url(#deposition)" />
+      <path d="M0 162h492" stroke="#D89158" stroke-width="3" stroke-opacity="0.7" />
+    </g>
+  </g>
+</svg>

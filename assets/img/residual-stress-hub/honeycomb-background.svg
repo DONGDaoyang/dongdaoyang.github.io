@@ -1,0 +1,1617 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="440" viewBox="0 0 1600 440" fill="none">
+  <title>Metal additively manufactured curved honeycomb</title>
+  <desc>
+    A decorative curved metal thin-wall honeycomb with silver reflective edges, fine deposition layers, without supports. The build plate is only
+    lightly suggested.
+  </desc>
+  <defs>
+    <linearGradient id="skin" x1="350" y1="60" x2="1250" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8496a4" />
+      <stop offset="0.28" stop-color="#d2dce2" />
+      <stop offset="0.43" stop-color="#f3f6f8" />
+      <stop offset="0.62" stop-color="#a0b0bc" />
+      <stop offset="0.82" stop-color="#e0e7eb" />
+      <stop offset="1" stop-color="#879ba9" />
+    </linearGradient>
+    <linearGradient id="metal-wall" x1="400" y1="50" x2="1100" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#536b7c" />
+      <stop offset="0.45" stop-color="#9eafb9" />
+      <stop offset="0.65" stop-color="#667d8d" />
+      <stop offset="1" stop-color="#425d70" />
+    </linearGradient>
+    <pattern id="deposition-layers" width="8" height="2.8" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H8" stroke="#e5edf2" stroke-width=".6" stroke-opacity=".65" />
+      <path d="M0 1.4H8" stroke="#425b6c" stroke-width=".4" stroke-opacity=".3" />
+    </pattern>
+    <pattern id="metal-grain" width="7" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".4" fill="#536b7c" fill-opacity=".24" />
+      <circle cx="4.5" cy="4" r=".4" fill="#fff" fill-opacity=".5" />
+    </pattern>
+  </defs>
+  <path d="m260 347 780 55 320-87M260 352l780 55 320-87" stroke="#86A5B6" stroke-width="1.5" stroke-opacity="0.13" />
+
+  <polygon points="406.63,81.47 381.26,110.67 384.26,121.67 409.63,92.47" fill="url(#metal-wall)" />
+  <polygon points="406.63,81.47 381.26,110.67 384.26,121.67 409.63,92.47" fill="url(#deposition-layers)" />
+  <polygon points="381.26,110.67 333.72,115.81 336.72,126.81 384.26,121.67" fill="url(#metal-wall)" />
+  <polygon points="381.26,110.67 333.72,115.81 336.72,126.81 384.26,121.67" fill="url(#deposition-layers)" />
+  <polygon points="333.72,115.81 311.67,91.72 314.67,102.72 336.72,126.81" fill="url(#metal-wall)" />
+  <polygon points="333.72,115.81 311.67,91.72 314.67,102.72 336.72,126.81" fill="url(#deposition-layers)" />
+  <polygon points="311.67,91.72 333.72,61.97 336.72,72.97 314.67,102.72" fill="url(#metal-wall)" />
+  <polygon points="311.67,91.72 333.72,61.97 336.72,72.97 314.67,102.72" fill="url(#deposition-layers)" />
+  <polygon points="333.72,61.97 381.26,56.84 384.26,67.84 336.72,72.97" fill="url(#metal-wall)" />
+  <polygon points="333.72,61.97 381.26,56.84 384.26,67.84 336.72,72.97" fill="url(#deposition-layers)" />
+  <polygon points="381.26,56.84 406.63,81.47 409.63,92.47 384.26,67.84" fill="url(#metal-wall)" />
+  <polygon points="381.26,56.84 406.63,81.47 409.63,92.47 384.26,67.84" fill="url(#deposition-layers)" />
+  <polygon points="399.89,82.05 378.01,107.46 381.01,118.46 402.89,93.05" fill="url(#metal-wall)" />
+  <polygon points="399.89,82.05 378.01,107.46 381.01,118.46 402.89,93.05" fill="url(#deposition-layers)" />
+  <polygon points="378.01,107.46 336.69,111.92 339.69,122.92 381.01,118.46" fill="url(#metal-wall)" />
+  <polygon points="378.01,107.46 336.69,111.92 339.69,122.92 381.01,118.46" fill="url(#deposition-layers)" />
+  <polygon points="336.69,111.92 317.33,90.96 320.33,101.96 339.69,122.92" fill="url(#metal-wall)" />
+  <polygon points="336.69,111.92 317.33,90.96 320.33,101.96 339.69,122.92" fill="url(#deposition-layers)" />
+  <polygon points="317.33,90.96 336.69,65.14 339.69,76.14 320.33,101.96" fill="url(#metal-wall)" />
+  <polygon points="317.33,90.96 336.69,65.14 339.69,76.14 320.33,101.96" fill="url(#deposition-layers)" />
+  <polygon points="336.69,65.14 378.01,60.68 381.01,71.68 339.69,76.14" fill="url(#metal-wall)" />
+  <polygon points="336.69,65.14 378.01,60.68 381.01,71.68 339.69,76.14" fill="url(#deposition-layers)" />
+  <polygon points="378.01,60.68 399.89,82.05 402.89,93.05 381.01,71.68" fill="url(#metal-wall)" />
+  <polygon points="378.01,60.68 399.89,82.05 402.89,93.05 381.01,71.68" fill="url(#deposition-layers)" />
+  <polygon points="406.63,135.30 381.26,164.50 384.26,175.50 409.63,146.30" fill="url(#metal-wall)" />
+  <polygon points="406.63,135.30 381.26,164.50 384.26,175.50 409.63,146.30" fill="url(#deposition-layers)" />
+  <polygon points="381.26,164.50 333.72,169.64 336.72,180.64 384.26,175.50" fill="url(#metal-wall)" />
+  <polygon points="381.26,164.50 333.72,169.64 336.72,180.64 384.26,175.50" fill="url(#deposition-layers)" />
+  <polygon points="333.72,169.64 311.67,145.55 314.67,156.55 336.72,180.64" fill="url(#metal-wall)" />
+  <polygon points="333.72,169.64 311.67,145.55 314.67,156.55 336.72,180.64" fill="url(#deposition-layers)" />
+  <polygon points="311.67,145.55 333.72,115.81 336.72,126.81 314.67,156.55" fill="url(#metal-wall)" />
+  <polygon points="311.67,145.55 333.72,115.81 336.72,126.81 314.67,156.55" fill="url(#deposition-layers)" />
+  <polygon points="333.72,115.81 381.26,110.67 384.26,121.67 336.72,126.81" fill="url(#metal-wall)" />
+  <polygon points="333.72,115.81 381.26,110.67 384.26,121.67 336.72,126.81" fill="url(#deposition-layers)" />
+  <polygon points="381.26,110.67 406.63,135.30 409.63,146.30 384.26,121.67" fill="url(#metal-wall)" />
+  <polygon points="381.26,110.67 406.63,135.30 409.63,146.30 384.26,121.67" fill="url(#deposition-layers)" />
+  <polygon points="399.89,135.88 378.01,161.29 381.01,172.29 402.89,146.88" fill="url(#metal-wall)" />
+  <polygon points="399.89,135.88 378.01,161.29 381.01,172.29 402.89,146.88" fill="url(#deposition-layers)" />
+  <polygon points="378.01,161.29 336.69,165.75 339.69,176.75 381.01,172.29" fill="url(#metal-wall)" />
+  <polygon points="378.01,161.29 336.69,165.75 339.69,176.75 381.01,172.29" fill="url(#deposition-layers)" />
+  <polygon points="336.69,165.75 317.33,144.80 320.33,155.80 339.69,176.75" fill="url(#metal-wall)" />
+  <polygon points="336.69,165.75 317.33,144.80 320.33,155.80 339.69,176.75" fill="url(#deposition-layers)" />
+  <polygon points="317.33,144.80 336.69,118.97 339.69,129.97 320.33,155.80" fill="url(#metal-wall)" />
+  <polygon points="317.33,144.80 336.69,118.97 339.69,129.97 320.33,155.80" fill="url(#deposition-layers)" />
+  <polygon points="336.69,118.97 378.01,114.51 381.01,125.51 339.69,129.97" fill="url(#metal-wall)" />
+  <polygon points="336.69,118.97 378.01,114.51 381.01,125.51 339.69,129.97" fill="url(#deposition-layers)" />
+  <polygon points="378.01,114.51 399.89,135.88 402.89,146.88 381.01,125.51" fill="url(#metal-wall)" />
+  <polygon points="378.01,114.51 399.89,135.88 402.89,146.88 381.01,125.51" fill="url(#deposition-layers)" />
+  <polygon points="406.63,189.14 381.26,218.34 384.26,229.34 409.63,200.14" fill="url(#metal-wall)" />
+  <polygon points="406.63,189.14 381.26,218.34 384.26,229.34 409.63,200.14" fill="url(#deposition-layers)" />
+  <polygon points="381.26,218.34 333.72,223.47 336.72,234.47 384.26,229.34" fill="url(#metal-wall)" />
+  <polygon points="381.26,218.34 333.72,223.47 336.72,234.47 384.26,229.34" fill="url(#deposition-layers)" />
+  <polygon points="333.72,223.47 311.67,199.39 314.67,210.39 336.72,234.47" fill="url(#metal-wall)" />
+  <polygon points="333.72,223.47 311.67,199.39 314.67,210.39 336.72,234.47" fill="url(#deposition-layers)" />
+  <polygon points="311.67,199.39 333.72,169.64 336.72,180.64 314.67,210.39" fill="url(#metal-wall)" />
+  <polygon points="311.67,199.39 333.72,169.64 336.72,180.64 314.67,210.39" fill="url(#deposition-layers)" />
+  <polygon points="333.72,169.64 381.26,164.50 384.26,175.50 336.72,180.64" fill="url(#metal-wall)" />
+  <polygon points="333.72,169.64 381.26,164.50 384.26,175.50 336.72,180.64" fill="url(#deposition-layers)" />
+  <polygon points="381.26,164.50 406.63,189.14 409.63,200.14 384.26,175.50" fill="url(#metal-wall)" />
+  <polygon points="381.26,164.50 406.63,189.14 409.63,200.14 384.26,175.50" fill="url(#deposition-layers)" />
+  <polygon points="399.89,189.72 378.01,215.12 381.01,226.12 402.89,200.72" fill="url(#metal-wall)" />
+  <polygon points="399.89,189.72 378.01,215.12 381.01,226.12 402.89,200.72" fill="url(#deposition-layers)" />
+  <polygon points="378.01,215.12 336.69,219.59 339.69,230.59 381.01,226.12" fill="url(#metal-wall)" />
+  <polygon points="378.01,215.12 336.69,219.59 339.69,230.59 381.01,226.12" fill="url(#deposition-layers)" />
+  <polygon points="336.69,219.59 317.33,198.63 320.33,209.63 339.69,230.59" fill="url(#metal-wall)" />
+  <polygon points="336.69,219.59 317.33,198.63 320.33,209.63 339.69,230.59" fill="url(#deposition-layers)" />
+  <polygon points="317.33,198.63 336.69,172.80 339.69,183.80 320.33,209.63" fill="url(#metal-wall)" />
+  <polygon points="317.33,198.63 336.69,172.80 339.69,183.80 320.33,209.63" fill="url(#deposition-layers)" />
+  <polygon points="336.69,172.80 378.01,168.34 381.01,179.34 339.69,183.80" fill="url(#metal-wall)" />
+  <polygon points="336.69,172.80 378.01,168.34 381.01,179.34 339.69,183.80" fill="url(#deposition-layers)" />
+  <polygon points="378.01,168.34 399.89,189.72 402.89,200.72 381.01,179.34" fill="url(#metal-wall)" />
+  <polygon points="378.01,168.34 399.89,189.72 402.89,200.72 381.01,179.34" fill="url(#deposition-layers)" />
+  <polygon points="406.63,242.97 381.26,272.17 384.26,283.17 409.63,253.97" fill="url(#metal-wall)" />
+  <polygon points="406.63,242.97 381.26,272.17 384.26,283.17 409.63,253.97" fill="url(#deposition-layers)" />
+  <polygon points="381.26,272.17 333.72,277.30 336.72,288.30 384.26,283.17" fill="url(#metal-wall)" />
+  <polygon points="381.26,272.17 333.72,277.30 336.72,288.30 384.26,283.17" fill="url(#deposition-layers)" />
+  <polygon points="333.72,277.30 311.67,253.22 314.67,264.22 336.72,288.30" fill="url(#metal-wall)" />
+  <polygon points="333.72,277.30 311.67,253.22 314.67,264.22 336.72,288.30" fill="url(#deposition-layers)" />
+  <polygon points="311.67,253.22 333.72,223.47 336.72,234.47 314.67,264.22" fill="url(#metal-wall)" />
+  <polygon points="311.67,253.22 333.72,223.47 336.72,234.47 314.67,264.22" fill="url(#deposition-layers)" />
+  <polygon points="333.72,223.47 381.26,218.34 384.26,229.34 336.72,234.47" fill="url(#metal-wall)" />
+  <polygon points="333.72,223.47 381.26,218.34 384.26,229.34 336.72,234.47" fill="url(#deposition-layers)" />
+  <polygon points="381.26,218.34 406.63,242.97 409.63,253.97 384.26,229.34" fill="url(#metal-wall)" />
+  <polygon points="381.26,218.34 406.63,242.97 409.63,253.97 384.26,229.34" fill="url(#deposition-layers)" />
+  <polygon points="399.89,243.55 378.01,268.96 381.01,279.96 402.89,254.55" fill="url(#metal-wall)" />
+  <polygon points="399.89,243.55 378.01,268.96 381.01,279.96 402.89,254.55" fill="url(#deposition-layers)" />
+  <polygon points="378.01,268.96 336.69,273.42 339.69,284.42 381.01,279.96" fill="url(#metal-wall)" />
+  <polygon points="378.01,268.96 336.69,273.42 339.69,284.42 381.01,279.96" fill="url(#deposition-layers)" />
+  <polygon points="336.69,273.42 317.33,252.46 320.33,263.46 339.69,284.42" fill="url(#metal-wall)" />
+  <polygon points="336.69,273.42 317.33,252.46 320.33,263.46 339.69,284.42" fill="url(#deposition-layers)" />
+  <polygon points="317.33,252.46 336.69,226.64 339.69,237.64 320.33,263.46" fill="url(#metal-wall)" />
+  <polygon points="317.33,252.46 336.69,226.64 339.69,237.64 320.33,263.46" fill="url(#deposition-layers)" />
+  <polygon points="336.69,226.64 378.01,222.17 381.01,233.17 339.69,237.64" fill="url(#metal-wall)" />
+  <polygon points="336.69,226.64 378.01,222.17 381.01,233.17 339.69,237.64" fill="url(#deposition-layers)" />
+  <polygon points="378.01,222.17 399.89,243.55 402.89,254.55 381.01,233.17" fill="url(#metal-wall)" />
+  <polygon points="378.01,222.17 399.89,243.55 402.89,254.55 381.01,233.17" fill="url(#deposition-layers)" />
+  <polygon points="488.37,102.76 460.25,131.34 463.25,142.34 491.37,113.76" fill="url(#metal-wall)" />
+  <polygon points="488.37,102.76 460.25,131.34 463.25,142.34 491.37,113.76" fill="url(#deposition-layers)" />
+  <polygon points="460.25,131.34 406.63,135.30 409.63,146.30 463.25,142.34" fill="url(#metal-wall)" />
+  <polygon points="460.25,131.34 406.63,135.30 409.63,146.30 463.25,142.34" fill="url(#deposition-layers)" />
+  <polygon points="406.63,135.30 381.26,110.67 384.26,121.67 409.63,146.30" fill="url(#metal-wall)" />
+  <polygon points="406.63,135.30 381.26,110.67 384.26,121.67 409.63,146.30" fill="url(#deposition-layers)" />
+  <polygon points="381.26,110.67 406.63,81.47 409.63,92.47 384.26,121.67" fill="url(#metal-wall)" />
+  <polygon points="381.26,110.67 406.63,81.47 409.63,92.47 384.26,121.67" fill="url(#deposition-layers)" />
+  <polygon points="406.63,81.47 460.25,77.51 463.25,88.51 409.63,92.47" fill="url(#metal-wall)" />
+  <polygon points="406.63,81.47 460.25,77.51 463.25,88.51 409.63,92.47" fill="url(#deposition-layers)" />
+  <polygon points="460.25,77.51 488.37,102.76 491.37,113.76 463.25,88.51" fill="url(#metal-wall)" />
+  <polygon points="460.25,77.51 488.37,102.76 491.37,113.76 463.25,88.51" fill="url(#deposition-layers)" />
+  <polygon points="480.93,103.17 456.63,128.05 459.63,139.05 483.93,114.17" fill="url(#metal-wall)" />
+  <polygon points="480.93,103.17 456.63,128.05 459.63,139.05 483.93,114.17" fill="url(#deposition-layers)" />
+  <polygon points="456.63,128.05 410.03,131.49 413.03,142.49 459.63,139.05" fill="url(#metal-wall)" />
+  <polygon points="456.63,128.05 410.03,131.49 413.03,142.49 459.63,139.05" fill="url(#deposition-layers)" />
+  <polygon points="410.03,131.49 387.80,110.05 390.80,121.05 413.03,142.49" fill="url(#metal-wall)" />
+  <polygon points="410.03,131.49 387.80,110.05 390.80,121.05 413.03,142.49" fill="url(#deposition-layers)" />
+  <polygon points="387.80,110.05 410.03,84.71 413.03,95.71 390.80,121.05" fill="url(#metal-wall)" />
+  <polygon points="387.80,110.05 410.03,84.71 413.03,95.71 390.80,121.05" fill="url(#deposition-layers)" />
+  <polygon points="410.03,84.71 456.63,81.27 459.63,92.27 413.03,95.71" fill="url(#metal-wall)" />
+  <polygon points="410.03,84.71 456.63,81.27 459.63,92.27 413.03,95.71" fill="url(#deposition-layers)" />
+  <polygon points="456.63,81.27 480.93,103.17 483.93,114.17 459.63,92.27" fill="url(#metal-wall)" />
+  <polygon points="456.63,81.27 480.93,103.17 483.93,114.17 459.63,92.27" fill="url(#deposition-layers)" />
+  <polygon points="488.37,156.59 460.25,185.17 463.25,196.17 491.37,167.59" fill="url(#metal-wall)" />
+  <polygon points="488.37,156.59 460.25,185.17 463.25,196.17 491.37,167.59" fill="url(#deposition-layers)" />
+  <polygon points="460.25,185.17 406.63,189.14 409.63,200.14 463.25,196.17" fill="url(#metal-wall)" />
+  <polygon points="460.25,185.17 406.63,189.14 409.63,200.14 463.25,196.17" fill="url(#deposition-layers)" />
+  <polygon points="406.63,189.14 381.26,164.50 384.26,175.50 409.63,200.14" fill="url(#metal-wall)" />
+  <polygon points="406.63,189.14 381.26,164.50 384.26,175.50 409.63,200.14" fill="url(#deposition-layers)" />
+  <polygon points="381.26,164.50 406.63,135.30 409.63,146.30 384.26,175.50" fill="url(#metal-wall)" />
+  <polygon points="381.26,164.50 406.63,135.30 409.63,146.30 384.26,175.50" fill="url(#deposition-layers)" />
+  <polygon points="406.63,135.30 460.25,131.34 463.25,142.34 409.63,146.30" fill="url(#metal-wall)" />
+  <polygon points="406.63,135.30 460.25,131.34 463.25,142.34 409.63,146.30" fill="url(#deposition-layers)" />
+  <polygon points="460.25,131.34 488.37,156.59 491.37,167.59 463.25,142.34" fill="url(#metal-wall)" />
+  <polygon points="460.25,131.34 488.37,156.59 491.37,167.59 463.25,142.34" fill="url(#deposition-layers)" />
+  <polygon points="480.93,157.01 456.63,181.88 459.63,192.88 483.93,168.01" fill="url(#metal-wall)" />
+  <polygon points="480.93,157.01 456.63,181.88 459.63,192.88 483.93,168.01" fill="url(#deposition-layers)" />
+  <polygon points="456.63,181.88 410.03,185.33 413.03,196.33 459.63,192.88" fill="url(#metal-wall)" />
+  <polygon points="456.63,181.88 410.03,185.33 413.03,196.33 459.63,192.88" fill="url(#deposition-layers)" />
+  <polygon points="410.03,185.33 387.80,163.89 390.80,174.89 413.03,196.33" fill="url(#metal-wall)" />
+  <polygon points="410.03,185.33 387.80,163.89 390.80,174.89 413.03,196.33" fill="url(#deposition-layers)" />
+  <polygon points="387.80,163.89 410.03,138.54 413.03,149.54 390.80,174.89" fill="url(#metal-wall)" />
+  <polygon points="387.80,163.89 410.03,138.54 413.03,149.54 390.80,174.89" fill="url(#deposition-layers)" />
+  <polygon points="410.03,138.54 456.63,135.10 459.63,146.10 413.03,149.54" fill="url(#metal-wall)" />
+  <polygon points="410.03,138.54 456.63,135.10 459.63,146.10 413.03,149.54" fill="url(#deposition-layers)" />
+  <polygon points="456.63,135.10 480.93,157.01 483.93,168.01 459.63,146.10" fill="url(#metal-wall)" />
+  <polygon points="456.63,135.10 480.93,157.01 483.93,168.01 459.63,146.10" fill="url(#deposition-layers)" />
+  <polygon points="488.37,210.42 460.25,239.00 463.25,250.00 491.37,221.42" fill="url(#metal-wall)" />
+  <polygon points="488.37,210.42 460.25,239.00 463.25,250.00 491.37,221.42" fill="url(#deposition-layers)" />
+  <polygon points="460.25,239.00 406.63,242.97 409.63,253.97 463.25,250.00" fill="url(#metal-wall)" />
+  <polygon points="460.25,239.00 406.63,242.97 409.63,253.97 463.25,250.00" fill="url(#deposition-layers)" />
+  <polygon points="406.63,242.97 381.26,218.34 384.26,229.34 409.63,253.97" fill="url(#metal-wall)" />
+  <polygon points="406.63,242.97 381.26,218.34 384.26,229.34 409.63,253.97" fill="url(#deposition-layers)" />
+  <polygon points="381.26,218.34 406.63,189.14 409.63,200.14 384.26,229.34" fill="url(#metal-wall)" />
+  <polygon points="381.26,218.34 406.63,189.14 409.63,200.14 384.26,229.34" fill="url(#deposition-layers)" />
+  <polygon points="406.63,189.14 460.25,185.17 463.25,196.17 409.63,200.14" fill="url(#metal-wall)" />
+  <polygon points="406.63,189.14 460.25,185.17 463.25,196.17 409.63,200.14" fill="url(#deposition-layers)" />
+  <polygon points="460.25,185.17 488.37,210.42 491.37,221.42 463.25,196.17" fill="url(#metal-wall)" />
+  <polygon points="460.25,185.17 488.37,210.42 491.37,221.42 463.25,196.17" fill="url(#deposition-layers)" />
+  <polygon points="480.93,210.84 456.63,235.71 459.63,246.71 483.93,221.84" fill="url(#metal-wall)" />
+  <polygon points="480.93,210.84 456.63,235.71 459.63,246.71 483.93,221.84" fill="url(#deposition-layers)" />
+  <polygon points="456.63,235.71 410.03,239.16 413.03,250.16 459.63,246.71" fill="url(#metal-wall)" />
+  <polygon points="456.63,235.71 410.03,239.16 413.03,250.16 459.63,246.71" fill="url(#deposition-layers)" />
+  <polygon points="410.03,239.16 387.80,217.72 390.80,228.72 413.03,250.16" fill="url(#metal-wall)" />
+  <polygon points="410.03,239.16 387.80,217.72 390.80,228.72 413.03,250.16" fill="url(#deposition-layers)" />
+  <polygon points="387.80,217.72 410.03,192.38 413.03,203.38 390.80,228.72" fill="url(#metal-wall)" />
+  <polygon points="387.80,217.72 410.03,192.38 413.03,203.38 390.80,228.72" fill="url(#deposition-layers)" />
+  <polygon points="410.03,192.38 456.63,188.93 459.63,199.93 413.03,203.38" fill="url(#metal-wall)" />
+  <polygon points="410.03,192.38 456.63,188.93 459.63,199.93 413.03,203.38" fill="url(#deposition-layers)" />
+  <polygon points="456.63,188.93 480.93,210.84 483.93,221.84 459.63,199.93" fill="url(#metal-wall)" />
+  <polygon points="456.63,188.93 480.93,210.84 483.93,221.84 459.63,199.93" fill="url(#deposition-layers)" />
+  <polygon points="488.37,264.25 460.25,292.84 463.25,303.84 491.37,275.25" fill="url(#metal-wall)" />
+  <polygon points="488.37,264.25 460.25,292.84 463.25,303.84 491.37,275.25" fill="url(#deposition-layers)" />
+  <polygon points="460.25,292.84 406.63,296.80 409.63,307.80 463.25,303.84" fill="url(#metal-wall)" />
+  <polygon points="460.25,292.84 406.63,296.80 409.63,307.80 463.25,303.84" fill="url(#deposition-layers)" />
+  <polygon points="406.63,296.80 381.26,272.17 384.26,283.17 409.63,307.80" fill="url(#metal-wall)" />
+  <polygon points="406.63,296.80 381.26,272.17 384.26,283.17 409.63,307.80" fill="url(#deposition-layers)" />
+  <polygon points="381.26,272.17 406.63,242.97 409.63,253.97 384.26,283.17" fill="url(#metal-wall)" />
+  <polygon points="381.26,272.17 406.63,242.97 409.63,253.97 384.26,283.17" fill="url(#deposition-layers)" />
+  <polygon points="406.63,242.97 460.25,239.00 463.25,250.00 409.63,253.97" fill="url(#metal-wall)" />
+  <polygon points="406.63,242.97 460.25,239.00 463.25,250.00 409.63,253.97" fill="url(#deposition-layers)" />
+  <polygon points="460.25,239.00 488.37,264.25 491.37,275.25 463.25,250.00" fill="url(#metal-wall)" />
+  <polygon points="460.25,239.00 488.37,264.25 491.37,275.25 463.25,250.00" fill="url(#deposition-layers)" />
+  <polygon points="480.93,264.67 456.63,289.55 459.63,300.55 483.93,275.67" fill="url(#metal-wall)" />
+  <polygon points="480.93,264.67 456.63,289.55 459.63,300.55 483.93,275.67" fill="url(#deposition-layers)" />
+  <polygon points="456.63,289.55 410.03,292.99 413.03,303.99 459.63,300.55" fill="url(#metal-wall)" />
+  <polygon points="456.63,289.55 410.03,292.99 413.03,303.99 459.63,300.55" fill="url(#deposition-layers)" />
+  <polygon points="410.03,292.99 387.80,271.55 390.80,282.55 413.03,303.99" fill="url(#metal-wall)" />
+  <polygon points="410.03,292.99 387.80,271.55 390.80,282.55 413.03,303.99" fill="url(#deposition-layers)" />
+  <polygon points="387.80,271.55 410.03,246.21 413.03,257.21 390.80,282.55" fill="url(#metal-wall)" />
+  <polygon points="387.80,271.55 410.03,246.21 413.03,257.21 390.80,282.55" fill="url(#deposition-layers)" />
+  <polygon points="410.03,246.21 456.63,242.76 459.63,253.76 413.03,257.21" fill="url(#metal-wall)" />
+  <polygon points="410.03,246.21 456.63,242.76 459.63,253.76 413.03,257.21" fill="url(#deposition-layers)" />
+  <polygon points="456.63,242.76 480.93,264.67 483.93,275.67 459.63,253.76" fill="url(#metal-wall)" />
+  <polygon points="456.63,242.76 480.93,264.67 483.93,275.67 459.63,253.76" fill="url(#deposition-layers)" />
+  <polygon points="577.12,72.18 546.88,100.09 549.88,111.09 580.12,83.18" fill="url(#metal-wall)" />
+  <polygon points="577.12,72.18 546.88,100.09 549.88,111.09 580.12,83.18" fill="url(#deposition-layers)" />
+  <polygon points="546.88,100.09 488.37,102.76 491.37,113.76 549.88,111.09" fill="url(#metal-wall)" />
+  <polygon points="546.88,100.09 488.37,102.76 491.37,113.76 549.88,111.09" fill="url(#deposition-layers)" />
+  <polygon points="488.37,102.76 460.25,77.51 463.25,88.51 491.37,113.76" fill="url(#metal-wall)" />
+  <polygon points="488.37,102.76 460.25,77.51 463.25,88.51 491.37,113.76" fill="url(#deposition-layers)" />
+  <polygon points="460.25,77.51 488.37,48.93 491.37,59.93 463.25,88.51" fill="url(#metal-wall)" />
+  <polygon points="460.25,77.51 488.37,48.93 491.37,59.93 463.25,88.51" fill="url(#deposition-layers)" />
+  <polygon points="488.37,48.93 546.88,46.26 549.88,57.26 491.37,59.93" fill="url(#metal-wall)" />
+  <polygon points="488.37,48.93 546.88,46.26 549.88,57.26 491.37,59.93" fill="url(#deposition-layers)" />
+  <polygon points="546.88,46.26 577.12,72.18 580.12,83.18 549.88,57.26" fill="url(#metal-wall)" />
+  <polygon points="546.88,46.26 577.12,72.18 580.12,83.18 549.88,57.26" fill="url(#deposition-layers)" />
+  <polygon points="569.14,72.42 542.96,96.71 545.96,107.71 572.14,83.42" fill="url(#metal-wall)" />
+  <polygon points="569.14,72.42 542.96,96.71 545.96,107.71 572.14,83.42" fill="url(#deposition-layers)" />
+  <polygon points="542.96,96.71 492.12,99.03 495.12,110.03 545.96,107.71" fill="url(#metal-wall)" />
+  <polygon points="542.96,96.71 492.12,99.03 495.12,110.03 545.96,107.71" fill="url(#deposition-layers)" />
+  <polygon points="492.12,99.03 467.54,77.05 470.54,88.05 495.12,110.03" fill="url(#metal-wall)" />
+  <polygon points="492.12,99.03 467.54,77.05 470.54,88.05 495.12,110.03" fill="url(#deposition-layers)" />
+  <polygon points="467.54,77.05 492.12,52.25 495.12,63.25 470.54,88.05" fill="url(#metal-wall)" />
+  <polygon points="467.54,77.05 492.12,52.25 495.12,63.25 470.54,88.05" fill="url(#deposition-layers)" />
+  <polygon points="492.12,52.25 542.96,49.93 545.96,60.93 495.12,63.25" fill="url(#metal-wall)" />
+  <polygon points="492.12,52.25 542.96,49.93 545.96,60.93 495.12,63.25" fill="url(#deposition-layers)" />
+  <polygon points="542.96,49.93 569.14,72.42 572.14,83.42 545.96,60.93" fill="url(#metal-wall)" />
+  <polygon points="542.96,49.93 569.14,72.42 572.14,83.42 545.96,60.93" fill="url(#deposition-layers)" />
+  <polygon points="577.12,126.01 546.88,153.92 549.88,164.92 580.12,137.01" fill="url(#metal-wall)" />
+  <polygon points="577.12,126.01 546.88,153.92 549.88,164.92 580.12,137.01" fill="url(#deposition-layers)" />
+  <polygon points="546.88,153.92 488.37,156.59 491.37,167.59 549.88,164.92" fill="url(#metal-wall)" />
+  <polygon points="546.88,153.92 488.37,156.59 491.37,167.59 549.88,164.92" fill="url(#deposition-layers)" />
+  <polygon points="488.37,156.59 460.25,131.34 463.25,142.34 491.37,167.59" fill="url(#metal-wall)" />
+  <polygon points="488.37,156.59 460.25,131.34 463.25,142.34 491.37,167.59" fill="url(#deposition-layers)" />
+  <polygon points="460.25,131.34 488.37,102.76 491.37,113.76 463.25,142.34" fill="url(#metal-wall)" />
+  <polygon points="460.25,131.34 488.37,102.76 491.37,113.76 463.25,142.34" fill="url(#deposition-layers)" />
+  <polygon points="488.37,102.76 546.88,100.09 549.88,111.09 491.37,113.76" fill="url(#metal-wall)" />
+  <polygon points="488.37,102.76 546.88,100.09 549.88,111.09 491.37,113.76" fill="url(#deposition-layers)" />
+  <polygon points="546.88,100.09 577.12,126.01 580.12,137.01 549.88,111.09" fill="url(#metal-wall)" />
+  <polygon points="546.88,100.09 577.12,126.01 580.12,137.01 549.88,111.09" fill="url(#deposition-layers)" />
+  <polygon points="569.14,126.25 542.96,150.54 545.96,161.54 572.14,137.25" fill="url(#metal-wall)" />
+  <polygon points="569.14,126.25 542.96,150.54 545.96,161.54 572.14,137.25" fill="url(#deposition-layers)" />
+  <polygon points="542.96,150.54 492.12,152.86 495.12,163.86 545.96,161.54" fill="url(#metal-wall)" />
+  <polygon points="542.96,150.54 492.12,152.86 495.12,163.86 545.96,161.54" fill="url(#deposition-layers)" />
+  <polygon points="492.12,152.86 467.54,130.88 470.54,141.88 495.12,163.86" fill="url(#metal-wall)" />
+  <polygon points="492.12,152.86 467.54,130.88 470.54,141.88 495.12,163.86" fill="url(#deposition-layers)" />
+  <polygon points="467.54,130.88 492.12,106.08 495.12,117.08 470.54,141.88" fill="url(#metal-wall)" />
+  <polygon points="467.54,130.88 492.12,106.08 495.12,117.08 470.54,141.88" fill="url(#deposition-layers)" />
+  <polygon points="492.12,106.08 542.96,103.76 545.96,114.76 495.12,117.08" fill="url(#metal-wall)" />
+  <polygon points="492.12,106.08 542.96,103.76 545.96,114.76 495.12,117.08" fill="url(#deposition-layers)" />
+  <polygon points="542.96,103.76 569.14,126.25 572.14,137.25 545.96,114.76" fill="url(#metal-wall)" />
+  <polygon points="542.96,103.76 569.14,126.25 572.14,137.25 545.96,114.76" fill="url(#deposition-layers)" />
+  <polygon points="577.12,179.85 546.88,207.75 549.88,218.75 580.12,190.85" fill="url(#metal-wall)" />
+  <polygon points="577.12,179.85 546.88,207.75 549.88,218.75 580.12,190.85" fill="url(#deposition-layers)" />
+  <polygon points="546.88,207.75 488.37,210.42 491.37,221.42 549.88,218.75" fill="url(#metal-wall)" />
+  <polygon points="546.88,207.75 488.37,210.42 491.37,221.42 549.88,218.75" fill="url(#deposition-layers)" />
+  <polygon points="488.37,210.42 460.25,185.17 463.25,196.17 491.37,221.42" fill="url(#metal-wall)" />
+  <polygon points="488.37,210.42 460.25,185.17 463.25,196.17 491.37,221.42" fill="url(#deposition-layers)" />
+  <polygon points="460.25,185.17 488.37,156.59 491.37,167.59 463.25,196.17" fill="url(#metal-wall)" />
+  <polygon points="460.25,185.17 488.37,156.59 491.37,167.59 463.25,196.17" fill="url(#deposition-layers)" />
+  <polygon points="488.37,156.59 546.88,153.92 549.88,164.92 491.37,167.59" fill="url(#metal-wall)" />
+  <polygon points="488.37,156.59 546.88,153.92 549.88,164.92 491.37,167.59" fill="url(#deposition-layers)" />
+  <polygon points="546.88,153.92 577.12,179.85 580.12,190.85 549.88,164.92" fill="url(#metal-wall)" />
+  <polygon points="546.88,153.92 577.12,179.85 580.12,190.85 549.88,164.92" fill="url(#deposition-layers)" />
+  <polygon points="569.14,180.08 542.96,204.38 545.96,215.38 572.14,191.08" fill="url(#metal-wall)" />
+  <polygon points="569.14,180.08 542.96,204.38 545.96,215.38 572.14,191.08" fill="url(#deposition-layers)" />
+  <polygon points="542.96,204.38 492.12,206.70 495.12,217.70 545.96,215.38" fill="url(#metal-wall)" />
+  <polygon points="542.96,204.38 492.12,206.70 495.12,217.70 545.96,215.38" fill="url(#deposition-layers)" />
+  <polygon points="492.12,206.70 467.54,184.71 470.54,195.71 495.12,217.70" fill="url(#metal-wall)" />
+  <polygon points="492.12,206.70 467.54,184.71 470.54,195.71 495.12,217.70" fill="url(#deposition-layers)" />
+  <polygon points="467.54,184.71 492.12,159.91 495.12,170.91 470.54,195.71" fill="url(#metal-wall)" />
+  <polygon points="467.54,184.71 492.12,159.91 495.12,170.91 470.54,195.71" fill="url(#deposition-layers)" />
+  <polygon points="492.12,159.91 542.96,157.59 545.96,168.59 495.12,170.91" fill="url(#metal-wall)" />
+  <polygon points="492.12,159.91 542.96,157.59 545.96,168.59 495.12,170.91" fill="url(#deposition-layers)" />
+  <polygon points="542.96,157.59 569.14,180.08 572.14,191.08 545.96,168.59" fill="url(#metal-wall)" />
+  <polygon points="542.96,157.59 569.14,180.08 572.14,191.08 545.96,168.59" fill="url(#deposition-layers)" />
+  <polygon points="577.12,233.68 546.88,261.59 549.88,272.59 580.12,244.68" fill="url(#metal-wall)" />
+  <polygon points="577.12,233.68 546.88,261.59 549.88,272.59 580.12,244.68" fill="url(#deposition-layers)" />
+  <polygon points="546.88,261.59 488.37,264.25 491.37,275.25 549.88,272.59" fill="url(#metal-wall)" />
+  <polygon points="546.88,261.59 488.37,264.25 491.37,275.25 549.88,272.59" fill="url(#deposition-layers)" />
+  <polygon points="488.37,264.25 460.25,239.00 463.25,250.00 491.37,275.25" fill="url(#metal-wall)" />
+  <polygon points="488.37,264.25 460.25,239.00 463.25,250.00 491.37,275.25" fill="url(#deposition-layers)" />
+  <polygon points="460.25,239.00 488.37,210.42 491.37,221.42 463.25,250.00" fill="url(#metal-wall)" />
+  <polygon points="460.25,239.00 488.37,210.42 491.37,221.42 463.25,250.00" fill="url(#deposition-layers)" />
+  <polygon points="488.37,210.42 546.88,207.75 549.88,218.75 491.37,221.42" fill="url(#metal-wall)" />
+  <polygon points="488.37,210.42 546.88,207.75 549.88,218.75 491.37,221.42" fill="url(#deposition-layers)" />
+  <polygon points="546.88,207.75 577.12,233.68 580.12,244.68 549.88,218.75" fill="url(#metal-wall)" />
+  <polygon points="546.88,207.75 577.12,233.68 580.12,244.68 549.88,218.75" fill="url(#deposition-layers)" />
+  <polygon points="569.14,233.92 542.96,258.21 545.96,269.21 572.14,244.92" fill="url(#metal-wall)" />
+  <polygon points="569.14,233.92 542.96,258.21 545.96,269.21 572.14,244.92" fill="url(#deposition-layers)" />
+  <polygon points="542.96,258.21 492.12,260.53 495.12,271.53 545.96,269.21" fill="url(#metal-wall)" />
+  <polygon points="542.96,258.21 492.12,260.53 495.12,271.53 545.96,269.21" fill="url(#deposition-layers)" />
+  <polygon points="492.12,260.53 467.54,238.55 470.54,249.55 495.12,271.53" fill="url(#metal-wall)" />
+  <polygon points="492.12,260.53 467.54,238.55 470.54,249.55 495.12,271.53" fill="url(#deposition-layers)" />
+  <polygon points="467.54,238.55 492.12,213.74 495.12,224.74 470.54,249.55" fill="url(#metal-wall)" />
+  <polygon points="467.54,238.55 492.12,213.74 495.12,224.74 470.54,249.55" fill="url(#deposition-layers)" />
+  <polygon points="492.12,213.74 542.96,211.43 545.96,222.43 495.12,224.74" fill="url(#metal-wall)" />
+  <polygon points="492.12,213.74 542.96,211.43 545.96,222.43 495.12,224.74" fill="url(#deposition-layers)" />
+  <polygon points="542.96,211.43 569.14,233.92 572.14,244.92 545.96,222.43" fill="url(#metal-wall)" />
+  <polygon points="542.96,211.43 569.14,233.92 572.14,244.92 545.96,222.43" fill="url(#deposition-layers)" />
+  <polygon points="670.86,97.55 639.19,124.74 642.19,135.74 673.86,108.55" fill="url(#metal-wall)" />
+  <polygon points="670.86,97.55 639.19,124.74 642.19,135.74 673.86,108.55" fill="url(#deposition-layers)" />
+  <polygon points="639.19,124.74 577.12,126.01 580.12,137.01 642.19,135.74" fill="url(#metal-wall)" />
+  <polygon points="639.19,124.74 577.12,126.01 580.12,137.01 642.19,135.74" fill="url(#deposition-layers)" />
+  <polygon points="577.12,126.01 546.88,100.09 549.88,111.09 580.12,137.01" fill="url(#metal-wall)" />
+  <polygon points="577.12,126.01 546.88,100.09 549.88,111.09 580.12,137.01" fill="url(#deposition-layers)" />
+  <polygon points="546.88,100.09 577.12,72.18 580.12,83.18 549.88,111.09" fill="url(#metal-wall)" />
+  <polygon points="546.88,100.09 577.12,72.18 580.12,83.18 549.88,111.09" fill="url(#deposition-layers)" />
+  <polygon points="577.12,72.18 639.19,70.91 642.19,81.91 580.12,83.18" fill="url(#metal-wall)" />
+  <polygon points="577.12,72.18 639.19,70.91 642.19,81.91 580.12,83.18" fill="url(#deposition-layers)" />
+  <polygon points="639.19,70.91 670.86,97.55 673.86,108.55 642.19,81.91" fill="url(#metal-wall)" />
+  <polygon points="639.19,70.91 670.86,97.55 673.86,108.55 642.19,81.91" fill="url(#deposition-layers)" />
+  <polygon points="662.53,97.60 635.07,121.27 638.07,132.27 665.53,108.60" fill="url(#metal-wall)" />
+  <polygon points="662.53,97.60 635.07,121.27 638.07,132.27 665.53,108.60" fill="url(#deposition-layers)" />
+  <polygon points="635.07,121.27 581.12,122.38 584.12,133.38 638.07,132.27" fill="url(#metal-wall)" />
+  <polygon points="635.07,121.27 581.12,122.38 584.12,133.38 638.07,132.27" fill="url(#deposition-layers)" />
+  <polygon points="581.12,122.38 554.74,99.81 557.74,110.81 584.12,133.38" fill="url(#metal-wall)" />
+  <polygon points="581.12,122.38 554.74,99.81 557.74,110.81 584.12,133.38" fill="url(#deposition-layers)" />
+  <polygon points="554.74,99.81 581.12,75.59 584.12,86.59 557.74,110.81" fill="url(#metal-wall)" />
+  <polygon points="554.74,99.81 581.12,75.59 584.12,86.59 557.74,110.81" fill="url(#deposition-layers)" />
+  <polygon points="581.12,75.59 635.07,74.49 638.07,85.49 584.12,86.59" fill="url(#metal-wall)" />
+  <polygon points="581.12,75.59 635.07,74.49 638.07,85.49 584.12,86.59" fill="url(#deposition-layers)" />
+  <polygon points="635.07,74.49 662.53,97.60 665.53,108.60 638.07,85.49" fill="url(#metal-wall)" />
+  <polygon points="635.07,74.49 662.53,97.60 665.53,108.60 638.07,85.49" fill="url(#deposition-layers)" />
+  <polygon points="670.86,151.38 639.19,178.57 642.19,189.57 673.86,162.38" fill="url(#metal-wall)" />
+  <polygon points="670.86,151.38 639.19,178.57 642.19,189.57 673.86,162.38" fill="url(#deposition-layers)" />
+  <polygon points="639.19,178.57 577.12,179.85 580.12,190.85 642.19,189.57" fill="url(#metal-wall)" />
+  <polygon points="639.19,178.57 577.12,179.85 580.12,190.85 642.19,189.57" fill="url(#deposition-layers)" />
+  <polygon points="577.12,179.85 546.88,153.92 549.88,164.92 580.12,190.85" fill="url(#metal-wall)" />
+  <polygon points="577.12,179.85 546.88,153.92 549.88,164.92 580.12,190.85" fill="url(#deposition-layers)" />
+  <polygon points="546.88,153.92 577.12,126.01 580.12,137.01 549.88,164.92" fill="url(#metal-wall)" />
+  <polygon points="546.88,153.92 577.12,126.01 580.12,137.01 549.88,164.92" fill="url(#deposition-layers)" />
+  <polygon points="577.12,126.01 639.19,124.74 642.19,135.74 580.12,137.01" fill="url(#metal-wall)" />
+  <polygon points="577.12,126.01 639.19,124.74 642.19,135.74 580.12,137.01" fill="url(#deposition-layers)" />
+  <polygon points="639.19,124.74 670.86,151.38 673.86,162.38 642.19,135.74" fill="url(#metal-wall)" />
+  <polygon points="639.19,124.74 670.86,151.38 673.86,162.38 642.19,135.74" fill="url(#deposition-layers)" />
+  <polygon points="662.53,151.43 635.07,175.10 638.07,186.10 665.53,162.43" fill="url(#metal-wall)" />
+  <polygon points="662.53,151.43 635.07,175.10 638.07,186.10 665.53,162.43" fill="url(#deposition-layers)" />
+  <polygon points="635.07,175.10 581.12,176.21 584.12,187.21 638.07,186.10" fill="url(#metal-wall)" />
+  <polygon points="635.07,175.10 581.12,176.21 584.12,187.21 638.07,186.10" fill="url(#deposition-layers)" />
+  <polygon points="581.12,176.21 554.74,153.64 557.74,164.64 584.12,187.21" fill="url(#metal-wall)" />
+  <polygon points="581.12,176.21 554.74,153.64 557.74,164.64 584.12,187.21" fill="url(#deposition-layers)" />
+  <polygon points="554.74,153.64 581.12,129.43 584.12,140.43 557.74,164.64" fill="url(#metal-wall)" />
+  <polygon points="554.74,153.64 581.12,129.43 584.12,140.43 557.74,164.64" fill="url(#deposition-layers)" />
+  <polygon points="581.12,129.43 635.07,128.32 638.07,139.32 584.12,140.43" fill="url(#metal-wall)" />
+  <polygon points="581.12,129.43 635.07,128.32 638.07,139.32 584.12,140.43" fill="url(#deposition-layers)" />
+  <polygon points="635.07,128.32 662.53,151.43 665.53,162.43 638.07,139.32" fill="url(#metal-wall)" />
+  <polygon points="635.07,128.32 662.53,151.43 665.53,162.43 638.07,139.32" fill="url(#deposition-layers)" />
+  <polygon points="670.86,205.21 639.19,232.41 642.19,243.41 673.86,216.21" fill="url(#metal-wall)" />
+  <polygon points="670.86,205.21 639.19,232.41 642.19,243.41 673.86,216.21" fill="url(#deposition-layers)" />
+  <polygon points="639.19,232.41 577.12,233.68 580.12,244.68 642.19,243.41" fill="url(#metal-wall)" />
+  <polygon points="639.19,232.41 577.12,233.68 580.12,244.68 642.19,243.41" fill="url(#deposition-layers)" />
+  <polygon points="577.12,233.68 546.88,207.75 549.88,218.75 580.12,244.68" fill="url(#metal-wall)" />
+  <polygon points="577.12,233.68 546.88,207.75 549.88,218.75 580.12,244.68" fill="url(#deposition-layers)" />
+  <polygon points="546.88,207.75 577.12,179.85 580.12,190.85 549.88,218.75" fill="url(#metal-wall)" />
+  <polygon points="546.88,207.75 577.12,179.85 580.12,190.85 549.88,218.75" fill="url(#deposition-layers)" />
+  <polygon points="577.12,179.85 639.19,178.57 642.19,189.57 580.12,190.85" fill="url(#metal-wall)" />
+  <polygon points="577.12,179.85 639.19,178.57 642.19,189.57 580.12,190.85" fill="url(#deposition-layers)" />
+  <polygon points="639.19,178.57 670.86,205.21 673.86,216.21 642.19,189.57" fill="url(#metal-wall)" />
+  <polygon points="639.19,178.57 670.86,205.21 673.86,216.21 642.19,189.57" fill="url(#deposition-layers)" />
+  <polygon points="662.53,205.26 635.07,228.93 638.07,239.93 665.53,216.26" fill="url(#metal-wall)" />
+  <polygon points="662.53,205.26 635.07,228.93 638.07,239.93 665.53,216.26" fill="url(#deposition-layers)" />
+  <polygon points="635.07,228.93 581.12,230.04 584.12,241.04 638.07,239.93" fill="url(#metal-wall)" />
+  <polygon points="635.07,228.93 581.12,230.04 584.12,241.04 638.07,239.93" fill="url(#deposition-layers)" />
+  <polygon points="581.12,230.04 554.74,207.47 557.74,218.47 584.12,241.04" fill="url(#metal-wall)" />
+  <polygon points="581.12,230.04 554.74,207.47 557.74,218.47 584.12,241.04" fill="url(#deposition-layers)" />
+  <polygon points="554.74,207.47 581.12,183.26 584.12,194.26 557.74,218.47" fill="url(#metal-wall)" />
+  <polygon points="554.74,207.47 581.12,183.26 584.12,194.26 557.74,218.47" fill="url(#deposition-layers)" />
+  <polygon points="581.12,183.26 635.07,182.15 638.07,193.15 584.12,194.26" fill="url(#metal-wall)" />
+  <polygon points="581.12,183.26 635.07,182.15 638.07,193.15 584.12,194.26" fill="url(#deposition-layers)" />
+  <polygon points="635.07,182.15 662.53,205.26 665.53,216.26 638.07,193.15" fill="url(#metal-wall)" />
+  <polygon points="635.07,182.15 662.53,205.26 665.53,216.26 638.07,193.15" fill="url(#deposition-layers)" />
+  <polygon points="670.86,259.05 639.19,286.24 642.19,297.24 673.86,270.05" fill="url(#metal-wall)" />
+  <polygon points="670.86,259.05 639.19,286.24 642.19,297.24 673.86,270.05" fill="url(#deposition-layers)" />
+  <polygon points="639.19,286.24 577.12,287.51 580.12,298.51 642.19,297.24" fill="url(#metal-wall)" />
+  <polygon points="639.19,286.24 577.12,287.51 580.12,298.51 642.19,297.24" fill="url(#deposition-layers)" />
+  <polygon points="577.12,287.51 546.88,261.59 549.88,272.59 580.12,298.51" fill="url(#metal-wall)" />
+  <polygon points="577.12,287.51 546.88,261.59 549.88,272.59 580.12,298.51" fill="url(#deposition-layers)" />
+  <polygon points="546.88,261.59 577.12,233.68 580.12,244.68 549.88,272.59" fill="url(#metal-wall)" />
+  <polygon points="546.88,261.59 577.12,233.68 580.12,244.68 549.88,272.59" fill="url(#deposition-layers)" />
+  <polygon points="577.12,233.68 639.19,232.41 642.19,243.41 580.12,244.68" fill="url(#metal-wall)" />
+  <polygon points="577.12,233.68 639.19,232.41 642.19,243.41 580.12,244.68" fill="url(#deposition-layers)" />
+  <polygon points="639.19,232.41 670.86,259.05 673.86,270.05 642.19,243.41" fill="url(#metal-wall)" />
+  <polygon points="639.19,232.41 670.86,259.05 673.86,270.05 642.19,243.41" fill="url(#deposition-layers)" />
+  <polygon points="662.53,259.09 635.07,282.77 638.07,293.77 665.53,270.09" fill="url(#metal-wall)" />
+  <polygon points="662.53,259.09 635.07,282.77 638.07,293.77 665.53,270.09" fill="url(#deposition-layers)" />
+  <polygon points="635.07,282.77 581.12,283.87 584.12,294.87 638.07,293.77" fill="url(#metal-wall)" />
+  <polygon points="635.07,282.77 581.12,283.87 584.12,294.87 638.07,293.77" fill="url(#deposition-layers)" />
+  <polygon points="581.12,283.87 554.74,261.30 557.74,272.30 584.12,294.87" fill="url(#metal-wall)" />
+  <polygon points="581.12,283.87 554.74,261.30 557.74,272.30 584.12,294.87" fill="url(#deposition-layers)" />
+  <polygon points="554.74,261.30 581.12,237.09 584.12,248.09 557.74,272.30" fill="url(#metal-wall)" />
+  <polygon points="554.74,261.30 581.12,237.09 584.12,248.09 557.74,272.30" fill="url(#deposition-layers)" />
+  <polygon points="581.12,237.09 635.07,235.98 638.07,246.98 584.12,248.09" fill="url(#metal-wall)" />
+  <polygon points="581.12,237.09 635.07,235.98 638.07,246.98 584.12,248.09" fill="url(#deposition-layers)" />
+  <polygon points="635.07,235.98 662.53,259.09 665.53,270.09 638.07,246.98" fill="url(#metal-wall)" />
+  <polygon points="635.07,235.98 662.53,259.09 665.53,270.09 638.07,246.98" fill="url(#deposition-layers)" />
+  <polygon points="767.51,71.28 735.11,97.74 738.11,108.74 770.51,82.28" fill="url(#metal-wall)" />
+  <polygon points="767.51,71.28 735.11,97.74 738.11,108.74 770.51,82.28" fill="url(#deposition-layers)" />
+  <polygon points="735.11,97.74 670.86,97.55 673.86,108.55 738.11,108.74" fill="url(#metal-wall)" />
+  <polygon points="735.11,97.74 670.86,97.55 673.86,108.55 738.11,108.74" fill="url(#deposition-layers)" />
+  <polygon points="670.86,97.55 639.19,70.91 642.19,81.91 673.86,108.55" fill="url(#metal-wall)" />
+  <polygon points="670.86,97.55 639.19,70.91 642.19,81.91 673.86,108.55" fill="url(#deposition-layers)" />
+  <polygon points="639.19,70.91 670.86,43.72 673.86,54.72 642.19,81.91" fill="url(#metal-wall)" />
+  <polygon points="639.19,70.91 670.86,43.72 673.86,54.72 642.19,81.91" fill="url(#deposition-layers)" />
+  <polygon points="670.86,43.72 735.11,43.90 738.11,54.90 673.86,54.72" fill="url(#metal-wall)" />
+  <polygon points="670.86,43.72 735.11,43.90 738.11,54.90 673.86,54.72" fill="url(#deposition-layers)" />
+  <polygon points="735.11,43.90 767.51,71.28 770.51,82.28 738.11,54.90" fill="url(#metal-wall)" />
+  <polygon points="735.11,43.90 767.51,71.28 770.51,82.28 738.11,54.90" fill="url(#deposition-layers)" />
+  <polygon points="759.02,71.14 730.88,94.17 733.88,105.17 762.02,82.14" fill="url(#metal-wall)" />
+  <polygon points="759.02,71.14 730.88,94.17 733.88,105.17 762.02,82.14" fill="url(#deposition-layers)" />
+  <polygon points="730.88,94.17 675.04,94.01 678.04,105.01 733.88,105.17" fill="url(#metal-wall)" />
+  <polygon points="730.88,94.17 675.04,94.01 678.04,105.01 733.88,105.17" fill="url(#deposition-layers)" />
+  <polygon points="675.04,94.01 647.45,70.81 650.45,81.81 678.04,105.01" fill="url(#metal-wall)" />
+  <polygon points="675.04,94.01 647.45,70.81 650.45,81.81 678.04,105.01" fill="url(#deposition-layers)" />
+  <polygon points="647.45,70.81 675.04,47.22 678.04,58.22 650.45,81.81" fill="url(#metal-wall)" />
+  <polygon points="647.45,70.81 675.04,47.22 678.04,58.22 650.45,81.81" fill="url(#deposition-layers)" />
+  <polygon points="675.04,47.22 730.88,47.39 733.88,58.39 678.04,58.22" fill="url(#metal-wall)" />
+  <polygon points="675.04,47.22 730.88,47.39 733.88,58.39 678.04,58.22" fill="url(#deposition-layers)" />
+  <polygon points="730.88,47.39 759.02,71.14 762.02,82.14 733.88,58.39" fill="url(#metal-wall)" />
+  <polygon points="730.88,47.39 759.02,71.14 762.02,82.14 733.88,58.39" fill="url(#deposition-layers)" />
+  <polygon points="767.51,125.12 735.11,151.57 738.11,162.57 770.51,136.12" fill="url(#metal-wall)" />
+  <polygon points="767.51,125.12 735.11,151.57 738.11,162.57 770.51,136.12" fill="url(#deposition-layers)" />
+  <polygon points="735.11,151.57 670.86,151.38 673.86,162.38 738.11,162.57" fill="url(#metal-wall)" />
+  <polygon points="735.11,151.57 670.86,151.38 673.86,162.38 738.11,162.57" fill="url(#deposition-layers)" />
+  <polygon points="670.86,151.38 639.19,124.74 642.19,135.74 673.86,162.38" fill="url(#metal-wall)" />
+  <polygon points="670.86,151.38 639.19,124.74 642.19,135.74 673.86,162.38" fill="url(#deposition-layers)" />
+  <polygon points="639.19,124.74 670.86,97.55 673.86,108.55 642.19,135.74" fill="url(#metal-wall)" />
+  <polygon points="639.19,124.74 670.86,97.55 673.86,108.55 642.19,135.74" fill="url(#deposition-layers)" />
+  <polygon points="670.86,97.55 735.11,97.74 738.11,108.74 673.86,108.55" fill="url(#metal-wall)" />
+  <polygon points="670.86,97.55 735.11,97.74 738.11,108.74 673.86,108.55" fill="url(#deposition-layers)" />
+  <polygon points="735.11,97.74 767.51,125.12 770.51,136.12 738.11,108.74" fill="url(#metal-wall)" />
+  <polygon points="735.11,97.74 767.51,125.12 770.51,136.12 738.11,108.74" fill="url(#deposition-layers)" />
+  <polygon points="759.02,124.97 730.88,148.00 733.88,159.00 762.02,135.97" fill="url(#metal-wall)" />
+  <polygon points="759.02,124.97 730.88,148.00 733.88,159.00 762.02,135.97" fill="url(#deposition-layers)" />
+  <polygon points="730.88,148.00 675.04,147.84 678.04,158.84 733.88,159.00" fill="url(#metal-wall)" />
+  <polygon points="730.88,148.00 675.04,147.84 678.04,158.84 733.88,159.00" fill="url(#deposition-layers)" />
+  <polygon points="675.04,147.84 647.45,124.65 650.45,135.65 678.04,158.84" fill="url(#metal-wall)" />
+  <polygon points="675.04,147.84 647.45,124.65 650.45,135.65 678.04,158.84" fill="url(#deposition-layers)" />
+  <polygon points="647.45,124.65 675.04,101.06 678.04,112.06 650.45,135.65" fill="url(#metal-wall)" />
+  <polygon points="647.45,124.65 675.04,101.06 678.04,112.06 650.45,135.65" fill="url(#deposition-layers)" />
+  <polygon points="675.04,101.06 730.88,101.22 733.88,112.22 678.04,112.06" fill="url(#metal-wall)" />
+  <polygon points="675.04,101.06 730.88,101.22 733.88,112.22 678.04,112.06" fill="url(#deposition-layers)" />
+  <polygon points="730.88,101.22 759.02,124.97 762.02,135.97 733.88,112.22" fill="url(#metal-wall)" />
+  <polygon points="730.88,101.22 759.02,124.97 762.02,135.97 733.88,112.22" fill="url(#deposition-layers)" />
+  <polygon points="767.51,178.95 735.11,205.40 738.11,216.40 770.51,189.95" fill="url(#metal-wall)" />
+  <polygon points="767.51,178.95 735.11,205.40 738.11,216.40 770.51,189.95" fill="url(#deposition-layers)" />
+  <polygon points="735.11,205.40 670.86,205.21 673.86,216.21 738.11,216.40" fill="url(#metal-wall)" />
+  <polygon points="735.11,205.40 670.86,205.21 673.86,216.21 738.11,216.40" fill="url(#deposition-layers)" />
+  <polygon points="670.86,205.21 639.19,178.57 642.19,189.57 673.86,216.21" fill="url(#metal-wall)" />
+  <polygon points="670.86,205.21 639.19,178.57 642.19,189.57 673.86,216.21" fill="url(#deposition-layers)" />
+  <polygon points="639.19,178.57 670.86,151.38 673.86,162.38 642.19,189.57" fill="url(#metal-wall)" />
+  <polygon points="639.19,178.57 670.86,151.38 673.86,162.38 642.19,189.57" fill="url(#deposition-layers)" />
+  <polygon points="670.86,151.38 735.11,151.57 738.11,162.57 673.86,162.38" fill="url(#metal-wall)" />
+  <polygon points="670.86,151.38 735.11,151.57 738.11,162.57 673.86,162.38" fill="url(#deposition-layers)" />
+  <polygon points="735.11,151.57 767.51,178.95 770.51,189.95 738.11,162.57" fill="url(#metal-wall)" />
+  <polygon points="735.11,151.57 767.51,178.95 770.51,189.95 738.11,162.57" fill="url(#deposition-layers)" />
+  <polygon points="759.02,178.80 730.88,201.83 733.88,212.83 762.02,189.80" fill="url(#metal-wall)" />
+  <polygon points="759.02,178.80 730.88,201.83 733.88,212.83 762.02,189.80" fill="url(#deposition-layers)" />
+  <polygon points="730.88,201.83 675.04,201.67 678.04,212.67 733.88,212.83" fill="url(#metal-wall)" />
+  <polygon points="730.88,201.83 675.04,201.67 678.04,212.67 733.88,212.83" fill="url(#deposition-layers)" />
+  <polygon points="675.04,201.67 647.45,178.48 650.45,189.48 678.04,212.67" fill="url(#metal-wall)" />
+  <polygon points="675.04,201.67 647.45,178.48 650.45,189.48 678.04,212.67" fill="url(#deposition-layers)" />
+  <polygon points="647.45,178.48 675.04,154.89 678.04,165.89 650.45,189.48" fill="url(#metal-wall)" />
+  <polygon points="647.45,178.48 675.04,154.89 678.04,165.89 650.45,189.48" fill="url(#deposition-layers)" />
+  <polygon points="675.04,154.89 730.88,155.05 733.88,166.05 678.04,165.89" fill="url(#metal-wall)" />
+  <polygon points="675.04,154.89 730.88,155.05 733.88,166.05 678.04,165.89" fill="url(#deposition-layers)" />
+  <polygon points="730.88,155.05 759.02,178.80 762.02,189.80 733.88,166.05" fill="url(#metal-wall)" />
+  <polygon points="730.88,155.05 759.02,178.80 762.02,189.80 733.88,166.05" fill="url(#deposition-layers)" />
+  <polygon points="767.51,232.78 735.11,259.23 738.11,270.23 770.51,243.78" fill="url(#metal-wall)" />
+  <polygon points="767.51,232.78 735.11,259.23 738.11,270.23 770.51,243.78" fill="url(#deposition-layers)" />
+  <polygon points="735.11,259.23 670.86,259.05 673.86,270.05 738.11,270.23" fill="url(#metal-wall)" />
+  <polygon points="735.11,259.23 670.86,259.05 673.86,270.05 738.11,270.23" fill="url(#deposition-layers)" />
+  <polygon points="670.86,259.05 639.19,232.41 642.19,243.41 673.86,270.05" fill="url(#metal-wall)" />
+  <polygon points="670.86,259.05 639.19,232.41 642.19,243.41 673.86,270.05" fill="url(#deposition-layers)" />
+  <polygon points="639.19,232.41 670.86,205.21 673.86,216.21 642.19,243.41" fill="url(#metal-wall)" />
+  <polygon points="639.19,232.41 670.86,205.21 673.86,216.21 642.19,243.41" fill="url(#deposition-layers)" />
+  <polygon points="670.86,205.21 735.11,205.40 738.11,216.40 673.86,216.21" fill="url(#metal-wall)" />
+  <polygon points="670.86,205.21 735.11,205.40 738.11,216.40 673.86,216.21" fill="url(#deposition-layers)" />
+  <polygon points="735.11,205.40 767.51,232.78 770.51,243.78 738.11,216.40" fill="url(#metal-wall)" />
+  <polygon points="735.11,205.40 767.51,232.78 770.51,243.78 738.11,216.40" fill="url(#deposition-layers)" />
+  <polygon points="759.02,232.64 730.88,255.66 733.88,266.66 762.02,243.64" fill="url(#metal-wall)" />
+  <polygon points="759.02,232.64 730.88,255.66 733.88,266.66 762.02,243.64" fill="url(#deposition-layers)" />
+  <polygon points="730.88,255.66 675.04,255.50 678.04,266.50 733.88,266.66" fill="url(#metal-wall)" />
+  <polygon points="730.88,255.66 675.04,255.50 678.04,266.50 733.88,266.66" fill="url(#deposition-layers)" />
+  <polygon points="675.04,255.50 647.45,232.31 650.45,243.31 678.04,266.50" fill="url(#metal-wall)" />
+  <polygon points="675.04,255.50 647.45,232.31 650.45,243.31 678.04,266.50" fill="url(#deposition-layers)" />
+  <polygon points="647.45,232.31 675.04,208.72 678.04,219.72 650.45,243.31" fill="url(#metal-wall)" />
+  <polygon points="647.45,232.31 675.04,208.72 678.04,219.72 650.45,243.31" fill="url(#deposition-layers)" />
+  <polygon points="675.04,208.72 730.88,208.88 733.88,219.88 678.04,219.72" fill="url(#metal-wall)" />
+  <polygon points="675.04,208.72 730.88,208.88 733.88,219.88 678.04,219.72" fill="url(#deposition-layers)" />
+  <polygon points="730.88,208.88 759.02,232.64 762.02,243.64 733.88,219.88" fill="url(#metal-wall)" />
+  <polygon points="730.88,208.88 759.02,232.64 762.02,243.64 733.88,219.88" fill="url(#deposition-layers)" />
+  <polygon points="864.89,101.10 832.49,126.80 835.49,137.80 867.89,112.10" fill="url(#metal-wall)" />
+  <polygon points="864.89,101.10 832.49,126.80 835.49,137.80 867.89,112.10" fill="url(#deposition-layers)" />
+  <polygon points="832.49,126.80 767.51,125.12 770.51,136.12 835.49,137.80" fill="url(#metal-wall)" />
+  <polygon points="832.49,126.80 767.51,125.12 770.51,136.12 835.49,137.80" fill="url(#deposition-layers)" />
+  <polygon points="767.51,125.12 735.11,97.74 738.11,108.74 770.51,136.12" fill="url(#metal-wall)" />
+  <polygon points="767.51,125.12 735.11,97.74 738.11,108.74 770.51,136.12" fill="url(#deposition-layers)" />
+  <polygon points="735.11,97.74 767.51,71.28 770.51,82.28 738.11,108.74" fill="url(#metal-wall)" />
+  <polygon points="735.11,97.74 767.51,71.28 770.51,82.28 738.11,108.74" fill="url(#deposition-layers)" />
+  <polygon points="767.51,71.28 832.49,72.96 835.49,83.96 770.51,82.28" fill="url(#metal-wall)" />
+  <polygon points="767.51,71.28 832.49,72.96 835.49,83.96 770.51,82.28" fill="url(#deposition-layers)" />
+  <polygon points="832.49,72.96 864.89,101.10 867.89,112.10 835.49,83.96" fill="url(#metal-wall)" />
+  <polygon points="832.49,72.96 864.89,101.10 867.89,112.10 835.49,83.96" fill="url(#deposition-layers)" />
+  <polygon points="856.42,100.75 828.24,123.13 831.24,134.13 859.42,111.75" fill="url(#metal-wall)" />
+  <polygon points="856.42,100.75 828.24,123.13 831.24,134.13 859.42,111.75" fill="url(#deposition-layers)" />
+  <polygon points="828.24,123.13 771.76,121.67 774.76,132.67 831.24,134.13" fill="url(#metal-wall)" />
+  <polygon points="828.24,123.13 771.76,121.67 774.76,132.67 831.24,134.13" fill="url(#deposition-layers)" />
+  <polygon points="771.76,121.67 743.58,97.83 746.58,108.83 774.76,132.67" fill="url(#metal-wall)" />
+  <polygon points="771.76,121.67 743.58,97.83 746.58,108.83 774.76,132.67" fill="url(#deposition-layers)" />
+  <polygon points="743.58,97.83 771.76,74.89 774.76,85.89 746.58,108.83" fill="url(#metal-wall)" />
+  <polygon points="743.58,97.83 771.76,74.89 774.76,85.89 746.58,108.83" fill="url(#deposition-layers)" />
+  <polygon points="771.76,74.89 828.24,76.35 831.24,87.35 774.76,85.89" fill="url(#metal-wall)" />
+  <polygon points="771.76,74.89 828.24,76.35 831.24,87.35 774.76,85.89" fill="url(#deposition-layers)" />
+  <polygon points="828.24,76.35 856.42,100.75 859.42,111.75 831.24,87.35" fill="url(#metal-wall)" />
+  <polygon points="828.24,76.35 856.42,100.75 859.42,111.75 831.24,87.35" fill="url(#deposition-layers)" />
+  <polygon points="864.89,154.93 832.49,180.63 835.49,191.63 867.89,165.93" fill="url(#metal-wall)" />
+  <polygon points="864.89,154.93 832.49,180.63 835.49,191.63 867.89,165.93" fill="url(#deposition-layers)" />
+  <polygon points="832.49,180.63 767.51,178.95 770.51,189.95 835.49,191.63" fill="url(#metal-wall)" />
+  <polygon points="832.49,180.63 767.51,178.95 770.51,189.95 835.49,191.63" fill="url(#deposition-layers)" />
+  <polygon points="767.51,178.95 735.11,151.57 738.11,162.57 770.51,189.95" fill="url(#metal-wall)" />
+  <polygon points="767.51,178.95 735.11,151.57 738.11,162.57 770.51,189.95" fill="url(#deposition-layers)" />
+  <polygon points="735.11,151.57 767.51,125.12 770.51,136.12 738.11,162.57" fill="url(#metal-wall)" />
+  <polygon points="735.11,151.57 767.51,125.12 770.51,136.12 738.11,162.57" fill="url(#deposition-layers)" />
+  <polygon points="767.51,125.12 832.49,126.80 835.49,137.80 770.51,136.12" fill="url(#metal-wall)" />
+  <polygon points="767.51,125.12 832.49,126.80 835.49,137.80 770.51,136.12" fill="url(#deposition-layers)" />
+  <polygon points="832.49,126.80 864.89,154.93 867.89,165.93 835.49,137.80" fill="url(#metal-wall)" />
+  <polygon points="832.49,126.80 864.89,154.93 867.89,165.93 835.49,137.80" fill="url(#deposition-layers)" />
+  <polygon points="856.42,154.59 828.24,176.96 831.24,187.96 859.42,165.59" fill="url(#metal-wall)" />
+  <polygon points="856.42,154.59 828.24,176.96 831.24,187.96 859.42,165.59" fill="url(#deposition-layers)" />
+  <polygon points="828.24,176.96 771.76,175.50 774.76,186.50 831.24,187.96" fill="url(#metal-wall)" />
+  <polygon points="828.24,176.96 771.76,175.50 774.76,186.50 831.24,187.96" fill="url(#deposition-layers)" />
+  <polygon points="771.76,175.50 743.58,151.67 746.58,162.67 774.76,186.50" fill="url(#metal-wall)" />
+  <polygon points="771.76,175.50 743.58,151.67 746.58,162.67 774.76,186.50" fill="url(#deposition-layers)" />
+  <polygon points="743.58,151.67 771.76,128.72 774.76,139.72 746.58,162.67" fill="url(#metal-wall)" />
+  <polygon points="743.58,151.67 771.76,128.72 774.76,139.72 746.58,162.67" fill="url(#deposition-layers)" />
+  <polygon points="771.76,128.72 828.24,130.18 831.24,141.18 774.76,139.72" fill="url(#metal-wall)" />
+  <polygon points="771.76,128.72 828.24,130.18 831.24,141.18 774.76,139.72" fill="url(#deposition-layers)" />
+  <polygon points="828.24,130.18 856.42,154.59 859.42,165.59 831.24,141.18" fill="url(#metal-wall)" />
+  <polygon points="828.24,130.18 856.42,154.59 859.42,165.59 831.24,141.18" fill="url(#deposition-layers)" />
+  <polygon points="864.89,208.76 832.49,234.46 835.49,245.46 867.89,219.76" fill="url(#metal-wall)" />
+  <polygon points="864.89,208.76 832.49,234.46 835.49,245.46 867.89,219.76" fill="url(#deposition-layers)" />
+  <polygon points="832.49,234.46 767.51,232.78 770.51,243.78 835.49,245.46" fill="url(#metal-wall)" />
+  <polygon points="832.49,234.46 767.51,232.78 770.51,243.78 835.49,245.46" fill="url(#deposition-layers)" />
+  <polygon points="767.51,232.78 735.11,205.40 738.11,216.40 770.51,243.78" fill="url(#metal-wall)" />
+  <polygon points="767.51,232.78 735.11,205.40 738.11,216.40 770.51,243.78" fill="url(#deposition-layers)" />
+  <polygon points="735.11,205.40 767.51,178.95 770.51,189.95 738.11,216.40" fill="url(#metal-wall)" />
+  <polygon points="735.11,205.40 767.51,178.95 770.51,189.95 738.11,216.40" fill="url(#deposition-layers)" />
+  <polygon points="767.51,178.95 832.49,180.63 835.49,191.63 770.51,189.95" fill="url(#metal-wall)" />
+  <polygon points="767.51,178.95 832.49,180.63 835.49,191.63 770.51,189.95" fill="url(#deposition-layers)" />
+  <polygon points="832.49,180.63 864.89,208.76 867.89,219.76 835.49,191.63" fill="url(#metal-wall)" />
+  <polygon points="832.49,180.63 864.89,208.76 867.89,219.76 835.49,191.63" fill="url(#deposition-layers)" />
+  <polygon points="856.42,208.42 828.24,230.80 831.24,241.80 859.42,219.42" fill="url(#metal-wall)" />
+  <polygon points="856.42,208.42 828.24,230.80 831.24,241.80 859.42,219.42" fill="url(#deposition-layers)" />
+  <polygon points="828.24,230.80 771.76,229.34 774.76,240.34 831.24,241.80" fill="url(#metal-wall)" />
+  <polygon points="828.24,230.80 771.76,229.34 774.76,240.34 831.24,241.80" fill="url(#deposition-layers)" />
+  <polygon points="771.76,229.34 743.58,205.50 746.58,216.50 774.76,240.34" fill="url(#metal-wall)" />
+  <polygon points="771.76,229.34 743.58,205.50 746.58,216.50 774.76,240.34" fill="url(#deposition-layers)" />
+  <polygon points="743.58,205.50 771.76,182.55 774.76,193.55 746.58,216.50" fill="url(#metal-wall)" />
+  <polygon points="743.58,205.50 771.76,182.55 774.76,193.55 746.58,216.50" fill="url(#deposition-layers)" />
+  <polygon points="771.76,182.55 828.24,184.01 831.24,195.01 774.76,193.55" fill="url(#metal-wall)" />
+  <polygon points="771.76,182.55 828.24,184.01 831.24,195.01 774.76,193.55" fill="url(#deposition-layers)" />
+  <polygon points="828.24,184.01 856.42,208.42 859.42,219.42 831.24,195.01" fill="url(#metal-wall)" />
+  <polygon points="828.24,184.01 856.42,208.42 859.42,219.42 831.24,195.01" fill="url(#deposition-layers)" />
+  <polygon points="864.89,262.59 832.49,288.29 835.49,299.29 867.89,273.59" fill="url(#metal-wall)" />
+  <polygon points="864.89,262.59 832.49,288.29 835.49,299.29 867.89,273.59" fill="url(#deposition-layers)" />
+  <polygon points="832.49,288.29 767.51,286.61 770.51,297.61 835.49,299.29" fill="url(#metal-wall)" />
+  <polygon points="832.49,288.29 767.51,286.61 770.51,297.61 835.49,299.29" fill="url(#deposition-layers)" />
+  <polygon points="767.51,286.61 735.11,259.23 738.11,270.23 770.51,297.61" fill="url(#metal-wall)" />
+  <polygon points="767.51,286.61 735.11,259.23 738.11,270.23 770.51,297.61" fill="url(#deposition-layers)" />
+  <polygon points="735.11,259.23 767.51,232.78 770.51,243.78 738.11,270.23" fill="url(#metal-wall)" />
+  <polygon points="735.11,259.23 767.51,232.78 770.51,243.78 738.11,270.23" fill="url(#deposition-layers)" />
+  <polygon points="767.51,232.78 832.49,234.46 835.49,245.46 770.51,243.78" fill="url(#metal-wall)" />
+  <polygon points="767.51,232.78 832.49,234.46 835.49,245.46 770.51,243.78" fill="url(#deposition-layers)" />
+  <polygon points="832.49,234.46 864.89,262.59 867.89,273.59 835.49,245.46" fill="url(#metal-wall)" />
+  <polygon points="832.49,234.46 864.89,262.59 867.89,273.59 835.49,245.46" fill="url(#deposition-layers)" />
+  <polygon points="856.42,262.25 828.24,284.63 831.24,295.63 859.42,273.25" fill="url(#metal-wall)" />
+  <polygon points="856.42,262.25 828.24,284.63 831.24,295.63 859.42,273.25" fill="url(#deposition-layers)" />
+  <polygon points="828.24,284.63 771.76,283.17 774.76,294.17 831.24,295.63" fill="url(#metal-wall)" />
+  <polygon points="828.24,284.63 771.76,283.17 774.76,294.17 831.24,295.63" fill="url(#deposition-layers)" />
+  <polygon points="771.76,283.17 743.58,259.33 746.58,270.33 774.76,294.17" fill="url(#metal-wall)" />
+  <polygon points="771.76,283.17 743.58,259.33 746.58,270.33 774.76,294.17" fill="url(#deposition-layers)" />
+  <polygon points="743.58,259.33 771.76,236.39 774.76,247.39 746.58,270.33" fill="url(#metal-wall)" />
+  <polygon points="743.58,259.33 771.76,236.39 774.76,247.39 746.58,270.33" fill="url(#deposition-layers)" />
+  <polygon points="771.76,236.39 828.24,237.85 831.24,248.85 774.76,247.39" fill="url(#metal-wall)" />
+  <polygon points="771.76,236.39 828.24,237.85 831.24,248.85 774.76,247.39" fill="url(#deposition-layers)" />
+  <polygon points="828.24,237.85 856.42,262.25 859.42,273.25 831.24,248.85" fill="url(#metal-wall)" />
+  <polygon points="828.24,237.85 856.42,262.25 859.42,273.25 831.24,248.85" fill="url(#deposition-layers)" />
+  <polygon points="960.81,79.31 929.14,104.27 932.14,115.27 963.81,90.31" fill="url(#metal-wall)" />
+  <polygon points="960.81,79.31 929.14,104.27 932.14,115.27 963.81,90.31" fill="url(#deposition-layers)" />
+  <polygon points="929.14,104.27 864.89,101.10 867.89,112.10 932.14,115.27" fill="url(#metal-wall)" />
+  <polygon points="929.14,104.27 864.89,101.10 867.89,112.10 932.14,115.27" fill="url(#deposition-layers)" />
+  <polygon points="864.89,101.10 832.49,72.96 835.49,83.96 867.89,112.10" fill="url(#metal-wall)" />
+  <polygon points="864.89,101.10 832.49,72.96 835.49,83.96 867.89,112.10" fill="url(#deposition-layers)" />
+  <polygon points="832.49,72.96 864.89,47.26 867.89,58.26 835.49,83.96" fill="url(#metal-wall)" />
+  <polygon points="832.49,72.96 864.89,47.26 867.89,58.26 835.49,83.96" fill="url(#deposition-layers)" />
+  <polygon points="864.89,47.26 929.14,50.44 932.14,61.44 867.89,58.26" fill="url(#metal-wall)" />
+  <polygon points="864.89,47.26 929.14,50.44 932.14,61.44 867.89,58.26" fill="url(#deposition-layers)" />
+  <polygon points="929.14,50.44 960.81,79.31 963.81,90.31 932.14,61.44" fill="url(#metal-wall)" />
+  <polygon points="929.14,50.44 960.81,79.31 963.81,90.31 932.14,61.44" fill="url(#deposition-layers)" />
+  <polygon points="952.55,78.77 924.96,100.51 927.96,111.51 955.55,89.77" fill="url(#metal-wall)" />
+  <polygon points="952.55,78.77 924.96,100.51 927.96,111.51 955.55,89.77" fill="url(#deposition-layers)" />
+  <polygon points="924.96,100.51 869.12,97.75 872.12,108.75 927.96,111.51" fill="url(#metal-wall)" />
+  <polygon points="924.96,100.51 869.12,97.75 872.12,108.75 927.96,111.51" fill="url(#deposition-layers)" />
+  <polygon points="869.12,97.75 840.98,73.26 843.98,84.26 872.12,108.75" fill="url(#metal-wall)" />
+  <polygon points="869.12,97.75 840.98,73.26 843.98,84.26 872.12,108.75" fill="url(#deposition-layers)" />
+  <polygon points="840.98,73.26 869.12,50.97 872.12,61.97 843.98,84.26" fill="url(#metal-wall)" />
+  <polygon points="840.98,73.26 869.12,50.97 872.12,61.97 843.98,84.26" fill="url(#deposition-layers)" />
+  <polygon points="869.12,50.97 924.96,53.72 927.96,64.72 872.12,61.97" fill="url(#metal-wall)" />
+  <polygon points="869.12,50.97 924.96,53.72 927.96,64.72 872.12,61.97" fill="url(#deposition-layers)" />
+  <polygon points="924.96,53.72 952.55,78.77 955.55,89.77 927.96,64.72" fill="url(#metal-wall)" />
+  <polygon points="924.96,53.72 952.55,78.77 955.55,89.77 927.96,64.72" fill="url(#deposition-layers)" />
+  <polygon points="960.81,133.14 929.14,158.10 932.14,169.10 963.81,144.14" fill="url(#metal-wall)" />
+  <polygon points="960.81,133.14 929.14,158.10 932.14,169.10 963.81,144.14" fill="url(#deposition-layers)" />
+  <polygon points="929.14,158.10 864.89,154.93 867.89,165.93 932.14,169.10" fill="url(#metal-wall)" />
+  <polygon points="929.14,158.10 864.89,154.93 867.89,165.93 932.14,169.10" fill="url(#deposition-layers)" />
+  <polygon points="864.89,154.93 832.49,126.80 835.49,137.80 867.89,165.93" fill="url(#metal-wall)" />
+  <polygon points="864.89,154.93 832.49,126.80 835.49,137.80 867.89,165.93" fill="url(#deposition-layers)" />
+  <polygon points="832.49,126.80 864.89,101.10 867.89,112.10 835.49,137.80" fill="url(#metal-wall)" />
+  <polygon points="832.49,126.80 864.89,101.10 867.89,112.10 835.49,137.80" fill="url(#deposition-layers)" />
+  <polygon points="864.89,101.10 929.14,104.27 932.14,115.27 867.89,112.10" fill="url(#metal-wall)" />
+  <polygon points="864.89,101.10 929.14,104.27 932.14,115.27 867.89,112.10" fill="url(#deposition-layers)" />
+  <polygon points="929.14,104.27 960.81,133.14 963.81,144.14 932.14,115.27" fill="url(#metal-wall)" />
+  <polygon points="929.14,104.27 960.81,133.14 963.81,144.14 932.14,115.27" fill="url(#deposition-layers)" />
+  <polygon points="952.55,132.61 924.96,154.34 927.96,165.34 955.55,143.61" fill="url(#metal-wall)" />
+  <polygon points="952.55,132.61 924.96,154.34 927.96,165.34 955.55,143.61" fill="url(#deposition-layers)" />
+  <polygon points="924.96,154.34 869.12,151.58 872.12,162.58 927.96,165.34" fill="url(#metal-wall)" />
+  <polygon points="924.96,154.34 869.12,151.58 872.12,162.58 927.96,165.34" fill="url(#deposition-layers)" />
+  <polygon points="869.12,151.58 840.98,127.09 843.98,138.09 872.12,162.58" fill="url(#metal-wall)" />
+  <polygon points="869.12,151.58 840.98,127.09 843.98,138.09 872.12,162.58" fill="url(#deposition-layers)" />
+  <polygon points="840.98,127.09 869.12,104.80 872.12,115.80 843.98,138.09" fill="url(#metal-wall)" />
+  <polygon points="840.98,127.09 869.12,104.80 872.12,115.80 843.98,138.09" fill="url(#deposition-layers)" />
+  <polygon points="869.12,104.80 924.96,107.56 927.96,118.56 872.12,115.80" fill="url(#metal-wall)" />
+  <polygon points="869.12,104.80 924.96,107.56 927.96,118.56 872.12,115.80" fill="url(#deposition-layers)" />
+  <polygon points="924.96,107.56 952.55,132.61 955.55,143.61 927.96,118.56" fill="url(#metal-wall)" />
+  <polygon points="924.96,107.56 952.55,132.61 955.55,143.61 927.96,118.56" fill="url(#deposition-layers)" />
+  <polygon points="960.81,186.97 929.14,211.93 932.14,222.93 963.81,197.97" fill="url(#metal-wall)" />
+  <polygon points="960.81,186.97 929.14,211.93 932.14,222.93 963.81,197.97" fill="url(#deposition-layers)" />
+  <polygon points="929.14,211.93 864.89,208.76 867.89,219.76 932.14,222.93" fill="url(#metal-wall)" />
+  <polygon points="929.14,211.93 864.89,208.76 867.89,219.76 932.14,222.93" fill="url(#deposition-layers)" />
+  <polygon points="864.89,208.76 832.49,180.63 835.49,191.63 867.89,219.76" fill="url(#metal-wall)" />
+  <polygon points="864.89,208.76 832.49,180.63 835.49,191.63 867.89,219.76" fill="url(#deposition-layers)" />
+  <polygon points="832.49,180.63 864.89,154.93 867.89,165.93 835.49,191.63" fill="url(#metal-wall)" />
+  <polygon points="832.49,180.63 864.89,154.93 867.89,165.93 835.49,191.63" fill="url(#deposition-layers)" />
+  <polygon points="864.89,154.93 929.14,158.10 932.14,169.10 867.89,165.93" fill="url(#metal-wall)" />
+  <polygon points="864.89,154.93 929.14,158.10 932.14,169.10 867.89,165.93" fill="url(#deposition-layers)" />
+  <polygon points="929.14,158.10 960.81,186.97 963.81,197.97 932.14,169.10" fill="url(#metal-wall)" />
+  <polygon points="929.14,158.10 960.81,186.97 963.81,197.97 932.14,169.10" fill="url(#deposition-layers)" />
+  <polygon points="952.55,186.44 924.96,208.17 927.96,219.17 955.55,197.44" fill="url(#metal-wall)" />
+  <polygon points="952.55,186.44 924.96,208.17 927.96,219.17 955.55,197.44" fill="url(#deposition-layers)" />
+  <polygon points="924.96,208.17 869.12,205.41 872.12,216.41 927.96,219.17" fill="url(#metal-wall)" />
+  <polygon points="924.96,208.17 869.12,205.41 872.12,216.41 927.96,219.17" fill="url(#deposition-layers)" />
+  <polygon points="869.12,205.41 840.98,180.92 843.98,191.92 872.12,216.41" fill="url(#metal-wall)" />
+  <polygon points="869.12,205.41 840.98,180.92 843.98,191.92 872.12,216.41" fill="url(#deposition-layers)" />
+  <polygon points="840.98,180.92 869.12,158.63 872.12,169.63 843.98,191.92" fill="url(#metal-wall)" />
+  <polygon points="840.98,180.92 869.12,158.63 872.12,169.63 843.98,191.92" fill="url(#deposition-layers)" />
+  <polygon points="869.12,158.63 924.96,161.39 927.96,172.39 872.12,169.63" fill="url(#metal-wall)" />
+  <polygon points="869.12,158.63 924.96,161.39 927.96,172.39 872.12,169.63" fill="url(#deposition-layers)" />
+  <polygon points="924.96,161.39 952.55,186.44 955.55,197.44 927.96,172.39" fill="url(#metal-wall)" />
+  <polygon points="924.96,161.39 952.55,186.44 955.55,197.44 927.96,172.39" fill="url(#deposition-layers)" />
+  <polygon points="960.81,240.81 929.14,265.77 932.14,276.77 963.81,251.81" fill="url(#metal-wall)" />
+  <polygon points="960.81,240.81 929.14,265.77 932.14,276.77 963.81,251.81" fill="url(#deposition-layers)" />
+  <polygon points="929.14,265.77 864.89,262.59 867.89,273.59 932.14,276.77" fill="url(#metal-wall)" />
+  <polygon points="929.14,265.77 864.89,262.59 867.89,273.59 932.14,276.77" fill="url(#deposition-layers)" />
+  <polygon points="864.89,262.59 832.49,234.46 835.49,245.46 867.89,273.59" fill="url(#metal-wall)" />
+  <polygon points="864.89,262.59 832.49,234.46 835.49,245.46 867.89,273.59" fill="url(#deposition-layers)" />
+  <polygon points="832.49,234.46 864.89,208.76 867.89,219.76 835.49,245.46" fill="url(#metal-wall)" />
+  <polygon points="832.49,234.46 864.89,208.76 867.89,219.76 835.49,245.46" fill="url(#deposition-layers)" />
+  <polygon points="864.89,208.76 929.14,211.93 932.14,222.93 867.89,219.76" fill="url(#metal-wall)" />
+  <polygon points="864.89,208.76 929.14,211.93 932.14,222.93 867.89,219.76" fill="url(#deposition-layers)" />
+  <polygon points="929.14,211.93 960.81,240.81 963.81,251.81 932.14,222.93" fill="url(#metal-wall)" />
+  <polygon points="929.14,211.93 960.81,240.81 963.81,251.81 932.14,222.93" fill="url(#deposition-layers)" />
+  <polygon points="952.55,240.27 924.96,262.00 927.96,273.00 955.55,251.27" fill="url(#metal-wall)" />
+  <polygon points="952.55,240.27 924.96,262.00 927.96,273.00 955.55,251.27" fill="url(#deposition-layers)" />
+  <polygon points="924.96,262.00 869.12,259.24 872.12,270.24 927.96,273.00" fill="url(#metal-wall)" />
+  <polygon points="924.96,262.00 869.12,259.24 872.12,270.24 927.96,273.00" fill="url(#deposition-layers)" />
+  <polygon points="869.12,259.24 840.98,234.76 843.98,245.76 872.12,270.24" fill="url(#metal-wall)" />
+  <polygon points="869.12,259.24 840.98,234.76 843.98,245.76 872.12,270.24" fill="url(#deposition-layers)" />
+  <polygon points="840.98,234.76 869.12,212.46 872.12,223.46 843.98,245.76" fill="url(#metal-wall)" />
+  <polygon points="840.98,234.76 869.12,212.46 872.12,223.46 843.98,245.76" fill="url(#deposition-layers)" />
+  <polygon points="869.12,212.46 924.96,215.22 927.96,226.22 872.12,223.46" fill="url(#metal-wall)" />
+  <polygon points="869.12,212.46 924.96,215.22 927.96,226.22 872.12,223.46" fill="url(#deposition-layers)" />
+  <polygon points="924.96,215.22 952.55,240.27 955.55,251.27 927.96,226.22" fill="url(#metal-wall)" />
+  <polygon points="924.96,215.22 952.55,240.27 955.55,251.27 927.96,226.22" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,113.53 1022.88,137.77 1025.88,148.77 1056.12,124.53" fill="url(#metal-wall)" />
+  <polygon points="1053.12,113.53 1022.88,137.77 1025.88,148.77 1056.12,124.53" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,137.77 960.81,133.14 963.81,144.14 1025.88,148.77" fill="url(#metal-wall)" />
+  <polygon points="1022.88,137.77 960.81,133.14 963.81,144.14 1025.88,148.77" fill="url(#deposition-layers)" />
+  <polygon points="960.81,133.14 929.14,104.27 932.14,115.27 963.81,144.14" fill="url(#metal-wall)" />
+  <polygon points="960.81,133.14 929.14,104.27 932.14,115.27 963.81,144.14" fill="url(#deposition-layers)" />
+  <polygon points="929.14,104.27 960.81,79.31 963.81,90.31 932.14,115.27" fill="url(#metal-wall)" />
+  <polygon points="929.14,104.27 960.81,79.31 963.81,90.31 932.14,115.27" fill="url(#deposition-layers)" />
+  <polygon points="960.81,79.31 1022.88,83.94 1025.88,94.94 963.81,90.31" fill="url(#metal-wall)" />
+  <polygon points="960.81,79.31 1022.88,83.94 1025.88,94.94 963.81,90.31" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,83.94 1053.12,113.53 1056.12,124.53 1025.88,94.94" fill="url(#metal-wall)" />
+  <polygon points="1022.88,83.94 1053.12,113.53 1056.12,124.53 1025.88,94.94" fill="url(#deposition-layers)" />
+  <polygon points="1045.26,112.81 1018.88,133.92 1021.88,144.92 1048.26,123.81" fill="url(#metal-wall)" />
+  <polygon points="1045.26,112.81 1018.88,133.92 1021.88,144.92 1048.26,123.81" fill="url(#deposition-layers)" />
+  <polygon points="1018.88,133.92 964.93,129.89 967.93,140.89 1021.88,144.92" fill="url(#metal-wall)" />
+  <polygon points="1018.88,133.92 964.93,129.89 967.93,140.89 1021.88,144.92" fill="url(#deposition-layers)" />
+  <polygon points="964.93,129.89 937.47,104.76 940.47,115.76 967.93,140.89" fill="url(#metal-wall)" />
+  <polygon points="964.93,129.89 937.47,104.76 940.47,115.76 967.93,140.89" fill="url(#deposition-layers)" />
+  <polygon points="937.47,104.76 964.93,83.11 967.93,94.11 940.47,115.76" fill="url(#metal-wall)" />
+  <polygon points="937.47,104.76 964.93,83.11 967.93,94.11 940.47,115.76" fill="url(#deposition-layers)" />
+  <polygon points="964.93,83.11 1018.88,87.13 1021.88,98.13 967.93,94.11" fill="url(#metal-wall)" />
+  <polygon points="964.93,83.11 1018.88,87.13 1021.88,98.13 967.93,94.11" fill="url(#deposition-layers)" />
+  <polygon points="1018.88,87.13 1045.26,112.81 1048.26,123.81 1021.88,98.13" fill="url(#metal-wall)" />
+  <polygon points="1018.88,87.13 1045.26,112.81 1048.26,123.81 1021.88,98.13" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,167.36 1022.88,191.61 1025.88,202.61 1056.12,178.36" fill="url(#metal-wall)" />
+  <polygon points="1053.12,167.36 1022.88,191.61 1025.88,202.61 1056.12,178.36" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,191.61 960.81,186.97 963.81,197.97 1025.88,202.61" fill="url(#metal-wall)" />
+  <polygon points="1022.88,191.61 960.81,186.97 963.81,197.97 1025.88,202.61" fill="url(#deposition-layers)" />
+  <polygon points="960.81,186.97 929.14,158.10 932.14,169.10 963.81,197.97" fill="url(#metal-wall)" />
+  <polygon points="960.81,186.97 929.14,158.10 932.14,169.10 963.81,197.97" fill="url(#deposition-layers)" />
+  <polygon points="929.14,158.10 960.81,133.14 963.81,144.14 932.14,169.10" fill="url(#metal-wall)" />
+  <polygon points="929.14,158.10 960.81,133.14 963.81,144.14 932.14,169.10" fill="url(#deposition-layers)" />
+  <polygon points="960.81,133.14 1022.88,137.77 1025.88,148.77 963.81,144.14" fill="url(#metal-wall)" />
+  <polygon points="960.81,133.14 1022.88,137.77 1025.88,148.77 963.81,144.14" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,137.77 1053.12,167.36 1056.12,178.36 1025.88,148.77" fill="url(#metal-wall)" />
+  <polygon points="1022.88,137.77 1053.12,167.36 1056.12,178.36 1025.88,148.77" fill="url(#deposition-layers)" />
+  <polygon points="1045.26,166.64 1018.88,187.75 1021.88,198.75 1048.26,177.64" fill="url(#metal-wall)" />
+  <polygon points="1045.26,166.64 1018.88,187.75 1021.88,198.75 1048.26,177.64" fill="url(#deposition-layers)" />
+  <polygon points="1018.88,187.75 964.93,183.72 967.93,194.72 1021.88,198.75" fill="url(#metal-wall)" />
+  <polygon points="1018.88,187.75 964.93,183.72 967.93,194.72 1021.88,198.75" fill="url(#deposition-layers)" />
+  <polygon points="964.93,183.72 937.47,158.59 940.47,169.59 967.93,194.72" fill="url(#metal-wall)" />
+  <polygon points="964.93,183.72 937.47,158.59 940.47,169.59 967.93,194.72" fill="url(#deposition-layers)" />
+  <polygon points="937.47,158.59 964.93,136.94 967.93,147.94 940.47,169.59" fill="url(#metal-wall)" />
+  <polygon points="937.47,158.59 964.93,136.94 967.93,147.94 940.47,169.59" fill="url(#deposition-layers)" />
+  <polygon points="964.93,136.94 1018.88,140.97 1021.88,151.97 967.93,147.94" fill="url(#metal-wall)" />
+  <polygon points="964.93,136.94 1018.88,140.97 1021.88,151.97 967.93,147.94" fill="url(#deposition-layers)" />
+  <polygon points="1018.88,140.97 1045.26,166.64 1048.26,177.64 1021.88,151.97" fill="url(#metal-wall)" />
+  <polygon points="1018.88,140.97 1045.26,166.64 1048.26,177.64 1021.88,151.97" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,221.19 1022.88,245.44 1025.88,256.44 1056.12,232.19" fill="url(#metal-wall)" />
+  <polygon points="1053.12,221.19 1022.88,245.44 1025.88,256.44 1056.12,232.19" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,245.44 960.81,240.81 963.81,251.81 1025.88,256.44" fill="url(#metal-wall)" />
+  <polygon points="1022.88,245.44 960.81,240.81 963.81,251.81 1025.88,256.44" fill="url(#deposition-layers)" />
+  <polygon points="960.81,240.81 929.14,211.93 932.14,222.93 963.81,251.81" fill="url(#metal-wall)" />
+  <polygon points="960.81,240.81 929.14,211.93 932.14,222.93 963.81,251.81" fill="url(#deposition-layers)" />
+  <polygon points="929.14,211.93 960.81,186.97 963.81,197.97 932.14,222.93" fill="url(#metal-wall)" />
+  <polygon points="929.14,211.93 960.81,186.97 963.81,197.97 932.14,222.93" fill="url(#deposition-layers)" />
+  <polygon points="960.81,186.97 1022.88,191.61 1025.88,202.61 963.81,197.97" fill="url(#metal-wall)" />
+  <polygon points="960.81,186.97 1022.88,191.61 1025.88,202.61 963.81,197.97" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,191.61 1053.12,221.19 1056.12,232.19 1025.88,202.61" fill="url(#metal-wall)" />
+  <polygon points="1022.88,191.61 1053.12,221.19 1056.12,232.19 1025.88,202.61" fill="url(#deposition-layers)" />
+  <polygon points="1045.26,220.47 1018.88,241.58 1021.88,252.58 1048.26,231.47" fill="url(#metal-wall)" />
+  <polygon points="1045.26,220.47 1018.88,241.58 1021.88,252.58 1048.26,231.47" fill="url(#deposition-layers)" />
+  <polygon points="1018.88,241.58 964.93,237.55 967.93,248.55 1021.88,252.58" fill="url(#metal-wall)" />
+  <polygon points="1018.88,241.58 964.93,237.55 967.93,248.55 1021.88,252.58" fill="url(#deposition-layers)" />
+  <polygon points="964.93,237.55 937.47,212.42 940.47,223.42 967.93,248.55" fill="url(#metal-wall)" />
+  <polygon points="964.93,237.55 937.47,212.42 940.47,223.42 967.93,248.55" fill="url(#deposition-layers)" />
+  <polygon points="937.47,212.42 964.93,190.77 967.93,201.77 940.47,223.42" fill="url(#metal-wall)" />
+  <polygon points="937.47,212.42 964.93,190.77 967.93,201.77 940.47,223.42" fill="url(#deposition-layers)" />
+  <polygon points="964.93,190.77 1018.88,194.80 1021.88,205.80 967.93,201.77" fill="url(#metal-wall)" />
+  <polygon points="964.93,190.77 1018.88,194.80 1021.88,205.80 967.93,201.77" fill="url(#deposition-layers)" />
+  <polygon points="1018.88,194.80 1045.26,220.47 1048.26,231.47 1021.88,205.80" fill="url(#metal-wall)" />
+  <polygon points="1018.88,194.80 1045.26,220.47 1048.26,231.47 1021.88,205.80" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,275.03 1022.88,299.27 1025.88,310.27 1056.12,286.03" fill="url(#metal-wall)" />
+  <polygon points="1053.12,275.03 1022.88,299.27 1025.88,310.27 1056.12,286.03" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,299.27 960.81,294.64 963.81,305.64 1025.88,310.27" fill="url(#metal-wall)" />
+  <polygon points="1022.88,299.27 960.81,294.64 963.81,305.64 1025.88,310.27" fill="url(#deposition-layers)" />
+  <polygon points="960.81,294.64 929.14,265.77 932.14,276.77 963.81,305.64" fill="url(#metal-wall)" />
+  <polygon points="960.81,294.64 929.14,265.77 932.14,276.77 963.81,305.64" fill="url(#deposition-layers)" />
+  <polygon points="929.14,265.77 960.81,240.81 963.81,251.81 932.14,276.77" fill="url(#metal-wall)" />
+  <polygon points="929.14,265.77 960.81,240.81 963.81,251.81 932.14,276.77" fill="url(#deposition-layers)" />
+  <polygon points="960.81,240.81 1022.88,245.44 1025.88,256.44 963.81,251.81" fill="url(#metal-wall)" />
+  <polygon points="960.81,240.81 1022.88,245.44 1025.88,256.44 963.81,251.81" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,245.44 1053.12,275.03 1056.12,286.03 1025.88,256.44" fill="url(#metal-wall)" />
+  <polygon points="1022.88,245.44 1053.12,275.03 1056.12,286.03 1025.88,256.44" fill="url(#deposition-layers)" />
+  <polygon points="1045.26,274.30 1018.88,295.41 1021.88,306.41 1048.26,285.30" fill="url(#metal-wall)" />
+  <polygon points="1045.26,274.30 1018.88,295.41 1021.88,306.41 1048.26,285.30" fill="url(#deposition-layers)" />
+  <polygon points="1018.88,295.41 964.93,291.39 967.93,302.39 1021.88,306.41" fill="url(#metal-wall)" />
+  <polygon points="1018.88,295.41 964.93,291.39 967.93,302.39 1021.88,306.41" fill="url(#deposition-layers)" />
+  <polygon points="964.93,291.39 937.47,266.25 940.47,277.25 967.93,302.39" fill="url(#metal-wall)" />
+  <polygon points="964.93,291.39 937.47,266.25 940.47,277.25 967.93,302.39" fill="url(#deposition-layers)" />
+  <polygon points="937.47,266.25 964.93,244.60 967.93,255.60 940.47,277.25" fill="url(#metal-wall)" />
+  <polygon points="937.47,266.25 964.93,244.60 967.93,255.60 940.47,277.25" fill="url(#deposition-layers)" />
+  <polygon points="964.93,244.60 1018.88,248.63 1021.88,259.63 967.93,255.60" fill="url(#metal-wall)" />
+  <polygon points="964.93,244.60 1018.88,248.63 1021.88,259.63 967.93,255.60" fill="url(#deposition-layers)" />
+  <polygon points="1018.88,248.63 1045.26,274.30 1048.26,285.30 1021.88,259.63" fill="url(#metal-wall)" />
+  <polygon points="1018.88,248.63 1045.26,274.30 1048.26,285.30 1021.88,259.63" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,95.99 1111.63,119.56 1114.63,130.56 1142.75,106.99" fill="url(#metal-wall)" />
+  <polygon points="1139.75,95.99 1111.63,119.56 1114.63,130.56 1142.75,106.99" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,119.56 1053.12,113.53 1056.12,124.53 1114.63,130.56" fill="url(#metal-wall)" />
+  <polygon points="1111.63,119.56 1053.12,113.53 1056.12,124.53 1114.63,130.56" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,113.53 1022.88,83.94 1025.88,94.94 1056.12,124.53" fill="url(#metal-wall)" />
+  <polygon points="1053.12,113.53 1022.88,83.94 1025.88,94.94 1056.12,124.53" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,83.94 1053.12,59.70 1056.12,70.70 1025.88,94.94" fill="url(#metal-wall)" />
+  <polygon points="1022.88,83.94 1053.12,59.70 1056.12,70.70 1025.88,94.94" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,59.70 1111.63,65.73 1114.63,76.73 1056.12,70.70" fill="url(#metal-wall)" />
+  <polygon points="1053.12,59.70 1111.63,65.73 1114.63,76.73 1056.12,70.70" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,65.73 1139.75,95.99 1142.75,106.99 1114.63,76.73" fill="url(#metal-wall)" />
+  <polygon points="1111.63,65.73 1139.75,95.99 1142.75,106.99 1114.63,76.73" fill="url(#deposition-layers)" />
+  <polygon points="1132.46,95.09 1107.88,115.61 1110.88,126.61 1135.46,106.09" fill="url(#metal-wall)" />
+  <polygon points="1132.46,95.09 1107.88,115.61 1110.88,126.61 1135.46,106.09" fill="url(#deposition-layers)" />
+  <polygon points="1107.88,115.61 1057.04,110.37 1060.04,121.37 1110.88,126.61" fill="url(#metal-wall)" />
+  <polygon points="1107.88,115.61 1057.04,110.37 1060.04,121.37 1110.88,126.61" fill="url(#deposition-layers)" />
+  <polygon points="1057.04,110.37 1030.86,84.62 1033.86,95.62 1060.04,121.37" fill="url(#metal-wall)" />
+  <polygon points="1057.04,110.37 1030.86,84.62 1033.86,95.62 1060.04,121.37" fill="url(#deposition-layers)" />
+  <polygon points="1030.86,84.62 1057.04,63.59 1060.04,74.59 1033.86,95.62" fill="url(#metal-wall)" />
+  <polygon points="1030.86,84.62 1057.04,63.59 1060.04,74.59 1033.86,95.62" fill="url(#deposition-layers)" />
+  <polygon points="1057.04,63.59 1107.88,68.83 1110.88,79.83 1060.04,74.59" fill="url(#metal-wall)" />
+  <polygon points="1057.04,63.59 1107.88,68.83 1110.88,79.83 1060.04,74.59" fill="url(#deposition-layers)" />
+  <polygon points="1107.88,68.83 1132.46,95.09 1135.46,106.09 1110.88,79.83" fill="url(#metal-wall)" />
+  <polygon points="1107.88,68.83 1132.46,95.09 1135.46,106.09 1110.88,79.83" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,149.82 1111.63,173.39 1114.63,184.39 1142.75,160.82" fill="url(#metal-wall)" />
+  <polygon points="1139.75,149.82 1111.63,173.39 1114.63,184.39 1142.75,160.82" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,173.39 1053.12,167.36 1056.12,178.36 1114.63,184.39" fill="url(#metal-wall)" />
+  <polygon points="1111.63,173.39 1053.12,167.36 1056.12,178.36 1114.63,184.39" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,167.36 1022.88,137.77 1025.88,148.77 1056.12,178.36" fill="url(#metal-wall)" />
+  <polygon points="1053.12,167.36 1022.88,137.77 1025.88,148.77 1056.12,178.36" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,137.77 1053.12,113.53 1056.12,124.53 1025.88,148.77" fill="url(#metal-wall)" />
+  <polygon points="1022.88,137.77 1053.12,113.53 1056.12,124.53 1025.88,148.77" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,113.53 1111.63,119.56 1114.63,130.56 1056.12,124.53" fill="url(#metal-wall)" />
+  <polygon points="1053.12,113.53 1111.63,119.56 1114.63,130.56 1056.12,124.53" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,119.56 1139.75,149.82 1142.75,160.82 1114.63,130.56" fill="url(#metal-wall)" />
+  <polygon points="1111.63,119.56 1139.75,149.82 1142.75,160.82 1114.63,130.56" fill="url(#deposition-layers)" />
+  <polygon points="1132.46,148.92 1107.88,169.44 1110.88,180.44 1135.46,159.92" fill="url(#metal-wall)" />
+  <polygon points="1132.46,148.92 1107.88,169.44 1110.88,180.44 1135.46,159.92" fill="url(#deposition-layers)" />
+  <polygon points="1107.88,169.44 1057.04,164.20 1060.04,175.20 1110.88,180.44" fill="url(#metal-wall)" />
+  <polygon points="1107.88,169.44 1057.04,164.20 1060.04,175.20 1110.88,180.44" fill="url(#deposition-layers)" />
+  <polygon points="1057.04,164.20 1030.86,138.45 1033.86,149.45 1060.04,175.20" fill="url(#metal-wall)" />
+  <polygon points="1057.04,164.20 1030.86,138.45 1033.86,149.45 1060.04,175.20" fill="url(#deposition-layers)" />
+  <polygon points="1030.86,138.45 1057.04,117.42 1060.04,128.42 1033.86,149.45" fill="url(#metal-wall)" />
+  <polygon points="1030.86,138.45 1057.04,117.42 1060.04,128.42 1033.86,149.45" fill="url(#deposition-layers)" />
+  <polygon points="1057.04,117.42 1107.88,122.66 1110.88,133.66 1060.04,128.42" fill="url(#metal-wall)" />
+  <polygon points="1057.04,117.42 1107.88,122.66 1110.88,133.66 1060.04,128.42" fill="url(#deposition-layers)" />
+  <polygon points="1107.88,122.66 1132.46,148.92 1135.46,159.92 1110.88,133.66" fill="url(#metal-wall)" />
+  <polygon points="1107.88,122.66 1132.46,148.92 1135.46,159.92 1110.88,133.66" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,203.65 1111.63,227.22 1114.63,238.22 1142.75,214.65" fill="url(#metal-wall)" />
+  <polygon points="1139.75,203.65 1111.63,227.22 1114.63,238.22 1142.75,214.65" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,227.22 1053.12,221.19 1056.12,232.19 1114.63,238.22" fill="url(#metal-wall)" />
+  <polygon points="1111.63,227.22 1053.12,221.19 1056.12,232.19 1114.63,238.22" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,221.19 1022.88,191.61 1025.88,202.61 1056.12,232.19" fill="url(#metal-wall)" />
+  <polygon points="1053.12,221.19 1022.88,191.61 1025.88,202.61 1056.12,232.19" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,191.61 1053.12,167.36 1056.12,178.36 1025.88,202.61" fill="url(#metal-wall)" />
+  <polygon points="1022.88,191.61 1053.12,167.36 1056.12,178.36 1025.88,202.61" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,167.36 1111.63,173.39 1114.63,184.39 1056.12,178.36" fill="url(#metal-wall)" />
+  <polygon points="1053.12,167.36 1111.63,173.39 1114.63,184.39 1056.12,178.36" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,173.39 1139.75,203.65 1142.75,214.65 1114.63,184.39" fill="url(#metal-wall)" />
+  <polygon points="1111.63,173.39 1139.75,203.65 1142.75,214.65 1114.63,184.39" fill="url(#deposition-layers)" />
+  <polygon points="1132.46,202.75 1107.88,223.28 1110.88,234.28 1135.46,213.75" fill="url(#metal-wall)" />
+  <polygon points="1132.46,202.75 1107.88,223.28 1110.88,234.28 1135.46,213.75" fill="url(#deposition-layers)" />
+  <polygon points="1107.88,223.28 1057.04,218.04 1060.04,229.04 1110.88,234.28" fill="url(#metal-wall)" />
+  <polygon points="1107.88,223.28 1057.04,218.04 1060.04,229.04 1110.88,234.28" fill="url(#deposition-layers)" />
+  <polygon points="1057.04,218.04 1030.86,192.28 1033.86,203.28 1060.04,229.04" fill="url(#metal-wall)" />
+  <polygon points="1057.04,218.04 1030.86,192.28 1033.86,203.28 1060.04,229.04" fill="url(#deposition-layers)" />
+  <polygon points="1030.86,192.28 1057.04,171.25 1060.04,182.25 1033.86,203.28" fill="url(#metal-wall)" />
+  <polygon points="1030.86,192.28 1057.04,171.25 1060.04,182.25 1033.86,203.28" fill="url(#deposition-layers)" />
+  <polygon points="1057.04,171.25 1107.88,176.49 1110.88,187.49 1060.04,182.25" fill="url(#metal-wall)" />
+  <polygon points="1057.04,171.25 1107.88,176.49 1110.88,187.49 1060.04,182.25" fill="url(#deposition-layers)" />
+  <polygon points="1107.88,176.49 1132.46,202.75 1135.46,213.75 1110.88,187.49" fill="url(#metal-wall)" />
+  <polygon points="1107.88,176.49 1132.46,202.75 1135.46,213.75 1110.88,187.49" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,257.48 1111.63,281.05 1114.63,292.05 1142.75,268.48" fill="url(#metal-wall)" />
+  <polygon points="1139.75,257.48 1111.63,281.05 1114.63,292.05 1142.75,268.48" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,281.05 1053.12,275.03 1056.12,286.03 1114.63,292.05" fill="url(#metal-wall)" />
+  <polygon points="1111.63,281.05 1053.12,275.03 1056.12,286.03 1114.63,292.05" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,275.03 1022.88,245.44 1025.88,256.44 1056.12,286.03" fill="url(#metal-wall)" />
+  <polygon points="1053.12,275.03 1022.88,245.44 1025.88,256.44 1056.12,286.03" fill="url(#deposition-layers)" />
+  <polygon points="1022.88,245.44 1053.12,221.19 1056.12,232.19 1025.88,256.44" fill="url(#metal-wall)" />
+  <polygon points="1022.88,245.44 1053.12,221.19 1056.12,232.19 1025.88,256.44" fill="url(#deposition-layers)" />
+  <polygon points="1053.12,221.19 1111.63,227.22 1114.63,238.22 1056.12,232.19" fill="url(#metal-wall)" />
+  <polygon points="1053.12,221.19 1111.63,227.22 1114.63,238.22 1056.12,232.19" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,227.22 1139.75,257.48 1142.75,268.48 1114.63,238.22" fill="url(#metal-wall)" />
+  <polygon points="1111.63,227.22 1139.75,257.48 1142.75,268.48 1114.63,238.22" fill="url(#deposition-layers)" />
+  <polygon points="1132.46,256.59 1107.88,277.11 1110.88,288.11 1135.46,267.59" fill="url(#metal-wall)" />
+  <polygon points="1132.46,256.59 1107.88,277.11 1110.88,288.11 1135.46,267.59" fill="url(#deposition-layers)" />
+  <polygon points="1107.88,277.11 1057.04,271.87 1060.04,282.87 1110.88,288.11" fill="url(#metal-wall)" />
+  <polygon points="1107.88,277.11 1057.04,271.87 1060.04,282.87 1110.88,288.11" fill="url(#deposition-layers)" />
+  <polygon points="1057.04,271.87 1030.86,246.12 1033.86,257.12 1060.04,282.87" fill="url(#metal-wall)" />
+  <polygon points="1057.04,271.87 1030.86,246.12 1033.86,257.12 1060.04,282.87" fill="url(#deposition-layers)" />
+  <polygon points="1030.86,246.12 1057.04,225.09 1060.04,236.09 1033.86,257.12" fill="url(#metal-wall)" />
+  <polygon points="1030.86,246.12 1057.04,225.09 1060.04,236.09 1033.86,257.12" fill="url(#deposition-layers)" />
+  <polygon points="1057.04,225.09 1107.88,230.32 1110.88,241.32 1060.04,236.09" fill="url(#metal-wall)" />
+  <polygon points="1057.04,225.09 1107.88,230.32 1110.88,241.32 1060.04,236.09" fill="url(#deposition-layers)" />
+  <polygon points="1107.88,230.32 1132.46,256.59 1135.46,267.59 1110.88,241.32" fill="url(#metal-wall)" />
+  <polygon points="1107.88,230.32 1132.46,256.59 1135.46,267.59 1110.88,241.32" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,134.19 1193.37,157.14 1196.37,168.14 1221.74,145.19" fill="url(#metal-wall)" />
+  <polygon points="1218.74,134.19 1193.37,157.14 1196.37,168.14 1221.74,145.19" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,157.14 1139.75,149.82 1142.75,160.82 1196.37,168.14" fill="url(#metal-wall)" />
+  <polygon points="1193.37,157.14 1139.75,149.82 1142.75,160.82 1196.37,168.14" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,149.82 1111.63,119.56 1114.63,130.56 1142.75,160.82" fill="url(#metal-wall)" />
+  <polygon points="1139.75,149.82 1111.63,119.56 1114.63,130.56 1142.75,160.82" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,119.56 1139.75,95.99 1142.75,106.99 1114.63,130.56" fill="url(#metal-wall)" />
+  <polygon points="1111.63,119.56 1139.75,95.99 1142.75,106.99 1114.63,130.56" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,95.99 1193.37,103.31 1196.37,114.31 1142.75,106.99" fill="url(#metal-wall)" />
+  <polygon points="1139.75,95.99 1193.37,103.31 1196.37,114.31 1142.75,106.99" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,103.31 1218.74,134.19 1221.74,145.19 1196.37,114.31" fill="url(#metal-wall)" />
+  <polygon points="1193.37,103.31 1218.74,134.19 1221.74,145.19 1196.37,114.31" fill="url(#deposition-layers)" />
+  <polygon points="1212.20,133.13 1189.97,153.11 1192.97,164.11 1215.20,144.13" fill="url(#metal-wall)" />
+  <polygon points="1212.20,133.13 1189.97,153.11 1192.97,164.11 1215.20,144.13" fill="url(#deposition-layers)" />
+  <polygon points="1189.97,153.11 1143.37,146.75 1146.37,157.75 1192.97,164.11" fill="url(#metal-wall)" />
+  <polygon points="1189.97,153.11 1143.37,146.75 1146.37,157.75 1192.97,164.11" fill="url(#deposition-layers)" />
+  <polygon points="1143.37,146.75 1119.07,120.41 1122.07,131.41 1146.37,157.75" fill="url(#metal-wall)" />
+  <polygon points="1143.37,146.75 1119.07,120.41 1122.07,131.41 1146.37,157.75" fill="url(#deposition-layers)" />
+  <polygon points="1119.07,120.41 1143.37,99.97 1146.37,110.97 1122.07,131.41" fill="url(#metal-wall)" />
+  <polygon points="1119.07,120.41 1143.37,99.97 1146.37,110.97 1122.07,131.41" fill="url(#deposition-layers)" />
+  <polygon points="1143.37,99.97 1189.97,106.33 1192.97,117.33 1146.37,110.97" fill="url(#metal-wall)" />
+  <polygon points="1143.37,99.97 1189.97,106.33 1192.97,117.33 1146.37,110.97" fill="url(#deposition-layers)" />
+  <polygon points="1189.97,106.33 1212.20,133.13 1215.20,144.13 1192.97,117.33" fill="url(#metal-wall)" />
+  <polygon points="1189.97,106.33 1212.20,133.13 1215.20,144.13 1192.97,117.33" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,188.02 1193.37,210.98 1196.37,221.98 1221.74,199.02" fill="url(#metal-wall)" />
+  <polygon points="1218.74,188.02 1193.37,210.98 1196.37,221.98 1221.74,199.02" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,210.98 1139.75,203.65 1142.75,214.65 1196.37,221.98" fill="url(#metal-wall)" />
+  <polygon points="1193.37,210.98 1139.75,203.65 1142.75,214.65 1196.37,221.98" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,203.65 1111.63,173.39 1114.63,184.39 1142.75,214.65" fill="url(#metal-wall)" />
+  <polygon points="1139.75,203.65 1111.63,173.39 1114.63,184.39 1142.75,214.65" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,173.39 1139.75,149.82 1142.75,160.82 1114.63,184.39" fill="url(#metal-wall)" />
+  <polygon points="1111.63,173.39 1139.75,149.82 1142.75,160.82 1114.63,184.39" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,149.82 1193.37,157.14 1196.37,168.14 1142.75,160.82" fill="url(#metal-wall)" />
+  <polygon points="1139.75,149.82 1193.37,157.14 1196.37,168.14 1142.75,160.82" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,157.14 1218.74,188.02 1221.74,199.02 1196.37,168.14" fill="url(#metal-wall)" />
+  <polygon points="1193.37,157.14 1218.74,188.02 1221.74,199.02 1196.37,168.14" fill="url(#deposition-layers)" />
+  <polygon points="1212.20,186.97 1189.97,206.95 1192.97,217.95 1215.20,197.97" fill="url(#metal-wall)" />
+  <polygon points="1212.20,186.97 1189.97,206.95 1192.97,217.95 1215.20,197.97" fill="url(#deposition-layers)" />
+  <polygon points="1189.97,206.95 1143.37,200.58 1146.37,211.58 1192.97,217.95" fill="url(#metal-wall)" />
+  <polygon points="1189.97,206.95 1143.37,200.58 1146.37,211.58 1192.97,217.95" fill="url(#deposition-layers)" />
+  <polygon points="1143.37,200.58 1119.07,174.25 1122.07,185.25 1146.37,211.58" fill="url(#metal-wall)" />
+  <polygon points="1143.37,200.58 1119.07,174.25 1122.07,185.25 1146.37,211.58" fill="url(#deposition-layers)" />
+  <polygon points="1119.07,174.25 1143.37,153.80 1146.37,164.80 1122.07,185.25" fill="url(#metal-wall)" />
+  <polygon points="1119.07,174.25 1143.37,153.80 1146.37,164.80 1122.07,185.25" fill="url(#deposition-layers)" />
+  <polygon points="1143.37,153.80 1189.97,160.16 1192.97,171.16 1146.37,164.80" fill="url(#metal-wall)" />
+  <polygon points="1143.37,153.80 1189.97,160.16 1192.97,171.16 1146.37,164.80" fill="url(#deposition-layers)" />
+  <polygon points="1189.97,160.16 1212.20,186.97 1215.20,197.97 1192.97,171.16" fill="url(#metal-wall)" />
+  <polygon points="1189.97,160.16 1212.20,186.97 1215.20,197.97 1192.97,171.16" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,241.86 1193.37,264.81 1196.37,275.81 1221.74,252.86" fill="url(#metal-wall)" />
+  <polygon points="1218.74,241.86 1193.37,264.81 1196.37,275.81 1221.74,252.86" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,264.81 1139.75,257.48 1142.75,268.48 1196.37,275.81" fill="url(#metal-wall)" />
+  <polygon points="1193.37,264.81 1139.75,257.48 1142.75,268.48 1196.37,275.81" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,257.48 1111.63,227.22 1114.63,238.22 1142.75,268.48" fill="url(#metal-wall)" />
+  <polygon points="1139.75,257.48 1111.63,227.22 1114.63,238.22 1142.75,268.48" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,227.22 1139.75,203.65 1142.75,214.65 1114.63,238.22" fill="url(#metal-wall)" />
+  <polygon points="1111.63,227.22 1139.75,203.65 1142.75,214.65 1114.63,238.22" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,203.65 1193.37,210.98 1196.37,221.98 1142.75,214.65" fill="url(#metal-wall)" />
+  <polygon points="1139.75,203.65 1193.37,210.98 1196.37,221.98 1142.75,214.65" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,210.98 1218.74,241.86 1221.74,252.86 1196.37,221.98" fill="url(#metal-wall)" />
+  <polygon points="1193.37,210.98 1218.74,241.86 1221.74,252.86 1196.37,221.98" fill="url(#deposition-layers)" />
+  <polygon points="1212.20,240.80 1189.97,260.78 1192.97,271.78 1215.20,251.80" fill="url(#metal-wall)" />
+  <polygon points="1212.20,240.80 1189.97,260.78 1192.97,271.78 1215.20,251.80" fill="url(#deposition-layers)" />
+  <polygon points="1189.97,260.78 1143.37,254.41 1146.37,265.41 1192.97,271.78" fill="url(#metal-wall)" />
+  <polygon points="1189.97,260.78 1143.37,254.41 1146.37,265.41 1192.97,271.78" fill="url(#deposition-layers)" />
+  <polygon points="1143.37,254.41 1119.07,228.08 1122.07,239.08 1146.37,265.41" fill="url(#metal-wall)" />
+  <polygon points="1143.37,254.41 1119.07,228.08 1122.07,239.08 1146.37,265.41" fill="url(#deposition-layers)" />
+  <polygon points="1119.07,228.08 1143.37,207.63 1146.37,218.63 1122.07,239.08" fill="url(#metal-wall)" />
+  <polygon points="1119.07,228.08 1143.37,207.63 1146.37,218.63 1122.07,239.08" fill="url(#deposition-layers)" />
+  <polygon points="1143.37,207.63 1189.97,214.00 1192.97,225.00 1146.37,218.63" fill="url(#metal-wall)" />
+  <polygon points="1143.37,207.63 1189.97,214.00 1192.97,225.00 1146.37,218.63" fill="url(#deposition-layers)" />
+  <polygon points="1189.97,214.00 1212.20,240.80 1215.20,251.80 1192.97,225.00" fill="url(#metal-wall)" />
+  <polygon points="1189.97,214.00 1212.20,240.80 1215.20,251.80 1192.97,225.00" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,295.69 1193.37,318.64 1196.37,329.64 1221.74,306.69" fill="url(#metal-wall)" />
+  <polygon points="1218.74,295.69 1193.37,318.64 1196.37,329.64 1221.74,306.69" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,318.64 1139.75,311.32 1142.75,322.32 1196.37,329.64" fill="url(#metal-wall)" />
+  <polygon points="1193.37,318.64 1139.75,311.32 1142.75,322.32 1196.37,329.64" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,311.32 1111.63,281.05 1114.63,292.05 1142.75,322.32" fill="url(#metal-wall)" />
+  <polygon points="1139.75,311.32 1111.63,281.05 1114.63,292.05 1142.75,322.32" fill="url(#deposition-layers)" />
+  <polygon points="1111.63,281.05 1139.75,257.48 1142.75,268.48 1114.63,292.05" fill="url(#metal-wall)" />
+  <polygon points="1111.63,281.05 1139.75,257.48 1142.75,268.48 1114.63,292.05" fill="url(#deposition-layers)" />
+  <polygon points="1139.75,257.48 1193.37,264.81 1196.37,275.81 1142.75,268.48" fill="url(#metal-wall)" />
+  <polygon points="1139.75,257.48 1193.37,264.81 1196.37,275.81 1142.75,268.48" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,264.81 1218.74,295.69 1221.74,306.69 1196.37,275.81" fill="url(#metal-wall)" />
+  <polygon points="1193.37,264.81 1218.74,295.69 1221.74,306.69 1196.37,275.81" fill="url(#deposition-layers)" />
+  <polygon points="1212.20,294.63 1189.97,314.61 1192.97,325.61 1215.20,305.63" fill="url(#metal-wall)" />
+  <polygon points="1212.20,294.63 1189.97,314.61 1192.97,325.61 1215.20,305.63" fill="url(#deposition-layers)" />
+  <polygon points="1189.97,314.61 1143.37,308.25 1146.37,319.25 1192.97,325.61" fill="url(#metal-wall)" />
+  <polygon points="1189.97,314.61 1143.37,308.25 1146.37,319.25 1192.97,325.61" fill="url(#deposition-layers)" />
+  <polygon points="1143.37,308.25 1119.07,281.91 1122.07,292.91 1146.37,319.25" fill="url(#metal-wall)" />
+  <polygon points="1143.37,308.25 1119.07,281.91 1122.07,292.91 1146.37,319.25" fill="url(#deposition-layers)" />
+  <polygon points="1119.07,281.91 1143.37,261.46 1146.37,272.46 1122.07,292.91" fill="url(#metal-wall)" />
+  <polygon points="1119.07,281.91 1143.37,261.46 1146.37,272.46 1122.07,292.91" fill="url(#deposition-layers)" />
+  <polygon points="1143.37,261.46 1189.97,267.83 1192.97,278.83 1146.37,272.46" fill="url(#metal-wall)" />
+  <polygon points="1143.37,261.46 1189.97,267.83 1192.97,278.83 1146.37,272.46" fill="url(#deposition-layers)" />
+  <polygon points="1189.97,267.83 1212.20,294.63 1215.20,305.63 1192.97,278.83" fill="url(#metal-wall)" />
+  <polygon points="1189.97,267.83 1212.20,294.63 1215.20,305.63 1192.97,278.83" fill="url(#deposition-layers)" />
+  <polygon points="1288.33,120.28 1266.28,142.69 1269.28,153.69 1291.33,131.28" fill="url(#metal-wall)" />
+  <polygon points="1288.33,120.28 1266.28,142.69 1269.28,153.69 1291.33,131.28" fill="url(#deposition-layers)" />
+  <polygon points="1266.28,142.69 1218.74,134.19 1221.74,145.19 1269.28,153.69" fill="url(#metal-wall)" />
+  <polygon points="1266.28,142.69 1218.74,134.19 1221.74,145.19 1269.28,153.69" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,134.19 1193.37,103.31 1196.37,114.31 1221.74,145.19" fill="url(#metal-wall)" />
+  <polygon points="1218.74,134.19 1193.37,103.31 1196.37,114.31 1221.74,145.19" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,103.31 1218.74,80.36 1221.74,91.36 1196.37,114.31" fill="url(#metal-wall)" />
+  <polygon points="1193.37,103.31 1218.74,80.36 1221.74,91.36 1196.37,114.31" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,80.36 1266.28,88.85 1269.28,99.85 1221.74,91.36" fill="url(#metal-wall)" />
+  <polygon points="1218.74,80.36 1266.28,88.85 1269.28,99.85 1221.74,91.36" fill="url(#deposition-layers)" />
+  <polygon points="1266.28,88.85 1288.33,120.28 1291.33,131.28 1269.28,99.85" fill="url(#metal-wall)" />
+  <polygon points="1266.28,88.85 1288.33,120.28 1291.33,131.28 1269.28,99.85" fill="url(#deposition-layers)" />
+  <polygon points="1282.67,119.08 1263.31,138.58 1266.31,149.58 1285.67,130.08" fill="url(#metal-wall)" />
+  <polygon points="1282.67,119.08 1263.31,138.58 1266.31,149.58 1285.67,130.08" fill="url(#deposition-layers)" />
+  <polygon points="1263.31,138.58 1221.99,131.20 1224.99,142.20 1266.31,149.58" fill="url(#metal-wall)" />
+  <polygon points="1263.31,138.58 1221.99,131.20 1224.99,142.20 1266.31,149.58" fill="url(#deposition-layers)" />
+  <polygon points="1221.99,131.20 1200.11,104.33 1203.11,115.33 1224.99,142.20" fill="url(#metal-wall)" />
+  <polygon points="1221.99,131.20 1200.11,104.33 1203.11,115.33 1224.99,142.20" fill="url(#deposition-layers)" />
+  <polygon points="1200.11,104.33 1221.99,84.42 1224.99,95.42 1203.11,115.33" fill="url(#metal-wall)" />
+  <polygon points="1200.11,104.33 1221.99,84.42 1224.99,95.42 1203.11,115.33" fill="url(#deposition-layers)" />
+  <polygon points="1221.99,84.42 1263.31,91.80 1266.31,102.80 1224.99,95.42" fill="url(#metal-wall)" />
+  <polygon points="1221.99,84.42 1263.31,91.80 1266.31,102.80 1224.99,95.42" fill="url(#deposition-layers)" />
+  <polygon points="1263.31,91.80 1282.67,119.08 1285.67,130.08 1266.31,102.80" fill="url(#metal-wall)" />
+  <polygon points="1263.31,91.80 1282.67,119.08 1285.67,130.08 1266.31,102.80" fill="url(#deposition-layers)" />
+  <polygon points="1288.33,174.11 1266.28,196.52 1269.28,207.52 1291.33,185.11" fill="url(#metal-wall)" />
+  <polygon points="1288.33,174.11 1266.28,196.52 1269.28,207.52 1291.33,185.11" fill="url(#deposition-layers)" />
+  <polygon points="1266.28,196.52 1218.74,188.02 1221.74,199.02 1269.28,207.52" fill="url(#metal-wall)" />
+  <polygon points="1266.28,196.52 1218.74,188.02 1221.74,199.02 1269.28,207.52" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,188.02 1193.37,157.14 1196.37,168.14 1221.74,199.02" fill="url(#metal-wall)" />
+  <polygon points="1218.74,188.02 1193.37,157.14 1196.37,168.14 1221.74,199.02" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,157.14 1218.74,134.19 1221.74,145.19 1196.37,168.14" fill="url(#metal-wall)" />
+  <polygon points="1193.37,157.14 1218.74,134.19 1221.74,145.19 1196.37,168.14" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,134.19 1266.28,142.69 1269.28,153.69 1221.74,145.19" fill="url(#metal-wall)" />
+  <polygon points="1218.74,134.19 1266.28,142.69 1269.28,153.69 1221.74,145.19" fill="url(#deposition-layers)" />
+  <polygon points="1266.28,142.69 1288.33,174.11 1291.33,185.11 1269.28,153.69" fill="url(#metal-wall)" />
+  <polygon points="1266.28,142.69 1288.33,174.11 1291.33,185.11 1269.28,153.69" fill="url(#deposition-layers)" />
+  <polygon points="1282.67,172.92 1263.31,192.41 1266.31,203.41 1285.67,183.92" fill="url(#metal-wall)" />
+  <polygon points="1282.67,172.92 1263.31,192.41 1266.31,203.41 1285.67,183.92" fill="url(#deposition-layers)" />
+  <polygon points="1263.31,192.41 1221.99,185.03 1224.99,196.03 1266.31,203.41" fill="url(#metal-wall)" />
+  <polygon points="1263.31,192.41 1221.99,185.03 1224.99,196.03 1266.31,203.41" fill="url(#deposition-layers)" />
+  <polygon points="1221.99,185.03 1200.11,158.16 1203.11,169.16 1224.99,196.03" fill="url(#metal-wall)" />
+  <polygon points="1221.99,185.03 1200.11,158.16 1203.11,169.16 1224.99,196.03" fill="url(#deposition-layers)" />
+  <polygon points="1200.11,158.16 1221.99,138.25 1224.99,149.25 1203.11,169.16" fill="url(#metal-wall)" />
+  <polygon points="1200.11,158.16 1221.99,138.25 1224.99,149.25 1203.11,169.16" fill="url(#deposition-layers)" />
+  <polygon points="1221.99,138.25 1263.31,145.63 1266.31,156.63 1224.99,149.25" fill="url(#metal-wall)" />
+  <polygon points="1221.99,138.25 1263.31,145.63 1266.31,156.63 1224.99,149.25" fill="url(#deposition-layers)" />
+  <polygon points="1263.31,145.63 1282.67,172.92 1285.67,183.92 1266.31,156.63" fill="url(#metal-wall)" />
+  <polygon points="1263.31,145.63 1282.67,172.92 1285.67,183.92 1266.31,156.63" fill="url(#deposition-layers)" />
+  <polygon points="1288.33,227.95 1266.28,250.35 1269.28,261.35 1291.33,238.95" fill="url(#metal-wall)" />
+  <polygon points="1288.33,227.95 1266.28,250.35 1269.28,261.35 1291.33,238.95" fill="url(#deposition-layers)" />
+  <polygon points="1266.28,250.35 1218.74,241.86 1221.74,252.86 1269.28,261.35" fill="url(#metal-wall)" />
+  <polygon points="1266.28,250.35 1218.74,241.86 1221.74,252.86 1269.28,261.35" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,241.86 1193.37,210.98 1196.37,221.98 1221.74,252.86" fill="url(#metal-wall)" />
+  <polygon points="1218.74,241.86 1193.37,210.98 1196.37,221.98 1221.74,252.86" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,210.98 1218.74,188.02 1221.74,199.02 1196.37,221.98" fill="url(#metal-wall)" />
+  <polygon points="1193.37,210.98 1218.74,188.02 1221.74,199.02 1196.37,221.98" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,188.02 1266.28,196.52 1269.28,207.52 1221.74,199.02" fill="url(#metal-wall)" />
+  <polygon points="1218.74,188.02 1266.28,196.52 1269.28,207.52 1221.74,199.02" fill="url(#deposition-layers)" />
+  <polygon points="1266.28,196.52 1288.33,227.95 1291.33,238.95 1269.28,207.52" fill="url(#metal-wall)" />
+  <polygon points="1266.28,196.52 1288.33,227.95 1291.33,238.95 1269.28,207.52" fill="url(#deposition-layers)" />
+  <polygon points="1282.67,226.75 1263.31,246.25 1266.31,257.25 1285.67,237.75" fill="url(#metal-wall)" />
+  <polygon points="1282.67,226.75 1263.31,246.25 1266.31,257.25 1285.67,237.75" fill="url(#deposition-layers)" />
+  <polygon points="1263.31,246.25 1221.99,238.86 1224.99,249.86 1266.31,257.25" fill="url(#metal-wall)" />
+  <polygon points="1263.31,246.25 1221.99,238.86 1224.99,249.86 1266.31,257.25" fill="url(#deposition-layers)" />
+  <polygon points="1221.99,238.86 1200.11,212.00 1203.11,223.00 1224.99,249.86" fill="url(#metal-wall)" />
+  <polygon points="1221.99,238.86 1200.11,212.00 1203.11,223.00 1224.99,249.86" fill="url(#deposition-layers)" />
+  <polygon points="1200.11,212.00 1221.99,192.08 1224.99,203.08 1203.11,223.00" fill="url(#metal-wall)" />
+  <polygon points="1200.11,212.00 1221.99,192.08 1224.99,203.08 1203.11,223.00" fill="url(#deposition-layers)" />
+  <polygon points="1221.99,192.08 1263.31,199.46 1266.31,210.46 1224.99,203.08" fill="url(#metal-wall)" />
+  <polygon points="1221.99,192.08 1263.31,199.46 1266.31,210.46 1224.99,203.08" fill="url(#deposition-layers)" />
+  <polygon points="1263.31,199.46 1282.67,226.75 1285.67,237.75 1266.31,210.46" fill="url(#metal-wall)" />
+  <polygon points="1263.31,199.46 1282.67,226.75 1285.67,237.75 1266.31,210.46" fill="url(#deposition-layers)" />
+  <polygon points="1288.33,281.78 1266.28,304.18 1269.28,315.18 1291.33,292.78" fill="url(#metal-wall)" />
+  <polygon points="1288.33,281.78 1266.28,304.18 1269.28,315.18 1291.33,292.78" fill="url(#deposition-layers)" />
+  <polygon points="1266.28,304.18 1218.74,295.69 1221.74,306.69 1269.28,315.18" fill="url(#metal-wall)" />
+  <polygon points="1266.28,304.18 1218.74,295.69 1221.74,306.69 1269.28,315.18" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,295.69 1193.37,264.81 1196.37,275.81 1221.74,306.69" fill="url(#metal-wall)" />
+  <polygon points="1218.74,295.69 1193.37,264.81 1196.37,275.81 1221.74,306.69" fill="url(#deposition-layers)" />
+  <polygon points="1193.37,264.81 1218.74,241.86 1221.74,252.86 1196.37,275.81" fill="url(#metal-wall)" />
+  <polygon points="1193.37,264.81 1218.74,241.86 1221.74,252.86 1196.37,275.81" fill="url(#deposition-layers)" />
+  <polygon points="1218.74,241.86 1266.28,250.35 1269.28,261.35 1221.74,252.86" fill="url(#metal-wall)" />
+  <polygon points="1218.74,241.86 1266.28,250.35 1269.28,261.35 1221.74,252.86" fill="url(#deposition-layers)" />
+  <polygon points="1266.28,250.35 1288.33,281.78 1291.33,292.78 1269.28,261.35" fill="url(#metal-wall)" />
+  <polygon points="1266.28,250.35 1288.33,281.78 1291.33,292.78 1269.28,261.35" fill="url(#deposition-layers)" />
+  <polygon points="1282.67,280.58 1263.31,300.08 1266.31,311.08 1285.67,291.58" fill="url(#metal-wall)" />
+  <polygon points="1282.67,280.58 1263.31,300.08 1266.31,311.08 1285.67,291.58" fill="url(#deposition-layers)" />
+  <polygon points="1263.31,300.08 1221.99,292.70 1224.99,303.70 1266.31,311.08" fill="url(#metal-wall)" />
+  <polygon points="1263.31,300.08 1221.99,292.70 1224.99,303.70 1266.31,311.08" fill="url(#deposition-layers)" />
+  <polygon points="1221.99,292.70 1200.11,265.83 1203.11,276.83 1224.99,303.70" fill="url(#metal-wall)" />
+  <polygon points="1221.99,292.70 1200.11,265.83 1203.11,276.83 1224.99,303.70" fill="url(#deposition-layers)" />
+  <polygon points="1200.11,265.83 1221.99,245.91 1224.99,256.91 1203.11,276.83" fill="url(#metal-wall)" />
+  <polygon points="1200.11,265.83 1221.99,245.91 1224.99,256.91 1203.11,276.83" fill="url(#deposition-layers)" />
+  <polygon points="1221.99,245.91 1263.31,253.30 1266.31,264.30 1224.99,256.91" fill="url(#metal-wall)" />
+  <polygon points="1221.99,245.91 1263.31,253.30 1266.31,264.30 1224.99,256.91" fill="url(#deposition-layers)" />
+  <polygon points="1263.31,253.30 1282.67,280.58 1285.67,291.58 1266.31,264.30" fill="url(#metal-wall)" />
+  <polygon points="1263.31,253.30 1282.67,280.58 1285.67,291.58 1266.31,264.30" fill="url(#deposition-layers)" />
+  <path
+    d="M406.63 81.47L381.26 110.67L333.72 115.81L311.67 91.72L333.72 61.97L381.26 56.84ZM399.89 82.05L378.01 107.46L336.69 111.92L317.33 90.96L336.69 65.14L378.01 60.68Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M406.63 135.30L381.26 164.50L333.72 169.64L311.67 145.55L333.72 115.81L381.26 110.67ZM399.89 135.88L378.01 161.29L336.69 165.75L317.33 144.80L336.69 118.97L378.01 114.51Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M406.63 189.14L381.26 218.34L333.72 223.47L311.67 199.39L333.72 169.64L381.26 164.50ZM399.89 189.72L378.01 215.12L336.69 219.59L317.33 198.63L336.69 172.80L378.01 168.34Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M406.63 242.97L381.26 272.17L333.72 277.30L311.67 253.22L333.72 223.47L381.26 218.34ZM399.89 243.55L378.01 268.96L336.69 273.42L317.33 252.46L336.69 226.64L378.01 222.17Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M488.37 102.76L460.25 131.34L406.63 135.30L381.26 110.67L406.63 81.47L460.25 77.51ZM480.93 103.17L456.63 128.05L410.03 131.49L387.80 110.05L410.03 84.71L456.63 81.27Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M488.37 156.59L460.25 185.17L406.63 189.14L381.26 164.50L406.63 135.30L460.25 131.34ZM480.93 157.01L456.63 181.88L410.03 185.33L387.80 163.89L410.03 138.54L456.63 135.10Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M488.37 210.42L460.25 239.00L406.63 242.97L381.26 218.34L406.63 189.14L460.25 185.17ZM480.93 210.84L456.63 235.71L410.03 239.16L387.80 217.72L410.03 192.38L456.63 188.93Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M488.37 264.25L460.25 292.84L406.63 296.80L381.26 272.17L406.63 242.97L460.25 239.00ZM480.93 264.67L456.63 289.55L410.03 292.99L387.80 271.55L410.03 246.21L456.63 242.76Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M577.12 72.18L546.88 100.09L488.37 102.76L460.25 77.51L488.37 48.93L546.88 46.26ZM569.14 72.42L542.96 96.71L492.12 99.03L467.54 77.05L492.12 52.25L542.96 49.93Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M577.12 126.01L546.88 153.92L488.37 156.59L460.25 131.34L488.37 102.76L546.88 100.09ZM569.14 126.25L542.96 150.54L492.12 152.86L467.54 130.88L492.12 106.08L542.96 103.76Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M577.12 179.85L546.88 207.75L488.37 210.42L460.25 185.17L488.37 156.59L546.88 153.92ZM569.14 180.08L542.96 204.38L492.12 206.70L467.54 184.71L492.12 159.91L542.96 157.59Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M577.12 233.68L546.88 261.59L488.37 264.25L460.25 239.00L488.37 210.42L546.88 207.75ZM569.14 233.92L542.96 258.21L492.12 260.53L467.54 238.55L492.12 213.74L542.96 211.43Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M670.86 97.55L639.19 124.74L577.12 126.01L546.88 100.09L577.12 72.18L639.19 70.91ZM662.53 97.60L635.07 121.27L581.12 122.38L554.74 99.81L581.12 75.59L635.07 74.49Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M670.86 151.38L639.19 178.57L577.12 179.85L546.88 153.92L577.12 126.01L639.19 124.74ZM662.53 151.43L635.07 175.10L581.12 176.21L554.74 153.64L581.12 129.43L635.07 128.32Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M670.86 205.21L639.19 232.41L577.12 233.68L546.88 207.75L577.12 179.85L639.19 178.57ZM662.53 205.26L635.07 228.93L581.12 230.04L554.74 207.47L581.12 183.26L635.07 182.15Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M670.86 259.05L639.19 286.24L577.12 287.51L546.88 261.59L577.12 233.68L639.19 232.41ZM662.53 259.09L635.07 282.77L581.12 283.87L554.74 261.30L581.12 237.09L635.07 235.98Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M767.51 71.28L735.11 97.74L670.86 97.55L639.19 70.91L670.86 43.72L735.11 43.90ZM759.02 71.14L730.88 94.17L675.04 94.01L647.45 70.81L675.04 47.22L730.88 47.39Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M767.51 125.12L735.11 151.57L670.86 151.38L639.19 124.74L670.86 97.55L735.11 97.74ZM759.02 124.97L730.88 148.00L675.04 147.84L647.45 124.65L675.04 101.06L730.88 101.22Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M767.51 178.95L735.11 205.40L670.86 205.21L639.19 178.57L670.86 151.38L735.11 151.57ZM759.02 178.80L730.88 201.83L675.04 201.67L647.45 178.48L675.04 154.89L730.88 155.05Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M767.51 232.78L735.11 259.23L670.86 259.05L639.19 232.41L670.86 205.21L735.11 205.40ZM759.02 232.64L730.88 255.66L675.04 255.50L647.45 232.31L675.04 208.72L730.88 208.88Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M864.89 101.10L832.49 126.80L767.51 125.12L735.11 97.74L767.51 71.28L832.49 72.96ZM856.42 100.75L828.24 123.13L771.76 121.67L743.58 97.83L771.76 74.89L828.24 76.35Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M864.89 154.93L832.49 180.63L767.51 178.95L735.11 151.57L767.51 125.12L832.49 126.80ZM856.42 154.59L828.24 176.96L771.76 175.50L743.58 151.67L771.76 128.72L828.24 130.18Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M864.89 208.76L832.49 234.46L767.51 232.78L735.11 205.40L767.51 178.95L832.49 180.63ZM856.42 208.42L828.24 230.80L771.76 229.34L743.58 205.50L771.76 182.55L828.24 184.01Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M864.89 262.59L832.49 288.29L767.51 286.61L735.11 259.23L767.51 232.78L832.49 234.46ZM856.42 262.25L828.24 284.63L771.76 283.17L743.58 259.33L771.76 236.39L828.24 237.85Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M960.81 79.31L929.14 104.27L864.89 101.10L832.49 72.96L864.89 47.26L929.14 50.44ZM952.55 78.77L924.96 100.51L869.12 97.75L840.98 73.26L869.12 50.97L924.96 53.72Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M960.81 133.14L929.14 158.10L864.89 154.93L832.49 126.80L864.89 101.10L929.14 104.27ZM952.55 132.61L924.96 154.34L869.12 151.58L840.98 127.09L869.12 104.80L924.96 107.56Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M960.81 186.97L929.14 211.93L864.89 208.76L832.49 180.63L864.89 154.93L929.14 158.10ZM952.55 186.44L924.96 208.17L869.12 205.41L840.98 180.92L869.12 158.63L924.96 161.39Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M960.81 240.81L929.14 265.77L864.89 262.59L832.49 234.46L864.89 208.76L929.14 211.93ZM952.55 240.27L924.96 262.00L869.12 259.24L840.98 234.76L869.12 212.46L924.96 215.22Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1053.12 113.53L1022.88 137.77L960.81 133.14L929.14 104.27L960.81 79.31L1022.88 83.94ZM1045.26 112.81L1018.88 133.92L964.93 129.89L937.47 104.76L964.93 83.11L1018.88 87.13Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1053.12 167.36L1022.88 191.61L960.81 186.97L929.14 158.10L960.81 133.14L1022.88 137.77ZM1045.26 166.64L1018.88 187.75L964.93 183.72L937.47 158.59L964.93 136.94L1018.88 140.97Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1053.12 221.19L1022.88 245.44L960.81 240.81L929.14 211.93L960.81 186.97L1022.88 191.61ZM1045.26 220.47L1018.88 241.58L964.93 237.55L937.47 212.42L964.93 190.77L1018.88 194.80Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1053.12 275.03L1022.88 299.27L960.81 294.64L929.14 265.77L960.81 240.81L1022.88 245.44ZM1045.26 274.30L1018.88 295.41L964.93 291.39L937.47 266.25L964.93 244.60L1018.88 248.63Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1139.75 95.99L1111.63 119.56L1053.12 113.53L1022.88 83.94L1053.12 59.70L1111.63 65.73ZM1132.46 95.09L1107.88 115.61L1057.04 110.37L1030.86 84.62L1057.04 63.59L1107.88 68.83Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1139.75 149.82L1111.63 173.39L1053.12 167.36L1022.88 137.77L1053.12 113.53L1111.63 119.56ZM1132.46 148.92L1107.88 169.44L1057.04 164.20L1030.86 138.45L1057.04 117.42L1107.88 122.66Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1139.75 203.65L1111.63 227.22L1053.12 221.19L1022.88 191.61L1053.12 167.36L1111.63 173.39ZM1132.46 202.75L1107.88 223.28L1057.04 218.04L1030.86 192.28L1057.04 171.25L1107.88 176.49Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1139.75 257.48L1111.63 281.05L1053.12 275.03L1022.88 245.44L1053.12 221.19L1111.63 227.22ZM1132.46 256.59L1107.88 277.11L1057.04 271.87L1030.86 246.12L1057.04 225.09L1107.88 230.32Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1218.74 134.19L1193.37 157.14L1139.75 149.82L1111.63 119.56L1139.75 95.99L1193.37 103.31ZM1212.20 133.13L1189.97 153.11L1143.37 146.75L1119.07 120.41L1143.37 99.97L1189.97 106.33Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1218.74 188.02L1193.37 210.98L1139.75 203.65L1111.63 173.39L1139.75 149.82L1193.37 157.14ZM1212.20 186.97L1189.97 206.95L1143.37 200.58L1119.07 174.25L1143.37 153.80L1189.97 160.16Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1218.74 241.86L1193.37 264.81L1139.75 257.48L1111.63 227.22L1139.75 203.65L1193.37 210.98ZM1212.20 240.80L1189.97 260.78L1143.37 254.41L1119.07 228.08L1143.37 207.63L1189.97 214.00Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1218.74 295.69L1193.37 318.64L1139.75 311.32L1111.63 281.05L1139.75 257.48L1193.37 264.81ZM1212.20 294.63L1189.97 314.61L1143.37 308.25L1119.07 281.91L1143.37 261.46L1189.97 267.83Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1288.33 120.28L1266.28 142.69L1218.74 134.19L1193.37 103.31L1218.74 80.36L1266.28 88.85ZM1282.67 119.08L1263.31 138.58L1221.99 131.20L1200.11 104.33L1221.99 84.42L1263.31 91.80Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1288.33 174.11L1266.28 196.52L1218.74 188.02L1193.37 157.14L1218.74 134.19L1266.28 142.69ZM1282.67 172.92L1263.31 192.41L1221.99 185.03L1200.11 158.16L1221.99 138.25L1263.31 145.63Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1288.33 227.95L1266.28 250.35L1218.74 241.86L1193.37 210.98L1218.74 188.02L1266.28 196.52ZM1282.67 226.75L1263.31 246.25L1221.99 238.86L1200.11 212.00L1221.99 192.08L1263.31 199.46Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M1288.33 281.78L1266.28 304.18L1218.74 295.69L1193.37 264.81L1218.74 241.86L1266.28 250.35ZM1282.67 280.58L1263.31 300.08L1221.99 292.70L1200.11 265.83L1221.99 245.91L1263.31 253.30Z"
+    fill="url(#skin)"
+    fill-rule="evenodd"
+    stroke="#8196a5"
+    stroke-width="1"
+  />
+  <path
+    d="M406.63 81.47L381.26 110.67L333.72 115.81L311.67 91.72L333.72 61.97L381.26 56.84ZM399.89 82.05L378.01 107.46L336.69 111.92L317.33 90.96L336.69 65.14L378.01 60.68Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M406.63 135.30L381.26 164.50L333.72 169.64L311.67 145.55L333.72 115.81L381.26 110.67ZM399.89 135.88L378.01 161.29L336.69 165.75L317.33 144.80L336.69 118.97L378.01 114.51Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M406.63 189.14L381.26 218.34L333.72 223.47L311.67 199.39L333.72 169.64L381.26 164.50ZM399.89 189.72L378.01 215.12L336.69 219.59L317.33 198.63L336.69 172.80L378.01 168.34Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M406.63 242.97L381.26 272.17L333.72 277.30L311.67 253.22L333.72 223.47L381.26 218.34ZM399.89 243.55L378.01 268.96L336.69 273.42L317.33 252.46L336.69 226.64L378.01 222.17Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M488.37 102.76L460.25 131.34L406.63 135.30L381.26 110.67L406.63 81.47L460.25 77.51ZM480.93 103.17L456.63 128.05L410.03 131.49L387.80 110.05L410.03 84.71L456.63 81.27Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M488.37 156.59L460.25 185.17L406.63 189.14L381.26 164.50L406.63 135.30L460.25 131.34ZM480.93 157.01L456.63 181.88L410.03 185.33L387.80 163.89L410.03 138.54L456.63 135.10Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M488.37 210.42L460.25 239.00L406.63 242.97L381.26 218.34L406.63 189.14L460.25 185.17ZM480.93 210.84L456.63 235.71L410.03 239.16L387.80 217.72L410.03 192.38L456.63 188.93Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M488.37 264.25L460.25 292.84L406.63 296.80L381.26 272.17L406.63 242.97L460.25 239.00ZM480.93 264.67L456.63 289.55L410.03 292.99L387.80 271.55L410.03 246.21L456.63 242.76Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M577.12 72.18L546.88 100.09L488.37 102.76L460.25 77.51L488.37 48.93L546.88 46.26ZM569.14 72.42L542.96 96.71L492.12 99.03L467.54 77.05L492.12 52.25L542.96 49.93Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M577.12 126.01L546.88 153.92L488.37 156.59L460.25 131.34L488.37 102.76L546.88 100.09ZM569.14 126.25L542.96 150.54L492.12 152.86L467.54 130.88L492.12 106.08L542.96 103.76Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M577.12 179.85L546.88 207.75L488.37 210.42L460.25 185.17L488.37 156.59L546.88 153.92ZM569.14 180.08L542.96 204.38L492.12 206.70L467.54 184.71L492.12 159.91L542.96 157.59Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M577.12 233.68L546.88 261.59L488.37 264.25L460.25 239.00L488.37 210.42L546.88 207.75ZM569.14 233.92L542.96 258.21L492.12 260.53L467.54 238.55L492.12 213.74L542.96 211.43Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M670.86 97.55L639.19 124.74L577.12 126.01L546.88 100.09L577.12 72.18L639.19 70.91ZM662.53 97.60L635.07 121.27L581.12 122.38L554.74 99.81L581.12 75.59L635.07 74.49Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M670.86 151.38L639.19 178.57L577.12 179.85L546.88 153.92L577.12 126.01L639.19 124.74ZM662.53 151.43L635.07 175.10L581.12 176.21L554.74 153.64L581.12 129.43L635.07 128.32Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M670.86 205.21L639.19 232.41L577.12 233.68L546.88 207.75L577.12 179.85L639.19 178.57ZM662.53 205.26L635.07 228.93L581.12 230.04L554.74 207.47L581.12 183.26L635.07 182.15Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M670.86 259.05L639.19 286.24L577.12 287.51L546.88 261.59L577.12 233.68L639.19 232.41ZM662.53 259.09L635.07 282.77L581.12 283.87L554.74 261.30L581.12 237.09L635.07 235.98Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M767.51 71.28L735.11 97.74L670.86 97.55L639.19 70.91L670.86 43.72L735.11 43.90ZM759.02 71.14L730.88 94.17L675.04 94.01L647.45 70.81L675.04 47.22L730.88 47.39Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M767.51 125.12L735.11 151.57L670.86 151.38L639.19 124.74L670.86 97.55L735.11 97.74ZM759.02 124.97L730.88 148.00L675.04 147.84L647.45 124.65L675.04 101.06L730.88 101.22Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M767.51 178.95L735.11 205.40L670.86 205.21L639.19 178.57L670.86 151.38L735.11 151.57ZM759.02 178.80L730.88 201.83L675.04 201.67L647.45 178.48L675.04 154.89L730.88 155.05Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M767.51 232.78L735.11 259.23L670.86 259.05L639.19 232.41L670.86 205.21L735.11 205.40ZM759.02 232.64L730.88 255.66L675.04 255.50L647.45 232.31L675.04 208.72L730.88 208.88Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M864.89 101.10L832.49 126.80L767.51 125.12L735.11 97.74L767.51 71.28L832.49 72.96ZM856.42 100.75L828.24 123.13L771.76 121.67L743.58 97.83L771.76 74.89L828.24 76.35Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M864.89 154.93L832.49 180.63L767.51 178.95L735.11 151.57L767.51 125.12L832.49 126.80ZM856.42 154.59L828.24 176.96L771.76 175.50L743.58 151.67L771.76 128.72L828.24 130.18Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M864.89 208.76L832.49 234.46L767.51 232.78L735.11 205.40L767.51 178.95L832.49 180.63ZM856.42 208.42L828.24 230.80L771.76 229.34L743.58 205.50L771.76 182.55L828.24 184.01Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M864.89 262.59L832.49 288.29L767.51 286.61L735.11 259.23L767.51 232.78L832.49 234.46ZM856.42 262.25L828.24 284.63L771.76 283.17L743.58 259.33L771.76 236.39L828.24 237.85Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M960.81 79.31L929.14 104.27L864.89 101.10L832.49 72.96L864.89 47.26L929.14 50.44ZM952.55 78.77L924.96 100.51L869.12 97.75L840.98 73.26L869.12 50.97L924.96 53.72Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M960.81 133.14L929.14 158.10L864.89 154.93L832.49 126.80L864.89 101.10L929.14 104.27ZM952.55 132.61L924.96 154.34L869.12 151.58L840.98 127.09L869.12 104.80L924.96 107.56Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M960.81 186.97L929.14 211.93L864.89 208.76L832.49 180.63L864.89 154.93L929.14 158.10ZM952.55 186.44L924.96 208.17L869.12 205.41L840.98 180.92L869.12 158.63L924.96 161.39Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M960.81 240.81L929.14 265.77L864.89 262.59L832.49 234.46L864.89 208.76L929.14 211.93ZM952.55 240.27L924.96 262.00L869.12 259.24L840.98 234.76L869.12 212.46L924.96 215.22Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1053.12 113.53L1022.88 137.77L960.81 133.14L929.14 104.27L960.81 79.31L1022.88 83.94ZM1045.26 112.81L1018.88 133.92L964.93 129.89L937.47 104.76L964.93 83.11L1018.88 87.13Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1053.12 167.36L1022.88 191.61L960.81 186.97L929.14 158.10L960.81 133.14L1022.88 137.77ZM1045.26 166.64L1018.88 187.75L964.93 183.72L937.47 158.59L964.93 136.94L1018.88 140.97Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1053.12 221.19L1022.88 245.44L960.81 240.81L929.14 211.93L960.81 186.97L1022.88 191.61ZM1045.26 220.47L1018.88 241.58L964.93 237.55L937.47 212.42L964.93 190.77L1018.88 194.80Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1053.12 275.03L1022.88 299.27L960.81 294.64L929.14 265.77L960.81 240.81L1022.88 245.44ZM1045.26 274.30L1018.88 295.41L964.93 291.39L937.47 266.25L964.93 244.60L1018.88 248.63Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1139.75 95.99L1111.63 119.56L1053.12 113.53L1022.88 83.94L1053.12 59.70L1111.63 65.73ZM1132.46 95.09L1107.88 115.61L1057.04 110.37L1030.86 84.62L1057.04 63.59L1107.88 68.83Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1139.75 149.82L1111.63 173.39L1053.12 167.36L1022.88 137.77L1053.12 113.53L1111.63 119.56ZM1132.46 148.92L1107.88 169.44L1057.04 164.20L1030.86 138.45L1057.04 117.42L1107.88 122.66Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1139.75 203.65L1111.63 227.22L1053.12 221.19L1022.88 191.61L1053.12 167.36L1111.63 173.39ZM1132.46 202.75L1107.88 223.28L1057.04 218.04L1030.86 192.28L1057.04 171.25L1107.88 176.49Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1139.75 257.48L1111.63 281.05L1053.12 275.03L1022.88 245.44L1053.12 221.19L1111.63 227.22ZM1132.46 256.59L1107.88 277.11L1057.04 271.87L1030.86 246.12L1057.04 225.09L1107.88 230.32Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1218.74 134.19L1193.37 157.14L1139.75 149.82L1111.63 119.56L1139.75 95.99L1193.37 103.31ZM1212.20 133.13L1189.97 153.11L1143.37 146.75L1119.07 120.41L1143.37 99.97L1189.97 106.33Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1218.74 188.02L1193.37 210.98L1139.75 203.65L1111.63 173.39L1139.75 149.82L1193.37 157.14ZM1212.20 186.97L1189.97 206.95L1143.37 200.58L1119.07 174.25L1143.37 153.80L1189.97 160.16Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1218.74 241.86L1193.37 264.81L1139.75 257.48L1111.63 227.22L1139.75 203.65L1193.37 210.98ZM1212.20 240.80L1189.97 260.78L1143.37 254.41L1119.07 228.08L1143.37 207.63L1189.97 214.00Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1218.74 295.69L1193.37 318.64L1139.75 311.32L1111.63 281.05L1139.75 257.48L1193.37 264.81ZM1212.20 294.63L1189.97 314.61L1143.37 308.25L1119.07 281.91L1143.37 261.46L1189.97 267.83Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1288.33 120.28L1266.28 142.69L1218.74 134.19L1193.37 103.31L1218.74 80.36L1266.28 88.85ZM1282.67 119.08L1263.31 138.58L1221.99 131.20L1200.11 104.33L1221.99 84.42L1263.31 91.80Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1288.33 174.11L1266.28 196.52L1218.74 188.02L1193.37 157.14L1218.74 134.19L1266.28 142.69ZM1282.67 172.92L1263.31 192.41L1221.99 185.03L1200.11 158.16L1221.99 138.25L1263.31 145.63Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1288.33 227.95L1266.28 250.35L1218.74 241.86L1193.37 210.98L1218.74 188.02L1266.28 196.52ZM1282.67 226.75L1263.31 246.25L1221.99 238.86L1200.11 212.00L1221.99 192.08L1263.31 199.46Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+  <path
+    d="M1288.33 281.78L1266.28 304.18L1218.74 295.69L1193.37 264.81L1218.74 241.86L1266.28 250.35ZM1282.67 280.58L1263.31 300.08L1221.99 292.70L1200.11 265.83L1221.99 245.91L1263.31 253.30Z"
+    fill="url(#metal-grain)"
+    fill-rule="evenodd"
+  />
+</svg>

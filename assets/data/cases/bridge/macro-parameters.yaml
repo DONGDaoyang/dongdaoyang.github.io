@@ -1,0 +1,81 @@
+# Portable macro configuration; the default inherent strain is a seed, not the identified result.
+case:
+  name: bridge_inherent_strain
+mesh:
+  element_type: HEX8
+  scale_to_meter: 0.001
+geometry:
+  base_plate_height_m: 0.01
+  fixed_plane_z_m: 0.0
+  fixed_plane_tolerance_m: 0.0001
+activation:
+  z_tolerance_m: 1.0e-05
+toolpath:
+  mode: generated
+  number_of_layers: 36
+  layer_height_m: 0.00025
+  layer_duration_s: 1.0
+  scan:
+    length_m: 0.5
+    width_m: 0.03
+    y_m: 0.0
+material:
+  elastic_modulus_pa: 1.1458e11
+  poisson_ratio: 0.3
+  initial_yield_stress_pa: 1.151e9
+  hardening_modulus_pa: 1.8139e9
+  maximum_yield_stress_pa: 1.31e9
+inherent_strain:
+  default:
+    xx: -0.005
+    yy: -0.005
+    zz: 0.005
+  increments_per_layer: 2
+  save_each_increment: false
+cutting:
+  enabled: false
+  mode: node_release
+  z_cut_m: 0.0
+  interface_tolerance_m: 1.0e-06
+  gap_m: 0.0
+  tag: cut_block
+postprocess:
+  enabled: true
+  output_directory: ../../../../opt_output/bridge/forward/postprocess
+  save_plot: true
+  jobs:
+    - name: pre_cut_strain_line_1
+      source: forward
+      variables:
+        - name: eps_e_xx
+          location: cell
+        - name: eps_e_zz
+          location: cell
+      line:
+        start_m:
+          - 0.0
+          - 0.0
+          - -0.00145
+        end_m:
+          - 0.075
+          - 0.0
+          - -0.00145
+        num_points: 150
+    - name: post_cut_displacement_line
+      source: cutting
+      variables:
+        - name: u
+          location: point
+          components:
+            - z
+          label: displacement
+      line:
+        start_m:
+          - -0.0635
+          - 0.0
+          - 0.03849
+        end_m:
+          - 0.0635
+          - 0.0
+          - 0.03849
+        num_points: 80

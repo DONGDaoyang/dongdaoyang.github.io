@@ -1,0 +1,339 @@
+# Portable saved physics configuration; local paths and runtime outputs omitted.
+case:
+  name: dc_in718
+mesh:
+  element_type: HEX8
+  scale_to_meter: 0.001
+geometry:
+  substrate_bottom_z_m: -0.001
+  bottom_tolerance_m: 0.0001
+  material_interface_z_m: 0.0
+  base_plate_height_m: 0.0
+thermal:
+  initial_temperature_c: 25.0
+  convection:
+    coefficient_w_m2k: 8.0
+    ambient_temperature_c: 25.0
+  radiation:
+    stefan_boltzmann: 5.67e-08
+    emissivity: 0.2
+    ambient_temperature_c: 25.0
+mechanics:
+  fixed_plane_z_m: -0.001
+  fixed_plane_tolerance_m: 0.0001
+  thermal_strain_reference_temperature_c: 25.0
+  thermal_strain_cutoff: solidus
+phase:
+  powder: 0
+  liquid: 1
+  solid: 2
+heat_source:
+  type: goldak_double_ellipsoid
+  power_w: 285.0
+  efficiency: 0.4
+  front_radius_x_m: 5.0e-05
+  rear_radius_x_m: 5.0e-05
+  radius_y_m: 5.0e-05
+  radius_z_m: 0.000125
+  front_fraction: 1.0
+  rear_fraction: 1.0
+  surface_source:
+    enabled: false
+    radius_x_m: 5.0e-05
+    radius_y_m: 5.0e-05
+activation:
+  active_radius_factor: 2.0
+toolpath:
+  mode: generated
+  pattern: box_zigzag
+  number_of_layers: 3
+  layer_height_m: 4.0e-05
+  cooling_time_s: 200.0
+  scan:
+    length_x_m: 0.00055
+    length_y_m: 0.00055
+    velocity_m_s: 0.96
+    hatch_spacing_m: 0.00011
+    center_x_m: 0.0
+    center_y_m: 0.0
+    first_layer_angle_degrees: 0.0
+    layer_rotation_degrees: 67.0
+    zigzag: true
+time_stepping:
+  laser_on_dt_s: 1.25e-05
+  laser_off_steps_per_segment: 10
+  mechanics_interval: 2
+materials:
+  upper_region:
+    name: IN718
+    density_kg_m3: 8146.0
+    latent_heat_j_kg: 286000.0
+    solidus_temperature_k: 1533.0
+    liquidus_temperature_k: 1609.0
+    conductivity:
+      temperature_k:
+        - 293.15
+        - 373.15
+        - 573.15
+        - 773.15
+        - 973.15
+        - 1623.15
+      values:
+        - 11.4
+        - 12.5
+        - 14.0
+        - 15.5
+        - 21.5
+        - 31.3
+    heat_capacity:
+      temperature_k:
+        - 293.15
+        - 373.15
+        - 573.15
+        - 773.15
+        - 973.15
+        - 1623.15
+      values:
+        - 427
+        - 441
+        - 481
+        - 521
+        - 601
+        - 691
+    elastic_modulus:
+      temperature_k:
+        - 294.15
+        - 366.15
+        - 477.15
+        - 589.15
+        - 700.15
+        - 811.15
+        - 922.15
+        - 1033.15
+        - 1144.15
+        - 1227.15
+      values_gpa:
+        - 208
+        - 205
+        - 202
+        - 194
+        - 186
+        - 179
+        - 172
+        - 162
+        - 127
+        - 17.8
+    thermal_expansion:
+      temperature_k:
+        - 294.15
+        - 366.15
+        - 477.15
+        - 589.15
+        - 700.15
+        - 811.15
+        - 922.15
+        - 1033.15
+        - 1227.15
+      values_micro_per_k:
+        - 12.8
+        - 12.8
+        - 13.5
+        - 13.9
+        - 14.2
+        - 14.4
+        - 15.1
+        - 16.1
+        - 16.2
+    poisson_ratio:
+      temperature_k:
+        - 294.15
+        - 1623.15
+      values:
+        - 0.3
+        - 0.3
+    yield_stress:
+      temperature_k:
+        - 294.15
+        - 366.15
+        - 700.15
+        - 811.15
+        - 922.15
+        - 1033.15
+        - 1144.15
+        - 1227.15
+      values_mpa:
+        - 1172
+        - 1172
+        - 1089
+        - 1068
+        - 1034
+        - 827
+        - 286
+        - 138
+    maximum_yield_factor: 1.0
+    hardening_modulus:
+      temperature_k:
+        - 294.15
+        - 366.15
+        - 700.15
+        - 811.15
+        - 922.15
+        - 1033.15
+        - 1144.15
+        - 1227.15
+      values_gpa:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+  lower_region:
+    name: IN718
+    density_kg_m3: 8146.0
+    latent_heat_j_kg: 286000.0
+    solidus_temperature_k: 1533.0
+    liquidus_temperature_k: 1609.0
+    conductivity:
+      temperature_k:
+        - 293.15
+        - 373.15
+        - 573.15
+        - 773.15
+        - 973.15
+        - 1623.15
+      values:
+        - 11.4
+        - 12.5
+        - 14.0
+        - 15.5
+        - 21.5
+        - 31.3
+    heat_capacity:
+      temperature_k:
+        - 293.15
+        - 373.15
+        - 573.15
+        - 773.15
+        - 973.15
+        - 1623.15
+      values:
+        - 427
+        - 441
+        - 481
+        - 521
+        - 601
+        - 691
+    elastic_modulus:
+      temperature_k:
+        - 294.15
+        - 366.15
+        - 477.15
+        - 589.15
+        - 700.15
+        - 811.15
+        - 922.15
+        - 1033.15
+        - 1144.15
+        - 1227.15
+      values_gpa:
+        - 208
+        - 205
+        - 202
+        - 194
+        - 186
+        - 179
+        - 172
+        - 162
+        - 127
+        - 17.8
+    thermal_expansion:
+      temperature_k:
+        - 294.15
+        - 366.15
+        - 477.15
+        - 589.15
+        - 700.15
+        - 811.15
+        - 922.15
+        - 1033.15
+        - 1227.15
+      values_micro_per_k:
+        - 12.8
+        - 12.8
+        - 13.5
+        - 13.9
+        - 14.2
+        - 14.4
+        - 15.1
+        - 16.1
+        - 16.2
+    poisson_ratio:
+      temperature_k:
+        - 294.15
+        - 1623.15
+      values:
+        - 0.3
+        - 0.3
+    yield_stress:
+      temperature_k:
+        - 294.15
+        - 366.15
+        - 700.15
+        - 811.15
+        - 922.15
+        - 1033.15
+        - 1144.15
+        - 1227.15
+      values_mpa:
+        - 1172
+        - 1172
+        - 1089
+        - 1068
+        - 1034
+        - 827
+        - 286
+        - 138
+    maximum_yield_factor: 1.0
+    hardening_modulus:
+      temperature_k:
+        - 294.15
+        - 366.15
+        - 700.15
+        - 811.15
+        - 922.15
+        - 1033.15
+        - 1144.15
+        - 1227.15
+      values_gpa:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+solver:
+  thermal:
+    backend: petsc
+    ksp_type: gmres
+    pc_type: gamg
+    line_search: true
+    tolerance: 1.0e-06
+    relative_tolerance: 1.0e-08
+    initial_guess_predictor:
+      enabled: true
+      reference_heat_capacity_j_kgk: 500.0
+      scale: 1.0
+      max_temperature_rise_c: 50.0
+  mechanics:
+    backend: petsc
+    ksp_type: preonly
+    pc_type: lu
+    factor_solver_type: mumps
+    line_search: true
+    tolerance: 1.0e-06
+    relative_tolerance: 1.0e-08
