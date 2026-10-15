@@ -29,7 +29,7 @@ image_alt: Thin-wall saved simulation stress result.
 
 ## Overview
 
-This is a four-layer S355 steel thin-wall model. The thermal–mechanical analysis follows successive line scans and cooling stages, then releases the specified anchors to calculate springback.
+This is a four-layer S355 steel thin-wall model. The thermal–mechanical analysis follows successive line scans and cooling stages, then releases the specified anchors to calculate springback. The original thin-wall benchmark and experimental results are reported by Ding et al. <a href="#reference-1">[1]</a>
 
 <div class="rsh-case-figures" markdown="1">
 
@@ -80,7 +80,7 @@ _Figure 1. Geometry and dimensions._
 <details class="rsh-parameter-details" markdown="1">
 <summary>Temperature-dependent material parameters</summary>
 
-The S355 thermal and temperature-dependent mechanical parameters used in this simulation are adapted from Qi et al., supplementary Tables S2–S3 <a href="#reference-1">[1]</a>.
+The S355 thermal and temperature-dependent mechanical parameters used in this simulation are adapted from Qi et al., supplementary Tables S2–S3 <a href="#reference-2">[2]</a>.
 
 #### S355 — upper region and lower region
 
@@ -288,4 +288,8 @@ The maximum springback magnitude is **3.246338 mm**, with a vertical component o
 
 <span id="reference-1"></span>
 
-[1] Qi, J., Liu, X., Dong, P., Li, Q., Yang, Y. (2025). An improved dynamic inherent strain method for efficient prediction of residual stresses and deformations in metal additive manufacturing. _Additive Manufacturing_, **114**, 105025. [https://doi.org/10.1016/j.addma.2025.105025](https://doi.org/10.1016/j.addma.2025.105025).
+[1] Ding, J., Colegrove, P., Mehnen, J., Ganguly, S., Sequeira Almeida, P.M., Wang, F., Williams, S. (2011). Thermo-mechanical analysis of Wire and Arc Additive Layer Manufacturing process on large multi-layer parts. _Computational Materials Science_, **50**, 3315–3322. [https://doi.org/10.1016/j.commatsci.2011.06.023](https://doi.org/10.1016/j.commatsci.2011.06.023).
+
+<span id="reference-2"></span>
+
+[2] Qi, J., Liu, X., Dong, P., Li, Q., Yang, Y. (2025). An improved dynamic inherent strain method for efficient prediction of residual stresses and deformations in metal additive manufacturing. _Additive Manufacturing_, **114**, 105025. [https://doi.org/10.1016/j.addma.2025.105025](https://doi.org/10.1016/j.addma.2025.105025).
