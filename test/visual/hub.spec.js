@@ -201,11 +201,31 @@ for (const theme of ["light", "dark"]) {
       await expect(page.locator(".rsh-welcome")).toContainText("Welcome to Residual Stress Hub!");
     });
 
-    test("Methods introduces only thermal-mechanical and inherent strain analysis", async ({ page }) => {
+    test("Methods explains the reference, optimization loop, and component handoff", async ({ page }) => {
       await openPage(page, "/methods/");
-      await expect(page.locator(".rsh-guide-section h2")).toHaveText(["Full thermal-mechanical analysis", "Inherent strain analysis"]);
+      const guide = page.locator(".rsh:not(.rsh-page-brand)");
+      await expect(page.locator(".rsh-guide-section h2")).toHaveText([
+        "Full thermal-mechanical analysis",
+        "Optimization-based inherent strain analysis",
+      ]);
       await expect(page.locator(".rsh-guide-section")).toHaveCount(2);
-      await expect(page.locator(".rsh:not(.rsh-page-brand)")).not.toContainText("Use this checklist");
+      await expect(guide).toContainText("python opt_solver/run.py bridge --dry-run");
+      await expect(guide).toContainText("Reset displacement, stress, and plastic history to zero.");
+      await expect(guide).toContainText("inherent_strain.default");
+      await expect(guide).toContainText("workflow_result.json");
+      await expect(guide).not.toContainText(/Macro|Use this checklist/);
+      await guide.locator('a[href="#inside-the-optimization"]').click();
+      await expect(page).toHaveURL(/#inside-the-optimization$/);
+      await expect(guide.locator("mjx-container").first()).toBeVisible();
+      for (const details of await guide.locator("details").all()) {
+        await details.locator("summary").click();
+        await expect(details).toHaveAttribute("open", "");
+      }
+      await page.evaluate(async () => {
+        if (window.MathJax?.startup?.promise) await window.MathJax.startup.promise;
+      });
+      await expect(guide.locator("mjx-merror, [data-mjx-error]")).toHaveCount(0);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
     });
 
     test("Benchmarks opens Cantilever directly with paper sections, full parameters, figures and a source footer", async ({ page, request }) => {
