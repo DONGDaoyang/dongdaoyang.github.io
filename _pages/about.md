@@ -8,7 +8,7 @@ nav_order: 0
 
 <!-- Edit the welcome and gallery in _data/residual_stress_hub.yml. -->
 
-<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
 {% assign hub = site.data.residual_stress_hub %}
 
 <div class="rsh" id="hub-home" markdown="1">

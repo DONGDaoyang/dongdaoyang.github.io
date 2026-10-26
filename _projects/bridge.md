@@ -9,11 +9,13 @@ hub_case: true
 published: true
 importance: 3
 case_type: Computational case
-img: /assets/img/cases/bridge/results-cover.png?v=3810220e4237
-image_alt: "Bridge axial elastic-strain field with a color scale in microstrain."
+img: /assets/img/cases/bridge/card-cover.png?v=21931f5eab15
+image_alt: "Bridge benchmark model."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
+
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
 
 <div class="rsh rsh-page-brand">
 <section class="rsh-hero rsh-hero-with-background" aria-label="Residual Stress Hub">

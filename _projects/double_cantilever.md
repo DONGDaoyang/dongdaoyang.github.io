@@ -9,11 +9,13 @@ hub_case: true
 published: true
 importance: 5
 case_type: Computational case
-img: /assets/img/cases/double_cantilever/results-cover.png?v=8e5614f749e8
-image_alt: "Double-cantilever axial elastic-strain field with a color scale in microstrain."
+img: /assets/img/cases/double_cantilever/card-cover.png?v=906e32b33a24
+image_alt: "Double-cantilever benchmark model."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
+
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
 
 <div class="rsh rsh-page-brand">
 <section class="rsh-hero rsh-hero-with-background" aria-label="Residual Stress Hub">

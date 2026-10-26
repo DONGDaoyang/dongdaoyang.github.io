@@ -2,6 +2,8 @@
    Content styles stay scoped to .rsh; no local layout/Sass or build pipeline. */
 html:root {
   --hub-case-heading-color: #17191b;
+  --hub-brand-ink: #253e50;
+  --hub-brand-accent: #d58a52;
   --global-bg-color: #fff;
   --global-text-color: #292c2e;
   --global-text-color-light: #62676b;
@@ -16,6 +18,8 @@ html:root {
 }
 html:root[data-theme="dark"] {
   --hub-case-heading-color: #f5f5ef;
+  --hub-brand-ink: #c8d9e5;
+  --hub-brand-accent: #e5a271;
   --global-bg-color: #202224;
   --global-text-color: #eeeee9;
   --global-text-color-light: #b8bcbe;
@@ -76,9 +80,6 @@ html[data-theme="dark"] .rsh,
   height: auto;
   margin: 0;
 }
-html[data-theme="dark"] .rsh .rsh-logo {
-  filter: brightness(1.12);
-}
 .rsh .rsh-hero-with-background {
   overflow: hidden;
   border-radius: 10px;
@@ -112,32 +113,19 @@ html[data-theme="dark"] .rsh .rsh-logo {
   font-size: clamp(1rem, 8cqw, 4.2rem);
   text-align: center;
   white-space: nowrap;
-  font-weight: 650;
+  font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.055em;
 }
 .rsh .rsh-hero :is(h1, .rsh-site-title) .rsh-brand-name {
   color: var(--hub-text);
 }
-.rsh .rsh-hero :is(h1, .rsh-site-title) .rsh-stress-name {
-  color: #4b7baa;
-}
-@supports (background-clip: text) or (-webkit-background-clip: text) {
-  .rsh .rsh-hero :is(h1, .rsh-site-title) .rsh-stress-name {
-    background-image: linear-gradient(90deg, #4b7baa 0%, #f7f8fa 25%, #c55e6b 50%, #f7f8fa 75%, #4b7baa 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-}
-@media (forced-colors: active) {
-  .rsh .rsh-hero :is(h1, .rsh-site-title) .rsh-stress-name {
-    background-image: none;
-    color: CanvasText;
-  }
+.rsh .rsh-hero :is(h1, .rsh-site-title) .rsh-stress-name,
+.post:has(.rsh-process-banner) > .post-header .post-title {
+  color: var(--hub-brand-ink);
 }
 .rsh .rsh-hero :is(h1, .rsh-site-title) .rsh-hub-name {
-  color: var(--hub-accent);
+  color: var(--hub-brand-accent);
 }
 .post:has(.rsh-page-brand) {
   --rsh-brand-height: clamp(9rem, 12vw, 11rem);
@@ -170,6 +158,23 @@ html[data-theme="dark"] .rsh .rsh-logo {
 .post:has(.rsh-process-banner) {
   --rsh-brand-height: clamp(10rem, 22vw, 15rem);
 }
+.post:has(.rsh-process-banner) > .post-header .post-title {
+  position: absolute;
+  z-index: 2;
+  top: calc(var(--rsh-brand-height) / 2);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  max-width: 100%;
+  margin: 0;
+  padding-block: 0.08em;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+  text-align: center;
+  filter: drop-shadow(0 1px 8px var(--global-bg-color));
+}
 .rsh.rsh-process-banner {
   height: var(--rsh-brand-height);
   overflow: hidden;
@@ -183,7 +188,7 @@ html[data-theme="dark"] .rsh .rsh-logo {
   object-fit: cover;
   object-position: center 45%;
   filter: blur(2px) saturate(0.95);
-  opacity: 0.9;
+  opacity: 0.5;
   -webkit-mask-image:
     linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent), linear-gradient(180deg, transparent, #000 18%, #000 62%, transparent);
   mask-image:
@@ -693,5 +698,5 @@ html[data-theme="dark"] .rsh .rsh-logo {
 }
 .rsh .rsh-benchmark-card h2 {
   margin: 0;
-  font-weight: 650;
+  font-weight: 700;
 }

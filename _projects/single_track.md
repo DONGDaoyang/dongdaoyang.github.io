@@ -9,11 +9,13 @@ hub_case: true
 published: true
 importance: 1
 case_type: Computational case
-img: /assets/img/cases/single_track/results-cover.png?v=70a6ec99dd48
-image_alt: "Single-track von Mises stress field with a color scale in MPa."
+img: /assets/img/cases/single_track/card-cover.png?v=bc443dc64c1a
+image_alt: "Single track benchmark model."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
+
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
 
 <div class="rsh rsh-page-brand">
 <section class="rsh-hero rsh-hero-with-background" aria-label="Residual Stress Hub">

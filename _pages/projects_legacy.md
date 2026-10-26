@@ -22,7 +22,7 @@ sitemap: false
 
 <!-- Edit headings, paragraphs, and lists in Markdown. Containers retain the page layout. -->
 
-<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
 {% assign cases = site.projects | where: "hub_case", true | where_exp: "case", "case.published != false" | sort: "importance" %}
 
 <div class="rsh" markdown="1">

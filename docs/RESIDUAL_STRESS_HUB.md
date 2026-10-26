@@ -59,7 +59,7 @@ Cantilever 正文采用 Overview、Problem set、Results 三段普通 Markdown�
 
 Benchmarks 按 **Single track → Thin-wall → Bridge → Cantilever → Double-cantilever** 排序，通过五个 Markdown 文件的 `importance: 1–5` 控制，桌面每行使用三列卡片，手机保持单列。Bridge 页面新增在 `_projects/bridge.md`，地址为 `/benchmarks/bridge/`。
 
-图片目录依次为 `assets/img/cases/single_track/`、`assets/img/cases/thin-wall/`、`assets/img/cases/bridge/`、`assets/img/cases/cantilever/`、`assets/img/cases/double_cantilever/`。每个目录均有 README。卡片只显示图片和算例名称，不显示介绍句或 “View case” 按钮。五个封面均采用当前论文的对应云图，完整渲染为 `results-cover.png`，原始 PDF 保存在对应的 `assets/pdf/cases/<case>/results-cover.pdf`。Single track 显示 von Mises 应力，Thin-wall 和 Cantilever 显示轴向应力，Bridge 和 Double-cantilever 显示轴向弹性应变。封面和正文使用同一张标有物理量和单位的图，并添加内容哈希刷新缓存。当前来源与哈希见 `docs/benchmark-manuscript-assets.json`，旧的 `docs/case-results-cover-assets.json` 仅保留历史导入记录。Single track 的原始单元数据继续提供下载。图片在 4:3 区域中完整显示，不裁剪。更换封面时同步修改算例 Markdown 的 `img` 和 `image_alt`。
+图片目录依次为 `assets/img/cases/single_track/`、`assets/img/cases/thin-wall/`、`assets/img/cases/bridge/`、`assets/img/cases/cantilever/`、`assets/img/cases/double_cantilever/`。列表卡片只显示图片和算例名称。五张列表封面已按维护者要求恢复为提交 `3c62167` 中的原始用图，独立保存为各目录下的 `card-cover.png`；来源路径和 SHA-256 见 `docs/benchmark-card-cover-assets.json`。详情页的论文结果图、温度曲线及图注修正继续保留。封面和详情图分别维护，`docs/benchmark-manuscript-figures.json` 的 `card_cover` 控制列表封面，离线导入器不会再用详情图覆盖它。所有图片完整显示，不裁剪。
 
 Single track、Thin-wall、Bridge 和 Double-cantilever 的参数与结果已整理，来源和复现步骤见下方“其他四个算例的数据与结果”。五个算例均保留已提供的几何图。
 
@@ -215,7 +215,7 @@ Benchmarks 使用 `/benchmarks/` 地址，详情页应是 `/benchmarks/your-case
 
 样式在 `assets/css/residual-stress-hub.css`：通过核心主题现有的 `--global-*` CSS 变量统一导航、链接和页脚的配色，Hub 内容组件限定在 `.rsh` 下；论文式算例样式限定在含 Overview 标题的正文 article 下。没有新增本地布局、Sass 覆盖、插件或 CSS 构建流程。
 
-页面主色为钢蓝色 `#4B7094`，用于 Hub、导航选中状态、链接和交互强调；悬停色为 `#355676`，深色模式使用浅蓝 `#AAC7E3`。浅色模式保持白色底和深灰正文。品牌标题使用柔和的红白蓝渐变（红色 `#C55E6B`、白色 `#F7F8FA`、蓝色 `#4B7BAA`）；S 的正面使用中灰 `#899097`，Logo 的 R 与标题共用红白蓝配色，采用红—白—蓝竖向渐变，白色过渡位于约 3/4 高度；两者的红蓝颜色需同步调整，S 为中灰金属色。品牌颜色仅用于视觉识别；实际算例结果图保留原始色标、单位与坐标约定。
+品牌标识采用深墨蓝 `#253E50` 与暖铜橙 `#D58A52`。首页及子页品牌字样中，Residual Stress 使用墨蓝，Hub 使用铜橙，不使用红蓝渐变；深色模式采用同色系的浅蓝灰 `#C8D9E5` 与浅铜色 `#E5A271` 保持可读性。导航、链接保留钢蓝交互色。实际科研图的色标、单位和数据不随品牌改色。
 
 保持现有 `url` / `baseurl`；列表的 Liquid 链接使用 `relative_url`，算例普通 Markdown 使用本站空 `baseurl` 对应的根路径。若以后部署到子目录，需同步调整 Markdown 路径。运行时归属仍遵循 [架构说明](ARCHITECTURE.md)。
 
@@ -267,7 +267,7 @@ npm run dev
 
 桌面画廊使用 4 列、2 行；1100px 及以下使用 2 列、4 行。动画自动循环播放，无轮播、拖动或手动播放按钮。设置了系统“减少动态效果”的浏览器通过 `<picture>` 自动显示静态 `poster`，其他浏览器播放动画；页面不依赖 JavaScript 播放。首页选图与 Benchmarks 封面相互独立。
 
-首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定。工业风 RS 保留分层打印的立体几何，采用拉丝银灰、深蓝石墨底板、细小紧固件和橙色沉积线。`hero_background` 仍为蜂窝背景。Benchmarks 与算例详情页复用这套品牌标识，Methods 和 Resources 使用独立工艺横幅。
+首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定。简化图案由深墨蓝切角外框和三条铜橙弯曲叠层构成。两个尖角与两个圆角并存，叠层曲线呼应增材制造和变形。Logo 为原生 SVG，网页与 iOS 图标使用同款图案。`hero_background` 仍为蜂窝背景。Benchmarks 与算例详情页复用品牌标识，Methods 和 Resources 使用独立工艺横幅。
 
 布局在 `_pages/about.md`，样式在 `assets/css/residual-stress-hub.css`。页面标识为 `assets/img/residual-stress-hub/rs-logo.svg`。浏览器图标使用独立简化的 `rs-favicon.svg`，`logo.svg` 保留同款简化标识作兼容资源；iOS 图标为 180×180 的 `rs-apple-touch.png`。图标路径由 `_config.yml` 的 `icon` 和 `apple_touch_icon` 指定。Logo 与背景是品牌装饰，不表示计算或测量结果。
 
@@ -297,7 +297,7 @@ python bin/render_single_track_stress.py --source <opt_output>/am_solver/track1/
 
 Benchmarks 卡片的 `card_title` 显示名称、工艺与材料；详情页标题仍使用 `title`。Single track 同时标注 IN718 沉积层和 Ti-6Al-4V 基板。Thin-wall 的材料牌号由维护者确认为 S355，配置内标识仍为 `thin_wall_steel`。
 
-标题的 `Residual Stress` 保留蓝—白—红—白—蓝渐变，`Hub` 使用钢蓝色。工业风 RS 的具体配色与图标文件见上文。蜂窝背景保留银灰金属反光、细密沉积层纹和轻微颗粒表现，首页三个入口卡片底色透明。
+品牌标题与 Logo 共用上文的墨蓝、铜橙配色。蜂窝背景保留银灰金属反光、细密沉积层纹和轻微颗粒表现，首页三个入口卡片底色透明。
 
 ## Benchmarks 论文用图核对与更新
 
@@ -321,6 +321,6 @@ npx prettier _projects/*.md docs/benchmark-manuscript-*.json --write
 
 首页欢迎语位于 `_data/residual_stress_hub.yml` 的 `welcome`，以 “Howdy! Welcome to Residual Stress Hub.” 开场。正文明确覆盖多种金属增材制造及修复工艺的残余应力模拟，目前重点为基于可微分有限元的固有应变法。
 
-Methods 和 Resources 的页顶采用 `page_background` 指定的虚化金属激光沉积横幅，不再重复显示网站 Logo。页面标题由原有布局显示。当前网页使用带真实 alpha 通道的 `assets/img/residual-stress-hub/additive-manufacturing-banner-transparent.webp`，源 PNG 为同名文件。工厂背景已移除，仅保留喷嘴、熔池和金属构件。`.rsh-process-banner` 容器无固定底色，图片通过四周透明遮罩和轻度模糊融入当前主题。旧的非透明生成图仅作素材存档。这是装饰图，不代表实验记录或模拟结果。
+Methods 和 Resources 的页顶采用 `page_background` 指定的虚化金属激光沉积横幅，不再重复显示网站 Logo。页面原有的 Methods / Resources 标题居中叠放在背景上，使用与 Residual Stress Hub 一致的字体、字重和墨蓝配色；深色模式使用浅蓝灰。标题只出现一次，简介在横幅下方显示。当前网页使用带真实 alpha 通道的 `assets/img/residual-stress-hub/additive-manufacturing-banner-transparent.webp`，源 PNG 为同名文件。工厂背景已移除，仅保留喷嘴、熔池和金属构件。`.rsh-process-banner` 容器无固定底色，图片通过四周透明遮罩和轻度模糊融入当前主题。旧的非透明生成图仅作素材存档。这是装饰图，不代表实验记录或模拟结果。
 
 该图片使用内置 imagegen 工具生成并去背景，当前透明版提示词见 `docs/additive-banner-transparent-prompt.txt`，原始生成提示词保存在 `docs/additive-banner-prompt.txt`。WebP 以 `cwebp -q 88 -alpha_q 100` 压缩并保留 alpha，路径附加内容哈希以刷新缓存。

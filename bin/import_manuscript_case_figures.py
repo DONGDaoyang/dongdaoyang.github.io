@@ -31,6 +31,8 @@ def main():
 
     # Validate all inputs before replacing any website content.
     for case in manifest['cases']:
+        if 'card_cover' in case:
+            assert (repo / case['card_cover']['image'].lstrip('/')).is_file(), case['key']
         for figure in case['figures']:
             if 'source' in figure:
                 source = source_root / figure['source']
@@ -71,8 +73,13 @@ def main():
         assert separator, page
         _, footer_separator, footer = old_results.partition('\n---\n')
         assert footer_separator, page
-        cover = next(f for f in case['figures'] if f.get('cover'))
-        before = re.sub(r'^img:.*$', 'img: ' + cover['_image_url'], before, count=1, flags=re.MULTILINE)
+        if 'card_cover' in case:
+            cover = case['card_cover']
+            cover_url = cover['image'] + '?v=' + sha256(repo / cover['image'].lstrip('/'))[:12]
+        else:
+            cover = next(f for f in case['figures'] if f.get('cover'))
+            cover_url = cover['_image_url']
+        before = re.sub(r'^img:.*$', 'img: ' + cover_url, before, count=1, flags=re.MULTILINE)
         before = re.sub(r'^image_alt:.*$', 'image_alt: ' + json.dumps(cover['alt']), before, count=1, flags=re.MULTILINE)
         results = '\n' + figure_grid(cards) + case.get('after', '')
         page.write_text(before + separator + align_case_figure_headers(results) + footer_separator + footer)

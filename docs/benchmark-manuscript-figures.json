@@ -26,7 +26,11 @@
           "caption": "Axial $\\sigma_{\\mathrm{xx}}$ (left) and through-thickness $\\sigma_{\\mathrm{zz}}$ (right), in MPa.",
           "explanation": "The profiles are sampled at $y=0$ and $z=0.335$ mm, the assumed deposit mid-height. The horizontal coordinate is $x_{\\mathrm{plot}}=x+20$ mm, covering the 40 mm track. DNS is compared with the supplied reference simulation and three experimental samples. The axial stress is mainly tensile, while the through-thickness component varies most strongly near the track ends."
         }
-      ]
+      ],
+      "card_cover": {
+        "image": "/assets/img/cases/single_track/card-cover.png",
+        "alt": "Single track benchmark model."
+      }
     },
     {
       "key": "thin_wall",
@@ -82,7 +86,11 @@
           "explanation": "This is the separate twenty-layer configuration after unclamping, rather than the four-layer thermal-history case above. The simulation is compared with the neutron-diffraction measurements and reported error bars of Ding et al. (2011). It captures the tensile-to-compressive trend with height, while local stress magnitudes remain overpredicted."
         }
       ],
-      "after": "### Springback after release\n\nThe maximum release-induced displacement increment is **3.246338 mm**, with a vertical component of **3.242710 mm** at that node. It measures the change between the states before and after release, rather than the total released displacement shown in the profile.\n\n[Download springback samples](/assets/data/cases/thin-wall/springback-summary.csv)\n\n"
+      "after": "### Springback after release\n\nThe maximum release-induced displacement increment is **3.246338 mm**, with a vertical component of **3.242710 mm** at that node. It measures the change between the states before and after release, rather than the total released displacement shown in the profile.\n\n[Download springback samples](/assets/data/cases/thin-wall/springback-summary.csv)\n\n",
+      "card_cover": {
+        "image": "/assets/img/cases/thin-wall/card-cover.png",
+        "alt": "Thin-wall benchmark model."
+      }
     },
     {
       "key": "bridge",
@@ -161,7 +169,11 @@
           "caption": "Bridge $\\varepsilon^{\\mathrm{e}}_{\\mathrm{zz}}$ along the vertical line (µε).",
           "explanation": "The line is at global $x=-6.75$ mm and $y=0$, over $z=10$–19 mm. The plotted height is $z_{\\mathrm{local}}=z-10$ mm. The filename label “3.75” refers to the local horizontal position $x+10.5$, rather than a global $x=3.75$ mm plane. The curves compare Opt-IS, MIS, DIS, the supplied reference simulation, and experimental data."
         }
-      ]
+      ],
+      "card_cover": {
+        "image": "/assets/img/cases/bridge/card-cover.png",
+        "alt": "Bridge benchmark model."
+      }
     },
     {
       "key": "cantilever",
@@ -237,7 +249,11 @@
             ["Download 50-group displacement samples", "/assets/data/cases/cantilever/warpage-50-layer.csv"]
           ]
         }
-      ]
+      ],
+      "card_cover": {
+        "image": "/assets/img/cases/cantilever/card-cover.png",
+        "alt": "Cantilever benchmark model."
+      }
     },
     {
       "key": "double_cantilever",
@@ -298,7 +314,11 @@
           "explanation": "Opt-IS, MIS, DIS, the supplied reference simulation, and experiment are compared along the specimen. Both ends lift after cutting, with greater uplift on the left and a low-displacement central region.",
           "links": [["Download displacement samples", "/assets/data/cases/double_cantilever/warpage.csv"]]
         }
-      ]
+      ],
+      "card_cover": {
+        "image": "/assets/img/cases/double_cantilever/card-cover.png",
+        "alt": "Double-cantilever benchmark model."
+      }
     }
   ]
 }

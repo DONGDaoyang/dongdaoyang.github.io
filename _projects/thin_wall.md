@@ -9,11 +9,13 @@ hub_case: true
 published: true
 importance: 2
 case_type: Computational case
-img: /assets/img/cases/thin-wall/results-cover.png?v=bd0e5d284a4f
-image_alt: "Four-layer thin-wall axial stress after anchor release, in MPa."
+img: /assets/img/cases/thin-wall/card-cover.png?v=f1afc73e661d
+image_alt: "Thin-wall benchmark model."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
+
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
 
 <div class="rsh rsh-page-brand">
 <section class="rsh-hero rsh-hero-with-background" aria-label="Residual Stress Hub">

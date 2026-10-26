@@ -14,8 +14,10 @@ Example:
 
 The Overview uses `geometry-overview.png`, rendered from the supplied `thin-wall_geo.pdf`. The unmodified PDF is stored at `assets/pdf/cases/thin-wall/geometry-overview.pdf`.
 
-The benchmark card and displayed result figures now use the canonical manuscript PDFs. See `docs/benchmark-manuscript-figures.json` for the figure-to-caption mapping and `docs/benchmark-manuscript-assets.json` for current source hashes. Earlier import records describe historical assets.
+The displayed detail-page result figures use the canonical manuscript PDFs. See `docs/benchmark-manuscript-figures.json` for the figure-to-caption mapping and `docs/benchmark-manuscript-assets.json` for current source hashes. Earlier import records describe historical assets.
 
 The displayed temperature histories are the three nonempty DNS/experiment comparisons from manuscript Appendix B. Earlier empty temperature and XX/YY/ZZ strain PNGs are no longer referenced by the page. The release displacement is distinguished from the springback increment, and the separate twenty-layer residual-stress comparison is labelled explicitly.
 
 Figure/data provenance is recorded in `docs/benchmark-case-assets.json`. Complete inputs are downloadable in `assets/data/cases/` under this case’s directory.
+
+The benchmark list uses `card-cover.png`, restored byte-for-byte from the pre-revision cover in commit `3c62167`. The list cover is independent of the corrected detail-page figures. See `docs/benchmark-card-cover-assets.json` and the `card_cover` entry in `docs/benchmark-manuscript-figures.json`.

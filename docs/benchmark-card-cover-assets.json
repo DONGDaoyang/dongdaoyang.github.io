@@ -1,0 +1,45 @@
+{
+  "policy": "List-card artwork is maintained independently from detail-page result figures.",
+  "covers": [
+    {
+      "case": "single_track",
+      "source_commit": "3c62167",
+      "source_path": "assets/img/cases/single_track/single-track-results.png",
+      "website_file": "assets/img/cases/single_track/card-cover.png",
+      "sha256": "bc443dc64c1ac15e96d4818c0f487d69e7c2c0eb88c6b44576da21eddd87f6f0",
+      "operation": "Original list-card cover copied byte-for-byte. Detail figures unchanged."
+    },
+    {
+      "case": "thin_wall",
+      "source_commit": "3c62167",
+      "source_path": "assets/img/cases/thin-wall/results-cover.png",
+      "website_file": "assets/img/cases/thin-wall/card-cover.png",
+      "sha256": "f1afc73e661d72586582b26f2d992d88b31d21befb5c1d901c8a266aa3e630f8",
+      "operation": "Original list-card cover copied byte-for-byte. Detail figures unchanged."
+    },
+    {
+      "case": "bridge",
+      "source_commit": "3c62167",
+      "source_path": "assets/img/cases/bridge/results-cover.png",
+      "website_file": "assets/img/cases/bridge/card-cover.png",
+      "sha256": "21931f5eab15d6eadc1a4c644ed64e821f555bf56a371d5389f98497963646f9",
+      "operation": "Original list-card cover copied byte-for-byte. Detail figures unchanged."
+    },
+    {
+      "case": "cantilever",
+      "source_commit": "3c62167",
+      "source_path": "assets/img/cases/cantilever/results-cover.png",
+      "website_file": "assets/img/cases/cantilever/card-cover.png",
+      "sha256": "b6b1af42a36f563977f1a44fd1c6db89be664cd0a6652817d96a3f952676f368",
+      "operation": "Original list-card cover copied byte-for-byte. Detail figures unchanged."
+    },
+    {
+      "case": "double_cantilever",
+      "source_commit": "3c62167",
+      "source_path": "assets/img/cases/double_cantilever/results-cover.png",
+      "website_file": "assets/img/cases/double_cantilever/card-cover.png",
+      "sha256": "906e32b33a24c25b6e0b24656062bb76522794a15501b1105a7101fedab1cbc1",
+      "operation": "Original list-card cover copied byte-for-byte. Detail figures unchanged."
+    }
+  ]
+}

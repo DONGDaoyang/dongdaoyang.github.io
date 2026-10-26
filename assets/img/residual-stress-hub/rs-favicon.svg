@@ -1,12 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="icon-title">
-  <title id="icon-title">Residual Stress Hub — steel RS</title>
-  <defs>
-    <linearGradient id="tile" x1="16" y1="8" x2="116" y2="128" gradientUnits="userSpaceOnUse"><stop stop-color="#304b61"/><stop offset="1" stop-color="#0a1d2d"/></linearGradient>
-    <linearGradient id="steel" x1="30" y1="30" x2="95" y2="90" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset=".48" stop-color="#d7e3ec"/><stop offset="1" stop-color="#92aabd"/></linearGradient>
-  </defs>
-  <rect x="3" y="3" width="122" height="122" rx="22" fill="url(#tile)" stroke="#5d778c" stroke-width="2"/>
-  <path d="M23 91V31H46C61 31 68 38 68 49C68 57 63 63 56 65L71 91H55L42 67H37V91ZM37 43V55H45C51 55 54 53 54 49C54 45 51 43 45 43Z" fill="url(#steel)" fill-rule="evenodd"/>
-  <path d="M106 36L100 47C95 43 91 41 86 41C81 41 78 43 78 47C78 51 82 53 89 55C102 59 108 65 108 75C108 87 99 94 86 94C77 94 68 90 63 85L70 74C75 79 81 82 87 82C92 82 95 80 95 76C95 72 91 70 83 67C71 63 65 57 65 48C65 37 74 29 87 29C95 29 102 32 106 36Z" fill="url(#steel)"/>
-  <path d="M24 105H104" stroke="#ed8d42" stroke-width="5" stroke-linecap="round"/>
-  <path d="M19 17H28M100 17H109" stroke="#829bad" stroke-width="2" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="icon-title icon-desc">
+  <title id="icon-title">Residual Stress Hub — layered bend</title>
+  <desc id="icon-desc">Three curved copper layers in an ink-blue mark with two angled corners and two rounded corners.</desc>
+  <path d="M32 12H106Q116 12 116 22V96L96 116H22Q12 116 12 106V32Z" fill="#253e50" stroke="#d58a52" stroke-width="1.6"/>
+  <g fill="#d58a52">
+    <path d="M32 39H55C70 39 77 31 94 31H98V43H94C79 43 72 51 55 51H32Z"/>
+    <path d="M32 60H55C70 60 77 52 94 52H98V64H94C79 64 72 72 55 72H32Z"/>
+    <path d="M32 81H55C70 81 77 73 94 73H98V85H94C79 85 72 93 55 93H32Z"/>
+  </g>
 </svg>

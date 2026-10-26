@@ -8,11 +8,13 @@ hub_case: true
 published: true
 importance: 4
 case_type: Computational case · Solver-output study
-img: /assets/img/cases/cantilever/results-cover.png?v=447bfee4b3b8
-image_alt: "Cantilever post-cut axial stress on undeformed geometry, in MPa."
+img: /assets/img/cases/cantilever/card-cover.png?v=b6b1af42a36f
+image_alt: "Cantilever benchmark model."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
+
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
 
 <div class="rsh rsh-page-brand">
 <section class="rsh-hero rsh-hero-with-background" aria-label="Residual Stress Hub">
