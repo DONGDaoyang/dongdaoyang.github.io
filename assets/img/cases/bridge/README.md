@@ -14,8 +14,8 @@ Example:
 
 The Overview uses `geometry-overview.png`, rendered from the supplied `bridge_geo.pdf`. The unmodified PDF is stored at `assets/pdf/cases/bridge/geometry-overview.pdf`.
 
-The benchmark card currently uses `results-cover.png`, rendered from `bridge_results.pdf`. Its original PDF is stored at `assets/pdf/cases/bridge/results-cover.pdf`. Change `img` in the case Markdown to use a different cover.
+The benchmark card and displayed result figures now use the canonical manuscript PDFs. See `docs/benchmark-manuscript-figures.json` for the figure-to-caption mapping and `docs/benchmark-manuscript-assets.json` for current source hashes. Earlier import records describe historical assets.
 
-Saved local histories, three-page calibration comparison, and six residual elastic-strain profiles are imported. The latest identification and the archived figure vector are distinguished in the page and JSON.
+Saved local histories are retained with units and model scope. Displayed calibration plots and part-scale results now use the manuscript figures. Older comparison PDFs and additional profiles remain archived separately. The latest identification and archived figure vectors remain distinct.
 
 Figure/data provenance is recorded in `docs/benchmark-case-assets.json`. Complete inputs are downloadable in `assets/data/cases/` under this case’s directory.

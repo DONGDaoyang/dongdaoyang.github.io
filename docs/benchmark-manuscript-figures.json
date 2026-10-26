@@ -1,0 +1,304 @@
+{
+  "description": "Reviewed result figures and explanations keyed to the canonical manuscript main.tex and figures/main or figures/appendices. Run the manuscript importer after any legacy solver importer.",
+  "cases": [
+    {
+      "key": "single_track",
+      "folder": "single_track",
+      "figures": [
+        {
+          "name": "results-cover",
+          "source": "figures/main/fig02_single_track_stress.pdf",
+          "heading": "Von Mises stress field",
+          "alt": "Single-track von Mises stress field with a color scale in MPa.",
+          "caption": "Von Mises stress $\\sigma_{\\mathrm{vM}}$ in the single-track deposit and substrate (MPa).",
+          "explanation": "The contour shows the stress magnitude after the deposition and cooling calculation. Von Mises stress is a scalar equivalent stress, while the profiles below resolve individual normal-stress components.",
+          "cover": true,
+          "links": [
+            ["Download final cell stresses", "/assets/data/cases/single_track/final-stress-cells.csv"],
+            ["Download cell-stress metadata", "/assets/data/cases/single_track/final-stress-metadata.json"]
+          ]
+        },
+        {
+          "name": "stress-comparison",
+          "source": "figures/main/fig02_track1_stress_comparison.pdf",
+          "heading": "Axial and through-thickness stress",
+          "alt": "Single-track axial and through-thickness stress compared with reference simulation and experimental samples.",
+          "caption": "Axial $\\sigma_{\\mathrm{xx}}$ (left) and through-thickness $\\sigma_{\\mathrm{zz}}$ (right), in MPa.",
+          "explanation": "The profiles are sampled at $y=0$ and $z=0.335$ mm, the assumed deposit mid-height. The horizontal coordinate is $x_{\\mathrm{plot}}=x+20$ mm, covering the 40 mm track. DNS is compared with the supplied reference simulation and three experimental samples. The axial stress is mainly tensile, while the through-thickness component varies most strongly near the track ends."
+        }
+      ]
+    },
+    {
+      "key": "thin_wall",
+      "folder": "thin-wall",
+      "figures": [
+        {
+          "name": "results-cover",
+          "source": "figures/main/fig03_thin_wall_stress.pdf",
+          "heading": "Axial stress after release",
+          "alt": "Four-layer thin-wall axial stress after anchor release, in MPa.",
+          "caption": "Four-layer wall: axial stress $\\sigma_{\\mathrm{xx}}$ after anchor release (MPa).",
+          "explanation": "The contour is plotted on the undeformed half-width simulation domain. Positive values indicate tension and negative values indicate compression. The two outer anchors have been released, while the central anchor and the $y=0$ symmetry constraint remain.",
+          "cover": true
+        },
+        {
+          "name": "temperature-point-1",
+          "source": "figures/appendices/figB2_thin_wall_temperature_point_1_comparison.pdf",
+          "heading": "Temperature history at Point 1",
+          "alt": "Nonempty temperature-time comparison at thin-wall measurement Point 1.",
+          "caption": "Four-layer wall: temperature history at Point 1, in °C versus time in seconds.",
+          "explanation": "The solid DNS curve is compared with the dashed experimental reference. Repeated peaks reflect successive deposition and cooling cycles. Point labels follow the supplied records. Measurement coordinates were not supplied, so no new spatial location is assigned to this point."
+        },
+        {
+          "name": "temperature-point-2",
+          "source": "figures/appendices/figB2_thin_wall_temperature_point_2_comparison.pdf",
+          "heading": "Temperature history at Point 2",
+          "alt": "Nonempty temperature-time comparison at thin-wall measurement Point 2.",
+          "caption": "Four-layer wall: temperature history at Point 2, in °C versus time in seconds.",
+          "explanation": "The solid DNS curve is compared with the dashed experimental reference. Repeated peaks reflect successive deposition and cooling cycles. Point labels follow the supplied records. Measurement coordinates were not supplied, so no new spatial location is assigned to this point."
+        },
+        {
+          "name": "temperature-point-3",
+          "source": "figures/appendices/figB2_thin_wall_temperature_point_3_comparison.pdf",
+          "heading": "Temperature history at Point 3",
+          "alt": "Nonempty temperature-time comparison at thin-wall measurement Point 3.",
+          "caption": "Four-layer wall: temperature history at Point 3, in °C versus time in seconds.",
+          "explanation": "The solid DNS curve is compared with the dashed experimental reference. Repeated peaks reflect successive deposition and cooling cycles. Point labels follow the supplied records. Measurement coordinates were not supplied, so no new spatial location is assigned to this point."
+        },
+        {
+          "name": "thin_wall_displacement_comparison",
+          "source": "figures/main/fig03_thin_wall_displacement_comparison.pdf",
+          "heading": "Vertical displacement after release",
+          "alt": "Total released vertical displacement along the four-layer wall compared with supplied reference and experimental curves.",
+          "caption": "Four-layer wall: total released vertical displacement $u_z$ (mm).",
+          "explanation": "The profile follows $y=z=0$, with $x_{\\mathrm{plot}}=x+250$ mm spanning 0–500 mm. This is the total displacement after release, whereas the springback increment below is the change caused by releasing the anchors. The supplied reference-simulation curve duplicates Experiment 1 and is not independent validation evidence."
+        },
+        {
+          "name": "20-layer-stress-comparison",
+          "source": "figures/main/fig04_thin_wall_20layer_stress_comparison.pdf",
+          "heading": "Twenty-layer residual stress",
+          "alt": "Longitudinal residual stress along the height of a separate twenty-layer wall compared with measurements.",
+          "caption": "Twenty-layer wall: longitudinal residual stress $\\sigma_{\\mathrm{xx}}$ along the 40 mm deposited height (MPa).",
+          "explanation": "This is the separate twenty-layer configuration after unclamping, rather than the four-layer thermal-history case above. The simulation is compared with the neutron-diffraction measurements and reported error bars of Ding et al. (2011). It captures the tensile-to-compressive trend with height, while local stress magnitudes remain overpredicted."
+        }
+      ],
+      "after": "### Springback after release\n\nThe maximum release-induced displacement increment is **3.246338 mm**, with a vertical component of **3.242710 mm** at that node. It measures the change between the states before and after release, rather than the total released displacement shown in the profile.\n\n[Download springback samples](/assets/data/cases/thin-wall/springback-summary.csv)\n\n"
+    },
+    {
+      "key": "bridge",
+      "folder": "bridge",
+      "figures": [
+        {
+          "name": "results-cover",
+          "source": "figures/main/fig11_bridge_strain.pdf",
+          "heading": "Axial elastic-strain field",
+          "alt": "Bridge axial elastic-strain field with a color scale in microstrain.",
+          "caption": "Bridge axial elastic strain $\\varepsilon^{\\mathrm{e}}_{\\mathrm{xx}}$ (µε).",
+          "explanation": "The color scale measures elastic strain. Positive values show axial extension and negative values show axial contraction. This part-scale result is distinct from the local DNS calibration model shown below.",
+          "cover": true
+        },
+        {
+          "image": "/assets/img/cases/bridge/thermal-history.png",
+          "heading": "Local thermal and strain histories",
+          "alt": "Bridge local temperature and axial plastic and elastic strain during scanning and cooling.",
+          "caption": "Saved Bridge local history: temperature (°C) and axial strain (dimensionless).",
+          "explanation": "The upper panel tracks temperature and the lower panel separates the saved plastic and elastic $xx$ strains at local cell 451, centered at $(0,0,0.0150)$ mm. The time axis covers the local scanning and cooling calculation. It is not the complete bridge build history or a new solver run.",
+          "links": [
+            ["Download local history CSV", "/assets/data/cases/bridge/thermal-mechanical-history.csv"],
+            ["Download local history PDF", "/assets/pdf/cases/bridge/thermal-history.pdf"]
+          ]
+        },
+        {
+          "name": "strain-parity",
+          "source": "figures/appendices/figC3_bridge_strain_parity.pdf",
+          "heading": "Local elastic-strain agreement",
+          "alt": "Bridge Opt-IS versus DNS elastic-strain parity plots for the xx, yy and zz components.",
+          "caption": "Bridge local calibration: $xx$, $yy$ and $zz$ elastic-strain parity (µε).",
+          "explanation": "The three panels compare Opt-IS with DNS on 882 paired active native cells. The dashed diagonal represents exact agreement. Scatter away from that line shows the remaining component-specific mismatch.",
+          "links": [["Download archived error metrics", "/assets/data/cases/bridge/optimization-metrics.csv"]]
+        },
+        {
+          "name": "strain-spatial-page-1",
+          "source": "figures/appendices/figC4_bridge_strain_spatial.pdf",
+          "heading": "Local elastic-strain maps",
+          "alt": "Bridge local axial elastic-strain maps.",
+          "caption": "Bridge local model: $\\varepsilon^{\\mathrm{e}}_{\\mathrm{xx}}$ maps (µε).",
+          "explanation": "From left to right: DNS, Opt-IS, and the signed difference Opt-IS minus DNS on the top layer. The difference map locates the spatial calibration mismatch.",
+          "page": 1,
+          "pdf_name": "strain-spatial"
+        },
+        {
+          "name": "strain-spatial-page-2",
+          "source": "figures/appendices/figC4_bridge_strain_spatial.pdf",
+          "heading": "Local elastic-strain profiles",
+          "alt": "Bridge local top-plane elastic-strain profiles.",
+          "caption": "Bridge local model: $xx$, $yy$ and $zz$ top-plane elastic-strain profiles (µε).",
+          "explanation": "The three panels compare the normal elastic-strain components along the same native top-plane sampling row. These local profiles are distinct from the full bridge measurement lines below.",
+          "page": 2,
+          "pdf_name": "strain-spatial"
+        },
+        {
+          "name": "axial-strain-profile",
+          "source": "figures/main/fig11_bridge_profile.pdf",
+          "heading": "Part-scale axial elastic strain",
+          "alt": "Bridge axial elastic strain across the span compared with experimental measurements.",
+          "caption": "Bridge $\\varepsilon^{\\mathrm{e}}_{\\mathrm{xx}}$ across the span (µε).",
+          "explanation": "The profile follows $y=0$ and $z=17.75$ mm over $x\\in[-10.5,10.5]$ mm. Experimental points and their reported error bars follow Ganeriwala et al. (2019). Opt-IS captures the broad tensile region but not the higher measured strain near the right end. The confidence level of the reported error bars is unspecified."
+        },
+        {
+          "name": "x3p75",
+          "source": "figures/main/fig14_x3p75.pdf",
+          "heading": "Vertical-line xx elastic strain",
+          "alt": "Bridge xx elastic strain along the vertical sampling line.",
+          "caption": "Bridge $\\varepsilon^{\\mathrm{e}}_{\\mathrm{xx}}$ along the vertical line (µε).",
+          "explanation": "The line is at global $x=-6.75$ mm and $y=0$, over $z=10$–19 mm. The plotted height is $z_{\\mathrm{local}}=z-10$ mm. The filename label “3.75” refers to the local horizontal position $x+10.5$, rather than a global $x=3.75$ mm plane. The curves compare Opt-IS, MIS, DIS, the supplied reference simulation, and experimental data."
+        },
+        {
+          "name": "z3p75",
+          "source": "figures/main/fig14_z3p75.pdf",
+          "heading": "Vertical-line zz elastic strain",
+          "alt": "Bridge zz elastic strain along the vertical sampling line.",
+          "caption": "Bridge $\\varepsilon^{\\mathrm{e}}_{\\mathrm{zz}}$ along the vertical line (µε).",
+          "explanation": "The line is at global $x=-6.75$ mm and $y=0$, over $z=10$–19 mm. The plotted height is $z_{\\mathrm{local}}=z-10$ mm. The filename label “3.75” refers to the local horizontal position $x+10.5$, rather than a global $x=3.75$ mm plane. The curves compare Opt-IS, MIS, DIS, the supplied reference simulation, and experimental data."
+        }
+      ]
+    },
+    {
+      "key": "cantilever",
+      "folder": "cantilever",
+      "figures": [
+        {
+          "name": "results-cover",
+          "source": "figures/main/fig12_cantilever_stress.pdf",
+          "heading": "Axial stress after cutting",
+          "alt": "Cantilever post-cut axial stress on undeformed geometry, in MPa.",
+          "caption": "Cantilever post-cut axial stress $\\sigma_{\\mathrm{xx}}$ in the 50-group calculation (MPa).",
+          "explanation": "The color scale shows axial stress on the undeformed geometry. The 50 mechanical activation groups represent a numerical deposition grouping and are distinct from the physical print layers.",
+          "cover": true
+        },
+        {
+          "image": "/assets/img/cases/cantilever/thermal-history.png",
+          "heading": "Local thermal and strain histories",
+          "alt": "Cantilever local temperature and axial plastic and elastic strain during scanning and cooling.",
+          "caption": "Saved Cantilever local history: temperature (°C) and axial strain (dimensionless).",
+          "explanation": "The upper panel shows temperature and the lower panel separates the saved plastic and elastic $xx$ strains at local cell 389, centered at $(-0.0125,0.0125,0.0100)$ mm. These are archived local scanning and cooling histories, not the full cantilever build or a new calculation.",
+          "links": [["Download local history PDF", "/assets/pdf/cases/cantilever/thermal-history.pdf"]]
+        },
+        {
+          "name": "strain-parity",
+          "source": "figures/main/fig08_cantilever_strain_parity.pdf",
+          "heading": "Local elastic-strain agreement",
+          "alt": "Cantilever Opt-IS versus DNS elastic-strain parity plots for the xx, yy and zz components.",
+          "caption": "Cantilever local calibration: $xx$, $yy$ and $zz$ elastic-strain parity (µε).",
+          "explanation": "The three panels compare Opt-IS with DNS on 800 paired active native cells. The dashed diagonal denotes exact agreement. The plot assesses local elastic-strain agreement, separate from the experimental part-scale comparisons below.",
+          "links": [["Download archived error metrics", "/assets/data/cases/cantilever/optimization-metrics.csv"]]
+        },
+        {
+          "name": "strain-maps",
+          "source": "figures/main/fig09_cantilever_strain_maps.pdf",
+          "heading": "Local elastic-strain maps",
+          "alt": "Cantilever local axial elastic-strain maps from DNS and Opt-IS with their signed difference.",
+          "caption": "Cantilever local top-layer $\\varepsilon^{\\mathrm{e}}_{\\mathrm{xx}}$ maps (µε).",
+          "explanation": "The panels show DNS, Opt-IS, and Opt-IS minus DNS at $z=0.030$ mm. The signed difference identifies where the local reduced model departs from DNS. These are calibration-model coordinates, not the nominal heights of the full cantilever."
+        },
+        {
+          "name": "x11",
+          "source": "figures/main/fig15_x11.pdf",
+          "heading": "Pre-cut xx elastic strain",
+          "alt": "Cantilever xx elastic strain at nominal height 11 mm before cutting.",
+          "caption": "Cantilever $\\varepsilon^{\\mathrm{e}}_{\\mathrm{xx}}$ at nominal height 11.0 mm before cutting (µε).",
+          "explanation": "The 25-group model is sampled along the central plane $y=0$ at global $z=-1.5$ mm. Opt-IS, MIS, and DIS are compared with experimental profiles retaining their original nearby height labels. Nominal height is measured from the part base and is not the global $z$ coordinate."
+        },
+        {
+          "name": "z11",
+          "source": "figures/main/fig15_z11.pdf",
+          "heading": "Pre-cut zz elastic strain",
+          "alt": "Cantilever zz elastic strain at nominal height 11 mm before cutting.",
+          "caption": "Cantilever $\\varepsilon^{\\mathrm{e}}_{\\mathrm{zz}}$ at nominal height 11.0 mm before cutting (µε).",
+          "explanation": "The 25-group model is sampled along the central plane $y=0$ at global $z=-1.5$ mm. Opt-IS, MIS, and DIS are compared with experimental profiles retaining their original nearby height labels. Nominal height is measured from the part base and is not the global $z$ coordinate."
+        },
+        {
+          "name": "leg-stress-comparison",
+          "source": "figures/main/fig12_cantilever_stress_height_comparison.pdf",
+          "heading": "Stress along a supporting leg",
+          "alt": "Cantilever axial stress from the bottom to the top of one supporting leg.",
+          "caption": "Cantilever axial stress $\\sigma_{\\mathrm{xx}}$ along one leg (MPa).",
+          "explanation": "Opt-IS is compared with two experimental profiles from the bottom to the top of the leg. The prediction captures the transition from compression to tension, but this transition occurs at a lower height than in the experimental profiles."
+        },
+        {
+          "name": "warpage",
+          "source": "figures/main/fig16_warpage.pdf",
+          "heading": "Vertical displacement after cutting",
+          "alt": "Cantilever vertical displacement after cutting compared across Opt-IS, MIS, DIS and experiment.",
+          "caption": "Cantilever post-cut vertical displacement $u_z$ (mm).",
+          "explanation": "The Opt-IS calculations with 25 and 50 activation groups are compared with MIS, DIS, and the experimental profile. Each Opt-IS curve contains 11 displayed calculation points. The curves show uplift at the left end and small displacement near the opposite end.",
+          "links": [
+            ["Download 25-group displacement samples", "/assets/data/cases/cantilever/warpage-25-layer.csv"],
+            ["Download 50-group displacement samples", "/assets/data/cases/cantilever/warpage-50-layer.csv"]
+          ]
+        }
+      ]
+    },
+    {
+      "key": "double_cantilever",
+      "folder": "double_cantilever",
+      "figures": [
+        {
+          "name": "results-cover",
+          "source": "figures/main/fig13_dc_strain.pdf",
+          "heading": "Axial elastic-strain field",
+          "alt": "Double-cantilever axial elastic-strain field with a color scale in microstrain.",
+          "caption": "Double-cantilever axial elastic strain $\\varepsilon^{\\mathrm{e}}_{\\mathrm{xx}}$ (µε).",
+          "explanation": "The contour shows the axial elastic-strain component in the IN718 double-cantilever model. Positive and negative values denote extension and contraction. Release displacement is a different quantity and is shown in millimeters below.",
+          "cover": true
+        },
+        {
+          "image": "/assets/img/cases/double_cantilever/thermal-history.png",
+          "heading": "Local strain histories",
+          "alt": "Double-cantilever local plastic, elastic and mechanical strain histories in three directions.",
+          "caption": "Saved Double-cantilever local $xx$, $yy$ and $zz$ strain histories (‰).",
+          "explanation": "The three panels show the saved plastic, elastic, and mechanical normal-strain components over the local scanning and cooling calculation. One per mille equals 0.001 strain. This figure contains strain histories only. The downloadable PDF also includes three scan-window detail pages.",
+          "links": [["Download all local strain-history pages", "/assets/pdf/cases/double_cantilever/thermal-history.pdf"]]
+        },
+        {
+          "name": "strain-parity",
+          "source": "figures/appendices/figC5_dc_strain_parity.pdf",
+          "heading": "Local elastic-strain agreement",
+          "alt": "Double-cantilever Opt-IS versus DNS elastic-strain parity plots for the xx, yy and zz components.",
+          "caption": "Double-cantilever local calibration: $xx$, $yy$ and $zz$ elastic-strain parity (µε).",
+          "explanation": "The panels compare Opt-IS with DNS on 1452 paired active native cells. The dashed diagonal denotes exact agreement. Departures from the diagonal show the remaining mismatch rather than part-scale experimental uncertainty.",
+          "links": [["Download archived error metrics", "/assets/data/cases/double_cantilever/optimization-metrics.csv"]]
+        },
+        {
+          "name": "strain-spatial-page-1",
+          "source": "figures/appendices/figC6_dc_strain_spatial.pdf",
+          "heading": "Local elastic-strain maps",
+          "alt": "Double-cantilever local axial elastic-strain maps.",
+          "caption": "Double-cantilever local $\\varepsilon^{\\mathrm{e}}_{\\mathrm{xx}}$ maps (µε).",
+          "explanation": "The three panels show DNS, Opt-IS, and the signed difference Opt-IS minus DNS on the local top layer. The color scale measures elastic strain.",
+          "page": 1,
+          "pdf_name": "strain-spatial"
+        },
+        {
+          "name": "strain-spatial-page-2",
+          "source": "figures/appendices/figC6_dc_strain_spatial.pdf",
+          "heading": "Local elastic-strain profiles",
+          "alt": "Double-cantilever local top-plane elastic-strain profiles.",
+          "caption": "Double-cantilever local $xx$, $yy$ and $zz$ elastic-strain profiles (µε).",
+          "explanation": "The three normal elastic-strain components are sampled along the native top-plane row and compared between DNS and Opt-IS. These curves describe the local calibration model.",
+          "page": 2,
+          "pdf_name": "strain-spatial"
+        },
+        {
+          "name": "warpage",
+          "source": "figures/main/fig17_warpage_disp2.pdf",
+          "heading": "Vertical displacement after cutting",
+          "alt": "Double-cantilever vertical displacement at both released ends compared with experiment and reference methods.",
+          "caption": "Double-cantilever post-cut vertical displacement $u_z$ for the 127 mm specimen (mm).",
+          "explanation": "Opt-IS, MIS, DIS, the supplied reference simulation, and experiment are compared along the specimen. Both ends lift after cutting, with greater uplift on the left and a low-displacement central region.",
+          "links": [["Download displacement samples", "/assets/data/cases/double_cantilever/warpage.csv"]]
+        }
+      ]
+    }
+  ]
+}

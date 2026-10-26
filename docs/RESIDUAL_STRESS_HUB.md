@@ -55,11 +55,11 @@ Cantilever 正文采用 Overview、Problem set、Results 三段普通 Markdown�
 
 ## 算例顺序与图片目录
 
-工艺标签写在算例 `title` 的括号中：Single track (DED)、Thin-wall (WAAM)、Bridge (LPBF)、Cantilever (LPBF)、Double-cantilever (LPBF)。Thin-wall 的原始 YAML 没有明确的工艺字段，WAAM 是暂定的网站分类，待维护者确认。标题标签与配置数值分别维护。概要表不展示 Elements / input mesh scale、Laser-on time stepping、Laser-off steps / mechanics interval、Geometry / saved mesh dimensions、Number of local deposited layers、Scan region / track length 或局部模型边界；完整配置下载保留这些设置。热源尺寸与层厚达到 200 µm 时用 mm，低于 200 µm 时用 µm；同一热源半径组使用一致单位。图注只保留结果类型、方向和位置，例如 `X-direction elastic strain at X = 3.75 mm.`，原始图片和下载元数据仍保留完整信息。
+工艺标签写在算例 `title` 的括号中：Single track (DED)、Thin-wall (WAAM)、Bridge (LPBF)、Cantilever (LPBF)、Double-cantilever (LPBF)。Thin-wall 的原始 YAML 没有明确的工艺字段，WAAM 是暂定的网站分类，待维护者确认。标题标签与配置数值分别维护。概要表不展示 Elements / input mesh scale、Laser-on time stepping、Laser-off steps / mechanics interval、Geometry / saved mesh dimensions、Number of local deposited layers、Scan region / track length 或局部模型边界；完整配置下载保留这些设置。热源尺寸与层厚达到 200 µm 时用 mm，低于 200 µm 时用 µm；同一热源半径组使用一致单位。结果图注和解释须写明物理量、分量、单位、计算状态、取样位置及对比对象。Bridge 文件名中的 `3p75` 是局部横坐标，不能写成全局 `X = 3.75 mm`。坐标换算以论文和下文的用图清单为准。
 
 Benchmarks 按 **Single track → Thin-wall → Bridge → Cantilever → Double-cantilever** 排序，通过五个 Markdown 文件的 `importance: 1–5` 控制，桌面每行使用三列卡片，手机保持单列。Bridge 页面新增在 `_projects/bridge.md`，地址为 `/benchmarks/bridge/`。
 
-图片目录依次为 `assets/img/cases/single_track/`、`assets/img/cases/thin-wall/`、`assets/img/cases/bridge/`、`assets/img/cases/cantilever/`、`assets/img/cases/double_cantilever/`。每个目录均有 README。卡片只显示图片和算例名称，不显示介绍句或 “View case” 按钮。Thin-wall、Bridge、Cantilever 和 Double-cantilever 使用新提供的结果 PDF 完整渲染得到的 `results-cover.png`，原始 PDF 保存在对应的 `assets/pdf/cases/<case>/results-cover.pdf`。Single track 封面使用最新提供的 `single_track_results.pdf` 完整页面预览，并以图片哈希为 URL 添加缓存版本；Results 保留最后保存帧的 von Mises 应力和完整单元数据下载。导入记录与哈希保存在 `docs/case-results-cover-assets.json`。图片在 4:3 区域中完整显示，不裁剪。更换封面时同步修改算例 Markdown 的 `img` 和 `image_alt`。
+图片目录依次为 `assets/img/cases/single_track/`、`assets/img/cases/thin-wall/`、`assets/img/cases/bridge/`、`assets/img/cases/cantilever/`、`assets/img/cases/double_cantilever/`。每个目录均有 README。卡片只显示图片和算例名称，不显示介绍句或 “View case” 按钮。五个封面均采用当前论文的对应云图，完整渲染为 `results-cover.png`，原始 PDF 保存在对应的 `assets/pdf/cases/<case>/results-cover.pdf`。Single track 显示 von Mises 应力，Thin-wall 和 Cantilever 显示轴向应力，Bridge 和 Double-cantilever 显示轴向弹性应变。封面和正文使用同一张标有物理量和单位的图，并添加内容哈希刷新缓存。当前来源与哈希见 `docs/benchmark-manuscript-assets.json`，旧的 `docs/case-results-cover-assets.json` 仅保留历史导入记录。Single track 的原始单元数据继续提供下载。图片在 4:3 区域中完整显示，不裁剪。更换封面时同步修改算例 Markdown 的 `img` 和 `image_alt`。
 
 Single track、Thin-wall、Bridge 和 Double-cantilever 的参数与结果已整理，来源和复现步骤见下方“其他四个算例的数据与结果”。五个算例均保留已提供的几何图。
 
@@ -267,9 +267,9 @@ npm run dev
 
 桌面画廊使用 4 列、2 行；1100px 及以下使用 2 列、4 行。动画自动循环播放，无轮播、拖动或手动播放按钮。设置了系统“减少动态效果”的浏览器通过 `<picture>` 自动显示静态 `poster`，其他浏览器播放动画；页面不依赖 JavaScript 播放。首页选图与 Benchmarks 封面相互独立。
 
-首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定。标志是直接连接厚蓝色底板的三维 RS，不带支撑。R 使用与标题一致的配色，从顶部红色，经约 3/4 高度处的白色过渡到底部蓝色，上方 3/4 为红白渐变，下方 1/4 为白蓝渐变，S 为纯中灰色并保留顶面和侧面明暗；蓝色底板象征受压。`hero_background` 现指向原创 `assets/img/residual-stress-hub/honeycomb-background.svg`，以曲面薄壁蜂窝作为标题底层装饰，底板仅用很淡的轮廓提示；CSS 使用首页 0.42、子页 0.55 的透明度和渐变遮罩保持标题可读性。可替换为本地照片；背景不添加说明文字。Logo 和背景地址附带内容版本号，避免旧素材缓存。各子页也在页面标题上方显示同款标志、网站名和背景，品牌标题可点击返回首页；子页为背景预留 9–11 rem 高度，居中取景，避免只裁出蜂窝下方的空白。
+首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定。工业风 RS 保留分层打印的立体几何，采用拉丝银灰、深蓝石墨底板、细小紧固件和橙色沉积线。`hero_background` 仍为蜂窝背景。Benchmarks 与算例详情页复用这套品牌标识，Methods 和 Resources 使用独立工艺横幅。
 
-布局在 `_pages/about.md`，样式在 `assets/css/residual-stress-hub.css`。页面品牌标识为 `assets/img/residual-stress-hub/rs-logo.svg`，`logo.svg` 保留同款标志供 favicon 使用，favicon 由 `_config.yml` 的 `icon` 指定。Logo 与背景中的构件和网格是品牌装饰，不表示计算或测量结果。
+布局在 `_pages/about.md`，样式在 `assets/css/residual-stress-hub.css`。页面标识为 `assets/img/residual-stress-hub/rs-logo.svg`。浏览器图标使用独立简化的 `rs-favicon.svg`，`logo.svg` 保留同款简化标识作兼容资源；iOS 图标为 180×180 的 `rs-apple-touch.png`。图标路径由 `_config.yml` 的 `icon` 和 `apple_touch_icon` 指定。Logo 与背景是品牌装饰，不表示计算或测量结果。
 
 ## 大屏页面宽度
 
@@ -281,8 +281,8 @@ Single track、Thin-wall、Bridge 和 Double-cantilever 采用与 Cantilever 一
 
 - **Single track**：配置为 IN718 沉积层和 Ti-6Al-4V 基板，600 W、6 mm/s、单层 0.67 mm。几何图的基板宽度为 30 mm，而保存网格的 Y 跨度为 10 mm，正文明确区别。封面使用用户提供的 `single_track_results.pdf`；Results 保留最后保存的应力场，200 s 冷却后的物理时间约为 206.66667 s。云图是原生未变形 Y=0 截面，未平滑；CSV 包含所有 29,170 个单元，包括 active 标记。
 - **Thin-wall**：主页面使用四层钢薄壁，2245 W、8.33 mm/s、层高 2 mm、层间冷却 400 s。使用 Y=0 半模型和指定锚点释放。另提供独立二十层 YAML；不将二十层设置冒充四层结果。保存的回弹模长为 3.246338 mm，对应竖向分量为 3.242710 mm。没有保存的固有应变识别结果，也未生成识别值。
-- **Bridge**：使用 Ti-6Al-4V、100 W、600 mm/s、层高 30 µm、hatch 105 µm；宏观激活是 36 × 0.25 mm。保存识别的常温 H 与宏观配置的 H 分别为 1.828 和 1.8139 GPa，独立列出。局部热历史、完整三页校准图和六个宏观应变剖面保留原曲线。
-- **Double-cantilever**：使用 IN718 `dc`，285 W、960 mm/s、层高 40 µm、hatch 110 µm、逐层旋转 67°，宏观激活是 36 × 0.515 mm。未合并 Ti-6Al-4V `dc2`。最新固有应变为 εxx=εyy≈−4.339316‰、εzz≈19.647142‰；存档对比图使用 εxx=εyy≈−4.672144‰、εzz≈15.520310‰，正文分别标注。局部流动塑性历史、三页校准图和释放翘曲均使用保存图，不重新求解。
+- **Bridge**：使用 Ti-6Al-4V、100 W、600 mm/s、层高 30 µm、hatch 105 µm；宏观激活是 36 × 0.25 mm。保存识别的常温 H 与宏观配置的 H 分别为 1.828 和 1.8139 GPa，独立列出。局部热历史保留原曲线；当前展示的校准图和宏观剖面采用下文的论文用图清单。旧三页校准图仍保存在素材目录。
+- **Double-cantilever**：使用 IN718 `dc`，285 W、960 mm/s、层高 40 µm、hatch 110 µm、逐层旋转 67°，宏观激活是 36 × 0.515 mm。未合并 Ti-6Al-4V `dc2`。最新固有应变为 εxx=εyy≈−4.339316‰、εzz≈19.647142‰；存档对比图使用 εxx=εyy≈−4.672144‰、εzz≈15.520310‰，正文分别标注。局部流动塑性历史保留；校准与释放翘曲采用下文的论文用图清单，不重新求解。旧三页校准图仍保存在素材目录。
 
 温度表保留每个属性自身的原始节点，CSV 逐区域列出所有配置点；常温参数从同一套表插值或使用端点保持，宏观常数另行列出。相变值、零硬化等模型设置不冒称实验测量。原图中参考曲线保留原标签；其他算例的完整原始文章引用尚未提供，本次不补造书目。
 
@@ -293,8 +293,34 @@ python bin/import_benchmark_assets.py --output-dir <opt_output> --solver-dir <op
 python bin/render_single_track_stress.py --source <opt_output>/am_solver/track1/vtk/step_00204.vtu --qa-dir /tmp/hub-case-figure-qa --skill-scripts <nature-figure>/scripts
 ```
 
-导入记录、来源哈希和转换规则在 `docs/benchmark-case-assets.json`，Single track 场数据说明在对应 `final-stress-metadata.json`。云图自动 PDF 字体和碰撞审查通过；单面板对齐审查记录为不适用。300 dpi PNG 用于网页，SVG/PDF 保留文字。当前会话不支持图像视觉输入，未声称完成人工视觉审查。
+导入记录、来源哈希和转换规则在 `docs/benchmark-case-assets.json`，Single track 场数据说明在对应 `final-stress-metadata.json`。云图自动 PDF 字体和碰撞审查通过；单面板对齐审查记录为不适用。300 dpi PNG 用于网页，SVG/PDF 保留文字。旧导入记录仅描述当时的检查，当前页面用图以以下论文清单为准。
 
 Benchmarks 卡片的 `card_title` 显示名称、工艺与材料；详情页标题仍使用 `title`。Single track 同时标注 IN718 沉积层和 Ti-6Al-4V 基板。Thin-wall 的材料牌号由维护者确认为 S355，配置内标识仍为 `thin_wall_steel`。
 
-标题的 `Residual Stress` 使用蓝—白—红—白—蓝渐变；`Hub` 使用钢蓝色。Logo 的 R 与标题共用红白蓝配色，采用顶部红—约 3/4 高度处白—底部蓝的连续竖向渐变，S 为纯中灰色；两个字母通过轻微顶面和侧面明暗差保留立体感；底板加厚并用浅蓝象征受压。蜂窝背景用银灰金属反光、细密沉积层纹和轻微颗粒表现增材制造，保持原有曲面轮廓和半透明效果，不带支撑。首页三个入口卡片底色透明。
+标题的 `Residual Stress` 保留蓝—白—红—白—蓝渐变，`Hub` 使用钢蓝色。工业风 RS 的具体配色与图标文件见上文。蜂窝背景保留银灰金属反光、细密沉积层纹和轻微颗粒表现，首页三个入口卡片底色透明。
+
+## Benchmarks 论文用图核对与更新
+
+当前五个算例的 Results 由 `docs/benchmark-manuscript-figures.json` 维护。该清单将论文 `Optimization_base_Inherent_strain_method/main.tex` 中的图号与网站图片、标题、图注和解释逐一对应。`figures/main/` 和 `figures/appendices/` 是当前论文用图来源，不使用历史 Overleaf_upload 快照。
+
+- Thin-wall 原来的温度和三个应变历史 PNG 是空坐标轴，页面已移除这些引用，改用附录 B 的三个测点温度对比。测点坐标未提供，不推断位置。四层墙的释放总位移、释放增量和二十层墙的应力图分别说明。
+- Bridge 和 Double-cantilever 的云图使用轴向弹性应变及 µε 色标。局部标定比较采用论文的应变 parity 和空间图，避免把应变图标成应力图。
+- Bridge 竖直取样线为全局 x = −6.75 mm、y = 0，局部高度为 z − 10 mm。Cantilever 的 11 mm 是零件底部以上的名义高度，对应全局 z = −1.5 mm。
+- Bridge、Cantilever 和 Double-cantilever 的有效局部历史图保留，解释其单位与局部模型范围。Double-cantilever 的历史图只有应变，不以温度历史命名。
+
+如需重新导入求解器参数，先运行旧的素材导入工具，再执行下列最终用图更新，以免旧脚本恢复空图或旧图注：
+
+```bash
+python bin/import_manuscript_case_figures.py --manuscript-dir <overleaf>/Optimization_base_Inherent_strain_method
+npx prettier _projects/*.md docs/benchmark-manuscript-*.json --write
+```
+
+该离线工具只需要 PyMuPDF。它复制原始 PDF 并以 180 dpi 渲染完整页面，不裁剪图、不改变曲线、图例或数值。导入记录及源文件 SHA-256 在 `docs/benchmark-manuscript-assets.json`，它取代旧记录中同一路径的结果图来源。几何、求解器输入及数值下载维持各自的原始来源记录，旧结果与当前配置是否对应仍须分别核对。
+
+## 首页欢迎语与 Methods / Resources 横幅
+
+首页欢迎语位于 `_data/residual_stress_hub.yml` 的 `welcome`，以 “Howdy! Welcome to Residual Stress Hub.” 开场。正文明确覆盖多种金属增材制造及修复工艺的残余应力模拟，目前重点为基于可微分有限元的固有应变法。
+
+Methods 和 Resources 的页顶采用 `page_background` 指定的虚化金属激光沉积横幅，不再重复显示网站 Logo。页面标题由原有布局显示。原始生成图保存在 `assets/img/residual-stress-hub/additive-manufacturing-banner.png`，网页使用同名 WebP 压缩版。模糊、冷色处理和底部淡出由 `.rsh-process-banner` 样式控制。这是装饰图，不代表实验记录或模拟结果。
+
+该图片使用内置 imagegen 工具生成，完整提示词见 `docs/additive-banner-prompt.txt`。WebP 以 `cwebp -q 88` 压缩，路径附加内容哈希以刷新缓存。

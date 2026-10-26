@@ -9,8 +9,8 @@ hub_case: true
 published: true
 importance: 1
 case_type: Computational case
-img: /assets/img/cases/single_track/single-track-results.png?v=bc443dc64c1a
-image_alt: Single track residual stress.
+img: /assets/img/cases/single_track/results-cover.png?v=70a6ec99dd48
+image_alt: "Single-track von Mises stress field with a color scale in MPa."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
@@ -350,17 +350,17 @@ Maximum yield stress, $\sigma_{\mathrm{max}}$, is $1.2\,\sigma_{\mathrm{y}}$ at 
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Residual stress field
+### Von Mises stress field
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Von Mises stress at Y = 0 mm.](/assets/img/cases/single_track/results-cover.png)
+![Single-track von Mises stress field with a color scale in MPa.](/assets/img/cases/single_track/results-cover.png?v=70a6ec99dd48)
 
-_Figure 2. Von Mises stress at $Y$ = 0 mm._
+<p markdown="0"><em>Figure 2. Von Mises stress $\sigma_{\mathrm{vM}}$ in the single-track deposit and substrate (MPa).</em></p>
 
-[Download the stress-field figure](/assets/pdf/cases/single_track/results-cover.pdf)
+The contour shows the stress magnitude after the deposition and cooling calculation. Von Mises stress is a scalar equivalent stress, while the profiles below resolve individual normal-stress components.
 
-[Download all final cell stresses](/assets/data/cases/single_track/final-stress-cells.csv) · [Download stress-field metadata](/assets/data/cases/single_track/final-stress-metadata.json)
+[Download the figure PDF](/assets/pdf/cases/single_track/results-cover.pdf) · [Download final cell stresses](/assets/data/cases/single_track/final-stress-cells.csv) · [Download cell-stress metadata](/assets/data/cases/single_track/final-stress-metadata.json)
 
 </div>
 
@@ -368,31 +368,17 @@ _Figure 2. Von Mises stress at $Y$ = 0 mm._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### X-direction stress comparison
+### Axial and through-thickness stress
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![X-direction stress comparison.](/assets/img/cases/single_track/single_track_stress_xx_comparison.png?v=20df8276736a)
+![Single-track axial and through-thickness stress compared with reference simulation and experimental samples.](/assets/img/cases/single_track/stress-comparison.png?v=b29cbf1b1fe3)
 
-_Figure 3. $X$-direction stress comparison._
+<p markdown="0"><em>Figure 3. Axial $\sigma_{\mathrm{xx}}$ (left) and through-thickness $\sigma_{\mathrm{zz}}$ (right), in MPa.</em></p>
 
-[Download the figure PDF](/assets/pdf/cases/single_track/single_track_stress_xx_comparison.pdf)
+The profiles are sampled at $y=0$ and $z=0.335$ mm, the assumed deposit mid-height. The horizontal coordinate is $x_{\mathrm{plot}}=x+20$ mm, covering the 40 mm track. DNS is compared with the supplied reference simulation and three experimental samples. The axial stress is mainly tensile, while the through-thickness component varies most strongly near the track ends.
 
-</div>
-
-</figure>
-
-<figure class="rsh-case-figure" markdown="1">
-
-### Z-direction stress comparison
-
-<div class="rsh-case-figure-content" markdown="1">
-
-![Z-direction stress comparison.](/assets/img/cases/single_track/single_track_stress_zz_comparison.png?v=c5212cb76553)
-
-_Figure 4. $Z$-direction stress comparison._
-
-[Download the figure PDF](/assets/pdf/cases/single_track/single_track_stress_zz_comparison.pdf)
+[Download the figure PDF](/assets/pdf/cases/single_track/stress-comparison.pdf)
 
 </div>
 

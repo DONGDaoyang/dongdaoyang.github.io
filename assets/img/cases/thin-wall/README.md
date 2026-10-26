@@ -14,8 +14,8 @@ Example:
 
 The Overview uses `geometry-overview.png`, rendered from the supplied `thin-wall_geo.pdf`. The unmodified PDF is stored at `assets/pdf/cases/thin-wall/geometry-overview.pdf`.
 
-The benchmark card currently uses `results-cover.png`, rendered from `thin_wall_results.pdf`. Its original PDF is stored at `assets/pdf/cases/thin-wall/results-cover.pdf`. Change `img` in the case Markdown to use a different cover.
+The benchmark card and displayed result figures now use the canonical manuscript PDFs. See `docs/benchmark-manuscript-figures.json` for the figure-to-caption mapping and `docs/benchmark-manuscript-assets.json` for current source hashes. Earlier import records describe historical assets.
 
-Saved temperature and XX/YY/ZZ strain histories are also imported. The page reports the numerical springback summary and links the complete history CSV. The four-layer and twenty-layer configurations remain separate.
+The displayed temperature histories are the three nonempty DNS/experiment comparisons from manuscript Appendix B. Earlier empty temperature and XX/YY/ZZ strain PNGs are no longer referenced by the page. The release displacement is distinguished from the springback increment, and the separate twenty-layer residual-stress comparison is labelled explicitly.
 
 Figure/data provenance is recorded in `docs/benchmark-case-assets.json`. Complete inputs are downloadable in `assets/data/cases/` under this case’s directory.

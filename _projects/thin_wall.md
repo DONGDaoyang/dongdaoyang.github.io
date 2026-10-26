@@ -9,8 +9,8 @@ hub_case: true
 published: true
 importance: 2
 case_type: Computational case
-img: /assets/img/cases/thin-wall/results-cover.png
-image_alt: Thin-wall saved simulation stress result.
+img: /assets/img/cases/thin-wall/results-cover.png?v=bd0e5d284a4f
+image_alt: "Four-layer thin-wall axial stress after anchor release, in MPa."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
@@ -216,15 +216,17 @@ The phase-change settings are numerical model inputs: latent heat is zero and th
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Residual stress field
+### Axial stress after release
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Residual stress field.](/assets/img/cases/thin-wall/results-cover.png)
+![Four-layer thin-wall axial stress after anchor release, in MPa.](/assets/img/cases/thin-wall/results-cover.png?v=bd0e5d284a4f)
 
-_Figure 2. Residual stress field._
+<p markdown="0"><em>Figure 2. Four-layer wall: axial stress $\sigma_{\mathrm{xx}}$ after anchor release (MPa).</em></p>
 
-[Download the stress-field figure](/assets/pdf/cases/thin-wall/results-cover.pdf)
+The contour is plotted on the undeformed half-width simulation domain. Positive values indicate tension and negative values indicate compression. The two outer anchors have been released, while the central anchor and the $y=0$ symmetry constraint remain.
+
+[Download the figure PDF](/assets/pdf/cases/thin-wall/results-cover.pdf)
 
 </div>
 
@@ -232,13 +234,17 @@ _Figure 2. Residual stress field._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Temperature and strain histories
+### Temperature history at Point 1
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Temperature history.](/assets/img/cases/thin-wall/temperature-history.png)
+![Nonempty temperature-time comparison at thin-wall measurement Point 1.](/assets/img/cases/thin-wall/temperature-point-1.png?v=20a5c3f2102f)
 
-_Figure 3. Temperature history._
+<p markdown="0"><em>Figure 3. Four-layer wall: temperature history at Point 1, in °C versus time in seconds.</em></p>
+
+The solid DNS curve is compared with the dashed experimental reference. Repeated peaks reflect successive deposition and cooling cycles. Point labels follow the supplied records. Measurement coordinates were not supplied, so no new spatial location is assigned to this point.
+
+[Download the figure PDF](/assets/pdf/cases/thin-wall/temperature-point-1.pdf)
 
 </div>
 
@@ -246,13 +252,35 @@ _Figure 3. Temperature history._
 
 <figure class="rsh-case-figure" markdown="1">
 
+### Temperature history at Point 2
+
 <div class="rsh-case-figure-content" markdown="1">
 
-![X-direction strain histories.](/assets/img/cases/thin-wall/strain-xx-history.png)
+![Nonempty temperature-time comparison at thin-wall measurement Point 2.](/assets/img/cases/thin-wall/temperature-point-2.png?v=3427ba3f0774)
 
-_Figure 4. $X$-direction strain histories._
+<p markdown="0"><em>Figure 4. Four-layer wall: temperature history at Point 2, in °C versus time in seconds.</em></p>
 
-[$Y$-direction strain history](/assets/img/cases/thin-wall/strain-yy-history.png) · [$Z$-direction strain history](/assets/img/cases/thin-wall/strain-zz-history.png) · [Download the history CSV](/assets/data/cases/thin-wall/thermal-mechanical-history.csv)
+The solid DNS curve is compared with the dashed experimental reference. Repeated peaks reflect successive deposition and cooling cycles. Point labels follow the supplied records. Measurement coordinates were not supplied, so no new spatial location is assigned to this point.
+
+[Download the figure PDF](/assets/pdf/cases/thin-wall/temperature-point-2.pdf)
+
+</div>
+
+</figure>
+
+<figure class="rsh-case-figure" markdown="1">
+
+### Temperature history at Point 3
+
+<div class="rsh-case-figure-content" markdown="1">
+
+![Nonempty temperature-time comparison at thin-wall measurement Point 3.](/assets/img/cases/thin-wall/temperature-point-3.png?v=4efdc6968524)
+
+<p markdown="0"><em>Figure 5. Four-layer wall: temperature history at Point 3, in °C versus time in seconds.</em></p>
+
+The solid DNS curve is compared with the dashed experimental reference. Repeated peaks reflect successive deposition and cooling cycles. Point labels follow the supplied records. Measurement coordinates were not supplied, so no new spatial location is assigned to this point.
+
+[Download the figure PDF](/assets/pdf/cases/thin-wall/temperature-point-3.pdf)
 
 </div>
 
@@ -264,11 +292,31 @@ _Figure 4. $X$-direction strain histories._
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Vertical displacement after release.](/assets/img/cases/thin-wall/thin_wall_displacement_comparison.png?v=71ab55f09e5e)
+![Total released vertical displacement along the four-layer wall compared with supplied reference and experimental curves.](/assets/img/cases/thin-wall/thin_wall_displacement_comparison.png?v=f5012f7fa5e0)
 
-_Figure 5. Vertical displacement after release._
+<p markdown="0"><em>Figure 6. Four-layer wall: total released vertical displacement $u_z$ (mm).</em></p>
+
+The profile follows $y=z=0$, with $x_{\mathrm{plot}}=x+250$ mm spanning 0–500 mm. This is the total displacement after release, whereas the springback increment below is the change caused by releasing the anchors. The supplied reference-simulation curve duplicates Experiment 1 and is not independent validation evidence.
 
 [Download the figure PDF](/assets/pdf/cases/thin-wall/thin_wall_displacement_comparison.pdf)
+
+</div>
+
+</figure>
+
+<figure class="rsh-case-figure" markdown="1">
+
+### Twenty-layer residual stress
+
+<div class="rsh-case-figure-content" markdown="1">
+
+![Longitudinal residual stress along the height of a separate twenty-layer wall compared with measurements.](/assets/img/cases/thin-wall/20-layer-stress-comparison.png?v=2fd858a17fa8)
+
+<p markdown="0"><em>Figure 7. Twenty-layer wall: longitudinal residual stress $\sigma_{\mathrm{xx}}$ along the 40 mm deposited height (MPa).</em></p>
+
+This is the separate twenty-layer configuration after unclamping, rather than the four-layer thermal-history case above. The simulation is compared with the neutron-diffraction measurements and reported error bars of Ding et al. (2011). It captures the tensile-to-compressive trend with height, while local stress magnitudes remain overpredicted.
+
+[Download the figure PDF](/assets/pdf/cases/thin-wall/20-layer-stress-comparison.pdf)
 
 </div>
 
@@ -278,7 +326,7 @@ _Figure 5. Vertical displacement after release._
 
 ### Springback after release
 
-The maximum springback magnitude is **3.246338 mm**, with a vertical component of **3.242710 mm** at that node.
+The maximum release-induced displacement increment is **3.246338 mm**, with a vertical component of **3.242710 mm** at that node. It measures the change between the states before and after release, rather than the total released displacement shown in the profile.
 
 [Download springback samples](/assets/data/cases/thin-wall/springback-summary.csv)
 

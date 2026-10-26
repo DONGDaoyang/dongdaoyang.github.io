@@ -9,8 +9,8 @@ hub_case: true
 published: true
 importance: 3
 case_type: Computational case
-img: /assets/img/cases/bridge/results-cover.png
-image_alt: Bridge saved simulation stress result.
+img: /assets/img/cases/bridge/results-cover.png?v=3810220e4237
+image_alt: "Bridge axial elastic-strain field with a color scale in microstrain."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
@@ -188,15 +188,17 @@ Maximum yield stress, $\sigma_{\mathrm{max}}$, is $1.2\,\sigma_{\mathrm{y}}$ at 
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Residual stress field
+### Axial elastic-strain field
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Residual stress field.](/assets/img/cases/bridge/results-cover.png)
+![Bridge axial elastic-strain field with a color scale in microstrain.](/assets/img/cases/bridge/results-cover.png?v=3810220e4237)
 
-_Figure 2. Residual stress field._
+<p markdown="0"><em>Figure 2. Bridge axial elastic strain $\varepsilon^{\mathrm{e}}_{\mathrm{xx}}$ (µε).</em></p>
 
-[Download the stress-field figure](/assets/pdf/cases/bridge/results-cover.pdf)
+The color scale measures elastic strain. Positive values show axial extension and negative values show axial contraction. This part-scale result is distinct from the local DNS calibration model shown below.
+
+[Download the figure PDF](/assets/pdf/cases/bridge/results-cover.pdf)
 
 </div>
 
@@ -204,15 +206,17 @@ _Figure 2. Residual stress field._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Temperature and strain histories
+### Local thermal and strain histories
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Temperature and X-direction strain histories.](/assets/img/cases/bridge/thermal-history.png)
+![Bridge local temperature and axial plastic and elastic strain during scanning and cooling.](/assets/img/cases/bridge/thermal-history.png)
 
-_Figure 3. Temperature and $X$-direction strain histories._
+<p markdown="0"><em>Figure 3. Saved Bridge local history: temperature (°C) and axial strain (dimensionless).</em></p>
 
-[Download the history CSV](/assets/data/cases/bridge/thermal-mechanical-history.csv)
+The upper panel tracks temperature and the lower panel separates the saved plastic and elastic $xx$ strains at local cell 451, centered at $(0,0,0.0150)$ mm. The time axis covers the local scanning and cooling calculation. It is not the complete bridge build history or a new solver run.
+
+[Download local history CSV](/assets/data/cases/bridge/thermal-mechanical-history.csv) · [Download local history PDF](/assets/pdf/cases/bridge/thermal-history.pdf)
 
 </div>
 
@@ -220,13 +224,17 @@ _Figure 3. Temperature and $X$-direction strain histories._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Inherent-strain identification
+### Local elastic-strain agreement
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Stress and elastic strain comparison.](/assets/img/cases/bridge/optimization-agreement.png)
+![Bridge Opt-IS versus DNS elastic-strain parity plots for the xx, yy and zz components.](/assets/img/cases/bridge/strain-parity.png?v=718cb6e725e8)
 
-_Figure 4. Stress and elastic strain comparison._
+<p markdown="0"><em>Figure 4. Bridge local calibration: $xx$, $yy$ and $zz$ elastic-strain parity (µε).</em></p>
+
+The three panels compare Opt-IS with DNS on 882 paired active native cells. The dashed diagonal represents exact agreement. Scatter away from that line shows the remaining component-specific mismatch.
+
+[Download the figure PDF](/assets/pdf/cases/bridge/strain-parity.pdf) · [Download archived error metrics](/assets/data/cases/bridge/optimization-metrics.csv)
 
 </div>
 
@@ -234,13 +242,17 @@ _Figure 4. Stress and elastic strain comparison._
 
 <figure class="rsh-case-figure" markdown="1">
 
+### Local elastic-strain maps
+
 <div class="rsh-case-figure-content" markdown="1">
 
-![Residual stress field comparison.](/assets/img/cases/bridge/optimization-agreement-page-2.png)
+![Bridge local axial elastic-strain maps.](/assets/img/cases/bridge/strain-spatial-page-1.png?v=9cc2e642e679)
 
-_Figure 5. Residual stress field comparison._
+<p markdown="0"><em>Figure 5. Bridge local model: $\varepsilon^{\mathrm{e}}_{\mathrm{xx}}$ maps (µε).</em></p>
 
-[Download all comparison pages](/assets/pdf/cases/bridge/optimization-agreement.pdf) · [Download the error metrics](/assets/data/cases/bridge/optimization-metrics.csv)
+From left to right: DNS, Opt-IS, and the signed difference Opt-IS minus DNS on the top layer. The difference map locates the spatial calibration mismatch.
+
+[Download the figure PDF](/assets/pdf/cases/bridge/strain-spatial.pdf)
 
 </div>
 
@@ -248,13 +260,17 @@ _Figure 5. Residual stress field comparison._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Residual elastic strain
+### Local elastic-strain profiles
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![X-direction elastic strain at X = 3.75 mm.](/assets/img/cases/bridge/x3p75.png)
+![Bridge local top-plane elastic-strain profiles.](/assets/img/cases/bridge/strain-spatial-page-2.png?v=92ca4ccfb80a)
 
-_Figure 6. $X$-direction elastic strain at $X$ = 3.75 mm._
+<p markdown="0"><em>Figure 6. Bridge local model: $xx$, $yy$ and $zz$ top-plane elastic-strain profiles (µε).</em></p>
+
+The three panels compare the normal elastic-strain components along the same native top-plane sampling row. These local profiles are distinct from the full bridge measurement lines below.
+
+[Download the figure PDF](/assets/pdf/cases/bridge/strain-spatial.pdf)
 
 </div>
 
@@ -262,13 +278,53 @@ _Figure 6. $X$-direction elastic strain at $X$ = 3.75 mm._
 
 <figure class="rsh-case-figure" markdown="1">
 
+### Part-scale axial elastic strain
+
 <div class="rsh-case-figure-content" markdown="1">
 
-![Z-direction elastic strain at X = 3.75 mm.](/assets/img/cases/bridge/z3p75.png)
+![Bridge axial elastic strain across the span compared with experimental measurements.](/assets/img/cases/bridge/axial-strain-profile.png?v=660c7a8bb22d)
 
-_Figure 7. $Z$-direction elastic strain at $X$ = 3.75 mm._
+<p markdown="0"><em>Figure 7. Bridge $\varepsilon^{\mathrm{e}}_{\mathrm{xx}}$ across the span (µε).</em></p>
 
-Additional profiles: [3.75 mm, $Y$-direction](/assets/img/cases/bridge/y3p75.png) · [7.75 mm, $X$-direction](/assets/img/cases/bridge/x7p75.png) · [7.75 mm, $Y$-direction](/assets/img/cases/bridge/y7p75.png) · [7.75 mm, $Z$-direction](/assets/img/cases/bridge/z7p75.png).
+The profile follows $y=0$ and $z=17.75$ mm over $x\in[-10.5,10.5]$ mm. Experimental points and their reported error bars follow Ganeriwala et al. (2019). Opt-IS captures the broad tensile region but not the higher measured strain near the right end. The confidence level of the reported error bars is unspecified.
+
+[Download the figure PDF](/assets/pdf/cases/bridge/axial-strain-profile.pdf)
+
+</div>
+
+</figure>
+
+<figure class="rsh-case-figure" markdown="1">
+
+### Vertical-line xx elastic strain
+
+<div class="rsh-case-figure-content" markdown="1">
+
+![Bridge xx elastic strain along the vertical sampling line.](/assets/img/cases/bridge/x3p75.png?v=ff23235c7de8)
+
+<p markdown="0"><em>Figure 8. Bridge $\varepsilon^{\mathrm{e}}_{\mathrm{xx}}$ along the vertical line (µε).</em></p>
+
+The line is at global $x=-6.75$ mm and $y=0$, over $z=10$–19 mm. The plotted height is $z_{\mathrm{local}}=z-10$ mm. The filename label “3.75” refers to the local horizontal position $x+10.5$, rather than a global $x=3.75$ mm plane. The curves compare Opt-IS, MIS, DIS, the supplied reference simulation, and experimental data.
+
+[Download the figure PDF](/assets/pdf/cases/bridge/x3p75.pdf)
+
+</div>
+
+</figure>
+
+<figure class="rsh-case-figure" markdown="1">
+
+### Vertical-line zz elastic strain
+
+<div class="rsh-case-figure-content" markdown="1">
+
+![Bridge zz elastic strain along the vertical sampling line.](/assets/img/cases/bridge/z3p75.png?v=9c781ac171a9)
+
+<p markdown="0"><em>Figure 9. Bridge $\varepsilon^{\mathrm{e}}_{\mathrm{zz}}$ along the vertical line (µε).</em></p>
+
+The line is at global $x=-6.75$ mm and $y=0$, over $z=10$–19 mm. The plotted height is $z_{\mathrm{local}}=z-10$ mm. The filename label “3.75” refers to the local horizontal position $x+10.5$, rather than a global $x=3.75$ mm plane. The curves compare Opt-IS, MIS, DIS, the supplied reference simulation, and experimental data.
+
+[Download the figure PDF](/assets/pdf/cases/bridge/z3p75.pdf)
 
 </div>
 

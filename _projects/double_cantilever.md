@@ -9,8 +9,8 @@ hub_case: true
 published: true
 importance: 5
 case_type: Computational case
-img: /assets/img/cases/double_cantilever/results-cover.png
-image_alt: Double-cantilever saved simulation stress result.
+img: /assets/img/cases/double_cantilever/results-cover.png?v=8e5614f749e8
+image_alt: "Double-cantilever axial elastic-strain field with a color scale in microstrain."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
@@ -193,15 +193,17 @@ Maximum yield stress, $\sigma_{\mathrm{max}}$, is $1\,\sigma_{\mathrm{y}}$ at ea
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Residual stress field
+### Axial elastic-strain field
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Residual stress field.](/assets/img/cases/double_cantilever/results-cover.png)
+![Double-cantilever axial elastic-strain field with a color scale in microstrain.](/assets/img/cases/double_cantilever/results-cover.png?v=8e5614f749e8)
 
-_Figure 2. Residual stress field._
+<p markdown="0"><em>Figure 2. Double-cantilever axial elastic strain $\varepsilon^{\mathrm{e}}_{\mathrm{xx}}$ (µε).</em></p>
 
-[Download the stress-field figure](/assets/pdf/cases/double_cantilever/results-cover.pdf)
+The contour shows the axial elastic-strain component in the IN718 double-cantilever model. Positive and negative values denote extension and contraction. Release displacement is a different quantity and is shown in millimeters below.
+
+[Download the figure PDF](/assets/pdf/cases/double_cantilever/results-cover.pdf)
 
 </div>
 
@@ -209,15 +211,17 @@ _Figure 2. Residual stress field._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Temperature and strain histories
+### Local strain histories
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![X-, Y- and Z-direction strain histories.](/assets/img/cases/double_cantilever/thermal-history.png)
+![Double-cantilever local plastic, elastic and mechanical strain histories in three directions.](/assets/img/cases/double_cantilever/thermal-history.png)
 
-_Figure 3. $X$-, $Y$- and $Z$-direction strain histories._
+<p markdown="0"><em>Figure 3. Saved Double-cantilever local $xx$, $yy$ and $zz$ strain histories (‰).</em></p>
 
-[Download all local history pages](/assets/pdf/cases/double_cantilever/thermal-history.pdf)
+The three panels show the saved plastic, elastic, and mechanical normal-strain components over the local scanning and cooling calculation. One per mille equals 0.001 strain. This figure contains strain histories only. The downloadable PDF also includes three scan-window detail pages.
+
+[Download all local strain-history pages](/assets/pdf/cases/double_cantilever/thermal-history.pdf)
 
 </div>
 
@@ -225,13 +229,17 @@ _Figure 3. $X$-, $Y$- and $Z$-direction strain histories._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Inherent-strain identification
+### Local elastic-strain agreement
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Stress and elastic strain comparison.](/assets/img/cases/double_cantilever/optimization-agreement.png)
+![Double-cantilever Opt-IS versus DNS elastic-strain parity plots for the xx, yy and zz components.](/assets/img/cases/double_cantilever/strain-parity.png?v=81b43e5130b2)
 
-_Figure 4. Stress and elastic strain comparison._
+<p markdown="0"><em>Figure 4. Double-cantilever local calibration: $xx$, $yy$ and $zz$ elastic-strain parity (µε).</em></p>
+
+The panels compare Opt-IS with DNS on 1452 paired active native cells. The dashed diagonal denotes exact agreement. Departures from the diagonal show the remaining mismatch rather than part-scale experimental uncertainty.
+
+[Download the figure PDF](/assets/pdf/cases/double_cantilever/strain-parity.pdf) · [Download archived error metrics](/assets/data/cases/double_cantilever/optimization-metrics.csv)
 
 </div>
 
@@ -239,13 +247,17 @@ _Figure 4. Stress and elastic strain comparison._
 
 <figure class="rsh-case-figure" markdown="1">
 
+### Local elastic-strain maps
+
 <div class="rsh-case-figure-content" markdown="1">
 
-![Residual stress field comparison.](/assets/img/cases/double_cantilever/optimization-agreement-page-2.png)
+![Double-cantilever local axial elastic-strain maps.](/assets/img/cases/double_cantilever/strain-spatial-page-1.png?v=b64afa2357f5)
 
-_Figure 5. Residual stress field comparison._
+<p markdown="0"><em>Figure 5. Double-cantilever local $\varepsilon^{\mathrm{e}}_{\mathrm{xx}}$ maps (µε).</em></p>
 
-[Download all comparison pages](/assets/pdf/cases/double_cantilever/optimization-agreement.pdf) · [Download the error metrics](/assets/data/cases/double_cantilever/optimization-metrics.csv)
+The three panels show DNS, Opt-IS, and the signed difference Opt-IS minus DNS on the local top layer. The color scale measures elastic strain.
+
+[Download the figure PDF](/assets/pdf/cases/double_cantilever/strain-spatial.pdf)
 
 </div>
 
@@ -253,15 +265,35 @@ _Figure 5. Residual stress field comparison._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Warpage after release
+### Local elastic-strain profiles
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Vertical displacement after release.](/assets/img/cases/double_cantilever/warpage.png)
+![Double-cantilever local top-plane elastic-strain profiles.](/assets/img/cases/double_cantilever/strain-spatial-page-2.png?v=18a2965b6dca)
 
-_Figure 6. Vertical displacement after release._
+<p markdown="0"><em>Figure 6. Double-cantilever local $xx$, $yy$ and $zz$ elastic-strain profiles (µε).</em></p>
 
-[Download the warpage figure](/assets/pdf/cases/double_cantilever/warpage.pdf) · [Download displacement samples](/assets/data/cases/double_cantilever/warpage.csv)
+The three normal elastic-strain components are sampled along the native top-plane row and compared between DNS and Opt-IS. These curves describe the local calibration model.
+
+[Download the figure PDF](/assets/pdf/cases/double_cantilever/strain-spatial.pdf)
+
+</div>
+
+</figure>
+
+<figure class="rsh-case-figure" markdown="1">
+
+### Vertical displacement after cutting
+
+<div class="rsh-case-figure-content" markdown="1">
+
+![Double-cantilever vertical displacement at both released ends compared with experiment and reference methods.](/assets/img/cases/double_cantilever/warpage.png?v=cbe3fe967c0c)
+
+<p markdown="0"><em>Figure 7. Double-cantilever post-cut vertical displacement $u_z$ for the 127 mm specimen (mm).</em></p>
+
+Opt-IS, MIS, DIS, the supplied reference simulation, and experiment are compared along the specimen. Both ends lift after cutting, with greater uplift on the left and a low-displacement central region.
+
+[Download the figure PDF](/assets/pdf/cases/double_cantilever/warpage.pdf) · [Download displacement samples](/assets/data/cases/double_cantilever/warpage.csv)
 
 </div>
 

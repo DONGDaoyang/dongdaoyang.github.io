@@ -1,36 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="160" viewBox="0 0 200 160" fill="none" role="img" aria-labelledby="logo-title logo-desc">
-  <title id="logo-title">Residual Stress Hub — printed RS</title>
-  <desc id="logo-desc">
-    Three-dimensional RS joined directly to a thick blue build plate, without supports. R has a continuous red-to-white-to-blue gradient matching the
-    title palette from top to bottom, with the white transition at three-quarters of its height. S is solid medium gray with subtle metallic face
-    shading. Both letters have approximately 30 softly rounded printed layers with continuous highlight-to-shadow transitions following their front
-    and side faces; the build plate stays smooth.
-  </desc>
+  <title id="logo-title">Residual Stress Hub — industrial RS</title>
+  <desc id="logo-desc">Layered brushed-steel RS monogram joined to a graphite build plate. Machined silver faces, dark blue steel edges, recessed fasteners, and a restrained orange deposition accent.</desc>
   <defs>
-    <linearGradient id="stress-front" x1="0" y1="17" x2="0" y2="129" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#c55e6b" />
-      <stop offset=".75" stop-color="#f7f8fa" />
-      <stop offset="1" stop-color="#4b7baa" />
-    </linearGradient>
-    <linearGradient id="stress-top" x1="0" y1="17" x2="0" y2="129" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#d48690" />
-      <stop offset=".75" stop-color="#fff" />
-      <stop offset="1" stop-color="#789cbf" />
-    </linearGradient>
-    <linearGradient id="stress-side" x1="0" y1="17" x2="0" y2="129" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#b15560" />
-      <stop offset=".75" stop-color="#e4e9ee" />
-      <stop offset="1" stop-color="#446f99" />
-    </linearGradient>
-    <linearGradient id="plate-top" x1="9" y1="129" x2="192" y2="117" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#a4c6e5" />
-      <stop offset=".5" stop-color="#8bb5dc" />
-      <stop offset="1" stop-color="#a4c6e5" />
-    </linearGradient>
-    <linearGradient id="plate-front" x1="0" y1="129" x2="0" y2="145" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7ca5ce" />
-      <stop offset="1" stop-color="#618db8" />
-    </linearGradient>
+    <linearGradient id="stress-front" x1="0" y1="17" x2="0" y2="129" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e4ecf1" /><stop offset=".26" stop-color="#a1b0bc" /><stop offset=".42" stop-color="#f4f8fa" /><stop offset=".58" stop-color="#9dabb7" /><stop offset="1" stop-color="#526b80" /></linearGradient>
+    <linearGradient id="stress-top" x1="0" y1="17" x2="0" y2="129" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f3f6f8" /><stop offset=".5" stop-color="#b6c6d2" /><stop offset="1" stop-color="#8195a6" /></linearGradient>
+    <linearGradient id="stress-side" x1="0" y1="17" x2="0" y2="129" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#52697c" /><stop offset=".45" stop-color="#2a4358" /><stop offset="1" stop-color="#132c40" /></linearGradient>
+    <linearGradient id="plate-top" x1="9" y1="129" x2="192" y2="117" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#728391" /><stop offset=".38" stop-color="#3d5568" /><stop offset="1" stop-color="#1e3549" /></linearGradient>
+    <linearGradient id="plate-front" x1="0" y1="129" x2="0" y2="145" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2a4358" /><stop offset="1" stop-color="#0d2335" /></linearGradient>
     <clipPath id="printed-face-0">
       <path
         d="M40 117 L40 21 L71 21 C94 21 106 33 106 49 C106 62 99 71 86 74 L110 117 L90 117 L69 77 L58 77 L58 117 Z M58 37 L58 61 L70 61 C82 61 88 57 88 49 C88 41 82 37 70 37 Z"
@@ -357,12 +333,22 @@
     <pattern id="print-layers-side-262" href="#print-layers-front" width="1" patternTransform="matrix(16 -12 1.380281690 1 77.916478873 0)" />
     <pattern id="print-layers-side-263" href="#print-layers-front" width="1" patternTransform="matrix(16 -12 1.283783784 1 82.959459459 0)" />
     <pattern id="print-layers-side-264" href="#print-layers-front" width="1" patternTransform="matrix(16 -12 -0.533333333 1 179.266666667 0)" />
+    <linearGradient id="alloy-front" x1="90" y1="29" x2="160" y2="129" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d2dce3"/><stop offset=".35" stop-color="#6e869a"/><stop offset=".49" stop-color="#c3d0da"/><stop offset="1" stop-color="#354f65"/>
+    </linearGradient>
+    <linearGradient id="deposition-accent" x1="18" y1="137" x2="162" y2="137" gradientUnits="userSpaceOnUse"><stop stop-color="#ba511e"/><stop offset=".45" stop-color="#ffb45b"/><stop offset="1" stop-color="#d26523"/></linearGradient>
   </defs>
   <g id="build-plate">
     <path d="M9 129H176L192 117H25Z" fill="url(#plate-top)" />
     <path d="M9 129H176V145H9Z" fill="url(#plate-front)" />
-    <path d="M176 129L192 117V133L176 145Z" fill="#618db8" />
-    <path d="M9 130H176L192 118" stroke="#c4dbee" stroke-width=".8" />
+    <path d="M176 129L192 117V133L176 145Z" fill="#132b3e" />
+    <path d="M9 130H176L192 118" stroke="#8fa8ba" stroke-width=".8" />
+  </g>
+  <g aria-hidden="true">
+    <path d="M18 137H162" stroke="url(#deposition-accent)" stroke-width="2"/>
+    <path d="M19 141H70M120 141H162" stroke="#718b9e" stroke-width=".7" opacity=".65"/>
+    <ellipse cx="17" cy="126" rx="2.5" ry="1.1" fill="#132b3e" stroke="#8ca0af" stroke-width=".5"/>
+    <ellipse cx="179" cy="122" rx="2.5" ry="1.1" fill="#132b3e" stroke="#8ca0af" stroke-width=".5"/>
   </g>
   <g id="rs-solids" data-print-layers="30">
     <path
@@ -525,397 +511,397 @@
     <polygon points="91.00,124.00 82.00,108.00 98.00,96.00 107.00,112.00" fill="url(#print-layers-side-70)" aria-hidden="true" />
     <path
       d="M175 26 C167 20 157 17 146 17 C125 17 112 29 112 45 C112 60 123 68 142 73 C155 76 161 80 161 87 C161 94 154 98 145 98 C133 98 124 94 115 86 L106 100 C116 111 129 117 146 117 C168 117 180 104 180 86 C180 70 169 62 149 56 C137 53 131 50 131 44 C131 38 137 34 146 34 C156 34 162 37 167 41 Z"
-      fill="#6e777f"
+      fill="#304c62"
       fill-rule="evenodd"
     />
     <g clip-path="url(#printed-face-2)" aria-hidden="true"><rect x="0" y="0" width="200" height="129" fill="url(#print-layers-rear)" /></g>
-    <polygon points="159.00,38.00 157.48,36.91 173.48,24.91 175.00,26.00" fill="#a6adb3" />
+    <polygon points="159.00,38.00 157.48,36.91 173.48,24.91 175.00,26.00" fill="#9cafbd" />
     <polygon points="159.00,38.00 157.48,36.91 173.48,24.91 175.00,26.00" fill="url(#print-layers-side-71)" aria-hidden="true" />
-    <polygon points="157.48,36.91 155.91,35.89 171.91,23.89 173.48,24.91" fill="#a6adb3" />
+    <polygon points="157.48,36.91 155.91,35.89 171.91,23.89 173.48,24.91" fill="#9cafbd" />
     <polygon points="157.48,36.91 155.91,35.89 171.91,23.89 173.48,24.91" fill="url(#print-layers-side-72)" aria-hidden="true" />
-    <polygon points="155.91,35.89 154.30,34.94 170.30,22.94 171.91,23.89" fill="#a6adb3" />
+    <polygon points="155.91,35.89 154.30,34.94 170.30,22.94 171.91,23.89" fill="#9cafbd" />
     <polygon points="155.91,35.89 154.30,34.94 170.30,22.94 171.91,23.89" fill="url(#print-layers-side-73)" aria-hidden="true" />
-    <polygon points="154.30,34.94 152.64,34.06 168.64,22.06 170.30,22.94" fill="#a6adb3" />
+    <polygon points="154.30,34.94 152.64,34.06 168.64,22.06 170.30,22.94" fill="#9cafbd" />
     <polygon points="154.30,34.94 152.64,34.06 168.64,22.06 170.30,22.94" fill="url(#print-layers-side-74)" aria-hidden="true" />
-    <polygon points="152.64,34.06 150.94,33.25 166.94,21.25 168.64,22.06" fill="#a6adb3" />
+    <polygon points="152.64,34.06 150.94,33.25 166.94,21.25 168.64,22.06" fill="#9cafbd" />
     <polygon points="152.64,34.06 150.94,33.25 166.94,21.25 168.64,22.06" fill="url(#print-layers-side-75)" aria-hidden="true" />
-    <polygon points="150.94,33.25 149.21,32.52 165.21,20.52 166.94,21.25" fill="#a6adb3" />
+    <polygon points="150.94,33.25 149.21,32.52 165.21,20.52 166.94,21.25" fill="#9cafbd" />
     <polygon points="150.94,33.25 149.21,32.52 165.21,20.52 166.94,21.25" fill="url(#print-layers-side-76)" aria-hidden="true" />
-    <polygon points="149.21,32.52 147.44,31.85 163.44,19.85 165.21,20.52" fill="#a6adb3" />
+    <polygon points="149.21,32.52 147.44,31.85 163.44,19.85 165.21,20.52" fill="#9cafbd" />
     <polygon points="149.21,32.52 147.44,31.85 163.44,19.85 165.21,20.52" fill="url(#print-layers-side-77)" aria-hidden="true" />
-    <polygon points="147.44,31.85 145.62,31.25 161.62,19.25 163.44,19.85" fill="#a6adb3" />
+    <polygon points="147.44,31.85 145.62,31.25 161.62,19.25 163.44,19.85" fill="#9cafbd" />
     <polygon points="147.44,31.85 145.62,31.25 161.62,19.25 163.44,19.85" fill="url(#print-layers-side-78)" aria-hidden="true" />
-    <polygon points="145.62,31.25 143.78,30.72 159.78,18.72 161.62,19.25" fill="#a6adb3" />
+    <polygon points="145.62,31.25 143.78,30.72 159.78,18.72 161.62,19.25" fill="#9cafbd" />
     <polygon points="145.62,31.25 143.78,30.72 159.78,18.72 161.62,19.25" fill="url(#print-layers-side-79)" aria-hidden="true" />
-    <polygon points="143.78,30.72 141.90,30.27 157.90,18.27 159.78,18.72" fill="#a6adb3" />
+    <polygon points="143.78,30.72 141.90,30.27 157.90,18.27 159.78,18.72" fill="#9cafbd" />
     <polygon points="143.78,30.72 141.90,30.27 157.90,18.27 159.78,18.72" fill="url(#print-layers-side-80)" aria-hidden="true" />
-    <polygon points="141.90,30.27 139.99,29.88 155.99,17.88 157.90,18.27" fill="#a6adb3" />
+    <polygon points="141.90,30.27 139.99,29.88 155.99,17.88 157.90,18.27" fill="#9cafbd" />
     <polygon points="141.90,30.27 139.99,29.88 155.99,17.88 157.90,18.27" fill="url(#print-layers-side-81)" aria-hidden="true" />
-    <polygon points="139.99,29.88 138.05,29.56 154.05,17.56 155.99,17.88" fill="#a6adb3" />
+    <polygon points="139.99,29.88 138.05,29.56 154.05,17.56 155.99,17.88" fill="#9cafbd" />
     <polygon points="139.99,29.88 138.05,29.56 154.05,17.56 155.99,17.88" fill="url(#print-layers-side-82)" aria-hidden="true" />
-    <polygon points="138.05,29.56 136.08,29.32 152.08,17.32 154.05,17.56" fill="#a6adb3" />
+    <polygon points="138.05,29.56 136.08,29.32 152.08,17.32 154.05,17.56" fill="#9cafbd" />
     <polygon points="138.05,29.56 136.08,29.32 152.08,17.32 154.05,17.56" fill="url(#print-layers-side-83)" aria-hidden="true" />
-    <polygon points="136.08,29.32 134.08,29.14 150.08,17.14 152.08,17.32" fill="#a6adb3" />
+    <polygon points="136.08,29.32 134.08,29.14 150.08,17.14 152.08,17.32" fill="#9cafbd" />
     <polygon points="136.08,29.32 134.08,29.14 150.08,17.14 152.08,17.32" fill="url(#print-layers-side-84)" aria-hidden="true" />
-    <polygon points="134.08,29.14 132.05,29.04 148.05,17.04 150.08,17.14" fill="#a6adb3" />
+    <polygon points="134.08,29.14 132.05,29.04 148.05,17.04 150.08,17.14" fill="#9cafbd" />
     <polygon points="134.08,29.14 132.05,29.04 148.05,17.04 150.08,17.14" fill="url(#print-layers-side-85)" aria-hidden="true" />
-    <polygon points="132.05,29.04 130.00,29.00 146.00,17.00 148.05,17.04" fill="#a6adb3" />
+    <polygon points="132.05,29.04 130.00,29.00 146.00,17.00 148.05,17.04" fill="#9cafbd" />
     <polygon points="132.05,29.04 130.00,29.00 146.00,17.00 148.05,17.04" fill="url(#print-layers-side-86)" aria-hidden="true" />
-    <polygon points="130.00,29.00 126.16,29.14 142.16,17.14 146.00,17.00" fill="#a6adb3" />
+    <polygon points="130.00,29.00 126.16,29.14 142.16,17.14 146.00,17.00" fill="#9cafbd" />
     <polygon points="130.00,29.00 126.16,29.14 142.16,17.14 146.00,17.00" fill="url(#print-layers-side-87)" aria-hidden="true" />
-    <polygon points="126.16,29.14 122.51,29.55 138.51,17.55 142.16,17.14" fill="#a6adb3" />
+    <polygon points="126.16,29.14 122.51,29.55 138.51,17.55 142.16,17.14" fill="#9cafbd" />
     <polygon points="126.16,29.14 122.51,29.55 138.51,17.55 142.16,17.14" fill="url(#print-layers-side-88)" aria-hidden="true" />
-    <polygon points="122.51,29.55 119.06,30.21 135.06,18.21 138.51,17.55" fill="#a6adb3" />
+    <polygon points="122.51,29.55 119.06,30.21 135.06,18.21 138.51,17.55" fill="#9cafbd" />
     <polygon points="122.51,29.55 119.06,30.21 135.06,18.21 138.51,17.55" fill="url(#print-layers-side-89)" aria-hidden="true" />
-    <polygon points="119.06,30.21 115.83,31.12 131.83,19.12 135.06,18.21" fill="#a6adb3" />
+    <polygon points="119.06,30.21 115.83,31.12 131.83,19.12 135.06,18.21" fill="#9cafbd" />
     <polygon points="119.06,30.21 115.83,31.12 131.83,19.12 135.06,18.21" fill="url(#print-layers-side-90)" aria-hidden="true" />
-    <polygon points="115.83,31.12 112.81,32.27 128.81,20.27 131.83,19.12" fill="#a6adb3" />
+    <polygon points="115.83,31.12 112.81,32.27 128.81,20.27 131.83,19.12" fill="#9cafbd" />
     <polygon points="115.83,31.12 112.81,32.27 128.81,20.27 131.83,19.12" fill="url(#print-layers-side-91)" aria-hidden="true" />
-    <polygon points="112.81,32.27 110.01,33.64 126.01,21.64 128.81,20.27" fill="#a6adb3" />
+    <polygon points="112.81,32.27 110.01,33.64 126.01,21.64 128.81,20.27" fill="#9cafbd" />
     <polygon points="112.81,32.27 110.01,33.64 126.01,21.64 128.81,20.27" fill="url(#print-layers-side-92)" aria-hidden="true" />
-    <polygon points="110.01,33.64 107.45,35.22 123.45,23.22 126.01,21.64" fill="#a6adb3" />
+    <polygon points="110.01,33.64 107.45,35.22 123.45,23.22 126.01,21.64" fill="#9cafbd" />
     <polygon points="110.01,33.64 107.45,35.22 123.45,23.22 126.01,21.64" fill="url(#print-layers-side-93)" aria-hidden="true" />
-    <polygon points="107.45,35.22 105.12,37.00 121.12,25.00 123.45,23.22" fill="#a6adb3" />
+    <polygon points="107.45,35.22 105.12,37.00 121.12,25.00 123.45,23.22" fill="#9cafbd" />
     <polygon points="107.45,35.22 105.12,37.00 121.12,25.00 123.45,23.22" fill="url(#print-layers-side-94)" aria-hidden="true" />
-    <polygon points="105.12,37.00 103.05,38.97 119.05,26.97 121.12,25.00" fill="#a6adb3" />
+    <polygon points="105.12,37.00 103.05,38.97 119.05,26.97 121.12,25.00" fill="#9cafbd" />
     <polygon points="105.12,37.00 103.05,38.97 119.05,26.97 121.12,25.00" fill="url(#print-layers-side-95)" aria-hidden="true" />
-    <polygon points="103.05,38.97 101.22,41.11 117.22,29.11 119.05,26.97" fill="#6e777f" />
+    <polygon points="103.05,38.97 101.22,41.11 117.22,29.11 119.05,26.97" fill="#304c62" />
     <polygon points="103.05,38.97 101.22,41.11 117.22,29.11 119.05,26.97" fill="url(#print-layers-side-96)" aria-hidden="true" />
-    <polygon points="101.22,41.11 99.66,43.42 115.66,31.42 117.22,29.11" fill="#6e777f" />
+    <polygon points="101.22,41.11 99.66,43.42 115.66,31.42 117.22,29.11" fill="#304c62" />
     <polygon points="101.22,41.11 99.66,43.42 115.66,31.42 117.22,29.11" fill="url(#print-layers-side-97)" aria-hidden="true" />
-    <polygon points="99.66,43.42 98.36,45.88 114.36,33.88 115.66,31.42" fill="#6e777f" />
+    <polygon points="99.66,43.42 98.36,45.88 114.36,33.88 115.66,31.42" fill="#304c62" />
     <polygon points="99.66,43.42 98.36,45.88 114.36,33.88 115.66,31.42" fill="url(#print-layers-side-98)" aria-hidden="true" />
-    <polygon points="98.36,45.88 97.34,48.47 113.34,36.47 114.36,33.88" fill="#6e777f" />
+    <polygon points="98.36,45.88 97.34,48.47 113.34,36.47 114.36,33.88" fill="#304c62" />
     <polygon points="98.36,45.88 97.34,48.47 113.34,36.47 114.36,33.88" fill="url(#print-layers-side-99)" aria-hidden="true" />
-    <polygon points="97.34,48.47 96.60,51.20 112.60,39.20 113.34,36.47" fill="#6e777f" />
+    <polygon points="97.34,48.47 96.60,51.20 112.60,39.20 113.34,36.47" fill="#304c62" />
     <polygon points="97.34,48.47 96.60,51.20 112.60,39.20 113.34,36.47" fill="url(#print-layers-side-100)" aria-hidden="true" />
-    <polygon points="96.60,51.20 96.15,54.05 112.15,42.05 112.60,39.20" fill="#6e777f" />
+    <polygon points="96.60,51.20 96.15,54.05 112.15,42.05 112.60,39.20" fill="#304c62" />
     <polygon points="96.60,51.20 96.15,54.05 112.15,42.05 112.60,39.20" fill="url(#print-layers-side-101)" aria-hidden="true" />
-    <polygon points="96.15,54.05 96.00,57.00 112.00,45.00 112.15,42.05" fill="#6e777f" />
+    <polygon points="96.15,54.05 96.00,57.00 112.00,45.00 112.15,42.05" fill="#304c62" />
     <polygon points="96.15,54.05 96.00,57.00 112.00,45.00 112.15,42.05" fill="url(#print-layers-side-102)" aria-hidden="true" />
-    <polygon points="96.00,57.00 96.13,59.73 112.13,47.73 112.00,45.00" fill="#6e777f" />
+    <polygon points="96.00,57.00 96.13,59.73 112.13,47.73 112.00,45.00" fill="#304c62" />
     <polygon points="96.00,57.00 96.13,59.73 112.13,47.73 112.00,45.00" fill="url(#print-layers-side-103)" aria-hidden="true" />
-    <polygon points="96.13,59.73 96.51,62.30 112.51,50.30 112.13,47.73" fill="#6e777f" />
+    <polygon points="96.13,59.73 96.51,62.30 112.51,50.30 112.13,47.73" fill="#304c62" />
     <polygon points="96.13,59.73 96.51,62.30 112.51,50.30 112.13,47.73" fill="url(#print-layers-side-104)" aria-hidden="true" />
-    <polygon points="96.51,62.30 97.14,64.73 113.14,52.73 112.51,50.30" fill="#6e777f" />
+    <polygon points="96.51,62.30 97.14,64.73 113.14,52.73 112.51,50.30" fill="#304c62" />
     <polygon points="96.51,62.30 97.14,64.73 113.14,52.73 112.51,50.30" fill="url(#print-layers-side-105)" aria-hidden="true" />
-    <polygon points="97.14,64.73 98.02,67.00 114.02,55.00 113.14,52.73" fill="#6e777f" />
+    <polygon points="97.14,64.73 98.02,67.00 114.02,55.00 113.14,52.73" fill="#304c62" />
     <polygon points="97.14,64.73 98.02,67.00 114.02,55.00 113.14,52.73" fill="url(#print-layers-side-106)" aria-hidden="true" />
-    <polygon points="98.02,67.00 99.13,69.13 115.13,57.13 114.02,55.00" fill="#6e777f" />
+    <polygon points="98.02,67.00 99.13,69.13 115.13,57.13 114.02,55.00" fill="#304c62" />
     <polygon points="98.02,67.00 99.13,69.13 115.13,57.13 114.02,55.00" fill="url(#print-layers-side-107)" aria-hidden="true" />
-    <polygon points="99.13,69.13 100.48,71.13 116.48,59.13 115.13,57.13" fill="#6e777f" />
+    <polygon points="99.13,69.13 100.48,71.13 116.48,59.13 115.13,57.13" fill="#304c62" />
     <polygon points="99.13,69.13 100.48,71.13 116.48,59.13 115.13,57.13" fill="url(#print-layers-side-108)" aria-hidden="true" />
-    <polygon points="100.48,71.13 102.07,73.00 118.07,61.00 116.48,59.13" fill="#6e777f" />
+    <polygon points="100.48,71.13 102.07,73.00 118.07,61.00 116.48,59.13" fill="#304c62" />
     <polygon points="100.48,71.13 102.07,73.00 118.07,61.00 116.48,59.13" fill="url(#print-layers-side-109)" aria-hidden="true" />
-    <polygon points="102.07,73.00 103.88,74.75 119.88,62.75 118.07,61.00" fill="#a6adb3" />
+    <polygon points="102.07,73.00 103.88,74.75 119.88,62.75 118.07,61.00" fill="#9cafbd" />
     <polygon points="102.07,73.00 103.88,74.75 119.88,62.75 118.07,61.00" fill="url(#print-layers-side-110)" aria-hidden="true" />
-    <polygon points="103.88,74.75 105.91,76.38 121.91,64.38 119.88,62.75" fill="#a6adb3" />
+    <polygon points="103.88,74.75 105.91,76.38 121.91,64.38 119.88,62.75" fill="#9cafbd" />
     <polygon points="103.88,74.75 105.91,76.38 121.91,64.38 119.88,62.75" fill="url(#print-layers-side-111)" aria-hidden="true" />
-    <polygon points="105.91,76.38 108.16,77.90 124.16,65.90 121.91,64.38" fill="#a6adb3" />
+    <polygon points="105.91,76.38 108.16,77.90 124.16,65.90 121.91,64.38" fill="#9cafbd" />
     <polygon points="105.91,76.38 108.16,77.90 124.16,65.90 121.91,64.38" fill="url(#print-layers-side-112)" aria-hidden="true" />
-    <polygon points="108.16,77.90 110.62,79.31 126.62,67.31 124.16,65.90" fill="#a6adb3" />
+    <polygon points="108.16,77.90 110.62,79.31 126.62,67.31 124.16,65.90" fill="#9cafbd" />
     <polygon points="108.16,77.90 110.62,79.31 126.62,67.31 124.16,65.90" fill="url(#print-layers-side-113)" aria-hidden="true" />
-    <polygon points="110.62,79.31 113.30,80.62 129.30,68.62 126.62,67.31" fill="#a6adb3" />
+    <polygon points="110.62,79.31 113.30,80.62 129.30,68.62 126.62,67.31" fill="#9cafbd" />
     <polygon points="110.62,79.31 113.30,80.62 129.30,68.62 126.62,67.31" fill="url(#print-layers-side-114)" aria-hidden="true" />
-    <polygon points="113.30,80.62 116.18,81.84 132.18,69.84 129.30,68.62" fill="#a6adb3" />
+    <polygon points="113.30,80.62 116.18,81.84 132.18,69.84 129.30,68.62" fill="#9cafbd" />
     <polygon points="113.30,80.62 116.18,81.84 132.18,69.84 129.30,68.62" fill="url(#print-layers-side-115)" aria-hidden="true" />
-    <polygon points="116.18,81.84 119.26,82.98 135.26,70.98 132.18,69.84" fill="#a6adb3" />
+    <polygon points="116.18,81.84 119.26,82.98 135.26,70.98 132.18,69.84" fill="#9cafbd" />
     <polygon points="116.18,81.84 119.26,82.98 135.26,70.98 132.18,69.84" fill="url(#print-layers-side-116)" aria-hidden="true" />
-    <polygon points="119.26,82.98 122.53,84.03 138.53,72.03 135.26,70.98" fill="#a6adb3" />
+    <polygon points="119.26,82.98 122.53,84.03 138.53,72.03 135.26,70.98" fill="#9cafbd" />
     <polygon points="119.26,82.98 122.53,84.03 138.53,72.03 135.26,70.98" fill="url(#print-layers-side-117)" aria-hidden="true" />
-    <polygon points="122.53,84.03 126.00,85.00 142.00,73.00 138.53,72.03" fill="#a6adb3" />
+    <polygon points="122.53,84.03 126.00,85.00 142.00,73.00 138.53,72.03" fill="#9cafbd" />
     <polygon points="122.53,84.03 126.00,85.00 142.00,73.00 138.53,72.03" fill="url(#print-layers-side-118)" aria-hidden="true" />
-    <polygon points="126.00,85.00 128.36,85.57 144.36,73.57 142.00,73.00" fill="#a6adb3" />
+    <polygon points="126.00,85.00 128.36,85.57 144.36,73.57 142.00,73.00" fill="#9cafbd" />
     <polygon points="126.00,85.00 128.36,85.57 144.36,73.57 142.00,73.00" fill="url(#print-layers-side-119)" aria-hidden="true" />
-    <polygon points="128.36,85.57 130.55,86.18 146.55,74.18 144.36,73.57" fill="#a6adb3" />
+    <polygon points="128.36,85.57 130.55,86.18 146.55,74.18 144.36,73.57" fill="#9cafbd" />
     <polygon points="128.36,85.57 130.55,86.18 146.55,74.18 144.36,73.57" fill="url(#print-layers-side-120)" aria-hidden="true" />
-    <polygon points="130.55,86.18 132.58,86.81 148.58,74.81 146.55,74.18" fill="#a6adb3" />
+    <polygon points="130.55,86.18 132.58,86.81 148.58,74.81 146.55,74.18" fill="#9cafbd" />
     <polygon points="130.55,86.18 132.58,86.81 148.58,74.81 146.55,74.18" fill="url(#print-layers-side-121)" aria-hidden="true" />
-    <polygon points="132.58,86.81 134.45,87.47 150.45,75.47 148.58,74.81" fill="#a6adb3" />
+    <polygon points="132.58,86.81 134.45,87.47 150.45,75.47 148.58,74.81" fill="#9cafbd" />
     <polygon points="132.58,86.81 134.45,87.47 150.45,75.47 148.58,74.81" fill="url(#print-layers-side-122)" aria-hidden="true" />
-    <polygon points="134.45,87.47 136.17,88.17 152.17,76.17 150.45,75.47" fill="#a6adb3" />
+    <polygon points="134.45,87.47 136.17,88.17 152.17,76.17 150.45,75.47" fill="#9cafbd" />
     <polygon points="134.45,87.47 136.17,88.17 152.17,76.17 150.45,75.47" fill="url(#print-layers-side-123)" aria-hidden="true" />
-    <polygon points="136.17,88.17 137.72,88.90 153.72,76.90 152.17,76.17" fill="#a6adb3" />
+    <polygon points="136.17,88.17 137.72,88.90 153.72,76.90 152.17,76.17" fill="#9cafbd" />
     <polygon points="136.17,88.17 137.72,88.90 153.72,76.90 152.17,76.17" fill="url(#print-layers-side-124)" aria-hidden="true" />
-    <polygon points="137.72,88.90 139.13,89.68 155.13,77.68 153.72,76.90" fill="#a6adb3" />
+    <polygon points="137.72,88.90 139.13,89.68 155.13,77.68 153.72,76.90" fill="#9cafbd" />
     <polygon points="137.72,88.90 139.13,89.68 155.13,77.68 153.72,76.90" fill="url(#print-layers-side-125)" aria-hidden="true" />
-    <polygon points="139.13,89.68 140.38,90.50 156.38,78.50 155.13,77.68" fill="#a6adb3" />
+    <polygon points="139.13,89.68 140.38,90.50 156.38,78.50 155.13,77.68" fill="#9cafbd" />
     <polygon points="139.13,89.68 140.38,90.50 156.38,78.50 155.13,77.68" fill="url(#print-layers-side-126)" aria-hidden="true" />
-    <polygon points="140.38,90.50 141.47,91.37 157.47,79.37 156.38,78.50" fill="#a6adb3" />
+    <polygon points="140.38,90.50 141.47,91.37 157.47,79.37 156.38,78.50" fill="#9cafbd" />
     <polygon points="140.38,90.50 141.47,91.37 157.47,79.37 156.38,78.50" fill="url(#print-layers-side-127)" aria-hidden="true" />
-    <polygon points="141.47,91.37 142.42,92.29 158.42,80.29 157.47,79.37" fill="#a6adb3" />
+    <polygon points="141.47,91.37 142.42,92.29 158.42,80.29 157.47,79.37" fill="#9cafbd" />
     <polygon points="141.47,91.37 142.42,92.29 158.42,80.29 157.47,79.37" fill="url(#print-layers-side-128)" aria-hidden="true" />
-    <polygon points="142.42,92.29 143.21,93.26 159.21,81.26 158.42,80.29" fill="#6e777f" />
+    <polygon points="142.42,92.29 143.21,93.26 159.21,81.26 158.42,80.29" fill="#304c62" />
     <polygon points="142.42,92.29 143.21,93.26 159.21,81.26 158.42,80.29" fill="url(#print-layers-side-129)" aria-hidden="true" />
-    <polygon points="143.21,93.26 143.86,94.28 159.86,82.28 159.21,81.26" fill="#6e777f" />
+    <polygon points="143.21,93.26 143.86,94.28 159.86,82.28 159.21,81.26" fill="#304c62" />
     <polygon points="143.21,93.26 143.86,94.28 159.86,82.28 159.21,81.26" fill="url(#print-layers-side-130)" aria-hidden="true" />
-    <polygon points="143.86,94.28 144.36,95.37 160.36,83.37 159.86,82.28" fill="#6e777f" />
+    <polygon points="143.86,94.28 144.36,95.37 160.36,83.37 159.86,82.28" fill="#304c62" />
     <polygon points="143.86,94.28 144.36,95.37 160.36,83.37 159.86,82.28" fill="url(#print-layers-side-131)" aria-hidden="true" />
-    <polygon points="144.36,95.37 144.72,96.51 160.72,84.51 160.36,83.37" fill="#6e777f" />
+    <polygon points="144.36,95.37 144.72,96.51 160.72,84.51 160.36,83.37" fill="#304c62" />
     <polygon points="144.36,95.37 144.72,96.51 160.72,84.51 160.36,83.37" fill="url(#print-layers-side-132)" aria-hidden="true" />
-    <polygon points="144.72,96.51 144.93,97.72 160.93,85.72 160.72,84.51" fill="#6e777f" />
+    <polygon points="144.72,96.51 144.93,97.72 160.93,85.72 160.72,84.51" fill="#304c62" />
     <polygon points="144.72,96.51 144.93,97.72 160.93,85.72 160.72,84.51" fill="url(#print-layers-side-133)" aria-hidden="true" />
-    <polygon points="144.93,97.72 145.00,99.00 161.00,87.00 160.93,85.72" fill="#6e777f" />
+    <polygon points="144.93,97.72 145.00,99.00 161.00,87.00 160.93,85.72" fill="#304c62" />
     <polygon points="144.93,97.72 145.00,99.00 161.00,87.00 160.93,85.72" fill="url(#print-layers-side-134)" aria-hidden="true" />
-    <polygon points="145.00,99.00 144.92,100.28 160.92,88.28 161.00,87.00" fill="#6e777f" />
+    <polygon points="145.00,99.00 144.92,100.28 160.92,88.28 161.00,87.00" fill="#304c62" />
     <polygon points="145.00,99.00 144.92,100.28 160.92,88.28 161.00,87.00" fill="url(#print-layers-side-135)" aria-hidden="true" />
-    <polygon points="144.92,100.28 144.68,101.48 160.68,89.48 160.92,88.28" fill="#6e777f" />
+    <polygon points="144.92,100.28 144.68,101.48 160.68,89.48 160.92,88.28" fill="#304c62" />
     <polygon points="144.92,100.28 144.68,101.48 160.68,89.48 160.92,88.28" fill="url(#print-layers-side-136)" aria-hidden="true" />
-    <polygon points="144.68,101.48 144.29,102.61 160.29,90.61 160.68,89.48" fill="#6e777f" />
+    <polygon points="144.68,101.48 144.29,102.61 160.29,90.61 160.68,89.48" fill="#304c62" />
     <polygon points="144.68,101.48 144.29,102.61 160.29,90.61 160.68,89.48" fill="url(#print-layers-side-137)" aria-hidden="true" />
-    <polygon points="144.29,102.61 143.77,103.67 159.77,91.67 160.29,90.61" fill="#6e777f" />
+    <polygon points="144.29,102.61 143.77,103.67 159.77,91.67 160.29,90.61" fill="#304c62" />
     <polygon points="144.29,102.61 143.77,103.67 159.77,91.67 160.29,90.61" fill="url(#print-layers-side-138)" aria-hidden="true" />
-    <polygon points="143.77,103.67 143.10,104.65 159.10,92.65 159.77,91.67" fill="#6e777f" />
+    <polygon points="143.77,103.67 143.10,104.65 159.10,92.65 159.77,91.67" fill="#304c62" />
     <polygon points="143.77,103.67 143.10,104.65 159.10,92.65 159.77,91.67" fill="url(#print-layers-side-139)" aria-hidden="true" />
-    <polygon points="143.10,104.65 142.31,105.56 158.31,93.56 159.10,92.65" fill="#6e777f" />
+    <polygon points="143.10,104.65 142.31,105.56 158.31,93.56 159.10,92.65" fill="#304c62" />
     <polygon points="143.10,104.65 142.31,105.56 158.31,93.56 159.10,92.65" fill="url(#print-layers-side-140)" aria-hidden="true" />
-    <polygon points="142.31,105.56 141.40,106.38 157.40,94.38 158.31,93.56" fill="#a6adb3" />
+    <polygon points="142.31,105.56 141.40,106.38 157.40,94.38 158.31,93.56" fill="#9cafbd" />
     <polygon points="142.31,105.56 141.40,106.38 157.40,94.38 158.31,93.56" fill="url(#print-layers-side-141)" aria-hidden="true" />
-    <polygon points="141.40,106.38 140.38,107.12 156.38,95.12 157.40,94.38" fill="#a6adb3" />
+    <polygon points="141.40,106.38 140.38,107.12 156.38,95.12 157.40,94.38" fill="#9cafbd" />
     <polygon points="141.40,106.38 140.38,107.12 156.38,95.12 157.40,94.38" fill="url(#print-layers-side-142)" aria-hidden="true" />
-    <polygon points="140.38,107.12 139.25,107.79 155.25,95.79 156.38,95.12" fill="#a6adb3" />
+    <polygon points="140.38,107.12 139.25,107.79 155.25,95.79 156.38,95.12" fill="#9cafbd" />
     <polygon points="140.38,107.12 139.25,107.79 155.25,95.79 156.38,95.12" fill="url(#print-layers-side-143)" aria-hidden="true" />
-    <polygon points="139.25,107.79 138.02,108.37 154.02,96.37 155.25,95.79" fill="#a6adb3" />
+    <polygon points="139.25,107.79 138.02,108.37 154.02,96.37 155.25,95.79" fill="#9cafbd" />
     <polygon points="139.25,107.79 138.02,108.37 154.02,96.37 155.25,95.79" fill="url(#print-layers-side-144)" aria-hidden="true" />
-    <polygon points="138.02,108.37 136.70,108.86 152.70,96.86 154.02,96.37" fill="#a6adb3" />
+    <polygon points="138.02,108.37 136.70,108.86 152.70,96.86 154.02,96.37" fill="#9cafbd" />
     <polygon points="138.02,108.37 136.70,108.86 152.70,96.86 154.02,96.37" fill="url(#print-layers-side-145)" aria-hidden="true" />
-    <polygon points="136.70,108.86 135.30,109.27 151.30,97.27 152.70,96.86" fill="#a6adb3" />
+    <polygon points="136.70,108.86 135.30,109.27 151.30,97.27 152.70,96.86" fill="#9cafbd" />
     <polygon points="136.70,108.86 135.30,109.27 151.30,97.27 152.70,96.86" fill="url(#print-layers-side-146)" aria-hidden="true" />
-    <polygon points="135.30,109.27 133.82,109.58 149.82,97.58 151.30,97.27" fill="#a6adb3" />
+    <polygon points="135.30,109.27 133.82,109.58 149.82,97.58 151.30,97.27" fill="#9cafbd" />
     <polygon points="135.30,109.27 133.82,109.58 149.82,97.58 151.30,97.27" fill="url(#print-layers-side-147)" aria-hidden="true" />
-    <polygon points="133.82,109.58 132.27,109.81 148.27,97.81 149.82,97.58" fill="#a6adb3" />
+    <polygon points="133.82,109.58 132.27,109.81 148.27,97.81 149.82,97.58" fill="#9cafbd" />
     <polygon points="133.82,109.58 132.27,109.81 148.27,97.81 149.82,97.58" fill="url(#print-layers-side-148)" aria-hidden="true" />
-    <polygon points="132.27,109.81 130.66,109.95 146.66,97.95 148.27,97.81" fill="#a6adb3" />
+    <polygon points="132.27,109.81 130.66,109.95 146.66,97.95 148.27,97.81" fill="#9cafbd" />
     <polygon points="132.27,109.81 130.66,109.95 146.66,97.95 148.27,97.81" fill="url(#print-layers-side-149)" aria-hidden="true" />
-    <polygon points="130.66,109.95 129.00,110.00 145.00,98.00 146.66,97.95" fill="#a6adb3" />
+    <polygon points="130.66,109.95 129.00,110.00 145.00,98.00 146.66,97.95" fill="#9cafbd" />
     <polygon points="130.66,109.95 129.00,110.00 145.00,98.00 146.66,97.95" fill="url(#print-layers-side-150)" aria-hidden="true" />
-    <polygon points="129.00,110.00 126.78,109.95 142.78,97.95 145.00,98.00" fill="#a6adb3" />
+    <polygon points="129.00,110.00 126.78,109.95 142.78,97.95 145.00,98.00" fill="#9cafbd" />
     <polygon points="129.00,110.00 126.78,109.95 142.78,97.95 145.00,98.00" fill="url(#print-layers-side-151)" aria-hidden="true" />
-    <polygon points="126.78,109.95 124.63,109.81 140.63,97.81 142.78,97.95" fill="#a6adb3" />
+    <polygon points="126.78,109.95 124.63,109.81 140.63,97.81 142.78,97.95" fill="#9cafbd" />
     <polygon points="126.78,109.95 124.63,109.81 140.63,97.81 142.78,97.95" fill="url(#print-layers-side-152)" aria-hidden="true" />
-    <polygon points="124.63,109.81 122.55,109.58 138.55,97.58 140.63,97.81" fill="#a6adb3" />
+    <polygon points="124.63,109.81 122.55,109.58 138.55,97.58 140.63,97.81" fill="#9cafbd" />
     <polygon points="124.63,109.81 122.55,109.58 138.55,97.58 140.63,97.81" fill="url(#print-layers-side-153)" aria-hidden="true" />
-    <polygon points="122.55,109.58 120.52,109.25 136.52,97.25 138.55,97.58" fill="#a6adb3" />
+    <polygon points="122.55,109.58 120.52,109.25 136.52,97.25 138.55,97.58" fill="#9cafbd" />
     <polygon points="122.55,109.58 120.52,109.25 136.52,97.25 138.55,97.58" fill="url(#print-layers-side-154)" aria-hidden="true" />
-    <polygon points="120.52,109.25 118.54,108.83 134.54,96.83 136.52,97.25" fill="#a6adb3" />
+    <polygon points="120.52,109.25 118.54,108.83 134.54,96.83 136.52,97.25" fill="#9cafbd" />
     <polygon points="120.52,109.25 118.54,108.83 134.54,96.83 136.52,97.25" fill="url(#print-layers-side-155)" aria-hidden="true" />
-    <polygon points="118.54,108.83 116.61,108.31 132.61,96.31 134.54,96.83" fill="#a6adb3" />
+    <polygon points="118.54,108.83 116.61,108.31 132.61,96.31 134.54,96.83" fill="#9cafbd" />
     <polygon points="118.54,108.83 116.61,108.31 132.61,96.31 134.54,96.83" fill="url(#print-layers-side-156)" aria-hidden="true" />
-    <polygon points="116.61,108.31 114.72,107.70 130.72,95.70 132.61,96.31" fill="#a6adb3" />
+    <polygon points="116.61,108.31 114.72,107.70 130.72,95.70 132.61,96.31" fill="#9cafbd" />
     <polygon points="116.61,108.31 114.72,107.70 130.72,95.70 132.61,96.31" fill="url(#print-layers-side-157)" aria-hidden="true" />
-    <polygon points="114.72,107.70 112.88,107.00 128.88,95.00 130.72,95.70" fill="#a6adb3" />
+    <polygon points="114.72,107.70 112.88,107.00 128.88,95.00 130.72,95.70" fill="#9cafbd" />
     <polygon points="114.72,107.70 112.88,107.00 128.88,95.00 130.72,95.70" fill="url(#print-layers-side-158)" aria-hidden="true" />
-    <polygon points="112.88,107.00 111.06,106.20 127.06,94.20 128.88,95.00" fill="#a6adb3" />
+    <polygon points="112.88,107.00 111.06,106.20 127.06,94.20 128.88,95.00" fill="#9cafbd" />
     <polygon points="112.88,107.00 111.06,106.20 127.06,94.20 128.88,95.00" fill="url(#print-layers-side-159)" aria-hidden="true" />
-    <polygon points="111.06,106.20 109.28,105.31 125.28,93.31 127.06,94.20" fill="#a6adb3" />
+    <polygon points="111.06,106.20 109.28,105.31 125.28,93.31 127.06,94.20" fill="#9cafbd" />
     <polygon points="111.06,106.20 109.28,105.31 125.28,93.31 127.06,94.20" fill="url(#print-layers-side-160)" aria-hidden="true" />
-    <polygon points="109.28,105.31 107.53,104.33 123.53,92.33 125.28,93.31" fill="#a6adb3" />
+    <polygon points="109.28,105.31 107.53,104.33 123.53,92.33 125.28,93.31" fill="#9cafbd" />
     <polygon points="109.28,105.31 107.53,104.33 123.53,92.33 125.28,93.31" fill="url(#print-layers-side-161)" aria-hidden="true" />
-    <polygon points="107.53,104.33 105.80,103.25 121.80,91.25 123.53,92.33" fill="#a6adb3" />
+    <polygon points="107.53,104.33 105.80,103.25 121.80,91.25 123.53,92.33" fill="#9cafbd" />
     <polygon points="107.53,104.33 105.80,103.25 121.80,91.25 123.53,92.33" fill="url(#print-layers-side-162)" aria-hidden="true" />
-    <polygon points="105.80,103.25 104.08,102.08 120.08,90.08 121.80,91.25" fill="#a6adb3" />
+    <polygon points="105.80,103.25 104.08,102.08 120.08,90.08 121.80,91.25" fill="#9cafbd" />
     <polygon points="105.80,103.25 104.08,102.08 120.08,90.08 121.80,91.25" fill="url(#print-layers-side-163)" aria-hidden="true" />
-    <polygon points="104.08,102.08 102.38,100.81 118.38,88.81 120.08,90.08" fill="#a6adb3" />
+    <polygon points="104.08,102.08 102.38,100.81 118.38,88.81 120.08,90.08" fill="#9cafbd" />
     <polygon points="104.08,102.08 102.38,100.81 118.38,88.81 120.08,90.08" fill="url(#print-layers-side-164)" aria-hidden="true" />
-    <polygon points="102.38,100.81 100.69,99.45 116.69,87.45 118.38,88.81" fill="#a6adb3" />
+    <polygon points="102.38,100.81 100.69,99.45 116.69,87.45 118.38,88.81" fill="#9cafbd" />
     <polygon points="102.38,100.81 100.69,99.45 116.69,87.45 118.38,88.81" fill="url(#print-layers-side-165)" aria-hidden="true" />
-    <polygon points="100.69,99.45 99.00,98.00 115.00,86.00 116.69,87.45" fill="#a6adb3" />
+    <polygon points="100.69,99.45 99.00,98.00 115.00,86.00 116.69,87.45" fill="#9cafbd" />
     <polygon points="100.69,99.45 99.00,98.00 115.00,86.00 116.69,87.45" fill="url(#print-layers-side-166)" aria-hidden="true" />
-    <polygon points="99.00,98.00 90.00,112.00 106.00,100.00 115.00,86.00" fill="#6e777f" />
+    <polygon points="99.00,98.00 90.00,112.00 106.00,100.00 115.00,86.00" fill="#304c62" />
     <polygon points="99.00,98.00 90.00,112.00 106.00,100.00 115.00,86.00" fill="url(#print-layers-side-167)" aria-hidden="true" />
-    <polygon points="90.00,112.00 91.91,114.00 107.91,102.00 106.00,100.00" fill="#6e777f" />
+    <polygon points="90.00,112.00 91.91,114.00 107.91,102.00 106.00,100.00" fill="#304c62" />
     <polygon points="90.00,112.00 91.91,114.00 107.91,102.00 106.00,100.00" fill="url(#print-layers-side-168)" aria-hidden="true" />
-    <polygon points="91.91,114.00 93.89,115.89 109.89,103.89 107.91,102.00" fill="#a6adb3" />
+    <polygon points="91.91,114.00 93.89,115.89 109.89,103.89 107.91,102.00" fill="#9cafbd" />
     <polygon points="91.91,114.00 93.89,115.89 109.89,103.89 107.91,102.00" fill="url(#print-layers-side-169)" aria-hidden="true" />
-    <polygon points="93.89,115.89 95.95,117.65 111.95,105.65 109.89,103.89" fill="#a6adb3" />
+    <polygon points="93.89,115.89 95.95,117.65 111.95,105.65 109.89,103.89" fill="#9cafbd" />
     <polygon points="93.89,115.89 95.95,117.65 111.95,105.65 109.89,103.89" fill="url(#print-layers-side-170)" aria-hidden="true" />
-    <polygon points="95.95,117.65 98.08,119.30 114.08,107.30 111.95,105.65" fill="#a6adb3" />
+    <polygon points="95.95,117.65 98.08,119.30 114.08,107.30 111.95,105.65" fill="#9cafbd" />
     <polygon points="95.95,117.65 98.08,119.30 114.08,107.30 111.95,105.65" fill="url(#print-layers-side-171)" aria-hidden="true" />
-    <polygon points="98.08,119.30 100.28,120.82 116.28,108.82 114.08,107.30" fill="#a6adb3" />
+    <polygon points="98.08,119.30 100.28,120.82 116.28,108.82 114.08,107.30" fill="#9cafbd" />
     <polygon points="98.08,119.30 100.28,120.82 116.28,108.82 114.08,107.30" fill="url(#print-layers-side-172)" aria-hidden="true" />
-    <polygon points="100.28,120.82 102.57,122.21 118.57,110.21 116.28,108.82" fill="#a6adb3" />
+    <polygon points="100.28,120.82 102.57,122.21 118.57,110.21 116.28,108.82" fill="#9cafbd" />
     <polygon points="100.28,120.82 102.57,122.21 118.57,110.21 116.28,108.82" fill="url(#print-layers-side-173)" aria-hidden="true" />
-    <polygon points="102.57,122.21 104.93,123.48 120.93,111.48 118.57,110.21" fill="#a6adb3" />
+    <polygon points="102.57,122.21 104.93,123.48 120.93,111.48 118.57,110.21" fill="#9cafbd" />
     <polygon points="102.57,122.21 104.93,123.48 120.93,111.48 118.57,110.21" fill="url(#print-layers-side-174)" aria-hidden="true" />
-    <polygon points="104.93,123.48 107.38,124.62 123.38,112.62 120.93,111.48" fill="#a6adb3" />
+    <polygon points="104.93,123.48 107.38,124.62 123.38,112.62 120.93,111.48" fill="#9cafbd" />
     <polygon points="104.93,123.48 107.38,124.62 123.38,112.62 120.93,111.48" fill="url(#print-layers-side-175)" aria-hidden="true" />
-    <polygon points="107.38,124.62 109.90,125.64 125.90,113.64 123.38,112.62" fill="#a6adb3" />
+    <polygon points="107.38,124.62 109.90,125.64 125.90,113.64 123.38,112.62" fill="#9cafbd" />
     <polygon points="107.38,124.62 109.90,125.64 125.90,113.64 123.38,112.62" fill="url(#print-layers-side-176)" aria-hidden="true" />
-    <polygon points="109.90,125.64 112.51,126.52 128.51,114.52 125.90,113.64" fill="#a6adb3" />
+    <polygon points="109.90,125.64 112.51,126.52 128.51,114.52 125.90,113.64" fill="#9cafbd" />
     <polygon points="109.90,125.64 112.51,126.52 128.51,114.52 125.90,113.64" fill="url(#print-layers-side-177)" aria-hidden="true" />
-    <polygon points="112.51,126.52 115.20,127.27 131.20,115.27 128.51,114.52" fill="#a6adb3" />
+    <polygon points="112.51,126.52 115.20,127.27 131.20,115.27 128.51,114.52" fill="#9cafbd" />
     <polygon points="112.51,126.52 115.20,127.27 131.20,115.27 128.51,114.52" fill="url(#print-layers-side-178)" aria-hidden="true" />
-    <polygon points="115.20,127.27 117.98,127.89 133.98,115.89 131.20,115.27" fill="#a6adb3" />
+    <polygon points="115.20,127.27 117.98,127.89 133.98,115.89 131.20,115.27" fill="#9cafbd" />
     <polygon points="115.20,127.27 117.98,127.89 133.98,115.89 131.20,115.27" fill="url(#print-layers-side-179)" aria-hidden="true" />
-    <polygon points="117.98,127.89 120.85,128.37 136.85,116.37 133.98,115.89" fill="#a6adb3" />
+    <polygon points="117.98,127.89 120.85,128.37 136.85,116.37 133.98,115.89" fill="#9cafbd" />
     <polygon points="117.98,127.89 120.85,128.37 136.85,116.37 133.98,115.89" fill="url(#print-layers-side-180)" aria-hidden="true" />
-    <polygon points="120.85,128.37 123.81,128.72 139.81,116.72 136.85,116.37" fill="#a6adb3" />
+    <polygon points="120.85,128.37 123.81,128.72 139.81,116.72 136.85,116.37" fill="#9cafbd" />
     <polygon points="120.85,128.37 123.81,128.72 139.81,116.72 136.85,116.37" fill="url(#print-layers-side-181)" aria-hidden="true" />
-    <polygon points="123.81,128.72 126.86,128.93 142.86,116.93 139.81,116.72" fill="#a6adb3" />
+    <polygon points="123.81,128.72 126.86,128.93 142.86,116.93 139.81,116.72" fill="#9cafbd" />
     <polygon points="123.81,128.72 126.86,128.93 142.86,116.93 139.81,116.72" fill="url(#print-layers-side-182)" aria-hidden="true" />
-    <polygon points="126.86,128.93 130.00,129.00 146.00,117.00 142.86,116.93" fill="#a6adb3" />
+    <polygon points="126.86,128.93 130.00,129.00 146.00,117.00 142.86,116.93" fill="#9cafbd" />
     <polygon points="126.86,128.93 130.00,129.00 146.00,117.00 142.86,116.93" fill="url(#print-layers-side-183)" aria-hidden="true" />
-    <polygon points="130.00,129.00 134.01,128.85 150.01,116.85 146.00,117.00" fill="#a6adb3" />
+    <polygon points="130.00,129.00 134.01,128.85 150.01,116.85 146.00,117.00" fill="#9cafbd" />
     <polygon points="130.00,129.00 134.01,128.85 150.01,116.85 146.00,117.00" fill="url(#print-layers-side-184)" aria-hidden="true" />
-    <polygon points="134.01,128.85 137.78,128.41 153.78,116.41 150.01,116.85" fill="#a6adb3" />
+    <polygon points="134.01,128.85 137.78,128.41 153.78,116.41 150.01,116.85" fill="#9cafbd" />
     <polygon points="134.01,128.85 137.78,128.41 153.78,116.41 150.01,116.85" fill="url(#print-layers-side-185)" aria-hidden="true" />
-    <polygon points="137.78,128.41 141.31,127.68 157.31,115.68 153.78,116.41" fill="#a6adb3" />
+    <polygon points="137.78,128.41 141.31,127.68 157.31,115.68 153.78,116.41" fill="#9cafbd" />
     <polygon points="137.78,128.41 141.31,127.68 157.31,115.68 153.78,116.41" fill="url(#print-layers-side-186)" aria-hidden="true" />
-    <polygon points="141.31,127.68 144.59,126.69 160.59,114.69 157.31,115.68" fill="#a6adb3" />
+    <polygon points="141.31,127.68 144.59,126.69 160.59,114.69 157.31,115.68" fill="#9cafbd" />
     <polygon points="141.31,127.68 144.59,126.69 160.59,114.69 157.31,115.68" fill="url(#print-layers-side-187)" aria-hidden="true" />
-    <polygon points="144.59,126.69 147.63,125.44 163.63,113.44 160.59,114.69" fill="#a6adb3" />
+    <polygon points="144.59,126.69 147.63,125.44 163.63,113.44 160.59,114.69" fill="#9cafbd" />
     <polygon points="144.59,126.69 147.63,125.44 163.63,113.44 160.59,114.69" fill="url(#print-layers-side-188)" aria-hidden="true" />
-    <polygon points="147.63,125.44 150.43,123.94 166.43,111.94 163.63,113.44" fill="#a6adb3" />
+    <polygon points="147.63,125.44 150.43,123.94 166.43,111.94 163.63,113.44" fill="#9cafbd" />
     <polygon points="147.63,125.44 150.43,123.94 166.43,111.94 163.63,113.44" fill="url(#print-layers-side-189)" aria-hidden="true" />
-    <polygon points="150.43,123.94 152.97,122.21 168.97,110.21 166.43,111.94" fill="#a6adb3" />
+    <polygon points="150.43,123.94 152.97,122.21 168.97,110.21 166.43,111.94" fill="#9cafbd" />
     <polygon points="150.43,123.94 152.97,122.21 168.97,110.21 166.43,111.94" fill="url(#print-layers-side-190)" aria-hidden="true" />
-    <polygon points="152.97,122.21 155.25,120.25 171.25,108.25 168.97,110.21" fill="#a6adb3" />
+    <polygon points="152.97,122.21 155.25,120.25 171.25,108.25 168.97,110.21" fill="#9cafbd" />
     <polygon points="152.97,122.21 155.25,120.25 171.25,108.25 168.97,110.21" fill="url(#print-layers-side-191)" aria-hidden="true" />
-    <polygon points="155.25,120.25 157.28,118.08 173.28,106.08 171.25,108.25" fill="#6e777f" />
+    <polygon points="155.25,120.25 157.28,118.08 173.28,106.08 171.25,108.25" fill="#304c62" />
     <polygon points="155.25,120.25 157.28,118.08 173.28,106.08 171.25,108.25" fill="url(#print-layers-side-192)" aria-hidden="true" />
-    <polygon points="157.28,118.08 159.04,115.72 175.04,103.72 173.28,106.08" fill="#6e777f" />
+    <polygon points="157.28,118.08 159.04,115.72 175.04,103.72 173.28,106.08" fill="#304c62" />
     <polygon points="157.28,118.08 159.04,115.72 175.04,103.72 173.28,106.08" fill="url(#print-layers-side-193)" aria-hidden="true" />
-    <polygon points="159.04,115.72 160.55,113.17 176.55,101.17 175.04,103.72" fill="#6e777f" />
+    <polygon points="159.04,115.72 160.55,113.17 176.55,101.17 175.04,103.72" fill="#304c62" />
     <polygon points="159.04,115.72 160.55,113.17 176.55,101.17 175.04,103.72" fill="url(#print-layers-side-194)" aria-hidden="true" />
-    <polygon points="160.55,113.17 161.78,110.44 177.78,98.44 176.55,101.17" fill="#6e777f" />
+    <polygon points="160.55,113.17 161.78,110.44 177.78,98.44 176.55,101.17" fill="#304c62" />
     <polygon points="160.55,113.17 161.78,110.44 177.78,98.44 176.55,101.17" fill="url(#print-layers-side-195)" aria-hidden="true" />
-    <polygon points="161.78,110.44 162.75,107.54 178.75,95.54 177.78,98.44" fill="#6e777f" />
+    <polygon points="161.78,110.44 162.75,107.54 178.75,95.54 177.78,98.44" fill="#304c62" />
     <polygon points="161.78,110.44 162.75,107.54 178.75,95.54 177.78,98.44" fill="url(#print-layers-side-196)" aria-hidden="true" />
-    <polygon points="162.75,107.54 163.44,104.50 179.44,92.50 178.75,95.54" fill="#6e777f" />
+    <polygon points="162.75,107.54 163.44,104.50 179.44,92.50 178.75,95.54" fill="#304c62" />
     <polygon points="162.75,107.54 163.44,104.50 179.44,92.50 178.75,95.54" fill="url(#print-layers-side-197)" aria-hidden="true" />
-    <polygon points="163.44,104.50 163.86,101.31 179.86,89.31 179.44,92.50" fill="#6e777f" />
+    <polygon points="163.44,104.50 163.86,101.31 179.86,89.31 179.44,92.50" fill="#304c62" />
     <polygon points="163.44,104.50 163.86,101.31 179.86,89.31 179.44,92.50" fill="url(#print-layers-side-198)" aria-hidden="true" />
-    <polygon points="163.86,101.31 164.00,98.00 180.00,86.00 179.86,89.31" fill="#6e777f" />
+    <polygon points="163.86,101.31 164.00,98.00 180.00,86.00 179.86,89.31" fill="#304c62" />
     <polygon points="163.86,101.31 164.00,98.00 180.00,86.00 179.86,89.31" fill="url(#print-layers-side-199)" aria-hidden="true" />
-    <polygon points="164.00,98.00 163.87,95.09 179.87,83.09 180.00,86.00" fill="#6e777f" />
+    <polygon points="164.00,98.00 163.87,95.09 179.87,83.09 180.00,86.00" fill="#304c62" />
     <polygon points="164.00,98.00 163.87,95.09 179.87,83.09 180.00,86.00" fill="url(#print-layers-side-200)" aria-hidden="true" />
-    <polygon points="163.87,95.09 163.49,92.36 179.49,80.36 179.87,83.09" fill="#6e777f" />
+    <polygon points="163.87,95.09 163.49,92.36 179.49,80.36 179.87,83.09" fill="#304c62" />
     <polygon points="163.87,95.09 163.49,92.36 179.49,80.36 179.87,83.09" fill="url(#print-layers-side-201)" aria-hidden="true" />
-    <polygon points="163.49,92.36 162.85,89.80 178.85,77.80 179.49,80.36" fill="#6e777f" />
+    <polygon points="163.49,92.36 162.85,89.80 178.85,77.80 179.49,80.36" fill="#304c62" />
     <polygon points="163.49,92.36 162.85,89.80 178.85,77.80 179.49,80.36" fill="url(#print-layers-side-202)" aria-hidden="true" />
-    <polygon points="162.85,89.80 161.97,87.41 177.97,75.41 178.85,77.80" fill="#6e777f" />
+    <polygon points="162.85,89.80 161.97,87.41 177.97,75.41 178.85,77.80" fill="#304c62" />
     <polygon points="162.85,89.80 161.97,87.41 177.97,75.41 178.85,77.80" fill="url(#print-layers-side-203)" aria-hidden="true" />
-    <polygon points="161.97,87.41 160.84,85.16 176.84,73.16 177.97,75.41" fill="#6e777f" />
+    <polygon points="161.97,87.41 160.84,85.16 176.84,73.16 177.97,75.41" fill="#304c62" />
     <polygon points="161.97,87.41 160.84,85.16 176.84,73.16 177.97,75.41" fill="url(#print-layers-side-204)" aria-hidden="true" />
-    <polygon points="160.84,85.16 159.46,83.06 175.46,71.06 176.84,73.16" fill="#6e777f" />
+    <polygon points="160.84,85.16 159.46,83.06 175.46,71.06 176.84,73.16" fill="#304c62" />
     <polygon points="160.84,85.16 159.46,83.06 175.46,71.06 176.84,73.16" fill="url(#print-layers-side-205)" aria-hidden="true" />
-    <polygon points="159.46,83.06 157.85,81.09 173.85,69.09 175.46,71.06" fill="#6e777f" />
+    <polygon points="159.46,83.06 157.85,81.09 173.85,69.09 175.46,71.06" fill="#304c62" />
     <polygon points="159.46,83.06 157.85,81.09 173.85,69.09 175.46,71.06" fill="url(#print-layers-side-206)" aria-hidden="true" />
-    <polygon points="157.85,81.09 156.00,79.25 172.00,67.25 173.85,69.09" fill="#a6adb3" />
+    <polygon points="157.85,81.09 156.00,79.25 172.00,67.25 173.85,69.09" fill="#9cafbd" />
     <polygon points="157.85,81.09 156.00,79.25 172.00,67.25 173.85,69.09" fill="url(#print-layers-side-207)" aria-hidden="true" />
-    <polygon points="156.00,79.25 153.91,77.53 169.91,65.53 172.00,67.25" fill="#a6adb3" />
+    <polygon points="156.00,79.25 153.91,77.53 169.91,65.53 172.00,67.25" fill="#9cafbd" />
     <polygon points="156.00,79.25 153.91,77.53 169.91,65.53 172.00,67.25" fill="url(#print-layers-side-208)" aria-hidden="true" />
-    <polygon points="153.91,77.53 151.60,75.91 167.60,63.91 169.91,65.53" fill="#a6adb3" />
+    <polygon points="153.91,77.53 151.60,75.91 167.60,63.91 169.91,65.53" fill="#9cafbd" />
     <polygon points="153.91,77.53 151.60,75.91 167.60,63.91 169.91,65.53" fill="url(#print-layers-side-209)" aria-hidden="true" />
-    <polygon points="151.60,75.91 149.05,74.39 165.05,62.39 167.60,63.91" fill="#a6adb3" />
+    <polygon points="151.60,75.91 149.05,74.39 165.05,62.39 167.60,63.91" fill="#9cafbd" />
     <polygon points="151.60,75.91 149.05,74.39 165.05,62.39 167.60,63.91" fill="url(#print-layers-side-210)" aria-hidden="true" />
-    <polygon points="149.05,74.39 146.28,72.97 162.28,60.97 165.05,62.39" fill="#a6adb3" />
+    <polygon points="149.05,74.39 146.28,72.97 162.28,60.97 165.05,62.39" fill="#9cafbd" />
     <polygon points="149.05,74.39 146.28,72.97 162.28,60.97 165.05,62.39" fill="url(#print-layers-side-211)" aria-hidden="true" />
-    <polygon points="146.28,72.97 143.29,71.63 159.29,59.63 162.28,60.97" fill="#a6adb3" />
+    <polygon points="146.28,72.97 143.29,71.63 159.29,59.63 162.28,60.97" fill="#9cafbd" />
     <polygon points="146.28,72.97 143.29,71.63 159.29,59.63 162.28,60.97" fill="url(#print-layers-side-212)" aria-hidden="true" />
-    <polygon points="143.29,71.63 140.07,70.36 156.07,58.36 159.29,59.63" fill="#a6adb3" />
+    <polygon points="143.29,71.63 140.07,70.36 156.07,58.36 159.29,59.63" fill="#9cafbd" />
     <polygon points="143.29,71.63 140.07,70.36 156.07,58.36 159.29,59.63" fill="url(#print-layers-side-213)" aria-hidden="true" />
-    <polygon points="140.07,70.36 136.64,69.15 152.64,57.15 156.07,58.36" fill="#a6adb3" />
+    <polygon points="140.07,70.36 136.64,69.15 152.64,57.15 156.07,58.36" fill="#9cafbd" />
     <polygon points="140.07,70.36 136.64,69.15 152.64,57.15 156.07,58.36" fill="url(#print-layers-side-214)" aria-hidden="true" />
-    <polygon points="136.64,69.15 133.00,68.00 149.00,56.00 152.64,57.15" fill="#a6adb3" />
+    <polygon points="136.64,69.15 133.00,68.00 149.00,56.00 152.64,57.15" fill="#9cafbd" />
     <polygon points="136.64,69.15 133.00,68.00 149.00,56.00 152.64,57.15" fill="url(#print-layers-side-215)" aria-hidden="true" />
-    <polygon points="133.00,68.00 130.82,67.44 146.82,55.44 149.00,56.00" fill="#a6adb3" />
+    <polygon points="133.00,68.00 130.82,67.44 146.82,55.44 149.00,56.00" fill="#9cafbd" />
     <polygon points="133.00,68.00 130.82,67.44 146.82,55.44 149.00,56.00" fill="url(#print-layers-side-216)" aria-hidden="true" />
-    <polygon points="130.82,67.44 128.78,66.87 144.78,54.87 146.82,55.44" fill="#a6adb3" />
+    <polygon points="130.82,67.44 128.78,66.87 144.78,54.87 146.82,55.44" fill="#9cafbd" />
     <polygon points="130.82,67.44 128.78,66.87 144.78,54.87 146.82,55.44" fill="url(#print-layers-side-217)" aria-hidden="true" />
-    <polygon points="128.78,66.87 126.88,66.29 142.88,54.29 144.78,54.87" fill="#a6adb3" />
+    <polygon points="128.78,66.87 126.88,66.29 142.88,54.29 144.78,54.87" fill="#9cafbd" />
     <polygon points="128.78,66.87 126.88,66.29 142.88,54.29 144.78,54.87" fill="url(#print-layers-side-218)" aria-hidden="true" />
-    <polygon points="126.88,66.29 125.12,65.70 141.12,53.70 142.88,54.29" fill="#a6adb3" />
+    <polygon points="126.88,66.29 125.12,65.70 141.12,53.70 142.88,54.29" fill="#9cafbd" />
     <polygon points="126.88,66.29 125.12,65.70 141.12,53.70 142.88,54.29" fill="url(#print-layers-side-219)" aria-hidden="true" />
-    <polygon points="125.12,65.70 123.51,65.10 139.51,53.10 141.12,53.70" fill="#a6adb3" />
+    <polygon points="125.12,65.70 123.51,65.10 139.51,53.10 141.12,53.70" fill="#9cafbd" />
     <polygon points="125.12,65.70 123.51,65.10 139.51,53.10 141.12,53.70" fill="url(#print-layers-side-220)" aria-hidden="true" />
-    <polygon points="123.51,65.10 122.03,64.47 138.03,52.47 139.51,53.10" fill="#a6adb3" />
+    <polygon points="123.51,65.10 122.03,64.47 138.03,52.47 139.51,53.10" fill="#9cafbd" />
     <polygon points="123.51,65.10 122.03,64.47 138.03,52.47 139.51,53.10" fill="url(#print-layers-side-221)" aria-hidden="true" />
-    <polygon points="122.03,64.47 120.70,63.81 136.70,51.81 138.03,52.47" fill="#a6adb3" />
+    <polygon points="122.03,64.47 120.70,63.81 136.70,51.81 138.03,52.47" fill="#9cafbd" />
     <polygon points="122.03,64.47 120.70,63.81 136.70,51.81 138.03,52.47" fill="url(#print-layers-side-222)" aria-hidden="true" />
-    <polygon points="120.70,63.81 119.50,63.12 135.50,51.12 136.70,51.81" fill="#a6adb3" />
+    <polygon points="120.70,63.81 119.50,63.12 135.50,51.12 136.70,51.81" fill="#9cafbd" />
     <polygon points="120.70,63.81 119.50,63.12 135.50,51.12 136.70,51.81" fill="url(#print-layers-side-223)" aria-hidden="true" />
-    <polygon points="119.50,63.12 118.45,62.40 134.45,50.40 135.50,51.12" fill="#a6adb3" />
+    <polygon points="119.50,63.12 118.45,62.40 134.45,50.40 135.50,51.12" fill="#9cafbd" />
     <polygon points="119.50,63.12 118.45,62.40 134.45,50.40 135.50,51.12" fill="url(#print-layers-side-224)" aria-hidden="true" />
-    <polygon points="118.45,62.40 117.53,61.64 133.53,49.64 134.45,50.40" fill="#a6adb3" />
+    <polygon points="118.45,62.40 117.53,61.64 133.53,49.64 134.45,50.40" fill="#9cafbd" />
     <polygon points="118.45,62.40 117.53,61.64 133.53,49.64 134.45,50.40" fill="url(#print-layers-side-225)" aria-hidden="true" />
-    <polygon points="117.53,61.64 116.76,60.84 132.76,48.84 133.53,49.64" fill="#6e777f" />
+    <polygon points="117.53,61.64 116.76,60.84 132.76,48.84 133.53,49.64" fill="#304c62" />
     <polygon points="117.53,61.64 116.76,60.84 132.76,48.84 133.53,49.64" fill="url(#print-layers-side-226)" aria-hidden="true" />
-    <polygon points="116.76,60.84 116.12,59.98 132.12,47.98 132.76,48.84" fill="#6e777f" />
+    <polygon points="116.76,60.84 116.12,59.98 132.12,47.98 132.76,48.84" fill="#304c62" />
     <polygon points="116.76,60.84 116.12,59.98 132.12,47.98 132.76,48.84" fill="url(#print-layers-side-227)" aria-hidden="true" />
-    <polygon points="116.12,59.98 115.63,59.08 131.63,47.08 132.12,47.98" fill="#6e777f" />
+    <polygon points="116.12,59.98 115.63,59.08 131.63,47.08 132.12,47.98" fill="#304c62" />
     <polygon points="116.12,59.98 115.63,59.08 131.63,47.08 132.12,47.98" fill="url(#print-layers-side-228)" aria-hidden="true" />
-    <polygon points="115.63,59.08 115.28,58.12 131.28,46.12 131.63,47.08" fill="#6e777f" />
+    <polygon points="115.63,59.08 115.28,58.12 131.28,46.12 131.63,47.08" fill="#304c62" />
     <polygon points="115.63,59.08 115.28,58.12 131.28,46.12 131.63,47.08" fill="url(#print-layers-side-229)" aria-hidden="true" />
-    <polygon points="115.28,58.12 115.07,57.09 131.07,45.09 131.28,46.12" fill="#6e777f" />
+    <polygon points="115.28,58.12 115.07,57.09 131.07,45.09 131.28,46.12" fill="#304c62" />
     <polygon points="115.28,58.12 115.07,57.09 131.07,45.09 131.28,46.12" fill="url(#print-layers-side-230)" aria-hidden="true" />
-    <polygon points="115.07,57.09 115.00,56.00 131.00,44.00 131.07,45.09" fill="#6e777f" />
+    <polygon points="115.07,57.09 115.00,56.00 131.00,44.00 131.07,45.09" fill="#304c62" />
     <polygon points="115.07,57.09 115.00,56.00 131.00,44.00 131.07,45.09" fill="url(#print-layers-side-231)" aria-hidden="true" />
-    <polygon points="115.00,56.00 115.07,54.90 131.07,42.90 131.00,44.00" fill="#6e777f" />
+    <polygon points="115.00,56.00 115.07,54.90 131.07,42.90 131.00,44.00" fill="#304c62" />
     <polygon points="115.00,56.00 115.07,54.90 131.07,42.90 131.00,44.00" fill="url(#print-layers-side-232)" aria-hidden="true" />
-    <polygon points="115.07,54.90 115.28,53.85 131.28,41.85 131.07,42.90" fill="#6e777f" />
+    <polygon points="115.07,54.90 115.28,53.85 131.28,41.85 131.07,42.90" fill="#304c62" />
     <polygon points="115.07,54.90 115.28,53.85 131.28,41.85 131.07,42.90" fill="url(#print-layers-side-233)" aria-hidden="true" />
-    <polygon points="115.28,53.85 115.61,52.85 131.61,40.85 131.28,41.85" fill="#6e777f" />
+    <polygon points="115.28,53.85 115.61,52.85 131.61,40.85 131.28,41.85" fill="#304c62" />
     <polygon points="115.28,53.85 115.61,52.85 131.61,40.85 131.28,41.85" fill="url(#print-layers-side-234)" aria-hidden="true" />
-    <polygon points="115.61,52.85 116.08,51.91 132.08,39.91 131.61,40.85" fill="#6e777f" />
+    <polygon points="115.61,52.85 116.08,51.91 132.08,39.91 131.61,40.85" fill="#304c62" />
     <polygon points="115.61,52.85 116.08,51.91 132.08,39.91 131.61,40.85" fill="url(#print-layers-side-235)" aria-hidden="true" />
-    <polygon points="116.08,51.91 116.67,51.02 132.67,39.02 132.08,39.91" fill="#6e777f" />
+    <polygon points="116.08,51.91 116.67,51.02 132.67,39.02 132.08,39.91" fill="#304c62" />
     <polygon points="116.08,51.91 116.67,51.02 132.67,39.02 132.08,39.91" fill="url(#print-layers-side-236)" aria-hidden="true" />
-    <polygon points="116.67,51.02 117.37,50.20 133.37,38.20 132.67,39.02" fill="#6e777f" />
+    <polygon points="116.67,51.02 117.37,50.20 133.37,38.20 132.67,39.02" fill="#304c62" />
     <polygon points="116.67,51.02 117.37,50.20 133.37,38.20 132.67,39.02" fill="url(#print-layers-side-237)" aria-hidden="true" />
-    <polygon points="117.37,50.20 118.19,49.44 134.19,37.44 133.37,38.20" fill="#a6adb3" />
+    <polygon points="117.37,50.20 118.19,49.44 134.19,37.44 133.37,38.20" fill="#9cafbd" />
     <polygon points="117.37,50.20 118.19,49.44 134.19,37.44 133.37,38.20" fill="url(#print-layers-side-238)" aria-hidden="true" />
-    <polygon points="118.19,49.44 119.12,48.75 135.12,36.75 134.19,37.44" fill="#a6adb3" />
+    <polygon points="118.19,49.44 119.12,48.75 135.12,36.75 134.19,37.44" fill="#9cafbd" />
     <polygon points="118.19,49.44 119.12,48.75 135.12,36.75 134.19,37.44" fill="url(#print-layers-side-239)" aria-hidden="true" />
-    <polygon points="119.12,48.75 120.16,48.13 136.16,36.13 135.12,36.75" fill="#a6adb3" />
+    <polygon points="119.12,48.75 120.16,48.13 136.16,36.13 135.12,36.75" fill="#9cafbd" />
     <polygon points="119.12,48.75 120.16,48.13 136.16,36.13 135.12,36.75" fill="url(#print-layers-side-240)" aria-hidden="true" />
-    <polygon points="120.16,48.13 121.30,47.58 137.30,35.58 136.16,36.13" fill="#a6adb3" />
+    <polygon points="120.16,48.13 121.30,47.58 137.30,35.58 136.16,36.13" fill="#9cafbd" />
     <polygon points="120.16,48.13 121.30,47.58 137.30,35.58 136.16,36.13" fill="url(#print-layers-side-241)" aria-hidden="true" />
-    <polygon points="121.30,47.58 122.53,47.11 138.53,35.11 137.30,35.58" fill="#a6adb3" />
+    <polygon points="121.30,47.58 122.53,47.11 138.53,35.11 137.30,35.58" fill="#9cafbd" />
     <polygon points="121.30,47.58 122.53,47.11 138.53,35.11 137.30,35.58" fill="url(#print-layers-side-242)" aria-hidden="true" />
-    <polygon points="122.53,47.11 123.86,46.72 139.86,34.72 138.53,35.11" fill="#a6adb3" />
+    <polygon points="122.53,47.11 123.86,46.72 139.86,34.72 138.53,35.11" fill="#9cafbd" />
     <polygon points="122.53,47.11 123.86,46.72 139.86,34.72 138.53,35.11" fill="url(#print-layers-side-243)" aria-hidden="true" />
-    <polygon points="123.86,46.72 125.27,46.41 141.27,34.41 139.86,34.72" fill="#a6adb3" />
+    <polygon points="123.86,46.72 125.27,46.41 141.27,34.41 139.86,34.72" fill="#9cafbd" />
     <polygon points="123.86,46.72 125.27,46.41 141.27,34.41 139.86,34.72" fill="url(#print-layers-side-244)" aria-hidden="true" />
-    <polygon points="125.27,46.41 126.77,46.18 142.77,34.18 141.27,34.41" fill="#a6adb3" />
+    <polygon points="125.27,46.41 126.77,46.18 142.77,34.18 141.27,34.41" fill="#9cafbd" />
     <polygon points="125.27,46.41 126.77,46.18 142.77,34.18 141.27,34.41" fill="url(#print-layers-side-245)" aria-hidden="true" />
-    <polygon points="126.77,46.18 128.35,46.05 144.35,34.05 142.77,34.18" fill="#a6adb3" />
+    <polygon points="126.77,46.18 128.35,46.05 144.35,34.05 142.77,34.18" fill="#9cafbd" />
     <polygon points="126.77,46.18 128.35,46.05 144.35,34.05 142.77,34.18" fill="url(#print-layers-side-246)" aria-hidden="true" />
-    <polygon points="128.35,46.05 130.00,46.00 146.00,34.00 144.35,34.05" fill="#a6adb3" />
+    <polygon points="128.35,46.05 130.00,46.00 146.00,34.00 144.35,34.05" fill="#9cafbd" />
     <polygon points="128.35,46.05 130.00,46.00 146.00,34.00 144.35,34.05" fill="url(#print-layers-side-247)" aria-hidden="true" />
-    <polygon points="130.00,46.00 131.83,46.03 147.83,34.03 146.00,34.00" fill="#a6adb3" />
+    <polygon points="130.00,46.00 131.83,46.03 147.83,34.03 146.00,34.00" fill="#9cafbd" />
     <polygon points="130.00,46.00 131.83,46.03 147.83,34.03 146.00,34.00" fill="url(#print-layers-side-248)" aria-hidden="true" />
-    <polygon points="131.83,46.03 133.57,46.14 149.57,34.14 147.83,34.03" fill="#a6adb3" />
+    <polygon points="131.83,46.03 133.57,46.14 149.57,34.14 147.83,34.03" fill="#9cafbd" />
     <polygon points="131.83,46.03 133.57,46.14 149.57,34.14 147.83,34.03" fill="url(#print-layers-side-249)" aria-hidden="true" />
-    <polygon points="133.57,46.14 135.22,46.30 151.22,34.30 149.57,34.14" fill="#a6adb3" />
+    <polygon points="133.57,46.14 135.22,46.30 151.22,34.30 149.57,34.14" fill="#9cafbd" />
     <polygon points="133.57,46.14 135.22,46.30 151.22,34.30 149.57,34.14" fill="url(#print-layers-side-250)" aria-hidden="true" />
-    <polygon points="135.22,46.30 136.80,46.53 152.80,34.53 151.22,34.30" fill="#a6adb3" />
+    <polygon points="135.22,46.30 136.80,46.53 152.80,34.53 151.22,34.30" fill="#9cafbd" />
     <polygon points="135.22,46.30 136.80,46.53 152.80,34.53 151.22,34.30" fill="url(#print-layers-side-251)" aria-hidden="true" />
-    <polygon points="136.80,46.53 138.29,46.82 154.29,34.82 152.80,34.53" fill="#a6adb3" />
+    <polygon points="136.80,46.53 138.29,46.82 154.29,34.82 152.80,34.53" fill="#9cafbd" />
     <polygon points="136.80,46.53 138.29,46.82 154.29,34.82 152.80,34.53" fill="url(#print-layers-side-252)" aria-hidden="true" />
-    <polygon points="138.29,46.82 139.72,47.16 155.72,35.16 154.29,34.82" fill="#a6adb3" />
+    <polygon points="138.29,46.82 139.72,47.16 155.72,35.16 154.29,34.82" fill="#9cafbd" />
     <polygon points="138.29,46.82 139.72,47.16 155.72,35.16 154.29,34.82" fill="url(#print-layers-side-253)" aria-hidden="true" />
-    <polygon points="139.72,47.16 141.08,47.56 157.08,35.56 155.72,35.16" fill="#a6adb3" />
+    <polygon points="139.72,47.16 141.08,47.56 157.08,35.56 155.72,35.16" fill="#9cafbd" />
     <polygon points="139.72,47.16 141.08,47.56 157.08,35.56 155.72,35.16" fill="url(#print-layers-side-254)" aria-hidden="true" />
-    <polygon points="141.08,47.56 142.38,48.00 158.38,36.00 157.08,35.56" fill="#a6adb3" />
+    <polygon points="141.08,47.56 142.38,48.00 158.38,36.00 157.08,35.56" fill="#9cafbd" />
     <polygon points="141.08,47.56 142.38,48.00 158.38,36.00 157.08,35.56" fill="url(#print-layers-side-255)" aria-hidden="true" />
-    <polygon points="142.38,48.00 143.61,48.49 159.61,36.49 158.38,36.00" fill="#a6adb3" />
+    <polygon points="142.38,48.00 143.61,48.49 159.61,36.49 158.38,36.00" fill="#9cafbd" />
     <polygon points="142.38,48.00 143.61,48.49 159.61,36.49 158.38,36.00" fill="url(#print-layers-side-256)" aria-hidden="true" />
-    <polygon points="143.61,48.49 144.79,49.03 160.79,37.03 159.61,36.49" fill="#a6adb3" />
+    <polygon points="143.61,48.49 144.79,49.03 160.79,37.03 159.61,36.49" fill="#9cafbd" />
     <polygon points="143.61,48.49 144.79,49.03 160.79,37.03 159.61,36.49" fill="url(#print-layers-side-257)" aria-hidden="true" />
-    <polygon points="144.79,49.03 145.93,49.60 161.93,37.60 160.79,37.03" fill="#a6adb3" />
+    <polygon points="144.79,49.03 145.93,49.60 161.93,37.60 160.79,37.03" fill="#9cafbd" />
     <polygon points="144.79,49.03 145.93,49.60 161.93,37.60 160.79,37.03" fill="url(#print-layers-side-258)" aria-hidden="true" />
-    <polygon points="145.93,49.60 147.02,50.22 163.02,38.22 161.93,37.60" fill="#a6adb3" />
+    <polygon points="145.93,49.60 147.02,50.22 163.02,38.22 161.93,37.60" fill="#9cafbd" />
     <polygon points="145.93,49.60 147.02,50.22 163.02,38.22 161.93,37.60" fill="url(#print-layers-side-259)" aria-hidden="true" />
-    <polygon points="147.02,50.22 148.06,50.87 164.06,38.87 163.02,38.22" fill="#a6adb3" />
+    <polygon points="147.02,50.22 148.06,50.87 164.06,38.87 163.02,38.22" fill="#9cafbd" />
     <polygon points="147.02,50.22 148.06,50.87 164.06,38.87 163.02,38.22" fill="url(#print-layers-side-260)" aria-hidden="true" />
-    <polygon points="148.06,50.87 149.07,51.55 165.07,39.55 164.06,38.87" fill="#a6adb3" />
+    <polygon points="148.06,50.87 149.07,51.55 165.07,39.55 164.06,38.87" fill="#9cafbd" />
     <polygon points="148.06,50.87 149.07,51.55 165.07,39.55 164.06,38.87" fill="url(#print-layers-side-261)" aria-hidden="true" />
-    <polygon points="149.07,51.55 150.05,52.26 166.05,40.26 165.07,39.55" fill="#a6adb3" />
+    <polygon points="149.07,51.55 150.05,52.26 166.05,40.26 165.07,39.55" fill="#9cafbd" />
     <polygon points="149.07,51.55 150.05,52.26 166.05,40.26 165.07,39.55" fill="url(#print-layers-side-262)" aria-hidden="true" />
-    <polygon points="150.05,52.26 151.00,53.00 167.00,41.00 166.05,40.26" fill="#a6adb3" />
+    <polygon points="150.05,52.26 151.00,53.00 167.00,41.00 166.05,40.26" fill="#9cafbd" />
     <polygon points="150.05,52.26 151.00,53.00 167.00,41.00 166.05,40.26" fill="url(#print-layers-side-263)" aria-hidden="true" />
-    <polygon points="151.00,53.00 159.00,38.00 175.00,26.00 167.00,41.00" fill="#6e777f" />
+    <polygon points="151.00,53.00 159.00,38.00 175.00,26.00 167.00,41.00" fill="#304c62" />
     <polygon points="151.00,53.00 159.00,38.00 175.00,26.00 167.00,41.00" fill="url(#print-layers-side-264)" aria-hidden="true" />
     <path
       d="M24 129 L24 33 L55 33 C78 33 90 45 90 61 C90 74 83 83 70 86 L94 129 L74 129 L53 89 L42 89 L42 129 Z M42 49 L42 73 L54 73 C66 73 72 69 72 61 C72 53 66 49 54 49 Z"
@@ -927,7 +913,7 @@
     <g clip-path="url(#printed-face-4)" aria-hidden="true"><rect x="0" y="0" width="200" height="129" fill="url(#print-layers-front)" /></g>
     <path
       d="M159 38 C151 32 141 29 130 29 C109 29 96 41 96 57 C96 72 107 80 126 85 C139 88 145 92 145 99 C145 106 138 110 129 110 C117 110 108 106 99 98 L90 112 C100 123 113 129 130 129 C152 129 164 116 164 98 C164 82 153 74 133 68 C121 65 115 62 115 56 C115 50 121 46 130 46 C140 46 146 49 151 53 Z"
-      fill="#899097"
+      fill="url(#alloy-front)"
       fill-rule="evenodd"
     />
     <g clip-path="url(#printed-face-5)" aria-hidden="true"><rect x="0" y="0" width="200" height="129" fill="url(#print-layers-front)" /></g>

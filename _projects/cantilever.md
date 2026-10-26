@@ -8,8 +8,8 @@ hub_case: true
 published: true
 importance: 4
 case_type: Computational case · Solver-output study
-img: /assets/img/cases/cantilever/results-cover.png
-image_alt: "Supplied Cantilever simulation result used as the benchmark card cover."
+img: /assets/img/cases/cantilever/results-cover.png?v=447bfee4b3b8
+image_alt: "Cantilever post-cut axial stress on undeformed geometry, in MPa."
 ---
 
 {% assign hub = site.data.residual_stress_hub %}
@@ -153,13 +153,17 @@ Between tabulated temperatures, properties are linearly interpolated. Outside ea
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Temperature and strain histories
+### Axial stress after cutting
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Temperature and X-direction strain histories.](/assets/img/cases/cantilever/thermal-history.png)
+![Cantilever post-cut axial stress on undeformed geometry, in MPa.](/assets/img/cases/cantilever/results-cover.png?v=447bfee4b3b8)
 
-_Figure 2. Temperature and $X$-direction strain histories._
+<p markdown="0"><em>Figure 2. Cantilever post-cut axial stress $\sigma_{\mathrm{xx}}$ in the 50-group calculation (MPa).</em></p>
+
+The color scale shows axial stress on the undeformed geometry. The 50 mechanical activation groups represent a numerical deposition grouping and are distinct from the physical print layers.
+
+[Download the figure PDF](/assets/pdf/cases/cantilever/results-cover.pdf)
 
 </div>
 
@@ -167,15 +171,17 @@ _Figure 2. Temperature and $X$-direction strain histories._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Inherent-strain identification
+### Local thermal and strain histories
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![Stress and elastic strain comparison.](/assets/img/cases/cantilever/optimization-agreement.png)
+![Cantilever local temperature and axial plastic and elastic strain during scanning and cooling.](/assets/img/cases/cantilever/thermal-history.png)
 
-_Figure 3. Stress and elastic strain comparison._
+<p markdown="0"><em>Figure 3. Saved Cantilever local history: temperature (°C) and axial strain (dimensionless).</em></p>
 
-[Download the complete calibration figure](/assets/pdf/cases/cantilever/optimization-agreement.pdf) · [Download the error metrics](/assets/data/cases/cantilever/optimization-metrics.csv)
+The upper panel shows temperature and the lower panel separates the saved plastic and elastic $xx$ strains at local cell 389, centered at $(-0.0125,0.0125,0.0100)$ mm. These are archived local scanning and cooling histories, not the full cantilever build or a new calculation.
+
+[Download local history PDF](/assets/pdf/cases/cantilever/thermal-history.pdf)
 
 </div>
 
@@ -183,13 +189,17 @@ _Figure 3. Stress and elastic strain comparison._
 
 <figure class="rsh-case-figure" markdown="1">
 
-### Residual elastic strain
+### Local elastic-strain agreement
 
 <div class="rsh-case-figure-content" markdown="1">
 
-![X-direction elastic strain at Z ≈ 11 mm.](/assets/img/cases/cantilever/x11.png)
+![Cantilever Opt-IS versus DNS elastic-strain parity plots for the xx, yy and zz components.](/assets/img/cases/cantilever/strain-parity.png?v=e712cd19ecee)
 
-_Figure 4. $X$-direction elastic strain at $Z$ ≈ 11 mm._
+<p markdown="0"><em>Figure 4. Cantilever local calibration: $xx$, $yy$ and $zz$ elastic-strain parity (µε).</em></p>
+
+The three panels compare Opt-IS with DNS on 800 paired active native cells. The dashed diagonal denotes exact agreement. The plot assesses local elastic-strain agreement, separate from the experimental part-scale comparisons below.
+
+[Download the figure PDF](/assets/pdf/cases/cantilever/strain-parity.pdf) · [Download archived error metrics](/assets/data/cases/cantilever/optimization-metrics.csv)
 
 </div>
 
@@ -197,13 +207,17 @@ _Figure 4. $X$-direction elastic strain at $Z$ ≈ 11 mm._
 
 <figure class="rsh-case-figure" markdown="1">
 
+### Local elastic-strain maps
+
 <div class="rsh-case-figure-content" markdown="1">
 
-![Z-direction elastic strain at Z ≈ 11 mm.](/assets/img/cases/cantilever/z11.png)
+![Cantilever local axial elastic-strain maps from DNS and Opt-IS with their signed difference.](/assets/img/cases/cantilever/strain-maps.png?v=2767b68420dc)
 
-_Figure 5. $Z$-direction elastic strain at $Z$ ≈ 11 mm._
+<p markdown="0"><em>Figure 5. Cantilever local top-layer $\varepsilon^{\mathrm{e}}_{\mathrm{xx}}$ maps (µε).</em></p>
 
-Additional profiles: [2.2 mm, $X$-direction](/assets/img/cases/cantilever/x2p2.png) · [2.2 mm, $Z$-direction](/assets/img/cases/cantilever/z2p2.png) · [9.5 mm, $X$-direction](/assets/img/cases/cantilever/x9p5.png) · [9.5 mm, $Z$-direction](/assets/img/cases/cantilever/z9p5.png).
+The panels show DNS, Opt-IS, and Opt-IS minus DNS at $z=0.030$ mm. The signed difference identifies where the local reduced model departs from DNS. These are calibration-model coordinates, not the nominal heights of the full cantilever.
+
+[Download the figure PDF](/assets/pdf/cases/cantilever/strain-maps.pdf)
 
 </div>
 
@@ -211,13 +225,71 @@ Additional profiles: [2.2 mm, $X$-direction](/assets/img/cases/cantilever/x2p2.p
 
 <figure class="rsh-case-figure" markdown="1">
 
+### Pre-cut xx elastic strain
+
 <div class="rsh-case-figure-content" markdown="1">
 
-![Vertical displacement after release.](/assets/img/cases/cantilever/warpage.png)
+![Cantilever xx elastic strain at nominal height 11 mm before cutting.](/assets/img/cases/cantilever/x11.png?v=ba4c380f9e0c)
 
-_Figure 6. Vertical displacement after release._
+<p markdown="0"><em>Figure 6. Cantilever $\varepsilon^{\mathrm{e}}_{\mathrm{xx}}$ at nominal height 11.0 mm before cutting (µε).</em></p>
 
-[Download the 25-layer displacement samples](/assets/data/cases/cantilever/warpage-25-layer.csv) · [Download the 50-layer displacement samples](/assets/data/cases/cantilever/warpage-50-layer.csv)
+The 25-group model is sampled along the central plane $y=0$ at global $z=-1.5$ mm. Opt-IS, MIS, and DIS are compared with experimental profiles retaining their original nearby height labels. Nominal height is measured from the part base and is not the global $z$ coordinate.
+
+[Download the figure PDF](/assets/pdf/cases/cantilever/x11.pdf)
+
+</div>
+
+</figure>
+
+<figure class="rsh-case-figure" markdown="1">
+
+### Pre-cut zz elastic strain
+
+<div class="rsh-case-figure-content" markdown="1">
+
+![Cantilever zz elastic strain at nominal height 11 mm before cutting.](/assets/img/cases/cantilever/z11.png?v=d86a149287b9)
+
+<p markdown="0"><em>Figure 7. Cantilever $\varepsilon^{\mathrm{e}}_{\mathrm{zz}}$ at nominal height 11.0 mm before cutting (µε).</em></p>
+
+The 25-group model is sampled along the central plane $y=0$ at global $z=-1.5$ mm. Opt-IS, MIS, and DIS are compared with experimental profiles retaining their original nearby height labels. Nominal height is measured from the part base and is not the global $z$ coordinate.
+
+[Download the figure PDF](/assets/pdf/cases/cantilever/z11.pdf)
+
+</div>
+
+</figure>
+
+<figure class="rsh-case-figure" markdown="1">
+
+### Stress along a supporting leg
+
+<div class="rsh-case-figure-content" markdown="1">
+
+![Cantilever axial stress from the bottom to the top of one supporting leg.](/assets/img/cases/cantilever/leg-stress-comparison.png?v=40df9dd9e397)
+
+<p markdown="0"><em>Figure 8. Cantilever axial stress $\sigma_{\mathrm{xx}}$ along one leg (MPa).</em></p>
+
+Opt-IS is compared with two experimental profiles from the bottom to the top of the leg. The prediction captures the transition from compression to tension, but this transition occurs at a lower height than in the experimental profiles.
+
+[Download the figure PDF](/assets/pdf/cases/cantilever/leg-stress-comparison.pdf)
+
+</div>
+
+</figure>
+
+<figure class="rsh-case-figure" markdown="1">
+
+### Vertical displacement after cutting
+
+<div class="rsh-case-figure-content" markdown="1">
+
+![Cantilever vertical displacement after cutting compared across Opt-IS, MIS, DIS and experiment.](/assets/img/cases/cantilever/warpage.png?v=040f4f18afa6)
+
+<p markdown="0"><em>Figure 9. Cantilever post-cut vertical displacement $u_z$ (mm).</em></p>
+
+The Opt-IS calculations with 25 and 50 activation groups are compared with MIS, DIS, and the experimental profile. Each Opt-IS curve contains 11 displayed calculation points. The curves show uplift at the left end and small displacement near the opposite end.
+
+[Download the figure PDF](/assets/pdf/cases/cantilever/warpage.pdf) · [Download 25-group displacement samples](/assets/data/cases/cantilever/warpage-25-layer.csv) · [Download 50-group displacement samples](/assets/data/cases/cantilever/warpage-50-layer.csv)
 
 </div>
 

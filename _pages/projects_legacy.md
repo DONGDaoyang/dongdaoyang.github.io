@@ -35,7 +35,8 @@ sitemap: false
 
 <article class="rsh-card rsh-benchmark-card" markdown="1">
 
-{% assign case_cover = site.static_files | where: "path", case.img | first %}
+{% assign case_cover_path = case.img | split: "?" | first %}
+{% assign case_cover = site.static_files | where: "path", case_cover_path | first %}
 {% if case_cover %}
 
 <a class="rsh-case-cover" href="{{ case.url | relative_url }}" aria-label="{{ case.card_title | default: case.title | escape }}"><img class="rsh-case-image" src="{{ case.img | relative_url }}" alt="{{ case.image_alt | default: case.title | escape }}" loading="lazy"></a>

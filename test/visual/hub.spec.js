@@ -46,10 +46,16 @@ for (const theme of ["light", "dark"]) {
         if (route !== "/") {
           const brand = page.locator(".rsh-page-brand");
           await expect(brand).toHaveCount(1);
-          await expect(brand.locator(".rsh-site-title")).toHaveText("Residual Stress Hub");
-          await expect(brand.locator(".rsh-site-title")).toHaveAttribute("href", "/");
-          await expect(brand.locator(".rsh-logo")).toHaveAttribute("src", /rs-logo\.svg\?v=[a-f0-9]+$/);
-          await expect(brand.locator(".rsh-hero-background")).toHaveAttribute("src", /honeycomb-background\.svg\?v=[a-f0-9]+$/);
+          if (["/methods/", "/resources/"].includes(route)) {
+            await expect(brand).toHaveClass(/rsh-process-banner/);
+            await expect(brand.locator(".rsh-logo, .rsh-site-title")).toHaveCount(0);
+            await expect(brand.locator("img")).toHaveAttribute("src", /additive-manufacturing-banner\.webp\?v=[a-f0-9]+$/);
+          } else {
+            await expect(brand.locator(".rsh-site-title")).toHaveText("Residual Stress Hub");
+            await expect(brand.locator(".rsh-site-title")).toHaveAttribute("href", "/");
+            await expect(brand.locator(".rsh-logo")).toHaveAttribute("src", /rs-logo\.svg\?v=[a-f0-9]+$/);
+            await expect(brand.locator(".rsh-hero-background")).toHaveAttribute("src", /honeycomb-background\.svg\?v=[a-f0-9]+$/);
+          }
           for (const image of await brand.locator("img").all()) {
             await expect.poll(() => image.evaluate((element) => element.complete && element.naturalWidth > 0)).toBe(true);
           }
@@ -149,7 +155,7 @@ for (const theme of ["light", "dark"]) {
         await expect(name).toHaveCSS("white-space", "nowrap");
         expect(nameBox.x + nameBox.width).toBeLessThanOrEqual(width);
         expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width + 1);
-        await expect(page.locator(".rsh-welcome")).toContainText("Welcome to Residual Stress Hub!");
+        await expect(page.locator(".rsh-welcome")).toContainText("Howdy! Welcome to Residual Stress Hub.");
         if (theme === "light" && width === widths[0]) {
           await page.screenshot({ path: `/tmp/rsh-home-${testInfo.project.name}.png` });
         }
@@ -198,7 +204,7 @@ for (const theme of ["light", "dark"]) {
           .toMatch(new RegExp(`${names[i]}-animation-poster\\.png(?:\\?v=[a-f0-9]+)?$`));
       }
       await expect(page.locator(".rsh-gallery button")).toHaveCount(0);
-      await expect(page.locator(".rsh-welcome")).toContainText("Welcome to Residual Stress Hub!");
+      await expect(page.locator(".rsh-welcome")).toContainText("Howdy! Welcome to Residual Stress Hub.");
     });
 
     test("Methods explains the reference, optimization loop, and component handoff", async ({ page }) => {
@@ -263,7 +269,7 @@ for (const theme of ["light", "dark"]) {
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(await page.evaluate(() => window.innerWidth + 1));
       await parameters.locator("summary").click();
       await expect(parameters.locator("table").first()).toBeHidden();
-      await expect(page.locator(".rsh-case-figures img")).toHaveCount(6);
+      await expect(page.locator(".rsh-case-figures img")).toHaveCount(9);
       await expect(page.locator(".post > article")).toContainText("Reference:");
       await expect(page.locator("#reference-1")).toHaveCount(1);
       await expect(page.locator("#reference-2")).toHaveCount(1);
@@ -337,11 +343,11 @@ for (const theme of ["light", "dark"]) {
 
     test("old Example 1 URL renders the same Cantilever without an intermediate page", async ({ page }) => {
       await openPage(page, "/benchmarks/cantilever/");
-      const content = await page.locator(".post > article").innerText();
+      const content = (await page.locator(".post > article").innerText()).replace(/\s+/g, " ").trim();
       await openPage(page, "/benchmarks/example-1/");
       await expect(page).toHaveURL(/\/benchmarks\/example-1\/$/);
       await expect(page.locator(".post h1")).toHaveText("Cantilever (LPBF · IN625)");
-      expect(await page.locator(".post > article").innerText()).toBe(content);
+      expect((await page.locator(".post > article").innerText()).replace(/\s+/g, " ").trim()).toBe(content);
     });
 
     test("old projects URL shows the list without an intermediate page", async ({ page }) => {
@@ -362,13 +368,13 @@ for (const theme of ["light", "dark"]) {
         "Double-cantilever (LPBF · IN718)",
       ]);
       expect(await cards.locator("img").evaluateAll((images) => images.map((image) => image.getAttribute("src").split("?")[0]))).toEqual([
-        "/assets/img/cases/single_track/single-track-results.png",
+        "/assets/img/cases/single_track/results-cover.png",
         "/assets/img/cases/thin-wall/results-cover.png",
         "/assets/img/cases/bridge/results-cover.png",
         "/assets/img/cases/cantilever/results-cover.png",
         "/assets/img/cases/double_cantilever/results-cover.png",
       ]);
-      await expect(cards.first().locator("img")).toHaveAttribute("src", /single-track-results\.png\?v=[a-f0-9]{12}$/);
+      await expect(cards.first().locator("img")).toHaveAttribute("src", /results-cover\.png\?v=[a-f0-9]{12}$/);
       const list = (await page.locator(".rsh:not(.rsh-page-brand)").innerText()).replace(/\s+/g, " ").trim();
       await openPage(page, "/projects/");
       await expect(page).toHaveURL(/\/projects\/$/);

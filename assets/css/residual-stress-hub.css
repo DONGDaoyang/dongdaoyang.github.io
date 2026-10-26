@@ -167,6 +167,33 @@ html[data-theme="dark"] .rsh .rsh-logo {
   font-size: clamp(1rem, 8cqw, 3rem);
   text-decoration: none;
 }
+.post:has(.rsh-process-banner) {
+  --rsh-brand-height: clamp(10rem, 22vw, 15rem);
+}
+.rsh.rsh-process-banner {
+  height: var(--rsh-brand-height);
+  overflow: hidden;
+  border-radius: 10px;
+  background: #16344e;
+  isolation: isolate;
+}
+.rsh-process-banner > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+  filter: blur(2px) saturate(0.95);
+  opacity: 0.9;
+  transform: scale(1.025);
+}
+.rsh-process-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 65%, var(--global-bg-color));
+  pointer-events: none;
+}
 .rsh .rsh-gallery {
   min-width: 0;
 }
