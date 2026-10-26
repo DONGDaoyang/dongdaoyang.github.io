@@ -267,7 +267,7 @@ npm run dev
 
 桌面画廊使用 4 列、2 行；1100px 及以下使用 2 列、4 行。动画自动循环播放，无轮播、拖动或手动播放按钮。设置了系统“减少动态效果”的浏览器通过 `<picture>` 自动显示静态 `poster`，其他浏览器播放动画；页面不依赖 JavaScript 播放。首页选图与 Benchmarks 封面相互独立。
 
-首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定。简化图案由深墨蓝切角外框和三条铜橙弯曲叠层构成。两个尖角与两个圆角并存，叠层曲线呼应增材制造和变形。Logo 为原生 SVG，网页与 iOS 图标使用同款图案。`hero_background` 仍为蜂窝背景。Benchmarks 与算例详情页复用品牌标识，Methods 和 Resources 使用独立工艺横幅。
+首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定。Logo 以明确可读的铜橙色 R、S 字母为主体。R 的斜切腿和外框切角保留锐利感，S 的曲线和外框圆角提供圆润轮廓。底部两条短叠层线呼应增材制造。Logo 为原生 SVG，网页与 iOS 图标使用同款图案。`hero_background` 仍为蜂窝背景。Benchmarks 与算例详情页复用品牌标识，Methods 和 Resources 使用独立工艺横幅。
 
 布局在 `_pages/about.md`，样式在 `assets/css/residual-stress-hub.css`。页面标识为 `assets/img/residual-stress-hub/rs-logo.svg`。浏览器图标使用独立简化的 `rs-favicon.svg`，`logo.svg` 保留同款简化标识作兼容资源；iOS 图标为 180×180 的 `rs-apple-touch.png`。图标路径由 `_config.yml` 的 `icon` 和 `apple_touch_icon` 指定。Logo 与背景是品牌装饰，不表示计算或测量结果。
 

@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="160" viewBox="0 0 160 128" fill="none" role="img" aria-labelledby="logo-title logo-desc">
-  <title id="logo-title">Residual Stress Hub — layered bend</title>
-  <desc id="logo-desc">An angular ink-blue emblem with rounded shoulders and three flowing copper layers, linking additive manufacturing with deformation.</desc>
+  <title id="logo-title">Residual Stress Hub — RS monogram</title>
+  <desc id="logo-desc">Clearly readable geometric R and curved S in copper, with a sharp diagonal leg and a frame combining angled and rounded corners. Two small layer marks reference additive manufacturing.</desc>
   <g transform="translate(16 0)">
-  <path d="M32 12H106Q116 12 116 22V96L96 116H22Q12 116 12 106V32Z" fill="#253e50" stroke="#d58a52" stroke-width="1.6"/>
+  <path d="M26 10H106Q118 10 118 22V100L100 118H22Q10 118 10 106V26Z" fill="#253e50" stroke="#d58a52" stroke-width="1.6"/>
   <g fill="#d58a52">
-    <path d="M32 39H55C70 39 77 31 94 31H98V43H94C79 43 72 51 55 51H32Z"/>
-    <path d="M32 60H55C70 60 77 52 94 52H98V64H94C79 64 72 72 55 72H32Z"/>
-    <path d="M32 81H55C70 81 77 73 94 73H98V85H94C79 85 72 93 55 93H32Z"/>
+    <path d="M23 94V31H43C58 31 66 38 66 50C66 60 61 67 54 70L69 94H53L39 72H36V94ZM36 43V60H43C50 60 53 57 53 51C53 46 50 43 43 43Z" fill-rule="evenodd"/>
+    <path d="M108 36L101 47C96 43 92 41 87 41C81 41 78 44 78 48C78 52 82 54 89 56C102 60 109 66 109 77C109 89 100 96 88 96C79 96 71 92 65 86L72 75C77 80 82 83 88 83C94 83 97 81 97 77C97 73 92 71 85 69C72 65 67 59 67 49C67 37 76 30 89 30C97 30 103 32 108 36Z"/>
+    <path d="M24 104H38V106H24ZM24 109H44V111H24Z"/>
   </g>
   </g>
 </svg>
