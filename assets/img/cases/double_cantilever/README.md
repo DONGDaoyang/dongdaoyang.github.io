@@ -14,7 +14,7 @@ Example:
 
 The Overview uses `geometry-overview.png`, rendered from the supplied `double_cantilever.pdf`. The unmodified PDF is stored at `assets/pdf/cases/double_cantilever/geometry-overview.pdf`.
 
-The benchmark card currently uses `results-cover.png`, rendered from `dc_results.pdf`. Its original PDF is stored at `assets/pdf/cases/double_cantilever/results-cover.pdf`. Change `img` in the case Markdown to use a different cover.
+The benchmark card and displayed result figures now use the canonical manuscript PDFs. See `docs/benchmark-manuscript-figures.json` for the figure-to-caption mapping and `docs/benchmark-manuscript-assets.json` for current source hashes. Earlier import records describe historical assets.
 
 This page uses the IN718 `dc` case. Saved local histories, three-page calibration comparison, and released-warpage figure are imported. The latest identification and archived figure vector remain separate; the Ti-6Al-4V `dc2` case is not merged into this page.
 
