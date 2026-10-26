@@ -48,8 +48,9 @@ for (const theme of ["light", "dark"]) {
           await expect(brand).toHaveCount(1);
           if (["/methods/", "/resources/"].includes(route)) {
             await expect(brand).toHaveClass(/rsh-process-banner/);
+            await expect(brand).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
             await expect(brand.locator(".rsh-logo, .rsh-site-title")).toHaveCount(0);
-            await expect(brand.locator("img")).toHaveAttribute("src", /additive-manufacturing-banner\.webp\?v=[a-f0-9]+$/);
+            await expect(brand.locator("img")).toHaveAttribute("src", /additive-manufacturing-banner-transparent\.webp\?v=[a-f0-9]+$/);
           } else {
             await expect(brand.locator(".rsh-site-title")).toHaveText("Residual Stress Hub");
             await expect(brand.locator(".rsh-site-title")).toHaveAttribute("href", "/");

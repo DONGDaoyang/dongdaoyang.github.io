@@ -321,6 +321,6 @@ npx prettier _projects/*.md docs/benchmark-manuscript-*.json --write
 
 首页欢迎语位于 `_data/residual_stress_hub.yml` 的 `welcome`，以 “Howdy! Welcome to Residual Stress Hub.” 开场。正文明确覆盖多种金属增材制造及修复工艺的残余应力模拟，目前重点为基于可微分有限元的固有应变法。
 
-Methods 和 Resources 的页顶采用 `page_background` 指定的虚化金属激光沉积横幅，不再重复显示网站 Logo。页面标题由原有布局显示。原始生成图保存在 `assets/img/residual-stress-hub/additive-manufacturing-banner.png`，网页使用同名 WebP 压缩版。模糊、冷色处理和底部淡出由 `.rsh-process-banner` 样式控制。这是装饰图，不代表实验记录或模拟结果。
+Methods 和 Resources 的页顶采用 `page_background` 指定的虚化金属激光沉积横幅，不再重复显示网站 Logo。页面标题由原有布局显示。当前网页使用带真实 alpha 通道的 `assets/img/residual-stress-hub/additive-manufacturing-banner-transparent.webp`，源 PNG 为同名文件。工厂背景已移除，仅保留喷嘴、熔池和金属构件。`.rsh-process-banner` 容器无固定底色，图片通过四周透明遮罩和轻度模糊融入当前主题。旧的非透明生成图仅作素材存档。这是装饰图，不代表实验记录或模拟结果。
 
-该图片使用内置 imagegen 工具生成，完整提示词见 `docs/additive-banner-prompt.txt`。WebP 以 `cwebp -q 88` 压缩，路径附加内容哈希以刷新缓存。
+该图片使用内置 imagegen 工具生成并去背景，当前透明版提示词见 `docs/additive-banner-transparent-prompt.txt`，原始生成提示词保存在 `docs/additive-banner-prompt.txt`。WebP 以 `cwebp -q 88 -alpha_q 100` 压缩并保留 alpha，路径附加内容哈希以刷新缓存。
