@@ -15,7 +15,7 @@ nav_order: 3
 
 <!-- Edit headings, paragraphs, and lists in Markdown. Containers retain the page layout. -->
 
-<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
 {% assign hub = site.data.residual_stress_hub %}
 
 <div class="rsh" markdown="1">

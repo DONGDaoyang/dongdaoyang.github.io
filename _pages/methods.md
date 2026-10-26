@@ -13,7 +13,7 @@ nav_order: 2
 <img src="{{ hub.page_background | relative_url }}" alt="" aria-hidden="true" width="2172" height="724" fetchpriority="high">
 </div>
 
-<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
 
 <div class="rsh" markdown="1">
 
