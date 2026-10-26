@@ -173,8 +173,7 @@ html[data-theme="dark"] .rsh .rsh-logo {
 .rsh.rsh-process-banner {
   height: var(--rsh-brand-height);
   overflow: hidden;
-  border-radius: 10px;
-  background: #16344e;
+  background: transparent;
   isolation: isolate;
 }
 .rsh-process-banner > img {
@@ -185,14 +184,12 @@ html[data-theme="dark"] .rsh .rsh-logo {
   object-position: center 45%;
   filter: blur(2px) saturate(0.95);
   opacity: 0.9;
-  transform: scale(1.025);
-}
-.rsh-process-banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 65%, var(--global-bg-color));
-  pointer-events: none;
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent), linear-gradient(180deg, transparent, #000 18%, #000 62%, transparent);
+  mask-image:
+    linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent), linear-gradient(180deg, transparent, #000 18%, #000 62%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
 }
 .rsh .rsh-gallery {
   min-width: 0;
