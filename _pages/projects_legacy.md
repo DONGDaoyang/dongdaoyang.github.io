@@ -40,6 +40,17 @@ sitemap: false
 
 ## [{{ case.card_title | default: case.title | escape }}]({{ case.url | relative_url }})
 
+{% assign case_slug = case.url | split: '/' | last %}
+{% assign repository_url = site.data.benchmark_repositories[case_slug] | default: '' | strip %}
+
+<div class="rsh-case-repository">
+{% if repository_url != '' %}
+<a class="rsh-repository-button" href="{{ repository_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ case.title | escape }}: GitHub directory (opens in a new tab)">GitHub directory <span aria-hidden="true">↗</span></a>
+{% else %}
+<button class="rsh-repository-button" type="button" disabled aria-label="{{ case.title | escape }}: GitHub directory coming soon">GitHub directory <span class="rsh-repository-status">Coming soon</span></button>
+{% endif %}
+</div>
+
 </article>
 
 {% endfor %}

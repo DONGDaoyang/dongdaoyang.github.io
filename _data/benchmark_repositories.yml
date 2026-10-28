@@ -1,0 +1,8 @@
+# Paste each case's GitHub directory URL here, for example:
+# https://github.com/OWNER/REPOSITORY/tree/main/path/to/case
+# An empty value keeps the button disabled and shows "Coming soon".
+single-track: ""
+thin-wall: ""
+bridge: ""
+cantilever: ""
+double-cantilever: ""

@@ -396,13 +396,21 @@ for (const theme of ["light", "dark"]) {
         "Double-cantilever (LPBF · IN718)",
       ]);
       const cards = page.locator(".rsh-benchmark-card");
-      expect((await cards.allTextContents()).map((text) => text.trim())).toEqual([
+      expect((await cards.locator("h2").allTextContents()).map((text) => text.trim())).toEqual([
         "Single track (DED · IN718 / Ti-6Al-4V)",
         "Thin-wall (WAAM · S355)",
         "Bridge (LPBF · Ti-6Al-4V)",
         "Cantilever (LPBF · IN625)",
         "Double-cantilever (LPBF · IN718)",
       ]);
+      await expect(cards.locator(".rsh-repository-button")).toHaveCount(5);
+      for (const card of await cards.all()) {
+        const button = card.getByRole("button", { name: /GitHub directory coming soon/ });
+        await expect(button).toBeVisible();
+        await expect(button).toBeDisabled();
+        await expect(button).toContainText("Coming soon");
+        await expect(button).not.toHaveAttribute("href");
+      }
       expect(await cards.locator("img").evaluateAll((images) => images.map((image) => image.getAttribute("src").split("?")[0]))).toEqual([
         "/assets/img/cases/single_track/card-cover.png",
         "/assets/img/cases/thin-wall/card-cover.png",

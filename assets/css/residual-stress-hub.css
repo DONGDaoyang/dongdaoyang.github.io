@@ -748,3 +748,40 @@ html[data-theme="dark"] .rsh,
   margin: 0;
   font-weight: 700;
 }
+.rsh .rsh-case-repository {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+.rsh .rsh-repository-button {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--hub-line);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--hub-accent);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.rsh a.rsh-repository-button:hover {
+  border-color: var(--hub-accent);
+  background: var(--hub-panel);
+}
+.rsh .rsh-repository-button:disabled {
+  color: var(--hub-muted);
+  cursor: default;
+}
+.rsh .rsh-repository-status {
+  padding-left: 0.45rem;
+  border-left: 1px solid var(--hub-line);
+  font-size: 0.9em;
+  font-weight: 400;
+}

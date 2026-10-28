@@ -133,9 +133,23 @@ image_alt: "Describe the objects and results in the cover image."
 ---
 ```
 
-`img` 会用于 Benchmarks 列表；`image_alt` 是图片的文字说明。卡片只保留图片和名称，`description` 仍可用于页面元数据。详情页的二级、三级标题采用更大、更粗的深色字体；深色模式使用浅色字体。`permalink` 必须是唯一的案例地址，不要设成 `/` 或 `/benchmarks/`，否则会与首页或列表页冲突。
+`img` 会用于 Benchmarks 列表；`image_alt` 是图片的文字说明。卡片显示图片、名称和 GitHub 目录按钮，`description` 仍可用于页面元数据。详情页的二级、三级标题采用更大、更粗的深色字体；深色模式使用浅色字体。`permalink` 必须是唯一的案例地址，不要设成 `/` 或 `/benchmarks/`，否则会与首页或列表页冲突。
 
 `hub_case: true` 才会进入 Hub 列表；`published: false` 是草稿，不会发布。原来的 `1_project.md`、`2_project.md` 占位项目已删除；新算例从 `case_template.md` 复制，不要把模板示例文字当成研究成果发布。
+
+### 每个算例的 GitHub 目录按钮
+
+在 `_data/benchmark_repositories.yml` 为对应算例填写完整的 GitHub 目录地址：
+
+```yaml
+single-track: ""
+thin-wall: ""
+bridge: "https://github.com/OWNER/REPOSITORY/tree/main/path/to/bridge"
+cantilever: ""
+double-cantilever: ""
+```
+
+上面的 Bridge 地址只是格式示例。五个实际字段目前均为空，按钮显示 “GitHub directory · Coming soon” 且禁用；填入地址后自动成为可点击的链接，在新标签页打开对应目录。键名与算例地址的最后一段一致，新算例也按此规则添加。不需要修改页面模板。`/benchmarks/` 和旧 `/projects/` 共用这份数据。
 
 ### 3. 详情页中的结果图和表格
 
