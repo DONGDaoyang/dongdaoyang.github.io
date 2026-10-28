@@ -235,7 +235,8 @@ html[data-theme="dark"] .rsh,
   overflow-x: auto;
   overflow-y: hidden;
 }
-.rsh .rsh-equation mjx-container[display="true"] {
+/* The child is inserted by MathJax; a static selector survives CSS purging. */
+.rsh .rsh-equation > * {
   min-width: max-content;
   padding-block: 0.25rem;
 }
