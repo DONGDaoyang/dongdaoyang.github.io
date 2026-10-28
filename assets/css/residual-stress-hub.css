@@ -2,38 +2,38 @@
    Content styles stay scoped to .rsh; no local layout/Sass or build pipeline. */
 html:root {
   --hub-case-heading-color: #17191b;
-  --hub-brand-ink: #102a43;
-  --hub-brand-accent: #ff6b00;
-  --hub-code-bg: #f4f1e8;
-  --hub-code-ink: #304b62;
+  --hub-brand-ink: #263746;
+  --hub-brand-accent: #708698;
+  --hub-code-bg: #eff2f4;
+  --hub-code-ink: #344b5c;
   --global-bg-color: #fff;
-  --global-text-color: #253c4c;
-  --global-text-color-light: #667583;
-  --global-theme-color: #102a43;
-  --global-hover-color: #b94d00;
+  --global-text-color: #2c3d49;
+  --global-text-color-light: #637380;
+  --global-theme-color: #38566d;
+  --global-hover-color: #233d50;
   --global-hover-text-color: #fff;
-  --global-divider-color: #ddd9cf;
-  --global-card-bg-color: #f4f1e8;
-  --global-footer-bg-color: #102a43;
-  --global-footer-text-color: #f4f1e8;
-  --global-footer-link-color: #ffab70;
+  --global-divider-color: #d5dde3;
+  --global-card-bg-color: #f0f3f5;
+  --global-footer-bg-color: #263541;
+  --global-footer-text-color: #e0e6eb;
+  --global-footer-link-color: #c5d2dc;
 }
 html:root[data-theme="dark"] {
   --hub-case-heading-color: #f5f5ef;
-  --hub-brand-ink: #f4f1e8;
-  --hub-brand-accent: #ff6b00;
-  --hub-code-bg: #152b3d;
-  --hub-code-ink: #c7d5df;
-  --global-bg-color: #101c28;
-  --global-text-color: #f4f1e8;
-  --global-text-color-light: #b5c0c8;
-  --global-theme-color: #c5d9e9;
-  --global-hover-color: #ff914d;
-  --global-divider-color: #314353;
-  --global-card-bg-color: #162b3e;
-  --global-footer-bg-color: #091520;
-  --global-footer-text-color: #b5c0c8;
-  --global-footer-link-color: #ffab70;
+  --hub-brand-ink: #e0e6eb;
+  --hub-brand-accent: #a5b9c8;
+  --hub-code-bg: #1c2b38;
+  --hub-code-ink: #cbd6df;
+  --global-bg-color: #141d25;
+  --global-text-color: #e0e6eb;
+  --global-text-color-light: #b0bdc7;
+  --global-theme-color: #b7cbd9;
+  --global-hover-color: #e0e6eb;
+  --global-divider-color: #344652;
+  --global-card-bg-color: #1c2a35;
+  --global-footer-bg-color: #0d151c;
+  --global-footer-text-color: #b0bdc7;
+  --global-footer-link-color: #c5d2dc;
 }
 /* Shared content, navigation and footer expand together on large displays. */
 body .container {
@@ -228,6 +228,20 @@ html[data-theme="dark"] .rsh,
   line-height: inherit;
   color: inherit;
   background: transparent;
+}
+/* Preserve one-line weak forms; narrow screens scroll the equation itself. */
+.rsh .rsh-equation {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.rsh .rsh-equation mjx-container[display="true"] {
+  min-width: max-content;
+  padding-block: 0.25rem;
+}
+.rsh .rsh-equation:focus-visible {
+  outline: 2px solid var(--hub-accent);
+  outline-offset: 3px;
 }
 .rsh .rsh-gallery {
   min-width: 0;
