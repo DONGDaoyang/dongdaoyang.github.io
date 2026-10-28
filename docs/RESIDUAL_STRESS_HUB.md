@@ -215,7 +215,7 @@ Benchmarks 使用 `/benchmarks/` 地址，详情页应是 `/benchmarks/your-case
 
 样式在 `assets/css/residual-stress-hub.css`：通过核心主题现有的 `--global-*` CSS 变量统一导航、链接和页脚的配色，Hub 内容组件限定在 `.rsh` 下；论文式算例样式限定在含 Overview 标题的正文 article 下。没有新增本地布局、Sass 覆盖、插件或 CSS 构建流程。
 
-品牌标识采用深墨蓝 `#253E50` 与暖铜橙 `#D58A52`。首页及子页品牌字样中，Residual Stress 使用墨蓝，Hub 使用铜橙，不使用红蓝渐变；深色模式采用同色系的浅蓝灰 `#C8D9E5` 与浅铜色 `#E5A271` 保持可读性。导航、链接保留钢蓝交互色。实际科研图的色标、单位和数据不随品牌改色。
+品牌配色来自维护者批准的 `logo/output/residual-stress-hub-rs-final-v8.png`：亮橙 `#FF6B00`、深藏蓝 `#102A43` 与象牙白 `#F4F1E8`。首页及子页品牌字样中，Residual Stress 使用深藏蓝，Hub 使用亮橙；深色模式中 Residual Stress 使用象牙白。导航、链接、面板及页脚采用同色系，正文图表的色标和数据保留原样。
 
 保持现有 `url` / `baseurl`；列表的 Liquid 链接使用 `relative_url`，算例普通 Markdown 使用本站空 `baseurl` 对应的根路径。若以后部署到子目录，需同步调整 Markdown 路径。运行时归属仍遵循 [架构说明](ARCHITECTURE.md)。
 
@@ -267,9 +267,9 @@ npm run dev
 
 桌面画廊使用 4 列、2 行；1100px 及以下使用 2 列、4 行。动画自动循环播放，无轮播、拖动或手动播放按钮。设置了系统“减少动态效果”的浏览器通过 `<picture>` 自动显示静态 `poster`，其他浏览器播放动画；页面不依赖 JavaScript 播放。首页选图与 Benchmarks 封面相互独立。
 
-首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定。Logo 以明确可读的铜橙色 R、S 字母为主体。R 的斜切腿和外框切角保留锐利感，S 的曲线和外框圆角提供圆润轮廓。底部两条短叠层线呼应增材制造。Logo 为原生 SVG，网页与 iOS 图标使用同款图案。`hero_background` 仍为蜂窝背景。Benchmarks 与算例详情页复用品牌标识，Methods 和 Resources 使用独立工艺横幅。
+首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定。当前直接采用维护者 `logo` 目录中的最终版 v8，不重新绘制：橙色底板、深藏蓝 R、上蓝下白且保留主斜切的 S。批准的原始 PNG 已原样复制到站点目录，来源哈希和转换记录见 `docs/brand-logo-assets.json`。`hero_background` 仍为蜂窝背景。Benchmarks 与算例详情页复用品牌标识，Methods 和 Resources 使用独立工艺横幅。
 
-布局在 `_pages/about.md`，样式在 `assets/css/residual-stress-hub.css`。页面标识为 `assets/img/residual-stress-hub/rs-logo.svg`。浏览器图标使用独立简化的 `rs-favicon.svg`，`logo.svg` 保留同款简化标识作兼容资源；iOS 图标为 180×180 的 `rs-apple-touch.png`。图标路径由 `_config.yml` 的 `icon` 和 `apple_touch_icon` 指定。Logo 与背景是品牌装饰，不表示计算或测量结果。
+布局在 `_pages/about.md`，样式在 `assets/css/residual-stress-hub.css`。当前页面 Logo 为 `assets/img/residual-stress-hub/rs-logo-v8.webp`，原始 PNG 为同名文件。网页图标使用 `rs-favicon-v8.png`，iOS 图标使用 180×180 的 `rs-apple-touch-v8.png`，均由同一批准图稿等比缩小。图标路径由 `_config.yml` 的 `icon` 和 `apple_touch_icon` 指定。旧 SVG 仅作历史资源，已不用于当前品牌。
 
 ## 大屏页面宽度
 
@@ -297,7 +297,7 @@ python bin/render_single_track_stress.py --source <opt_output>/am_solver/track1/
 
 Benchmarks 卡片的 `card_title` 显示名称、工艺与材料；详情页标题仍使用 `title`。Single track 同时标注 IN718 沉积层和 Ti-6Al-4V 基板。Thin-wall 的材料牌号由维护者确认为 S355，配置内标识仍为 `thin_wall_steel`。
 
-品牌标题与 Logo 共用上文的墨蓝、铜橙配色。蜂窝背景保留银灰金属反光、细密沉积层纹和轻微颗粒表现，首页三个入口卡片底色透明。
+品牌标题与 Logo 共用上文的深藏蓝、亮橙与象牙白。蜂窝背景保留银灰金属反光、细密沉积层纹和轻微颗粒表现，首页三个入口卡片底色透明。
 
 ## Benchmarks 论文用图核对与更新
 
@@ -324,3 +324,5 @@ npx prettier _projects/*.md docs/benchmark-manuscript-*.json --write
 Methods 和 Resources 的页顶采用 `page_background` 指定的虚化金属激光沉积横幅，不再重复显示网站 Logo。页面原有的 Methods / Resources 标题居中叠放在背景上，使用与 Residual Stress Hub 一致的字体、字重和墨蓝配色；深色模式使用浅蓝灰。标题只出现一次，简介在横幅下方显示。当前网页使用带真实 alpha 通道的 `assets/img/residual-stress-hub/additive-manufacturing-banner-transparent.webp`，源 PNG 为同名文件。工厂背景已移除，仅保留喷嘴、熔池和金属构件。`.rsh-process-banner` 容器无固定底色，图片通过四周透明遮罩和轻度模糊融入当前主题。旧的非透明生成图仅作素材存档。这是装饰图，不代表实验记录或模拟结果。
 
 该图片使用内置 imagegen 工具生成并去背景，当前透明版提示词见 `docs/additive-banner-transparent-prompt.txt`，原始生成提示词保存在 `docs/additive-banner-prompt.txt`。WebP 以 `cwebp -q 88 -alpha_q 100` 压缩并保留 alpha，路径附加内容哈希以刷新缓存。
+
+Methods 等 Hub 内容区的代码块采用 13 px 字号和 1.5 倍行高，内边距为 0.65 rem / 0.85 rem。行内代码为正文的 0.8 倍，最低 12 px；代码底色和文字使用低对比的同色系背景，减少对正文阅读的干扰。代码内容不变。

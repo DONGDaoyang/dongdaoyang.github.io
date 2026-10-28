@@ -1,0 +1,31 @@
+{
+  "source": "logo/output/residual-stress-hub-rs-final-v8.png",
+  "source_sha256": "b8da8d800a68b243c0702bc68ac83f1adeeb262696cd82d1a4fd36946f1e29d9",
+  "palette": {
+    "signal_orange": "#FF6B00",
+    "dark_navy": "#102A43",
+    "ivory": "#F4F1E8"
+  },
+  "assets": [
+    {
+      "website_file": "assets/img/residual-stress-hub/rs-logo-v8.png",
+      "sha256": "b8da8d800a68b243c0702bc68ac83f1adeeb262696cd82d1a4fd36946f1e29d9",
+      "operation": "Unmodified copy of approved final-v8 artwork"
+    },
+    {
+      "website_file": "assets/img/residual-stress-hub/rs-logo-v8.webp",
+      "sha256": "64d56a831191d36449083080c1bf533569d87ce549cc16d5b9f787be879524cc",
+      "operation": "WebP encoding at quality 95 with original alpha preserved"
+    },
+    {
+      "website_file": "assets/img/residual-stress-hub/rs-favicon-v8.png",
+      "sha256": "3f269338be179c94bac0284eefec76d431ceceba133adcb02bef42a3a6946346",
+      "operation": "64x64 PNG downsample for browser tabs"
+    },
+    {
+      "website_file": "assets/img/residual-stress-hub/rs-apple-touch-v8.png",
+      "sha256": "ac264888ff00efa30fa559f7adeaedf798fcfd00cc08f72171d8a4c0a3236edf",
+      "operation": "180x180 PNG downsample for iOS bookmarks"
+    }
+  ]
+}
