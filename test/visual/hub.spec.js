@@ -264,6 +264,8 @@ for (const theme of ["light", "dark"]) {
         const box = await equation.boundingBox();
         expect(box.x).toBeGreaterThanOrEqual(0);
         expect(box.x + box.width).toBeLessThanOrEqual(page.viewportSize().width + 1);
+        const math = await equation.locator("mjx-math").boundingBox();
+        expect(math.x).toBeGreaterThanOrEqual(box.x - 1);
       }
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
     });
