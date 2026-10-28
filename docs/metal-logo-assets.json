@@ -1,0 +1,34 @@
+{
+  "source": "assets/img/residual-stress-hub/rs-logo-v8.png",
+  "source_sha256": "b8da8d800a68b243c0702bc68ac83f1adeeb262696cd82d1a4fd36946f1e29d9",
+  "operation": "Built-in imagegen edit of the approved v8 RS monogram: satin graphite and brushed silver finish, transparent exterior.",
+  "prompt": "docs/metal-logo-prompt.txt",
+  "palette": {
+    "graphite": "#263746",
+    "steel": "#708698",
+    "silver": "#E0E6EB",
+    "dark_steel": "#A5B9C8"
+  },
+  "assets": [
+    {
+      "website_file": "assets/img/residual-stress-hub/rs-logo-metal.png",
+      "sha256": "cde2db14ae2f1a3b83136b217c483f57743b6cbe30dacb4483f773bcbbe77489",
+      "operation": "Generated metallic artwork, original alpha preserved"
+    },
+    {
+      "website_file": "assets/img/residual-stress-hub/rs-logo-metal.webp",
+      "sha256": "280b551b457ccc2145604d0c64887873c8f22f33535e5a278d5e9e61afa6bccd",
+      "operation": "WebP encoding at quality 95, alpha quality 100"
+    },
+    {
+      "website_file": "assets/img/residual-stress-hub/rs-favicon-metal.png",
+      "sha256": "7024370e6ddfcedebb073e9ac9d184b8a3f051c55f6e5daffabf87e2d93cfc16",
+      "operation": "64x64 PNG downsample for browser tabs"
+    },
+    {
+      "website_file": "assets/img/residual-stress-hub/rs-apple-touch-metal.png",
+      "sha256": "3eb25e92fc9891ceea89ee96fc22392619516876b04816d71f0303f341b86663",
+      "operation": "180x180 PNG downsample for iOS bookmarks"
+    }
+  ]
+}

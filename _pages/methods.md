@@ -17,63 +17,79 @@ nav_order: 2
 
 <div class="rsh" markdown="1">
 
-The workflow connects a local thermal-mechanical reference simulation, inherent strain identification, and a full-component prediction. Read it from inputs to outputs: each stage prepares the data needed by the next.
+Both methods use finite elements to enforce mechanical equilibrium on the currently active material domain. Full thermal-mechanical analysis also resolves heat transfer and temperature-driven inelastic deformation. Inherent-strain analysis replaces those thermal cycles with a calibrated strain field. The sections below use the same structure so that their common mechanics and different loading models can be compared directly.
 {: .rsh-readable}
 
-| Stage                          | Input                                                     | Output                                                   |
-| :----------------------------- | :-------------------------------------------------------- | :------------------------------------------------------- |
-| Thermal-mechanical reference   | Local mesh, scan path, process and material data          | Cooled displacement and stress fields                    |
-| Inherent strain identification | Reference fields and the same local mesh                  | Optimized inherent strain vector                         |
-| Component prediction           | Identified strain, component mesh and activation sequence | Residual stress and deformation before and after release |
+| Method                                      | Fields solved                                 | Source of residual stress                                       | Typical use                                                  |
+| :------------------------------------------ | :-------------------------------------------- | :-------------------------------------------------------------- | :----------------------------------------------------------- |
+| Full thermal-mechanical analysis            | Temperature and displacement                  | Constrained thermal expansion, plastic deformation, and cooling | Process-resolved prediction or a local reference calculation |
+| Optimization-based inherent strain analysis | Displacement, with prescribed inherent strain | Constrained application of the calibrated strain                | Efficient component prediction after local calibration       |
 
-[Reference simulation](#thermo-mechanical) · [Run the workflow](#run-the-workflow) · [Inside the optimization](#inside-the-optimization) · [Read the results](#read-the-results)
+[Thermal-mechanical method](#thermo-mechanical) · [Inherent-strain method](#inherent-strain) · [Run the workflow](#run-the-workflow) · [Optimization details](#inside-the-optimization)
 
 <section class="rsh-guide-section" id="thermo-mechanical" aria-labelledby="thermo-mechanical-title" markdown="1">
 
 ## Full thermal-mechanical analysis {#thermo-mechanical-title}
 
-The reference model resolves the moving heat source and the thermal cycles during deposition and cooling. Temperature-dependent elastic and plastic properties connect this temperature history to residual stress and deformation. In the optimization workflow, this detailed calculation is performed on a small representative domain.
+### Model and weak forms {#thermal-weak-forms}
 
-### Follow the thermal-mechanical loop
+Let $\Omega_a(t)$ denote the activated material domain. Find temperature $T\in W_D$ and displacement $\mathbf u\in V_D$ satisfying the prescribed values on $\Gamma_T$ and $\Gamma_u$. The scalar test space $W_0$ and vector test space $V_0$ contain $H^1$ functions that vanish on their respective prescribed-value boundaries. Small-strain, quasi-static mechanics uses $\boldsymbol\varepsilon(\mathbf v)=\operatorname{sym}\nabla\mathbf v$.
 
-`am_solver/run.py` starts the calculation; `am_solver/thermo_mech/simulation.py` advances the process history.
+The thermal weak form is
 
-1. Activate the material reached by the deposition sequence and update the heat-source position.
-2. Solve the transient heat equation for the new temperature field.
-3. At mechanical updates, pass temperature and phase changes to the constitutive model, solve equilibrium, and commit stress and plastic history.
-4. Continue through deposition and cooling, then export the reference displacement and stress fields.
-
-The heat balance is
+<div class="rsh-equation" markdown="1" tabindex="0" role="region" aria-label="Thermal weak form">
 
 $$
-\rho C_{\mathrm{p}}(T)\dot T
--\nabla\!\cdot\!\bigl(k(T)\nabla T\bigr)
-=Q_{\mathrm{v}}-\rho L\dot f_{\mathrm{l}}.
+\int_{\Omega_a}w\rho\bigl(c_p(T)\dot T+L\dot f_L(T)\bigr)\,\mathrm d\Omega+\int_{\Omega_a}\nabla w\cdot k(T)\nabla T\,\mathrm d\Omega=\int_{\Omega_a}wQ_v\,\mathrm d\Omega+\int_{\Gamma_q}w\bar q_{\mathrm{in}}\,\mathrm d\Gamma\quad\forall w\in W_0.
 $$
 
-Here $Q_{\mathrm{v}}$ is the moving volumetric heat source, $L$ is latent heat, and $f_{\mathrm{l}}$ is the liquid fraction. Convection and radiation enter through the boundary flux. `thermal_problem.py` defines the thermal kernels; `plasticity_problem.py` defines the temperature-dependent mechanical response.
+</div>
 
-<details markdown="1">
-<summary><strong>Thermal weak form</strong></summary>
+Here $\rho$ is density, $c_p$ is specific heat, $k$ is conductivity, $L$ is latent heat, and $f_L$ is liquid fraction. $Q_v$ is volumetric heating. The net inward flux $\bar q_{\mathrm{in}}$ includes applicable surface heating, convection, and radiation, with heat loss contributing a negative inward flux; it may depend on temperature. The sensible-heat and latent-heat terms account for energy storage. Time discretization and quadrature turn this statement into the thermal finite-element residual at each step.
 
-On the active domain $\Omega$, let $w$ vanish on prescribed-temperature boundaries. One backward-Euler step satisfies
+The mechanical weak form is
+
+<div class="rsh-equation" markdown="1" tabindex="0" role="region" aria-label="Thermal-mechanical equilibrium weak form">
 
 $$
-\begin{aligned}
-0={}&\int_\Omega w\rho C_{\mathrm{p}}(T^{n+1})
-\frac{T^{n+1}-T^n}{\Delta t}\,\mathrm{d}\Omega\\
-&+\int_\Omega \nabla w\cdot k(T^n)\nabla T^{n+1}\,\mathrm{d}\Omega\\
-&-\int_\Omega wQ_{\mathrm{v}}^{n+1}\,\mathrm{d}\Omega
-+\int_\Omega w\rho L\frac{f_{\mathrm{l}}^{n+1}-f_{\mathrm{l}}^n}{\Delta t}\,\mathrm{d}\Omega\\
-&-\int_{\Gamma_q}w\bar q_{\mathrm{in}}\,\mathrm{d}\Gamma .
-\end{aligned}
+\int_{\Omega_a}\boldsymbol\varepsilon(\mathbf v):\boldsymbol\sigma\,\mathrm d\Omega=\int_{\Omega_a}\mathbf v\cdot\mathbf b\,\mathrm d\Omega+\int_{\Gamma_t}\mathbf v\cdot\bar{\mathbf t}\,\mathrm d\Gamma\quad\forall\mathbf v\in V_0.
 $$
 
-The inward flux $\bar q_{\mathrm{in}}$ is negative for heat loss. The implementation evaluates conductivity at the previous temperature and heat capacity at the current temperature. This separates the storage, conduction, source, phase-change, and boundary contributions to the thermal residual.
+</div>
 
-</details>
+$\mathbf b$ is body force per unit volume and $\bar{\mathbf t}$ is prescribed traction. The constitutive update supplies $\boldsymbol\sigma$ from the displacement increment, temperature change, and stored plastic history. Thermal strain provides the temperature-driven stress-free strain. The material properties and hardening response follow the selected case.
 
-**What passes to identification?** The final cooled reference contains nodal displacement and cell stress. The orchestrator selects the highest-numbered `step_*.vtu` unless a reference file is supplied explicitly. Complete the cooling stage in `am.yaml` so that this file represents the state being matched.
+### Element activation
+
+The substrate is active initially. Deposition activates new cells as the prescribed scan reaches them, expanding $\Omega_a(t)$. Active cells contribute to the heat-capacity, conduction, and mechanical residuals. Masks suppress inactive-cell contributions, and constraints on inactive degrees of freedom keep the algebraic problem well posed.
+
+When material is added, the exposed thermal faces and applicable heat-loss boundaries are updated. Newly activated material receives its configured initial state. Previously deposited cells retain their temperature, stress, and internal-variable history, so later scans can reheat and mechanically load the existing build.
+
+### Solution procedure
+
+1. Update the heat-source position, activation mask, and exposed surfaces.
+2. Solve the thermal weak form over the active mesh for the next temperature field.
+3. Pass temperature changes to the mechanical constitutive update and solve the mechanical weak form at the configured mechanical updates.
+4. Commit the converged stress and plastic history, then continue through deposition and cooling.
+
+The coupling is staggered: temperature drives the mechanical calculation. The local calculation used for inherent-strain calibration follows this same sequence before its cooled fields are exported.
+
+### Cutting and stress release
+
+Release starts from the final constrained state after the prescribed cooling stage. The selected anchors or support connections are removed while the retained constraints remain active. Newly exposed cut faces carry zero prescribed traction unless a different load is specified. If cutting removes cells, the remaining domain and its boundary are updated as well.
+
+The mechanical weak form is then solved again with the inherited stress and plastic state and the revised constraints. Displacement changes as stresses redistribute to satisfy the new equilibrium. Residual stress can remain in the released part. No additional heat cycle is needed for this mechanical release step. Report the total post-release displacement separately from the release increment $\Delta\mathbf u_{\mathrm{release}}=\mathbf u_{\mathrm{after}}-\mathbf u_{\mathrm{before}}$.
+
+### Implementation and results
+
+| Entry point                           | Role                                                           |
+| :------------------------------------ | :------------------------------------------------------------- |
+| `am_solver/run.py`                    | Start the configured thermal-mechanical case                   |
+| `am_solver/thermo_mech/simulation.py` | Advance scanning, activation, cooling, and optional springback |
+| `thermal_problem.py`                  | Assemble thermal storage, conduction, and boundary terms       |
+| `plasticity_problem.py`               | Supply the temperature-dependent constitutive response         |
+
+The saved fields contain temperature, displacement, stress, and the configured history variables. For calibration, complete the cooling stage in `am.yaml` before selecting the reference. The orchestrator selects the highest-numbered `step_*.vtu` unless a reference file is supplied explicitly. Release-enabled cases also export the post-release fields and displacement increment.
 
 </section>
 
@@ -81,45 +97,22 @@ The inward flux $\bar q_{\mathrm{in}}$ is negative for heat loss. The implementa
 
 ## Optimization-based inherent strain analysis {#inherent-strain-title}
 
-We replace repeated thermal cycles at the component scale with a calibrated inherent strain. The local reference supplies the target fields; a layerwise mechanical model identifies the strain that reproduces them. The resulting vector is then transferred to the full component.
+### Model and weak forms {#inherent-weak-forms}
 
-### Run the workflow {#run-the-workflow}
+On the current activated domain $\Omega_a$, find displacement $\mathbf u\in V_D$ satisfying the prescribed displacements. For every $\mathbf v\in V_0$, with the same virtual strain and boundary-work definitions as above, the standard mechanical weak form is
 
-From the solver project root, in an environment with JAX, JAX-FEM, MeshIO, SciPy, PyYAML, and the configured linear solver:
+<div class="rsh-equation" markdown="1" tabindex="0" role="region" aria-label="Inherent-strain equilibrium weak form">
 
-```bash
-# Resolve inputs and write stage configurations without solving.
-python opt_solver/run.py bridge --dry-run
+$$
+\int_{\Omega_a}\boldsymbol\varepsilon(\mathbf v):\boldsymbol\sigma\,\mathrm d\Omega=\int_{\Omega_a}\mathbf v\cdot\mathbf b\,\mathrm d\Omega+\int_{\Gamma_t}\mathbf v\cdot\bar{\mathbf t}\,\mathrm d\Gamma\quad\forall\mathbf v\in V_0.
+$$
 
-# Reference simulation → identification → component prediction.
-python opt_solver/run.py bridge
-```
+</div>
 
-To reuse completed stages:
+The loading model enters through the stress-free inherent strain $\boldsymbol\varepsilon^\ast$. For a purely elastic material, $\boldsymbol\sigma=\mathbb C:(\boldsymbol\varepsilon(\mathbf u)-\boldsymbol\varepsilon^\ast)$. The implemented solver instead uses incremental elastoplastic updates and carries stress and plastic history between increments. Its calibrated strain represents the net effect of the local thermal cycles, so the component calculation does not solve a heat-transfer problem.
 
-```bash
-python opt_solver/run.py bridge --from-stage optimization
-python opt_solver/run.py bridge --from-stage forward
-```
-
-`--from-stage` reuses preceding outputs; it does not resume inside a time step or an optimizer iteration. The first command needs an existing reference field, and the second needs `epsilon_result.json`.
-
-### Know which file controls each step
-
-`opt_solver/run.py` orchestrates the stages. The case directory holds the physical inputs; the root `solver_config.yaml` supplies the shared numerical solver settings.
-
-| Case file           | What to read or change                                                                                                  |
-| :------------------ | :---------------------------------------------------------------------------------------------------------------------- |
-| `config.yaml`       | Mesh paths, output directory, stage overrides, and reference displacement conversion                                    |
-| `am.yaml`           | Scan path, power $P$, speed $v$, heat-source dimensions, thermal boundaries, and temperature-dependent material data    |
-| `optimization.yaml` | Room-temperature material model, strain variables and bounds, regions of interest, loss weights, and optimizer settings |
-| `forward.yaml`      | Component layer activation, inherent strain application, constraints, release, and postprocessing                       |
-
-The orchestrator writes the effective stage inputs to `generated_configs/`. These include resolved mesh paths and injected solver settings, so they show exactly what each solver receives.
-
-**The handoff matters:** the reference and identification models share node coordinates, connectivity, and ordering. `load_reference_data()` checks this correspondence; it does not interpolate between meshes. Reference displacements stored in mm are converted to m with `reference.displacement_scale_to_m: 0.001`.
-
-### Define the strain to identify
+<details markdown="1">
+<summary><strong>Strain parameters and the elastic equivalent load</strong></summary>
 
 The prescribed inherent strain is diagonal:
 
@@ -145,56 +138,39 @@ $$
 
 `expand_inherent_strain_parameters()` expands these two entries into the three-component vector used by the mechanics. Bounds and initial values belong to the case configuration. The optimizer works with scaled variables $\mathbf p$, with $\boldsymbol\theta=\mathbf s\odot\mathbf p$; `param_scale` defines $\mathbf s$.
 
-### Understand one mechanical solve
+For the elastic illustration, write $\ell(\mathbf v)=\int_{\Omega_a}\mathbf v\cdot\mathbf b\,\mathrm d\Omega+\int_{\Gamma_t}\mathbf v\cdot\bar{\mathbf t}\,\mathrm d\Gamma$. Substitution of the elastic constitutive relation gives
 
-Inherent strain is a prescribed stress-free strain. It changes the constitutive response of newly deposited material. For a virtual displacement $\mathbf v$ that vanishes on the displacement boundary, equilibrium requires
-
-$$
-\int_\Omega \boldsymbol\varepsilon(\mathbf v):\boldsymbol\sigma\,\mathrm{d}\Omega
-=\ell(\mathbf v),
-\qquad
-\boldsymbol\varepsilon(\mathbf v)=\operatorname{sym}\nabla\mathbf v,
-$$
-
-where $\ell(\mathbf v)$ is the virtual work of body forces and boundary tractions. JAX-FEM assembles this residual from the constitutive kernels in `IS_solver/inherent_solver/problem.py`.
-
-For an elastic illustration, substituting $\boldsymbol\sigma=\mathbb C:(\boldsymbol\varepsilon(\mathbf u)-\boldsymbol\varepsilon^{\ast})$ gives
+<div class="rsh-equation" markdown="1" tabindex="0" role="region" aria-label="Elastic inherent-strain equivalent weak form">
 
 $$
-\begin{aligned}
-\int_\Omega \boldsymbol\varepsilon(\mathbf v):\mathbb C:
-\boldsymbol\varepsilon(\mathbf u)\,\mathrm{d}\Omega
-={}&\ell(\mathbf v)\\
-&+\int_\Omega \boldsymbol\varepsilon(\mathbf v):\mathbb C:
-\boldsymbol\varepsilon^{\ast}\,\mathrm{d}\Omega .
-\end{aligned}
+\int_{\Omega_a}\boldsymbol\varepsilon(\mathbf v):\mathbb C:\boldsymbol\varepsilon(\mathbf u)\,\mathrm d\Omega=\ell(\mathbf v)+\int_{\Omega_a}\boldsymbol\varepsilon(\mathbf v):\mathbb C:\boldsymbol\varepsilon^\ast\,\mathrm d\Omega.
 $$
 
-This explains the equivalent strain load. **The implemented identification solver is incremental elastoplastic:** it activates layers, applies strain increments to newly activated cells, and retains stress and plastic history between increments.
+</div>
 
-<details markdown="1">
-<summary><strong>Layer activation and constitutive update</strong></summary>
-
-For a newly activated cell, an increment applies $\Delta\boldsymbol\varepsilon^{\ast}=\gamma_m\boldsymbol\varepsilon^{\ast}$, with $\sum_m\gamma_m=1$. Other cells receive no additional inherent strain in that activation. Identification uses one loading increment per layer; component loading can be subdivided. A configured base region can also receive strain at the first increment.
-
-The elastic trial stress is
-
-$$
-\begin{aligned}
-\Delta\boldsymbol\varepsilon^{k+1}
-&=\operatorname{sym}\!\left(\nabla\mathbf u^{k+1}-\nabla\mathbf u^k\right),\\
-\boldsymbol\sigma_{\mathrm{trial}}^{k+1}
-&=\boldsymbol\sigma^k+\mathbb C:\!\left(
-\Delta\boldsymbol\varepsilon^{k+1}
--\Delta\boldsymbol\varepsilon^{\ast,k+1}\right).
-\end{aligned}
-$$
-
-A $J_2$ return map with isotropic hardening updates the constitutive response. After equilibrium converges, `update_stress_strain()` commits stress, accumulated plastic strain, and the displacement-gradient history for the next layer.
+This equivalent strain load explains the role of $\boldsymbol\varepsilon^\ast$ in the finite-element residual. The incremental elastoplastic implementation evaluates stress through its constitutive update rather than assuming a globally linear elastic response.
 
 </details>
 
-### Inside the optimization {#inside-the-optimization}
+### Element activation
+
+A fixed layer schedule expands the active domain. Newly activated cells receive the prescribed inherent-strain increment $\Delta\boldsymbol\varepsilon^\ast=\gamma_m\boldsymbol\varepsilon^\ast$, with $\sum_m\gamma_m=1$ over the loading subdivisions for that activation. A configured base region may also receive strain at the first increment.
+
+Previously active cells retain their stress and plastic state and respond to the new layer through equilibrium. Their deposited inherent strain is not applied again at every subsequent layer. Identification uses one loading increment per layer, while component loading can be subdivided. Inactive cells and degrees of freedom are handled by the activation masks and associated constraints.
+
+### Solution procedure
+
+1. Obtain cooled local displacement and stress fields from the thermal-mechanical reference model.
+2. For each trial strain vector, replay the layer-activation schedule and solve the mechanical weak form, retaining history within that trial.
+3. Compare the final local fields with the reference and use differentiable finite elements to supply the objective gradient to bounded L-BFGS-B.
+4. Transfer the selected strain to the component model and solve its layerwise deposition sequence with the configured room-temperature material model.
+
+Each trial starts from the same unloaded local state. The thermal reference is calculated once and held fixed during optimization. The activation schedule also remains fixed as the strain parameters change.
+
+<details id="inside-the-optimization" markdown="1">
+<summary><strong>Optimization and differentiation details</strong></summary>
+
+#### Calibration data flow
 
 Start reading `IS_solver/optimization/inherent_strain_optimization.py`. Its functions follow the data flow:
 
@@ -232,7 +208,7 @@ Transfer the vector to the component configuration.
 
 The history reset belongs **outside the layer loop and inside each trial evaluation**. Layers within one trial share history; separate parameter trials start from the same unloaded state. The thermal reference is computed once and stays fixed during optimization.
 
-### What does the loss measure?
+#### Loss and comparison regions
 
 The objective combines four normalized terms:
 
@@ -275,13 +251,14 @@ $$
 This matching quantity excludes shear stresses. It differs from the full tensor invariant used in the plasticity model.
 
 $$
-\begin{aligned}
-\mathcal L_{\mathrm{vm}}&=\frac{1}{N_c}\sum_{e=1}^{N_c}
+\mathcal L_{\mathrm{vm}}=\frac{1}{N_c}\sum_{e=1}^{N_c}
 \left(\frac{\sigma_{\mathrm{vm},e}^{\mathrm{diag}}
--\widehat\sigma_{\mathrm{vm},e}^{\mathrm{diag}}}{s_{\mathrm{vm}}}\right)^2,\\
-\mathcal L_U&=\frac{1}{N_u}\sum_{a=1}^{N_u}
+-\widehat\sigma_{\mathrm{vm},e}^{\mathrm{diag}}}{s_{\mathrm{vm}}}\right)^2.
+$$
+
+$$
+\mathcal L_U=\frac{1}{N_u}\sum_{a=1}^{N_u}
 \left(\frac{u_{\mathrm{z},a}-\widehat u_{\mathrm{z},a}}{s_U}\right)^2.
-\end{aligned}
 $$
 
 Here $N_u$ counts the selected top-region nodes. Each RMS normalization is calculated from the corresponding reference values and held fixed during optimization.
@@ -303,7 +280,7 @@ Thus a trial is penalized for falling below the contraction target. `relative_co
 
 </details>
 
-### How the gradient reaches the strain parameters
+#### Differentiating the layer history
 
 Within `run_simulation()`, `ad_wrapper` wraps each mechanical equilibrium solve for implicit differentiation. `jax.value_and_grad(compute_loss_scaled)` evaluates the composed objective and its gradient, which are passed to SciPy's bounded L-BFGS-B optimizer.
 
@@ -318,13 +295,54 @@ $$
 
 JAX propagates this dependency through the deposition history; the implicit backward solve handles each converged equilibrium. This includes the effect of earlier layers on the final loss. The activation schedule remains fixed while the inherent strain parameters change.
 
-### Transfer to the component and release
+</details>
 
-The orchestrator reads `optimization/epsilon_result.json`, inserts the selected vector into `inherent_strain.default` in the generated component configuration, and calls `IS_solver/run.py`. The component solver activates layers and applies the calibrated strain using the room-temperature material model.
+### Cutting and stress release
 
-After deposition, the release stage changes the configured supports or cut connections and re-equilibrates the existing stress state. It adds no new inherent strain. The resulting displacement includes the deformation caused by stress redistribution during release. Transfer assumes that the local reference is representative of the component's deposition conditions.
+After component deposition, release modifies the selected supports, interface connections, or retained-cell set. The solver carries the pre-cut displacement, stress, and plastic state into the released configuration, applies traction-free conditions on the new free surfaces, and solves the same mechanical weak form again.
 
-### Read the results {#read-the-results}
+The calibrated inherent strain remains the deposition history of the retained material. The cutting step applies no new inherent strain. Stress redistribution produces the post-cut deformation, with each remaining support continuing to constrain the part. Compare the total released displacement and its change from the constrained state separately, using the same definition of $\Delta\mathbf u_{\mathrm{release}}$ as in the thermal-mechanical method.
+
+### Implementation and results {#read-the-results}
+
+The orchestrator reads `optimization/epsilon_result.json`, inserts the selected vector into `inherent_strain.default`, and calls `IS_solver/run.py` for the component. The reference and identification models share node coordinates, connectivity, and ordering. `load_reference_data()` checks this correspondence without interpolating between meshes. Reference displacements stored in mm are converted to m with `reference.displacement_scale_to_m: 0.001`.
+
+<details id="run-the-workflow" markdown="1">
+<summary><strong>Run the workflow and locate its files</strong></summary>
+
+From the solver project root, in an environment with JAX, JAX-FEM, MeshIO, SciPy, PyYAML, and the configured linear solver:
+
+```bash
+# Resolve inputs and write stage configurations without solving.
+python opt_solver/run.py bridge --dry-run
+
+# Reference simulation → identification → component prediction.
+python opt_solver/run.py bridge
+```
+
+To reuse completed stages:
+
+```bash
+python opt_solver/run.py bridge --from-stage optimization
+python opt_solver/run.py bridge --from-stage forward
+```
+
+`--from-stage` reuses preceding outputs; it does not resume inside a time step or an optimizer iteration. The first command needs an existing reference field, and the second needs `epsilon_result.json`.
+
+#### Configuration files
+
+`opt_solver/run.py` orchestrates the stages. The case directory holds the physical inputs; the root `solver_config.yaml` supplies the shared numerical solver settings.
+
+| Case file           | What to read or change                                                                                                  |
+| :------------------ | :---------------------------------------------------------------------------------------------------------------------- |
+| `config.yaml`       | Mesh paths, output directory, stage overrides, and reference displacement conversion                                    |
+| `am.yaml`           | Scan path, power $P$, speed $v$, heat-source dimensions, thermal boundaries, and temperature-dependent material data    |
+| `optimization.yaml` | Room-temperature material model, strain variables and bounds, regions of interest, loss weights, and optimizer settings |
+| `forward.yaml`      | Component layer activation, inherent strain application, constraints, release, and postprocessing                       |
+
+The orchestrator writes the effective stage inputs to `generated_configs/`. These include resolved mesh paths and injected solver settings, so they show exactly what each solver receives.
+
+#### Output files
 
 Outputs are organized under `opt_output/<case>/`:
 
@@ -339,6 +357,11 @@ Outputs are organized under `opt_output/<case>/`:
 
 Read the optimizer status together with the strain values: the case's `require_success` setting controls whether a result that reaches the iteration limit can proceed to component prediction. To understand a mismatch, inspect the reference and identification fields in the configured regions before interpreting the component result.
 
+</details>
+
 </section>
+
+Variational background: [transient heat transfer](https://jsdokken.com/dolfinx-tutorial/chapter2/heat_equation.html) · [mechanical equilibrium](https://jsdokken.com/dolfinx-tutorial/chapter2/linearelasticity.html).
+{: .rsh-note}
 
 </div>

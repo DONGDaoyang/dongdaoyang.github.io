@@ -215,7 +215,7 @@ Benchmarks 使用 `/benchmarks/` 地址，详情页应是 `/benchmarks/your-case
 
 样式在 `assets/css/residual-stress-hub.css`：通过核心主题现有的 `--global-*` CSS 变量统一导航、链接和页脚的配色，Hub 内容组件限定在 `.rsh` 下；论文式算例样式限定在含 Overview 标题的正文 article 下。没有新增本地布局、Sass 覆盖、插件或 CSS 构建流程。
 
-品牌配色来自维护者批准的 `logo/output/residual-stress-hub-rs-final-v8.png`：亮橙 `#FF6B00`、深藏蓝 `#102A43` 与象牙白 `#F4F1E8`。首页及子页品牌字样中，Residual Stress 使用深藏蓝，Hub 使用亮橙；深色模式中 Residual Stress 使用象牙白。导航、链接、面板及页脚采用同色系，正文图表的色标和数据保留原样。
+品牌保留维护者批准的 v8 RS 轮廓，按要求将表面改为石墨灰和拉丝银。当前资源为 `rs-logo-metal.webp`，网页图标和 iOS 图标使用同版缩小 PNG。品牌字样浅色模式采用石墨灰 `#263746` 与钢灰 `#708698`，深色模式采用银白 `#E0E6EB` 与浅钢灰 `#A5B9C8`；导航、链接、面板及页脚使用同色系。正文图表的色标和数据保留原样。内置 imagegen 的编辑提示词见 `docs/metal-logo-prompt.txt`，来源和资源哈希见 `docs/metal-logo-assets.json`；旧 v8 文件保留为源素材。
 
 保持现有 `url` / `baseurl`；列表的 Liquid 链接使用 `relative_url`，算例普通 Markdown 使用本站空 `baseurl` 对应的根路径。若以后部署到子目录，需同步调整 Markdown 路径。运行时归属仍遵循 [架构说明](ARCHITECTURE.md)。
 
@@ -267,9 +267,9 @@ npm run dev
 
 桌面画廊使用 4 列、2 行；1100px 及以下使用 2 列、4 行。动画自动循环播放，无轮播、拖动或手动播放按钮。设置了系统“减少动态效果”的浏览器通过 `<picture>` 自动显示静态 `poster`，其他浏览器播放动画；页面不依赖 JavaScript 播放。首页选图与 Benchmarks 封面相互独立。
 
-首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定。当前直接采用维护者 `logo` 目录中的最终版 v8，不重新绘制：橙色底板、深藏蓝 R、上蓝下白且保留主斜切的 S。批准的原始 PNG 已原样复制到站点目录，来源哈希和转换记录见 `docs/brand-logo-assets.json`。`hero_background` 仍为蜂窝背景。Benchmarks 与算例详情页复用品牌标识，Methods 和 Resources 使用独立工艺横幅。
+首页 Logo 位于标题文字前，与单行标题一起居中，由 `_data/residual_stress_hub.yml` 的 `logo` 指定，当前使用上文记录的金属版 RS。`hero_background` 为蜂窝背景。算例详情页复用品牌标识，Benchmarks、Methods 和 Resources 使用工艺横幅及各自栏目标题。
 
-布局在 `_pages/about.md`，样式在 `assets/css/residual-stress-hub.css`。当前页面 Logo 为 `assets/img/residual-stress-hub/rs-logo-v8.webp`，原始 PNG 为同名文件。网页图标使用 `rs-favicon-v8.png`，iOS 图标使用 180×180 的 `rs-apple-touch-v8.png`，均由同一批准图稿等比缩小。图标路径由 `_config.yml` 的 `icon` 和 `apple_touch_icon` 指定。旧 SVG 仅作历史资源，已不用于当前品牌。
+布局在 `_pages/about.md`，样式在 `assets/css/residual-stress-hub.css`。图标路径由 `_config.yml` 的 `icon` 和 `apple_touch_icon` 指定。品牌资源及来源统一见上文“数据与样式”，旧文件只作历史素材。
 
 ## 大屏页面宽度
 
@@ -297,7 +297,7 @@ python bin/render_single_track_stress.py --source <opt_output>/am_solver/track1/
 
 Benchmarks 卡片的 `card_title` 显示名称、工艺与材料；详情页标题仍使用 `title`。Single track 同时标注 IN718 沉积层和 Ti-6Al-4V 基板。Thin-wall 的材料牌号由维护者确认为 S355，配置内标识仍为 `thin_wall_steel`。
 
-品牌标题与 Logo 共用上文的深藏蓝、亮橙与象牙白。蜂窝背景保留银灰金属反光、细密沉积层纹和轻微颗粒表现，首页三个入口卡片底色透明。
+品牌标题与 Logo 共用上文的石墨灰和银灰。蜂窝背景保留银灰金属反光、细密沉积层纹和轻微颗粒表现，首页三个入口卡片底色透明。
 
 ## Benchmarks 论文用图核对与更新
 
@@ -317,12 +317,18 @@ npx prettier _projects/*.md docs/benchmark-manuscript-*.json --write
 
 该离线工具只需要 PyMuPDF。它复制原始 PDF 并以 180 dpi 渲染完整页面，不裁剪图、不改变曲线、图例或数值。导入记录及源文件 SHA-256 在 `docs/benchmark-manuscript-assets.json`，它取代旧记录中同一路径的结果图来源。几何、求解器输入及数值下载维持各自的原始来源记录，旧结果与当前配置是否对应仍须分别核对。
 
-## 首页欢迎语与 Methods / Resources 横幅
+## 首页欢迎语与栏目横幅
 
 首页欢迎语位于 `_data/residual_stress_hub.yml` 的 `welcome`，以 “Howdy! Welcome to Residual Stress Hub.” 开场。正文明确覆盖多种金属增材制造及修复工艺的残余应力模拟，目前重点为基于可微分有限元的固有应变法。
 
-Methods 和 Resources 的页顶采用 `page_background` 指定的虚化金属激光沉积横幅，不再重复显示网站 Logo。页面原有的 Methods / Resources 标题居中叠放在背景上，使用与 Residual Stress Hub 一致的字体、字重和墨蓝配色；深色模式使用浅蓝灰。标题只出现一次，简介在横幅下方显示。当前网页使用带真实 alpha 通道的 `assets/img/residual-stress-hub/additive-manufacturing-banner-transparent.webp`，源 PNG 为同名文件。工厂背景已移除，仅保留喷嘴、熔池和金属构件。`.rsh-process-banner` 容器无固定底色，图片通过四周透明遮罩和轻度模糊融入当前主题。旧的非透明生成图仅作素材存档。这是装饰图，不代表实验记录或模拟结果。
+Benchmarks（含旧 `/projects/`）、Methods 和 Resources 的页顶采用 `page_background` 指定的虚化金属激光沉积横幅，不再重复显示网站 Logo。页面原有的 Benchmarks / Methods / Resources 标题居中叠放在背景上，使用与 Residual Stress Hub 一致的字体、字重和石墨灰配色；深色模式使用浅蓝灰。标题只出现一次，简介在横幅下方显示。当前网页使用带真实 alpha 通道的 `assets/img/residual-stress-hub/additive-manufacturing-banner-transparent.webp`，源 PNG 为同名文件。工厂背景已移除，仅保留喷嘴、熔池和金属构件。`.rsh-process-banner` 容器无固定底色，图片通过四周透明遮罩和轻度模糊融入当前主题。旧的非透明生成图仅作素材存档。这是装饰图，不代表实验记录或模拟结果。
 
 该图片使用内置 imagegen 工具生成并去背景，当前透明版提示词见 `docs/additive-banner-transparent-prompt.txt`，原始生成提示词保存在 `docs/additive-banner-prompt.txt`。WebP 以 `cwebp -q 88 -alpha_q 100` 压缩并保留 alpha，路径附加内容哈希以刷新缓存。
 
 Methods 等 Hub 内容区的代码块采用 13 px 字号和 1.5 倍行高，内边距为 0.65 rem / 0.85 rem。行内代码为正文的 0.8 倍，最低 12 px；代码底色和文字使用低对比的同色系背景，减少对正文阅读的干扰。代码内容不变。
+
+## Methods 的并列结构与弱形式
+
+两种方法均按 **Model and weak forms → Element activation → Solution procedure → Cutting and stress release → Implementation and results** 组织。热力法给出热传导和力平衡的标准弱形式；固有应变法给出同一机械弱形式，再说明固有应变如何进入本构更新。正文不列强形式。两者分别解释新单元的加载、已激活材料的状态继承，以及切割后改变约束、保留应力和塑性历史并重新求平衡的过程。优化与运行细节放在原生 details 中。
+
+弱形式不使用 aligned 或显式换行，`.rsh-equation` 在窄屏内横向滚动，保持一条公式一行且不撑宽整页。背景资料链接位于 Methods 页脚。

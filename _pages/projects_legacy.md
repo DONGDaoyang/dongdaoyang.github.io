@@ -10,14 +10,8 @@ sitemap: false
 
 {% assign hub = site.data.residual_stress_hub %}
 
-<div class="rsh rsh-page-brand">
-<section class="rsh-hero rsh-hero-with-background" aria-label="Residual Stress Hub">
-<img class="rsh-hero-background" src="{{ hub.hero_background | relative_url }}" alt="" aria-hidden="true">
-<a class="rsh-hero-brand rsh-site-title" href="{{ '/' | relative_url }}" aria-label="Residual Stress Hub home">
-<img class="rsh-logo" src="{{ hub.logo | relative_url }}" alt="" aria-hidden="true" width="200" height="160">
-<span class="rsh-brand-name"><span class="rsh-stress-name">Residual Stress</span> <span class="rsh-hub-name">Hub</span></span>
-</a>
-</section>
+<div class="rsh rsh-page-brand rsh-process-banner" aria-hidden="true">
+<img src="{{ hub.page_background | relative_url }}" alt="" aria-hidden="true" width="2172" height="724" fetchpriority="high">
 </div>
 
 <!-- Edit headings, paragraphs, and lists in Markdown. Containers retain the page layout. -->

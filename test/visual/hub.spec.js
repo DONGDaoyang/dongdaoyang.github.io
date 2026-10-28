@@ -46,13 +46,13 @@ for (const theme of ["light", "dark"]) {
         if (route !== "/") {
           const brand = page.locator(".rsh-page-brand");
           await expect(brand).toHaveCount(1);
-          if (["/methods/", "/resources/"].includes(route)) {
+          if (["/methods/", "/resources/", "/benchmarks/", "/projects/"].includes(route)) {
             await expect(brand).toHaveClass(/rsh-process-banner/);
             await expect(brand).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
             await expect(brand.locator(".rsh-logo, .rsh-site-title")).toHaveCount(0);
             await expect(brand.locator("img")).toHaveAttribute("src", /additive-manufacturing-banner-transparent\.webp\?v=[a-f0-9]+$/);
             const title = page.locator(".post-header .post-title");
-            await expect(title).toHaveText(route === "/methods/" ? "Methods" : "Resources");
+            await expect(title).toHaveText(route === "/methods/" ? "Methods" : route === "/resources/" ? "Resources" : "Benchmarks");
             const titleBox = await title.boundingBox();
             const bannerBox = await brand.boundingBox();
             expect(titleBox.y).toBeGreaterThanOrEqual(bannerBox.y);
@@ -61,7 +61,7 @@ for (const theme of ["light", "dark"]) {
           } else {
             await expect(brand.locator(".rsh-site-title")).toHaveText("Residual Stress Hub");
             await expect(brand.locator(".rsh-site-title")).toHaveAttribute("href", "/");
-            await expect(brand.locator(".rsh-logo")).toHaveAttribute("src", /rs-logo-v8\.webp\?v=[a-f0-9]+$/);
+            await expect(brand.locator(".rsh-logo")).toHaveAttribute("src", /rs-logo-metal\.webp\?v=[a-f0-9]+$/);
             await expect(brand.locator(".rsh-hero-background")).toHaveAttribute("src", /honeycomb-background\.svg\?v=[a-f0-9]+$/);
           }
           for (const image of await brand.locator("img").all()) {
@@ -150,7 +150,7 @@ for (const theme of ["light", "dark"]) {
         const name = page.locator(".rsh-brand-name");
         const background = page.locator(".rsh-hero-background");
         await expect(logo).toBeVisible();
-        await expect(logo).toHaveAttribute("src", /rs-logo-v8\.webp\?v=[a-f0-9]+$/);
+        await expect(logo).toHaveAttribute("src", /rs-logo-metal\.webp\?v=[a-f0-9]+$/);
         await expect(background).toHaveAttribute("src", /honeycomb-background\.svg\?v=[a-f0-9]+$/);
         await expect.poll(() => logo.evaluate((image) => image.complete && image.naturalWidth > 0)).toBe(true);
         await expect.poll(() => background.evaluate((image) => image.complete && image.naturalWidth > 0)).toBe(true);
@@ -162,8 +162,8 @@ for (const theme of ["light", "dark"]) {
         expect(Math.abs(markBox.y + markBox.height / 2 - nameBox.y - nameBox.height / 2)).toBeLessThanOrEqual(1);
         await expect(name).toHaveCSS("white-space", "nowrap");
         await expect(name.locator(".rsh-stress-name")).toHaveCSS("background-image", "none");
-        await expect(name.locator(".rsh-stress-name")).toHaveCSS("color", theme === "light" ? "rgb(16, 42, 67)" : "rgb(244, 241, 232)");
-        await expect(name.locator(".rsh-hub-name")).toHaveCSS("color", "rgb(255, 107, 0)");
+        await expect(name.locator(".rsh-stress-name")).toHaveCSS("color", theme === "light" ? "rgb(38, 55, 70)" : "rgb(224, 230, 235)");
+        await expect(name.locator(".rsh-hub-name")).toHaveCSS("color", theme === "light" ? "rgb(112, 134, 152)" : "rgb(165, 185, 200)");
         expect(nameBox.x + nameBox.width).toBeLessThanOrEqual(width);
         expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width + 1);
         await expect(page.locator(".rsh-welcome")).toContainText("Howdy! Welcome to Residual Stress Hub.");
@@ -230,6 +230,17 @@ for (const theme of ["light", "dark"]) {
         "Optimization-based inherent strain analysis",
       ]);
       await expect(page.locator(".rsh-guide-section")).toHaveCount(2);
+      for (const section of await page.locator(".rsh-guide-section").all()) {
+        await expect(section.locator(":scope > h3")).toHaveText([
+          "Model and weak forms",
+          "Element activation",
+          "Solution procedure",
+          "Cutting and stress release",
+          "Implementation and results",
+        ]);
+      }
+      await expect(guide.locator(".rsh-equation")).toHaveCount(4);
+      await expect(guide).toContainText("inherited stress and plastic state");
       await expect(guide).toContainText("python opt_solver/run.py bridge --dry-run");
       await expect(guide).toContainText("Reset displacement, stress, and plastic history to zero.");
       await expect(guide).toContainText("inherent_strain.default");
@@ -239,13 +250,21 @@ for (const theme of ["light", "dark"]) {
       await expect(page).toHaveURL(/#inside-the-optimization$/);
       await expect(guide.locator("mjx-container").first()).toBeVisible();
       for (const details of await guide.locator("details").all()) {
-        await details.locator("summary").click();
+        if (!(await details.evaluate((element) => element.open))) await details.locator(":scope > summary").click();
         await expect(details).toHaveAttribute("open", "");
       }
       await page.evaluate(async () => {
         if (window.MathJax?.startup?.promise) await window.MathJax.startup.promise;
       });
       await expect(guide.locator("mjx-merror, [data-mjx-error]")).toHaveCount(0);
+      await expect(guide.locator(".rsh-equation mjx-container")).toHaveCount(4);
+      await expect(guide.locator(".rsh-equation mjx-mtable")).toHaveCount(0);
+      for (const equation of await guide.locator(".rsh-equation").all()) {
+        await expect(equation).toHaveCSS("overflow-x", "auto");
+        const box = await equation.boundingBox();
+        expect(box.x).toBeGreaterThanOrEqual(0);
+        expect(box.x + box.width).toBeLessThanOrEqual(page.viewportSize().width + 1);
+      }
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
     });
 
