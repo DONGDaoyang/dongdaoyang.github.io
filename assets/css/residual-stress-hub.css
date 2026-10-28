@@ -2,34 +2,38 @@
    Content styles stay scoped to .rsh; no local layout/Sass or build pipeline. */
 html:root {
   --hub-case-heading-color: #17191b;
-  --hub-brand-ink: #253e50;
-  --hub-brand-accent: #d58a52;
+  --hub-brand-ink: #102a43;
+  --hub-brand-accent: #ff6b00;
+  --hub-code-bg: #f4f1e8;
+  --hub-code-ink: #304b62;
   --global-bg-color: #fff;
-  --global-text-color: #292c2e;
-  --global-text-color-light: #62676b;
-  --global-theme-color: #4b7094;
-  --global-hover-color: #355676;
+  --global-text-color: #253c4c;
+  --global-text-color-light: #667583;
+  --global-theme-color: #102a43;
+  --global-hover-color: #b94d00;
   --global-hover-text-color: #fff;
-  --global-divider-color: #d6d6d0;
-  --global-card-bg-color: #f0f0ed;
-  --global-footer-bg-color: #292c2e;
-  --global-footer-text-color: #d6d6d0;
-  --global-footer-link-color: #aac7e3;
+  --global-divider-color: #ddd9cf;
+  --global-card-bg-color: #f4f1e8;
+  --global-footer-bg-color: #102a43;
+  --global-footer-text-color: #f4f1e8;
+  --global-footer-link-color: #ffab70;
 }
 html:root[data-theme="dark"] {
   --hub-case-heading-color: #f5f5ef;
-  --hub-brand-ink: #c8d9e5;
-  --hub-brand-accent: #e5a271;
-  --global-bg-color: #202224;
-  --global-text-color: #eeeee9;
-  --global-text-color-light: #b8bcbe;
-  --global-theme-color: #aac7e3;
-  --global-hover-color: #c3d9ee;
-  --global-divider-color: #45484a;
-  --global-card-bg-color: #2b2e30;
-  --global-footer-bg-color: #191b1c;
-  --global-footer-text-color: #b8bcbe;
-  --global-footer-link-color: #aac7e3;
+  --hub-brand-ink: #f4f1e8;
+  --hub-brand-accent: #ff6b00;
+  --hub-code-bg: #152b3d;
+  --hub-code-ink: #c7d5df;
+  --global-bg-color: #101c28;
+  --global-text-color: #f4f1e8;
+  --global-text-color-light: #b5c0c8;
+  --global-theme-color: #c5d9e9;
+  --global-hover-color: #ff914d;
+  --global-divider-color: #314353;
+  --global-card-bg-color: #162b3e;
+  --global-footer-bg-color: #091520;
+  --global-footer-text-color: #b5c0c8;
+  --global-footer-link-color: #ffab70;
 }
 /* Shared content, navigation and footer expand together on large displays. */
 body .container {
@@ -37,7 +41,7 @@ body .container {
 }
 .rsh {
   --hub-text: var(--global-text-color, #292c2e);
-  --hub-muted: #62676b;
+  --hub-muted: var(--global-text-color-light);
   --hub-line: var(--global-divider-color, #d6d6d0);
   --hub-panel: var(--global-card-bg-color, #f0f0ed);
   --hub-accent: var(--global-theme-color, #4b7094);
@@ -46,12 +50,13 @@ body .container {
 }
 html[data-theme="dark"] .rsh,
 .dark .rsh {
-  --hub-text: #eeeee9;
-  --hub-muted: #b8bcbe;
-  --hub-line: #45484a;
-  --hub-panel: #2b2e30;
-  --hub-accent: #aac7e3;
+  --hub-text: var(--global-text-color);
+  --hub-muted: var(--global-text-color-light);
+  --hub-line: var(--global-divider-color);
+  --hub-panel: var(--global-card-bg-color);
+  --hub-accent: var(--global-theme-color);
 }
+
 .rsh a {
   color: var(--hub-accent);
 }
@@ -195,6 +200,34 @@ html[data-theme="dark"] .rsh,
     linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent), linear-gradient(180deg, transparent, #000 18%, #000 62%, transparent);
   -webkit-mask-composite: source-in;
   mask-composite: intersect;
+}
+/* Keep technical examples visually quieter than the surrounding prose. */
+.rsh :not(pre) > code {
+  font-size: max(12px, 0.8em);
+  color: var(--hub-code-ink);
+  background: var(--hub-code-bg);
+  padding: 0.12em 0.32em;
+}
+.rsh div.highlighter-rouge {
+  background: transparent;
+}
+.rsh .highlight {
+  background: var(--hub-code-bg);
+}
+.rsh pre {
+  padding: 0.65rem 0.85rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--hub-code-ink);
+  background: var(--hub-code-bg);
+  border-radius: 4px;
+}
+.rsh pre code {
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: transparent;
 }
 .rsh .rsh-gallery {
   min-width: 0;
