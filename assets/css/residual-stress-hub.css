@@ -625,9 +625,3 @@ html[data-theme="dark"] .rsh,
   color: var(--hub-muted);
   cursor: default;
 }
-.rsh .rsh-repository-status {
-  padding-left: 0.45rem;
-  border-left: 1px solid var(--hub-line);
-  font-size: 0.9em;
-  font-weight: 400;
-}
