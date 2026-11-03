@@ -69,7 +69,7 @@ scope:
     url: /methods/
     action: Explore the methods
   - title: Resources
-    description: Visit my GitHub profile to explore my public repositories and project materials.
+    description: Access the Opt-IS solvers, benchmark case configurations, and input meshes.
     url: /resources/
     action: Explore the resources
 case_fields:
@@ -80,9 +80,9 @@ case_fields:
   - title: Results
     detail: Present results and comparisons with components, units, conditions, sources, and limitations. Link the original article at the bottom of the page.
 resources:
-  - title: My GitHub
-    description: Explore my public repositories and follow project updates on GitHub.
-    url: https://github.com/DONGDaoyang
-    source: DONGDaoyang
+  - title: Opt-IS
+    description: Thermal-mechanical simulation and optimization-based inherent strain solvers, with case configurations and input meshes.
+    url: https://github.com/CMSL-HKUST/Opt-IS
+    source: CMSL-HKUST/Opt-IS
 # Add available code/data only. Required fields: title, description, url.
 research_resources: []

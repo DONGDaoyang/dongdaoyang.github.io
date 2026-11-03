@@ -43,6 +43,9 @@ for (const theme of ["light", "dark"]) {
           "/resources/",
         ]);
         await expect(page.locator("#navbar")).not.toContainText(/Albert Einstein|Daoyang Dong/);
+        if (route === "/resources/") {
+          await expect(page.locator(".rsh-resource h2 a")).toHaveAttribute("href", "https://github.com/CMSL-HKUST/Opt-IS");
+        }
         if (route !== "/") {
           const brand = page.locator(".rsh-page-brand");
           await expect(brand).toHaveCount(1);
@@ -404,12 +407,22 @@ for (const theme of ["light", "dark"]) {
         "Double-cantilever (LPBF · IN718)",
       ]);
       await expect(cards.locator(".rsh-repository-button")).toHaveCount(5);
+      const repositoryPaths = [
+        "am_solver/cases/track1",
+        "am_solver/cases/thin_wall",
+        "workflow/cases/bridge",
+        "workflow/cases/cantilever",
+        "workflow/cases/dc",
+      ];
+      expect(await cards.locator("a.rsh-repository-button").evaluateAll((links) => links.map((link) => link.getAttribute("href")))).toEqual(
+        repositoryPaths.map((path) => `https://github.com/CMSL-HKUST/Opt-IS/tree/main/${path}`)
+      );
       for (const card of await cards.all()) {
-        const button = card.getByRole("button", { name: /GitHub directory coming soon/ });
-        await expect(button).toBeVisible();
-        await expect(button).toBeDisabled();
-        await expect(button).toContainText("Coming soon");
-        await expect(button).not.toHaveAttribute("href");
+        const link = card.getByRole("link", { name: /GitHub directory/ });
+        await expect(link).toBeVisible();
+        await expect(link).toHaveAttribute("target", "_blank");
+        await expect(link).toHaveAttribute("rel", "noopener noreferrer");
+        await expect(card.locator("button:disabled, .rsh-repository-status")).toHaveCount(0);
       }
       expect(await cards.locator("img").evaluateAll((images) => images.map((image) => image.getAttribute("src").split("?")[0]))).toEqual([
         "/assets/img/cases/single_track/card-cover.png",

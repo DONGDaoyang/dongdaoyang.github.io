@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resources
-description: My GitHub profile and available project repositories.
+description: Opt-IS source code, benchmark case configurations, and input meshes.
 permalink: /resources/
 nav: true
 nav_order: 3
@@ -20,7 +20,7 @@ nav_order: 3
 
 <div class="rsh" markdown="1">
 
-Visit my GitHub profile to explore my public repositories and follow project updates.
+Find the thermal-mechanical and inherent-strain solvers, case configurations, and input meshes in the Opt-IS repository.
 {: .rsh-readable}
 
 <div class="rsh-resource-list rsh-section" markdown="1">

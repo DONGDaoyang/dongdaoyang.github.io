@@ -12,7 +12,7 @@
 
 原首页、个人简介及原论文列表入口备份在 `docs/archive/`。`docs/` 在站点配置中被排除，不会发布成网页。无关模板页面和模板项目已删除，不作为真实研究案例发布。
 
-本站是独立维护的研究资源。Resources 当前仅链接到维护者的 GitHub 主页，不展示外部机构或参考网站的资源卡片。
+本站是独立维护的研究资源。Resources 直接链接到 `https://github.com/CMSL-HKUST/Opt-IS`，提供求解器、算例配置及输入网格的入口。
 
 ## 统一导航与简洁页面
 
@@ -139,17 +139,19 @@ image_alt: "Describe the objects and results in the cover image."
 
 ### 每个算例的 GitHub 目录按钮
 
-在 `_data/benchmark_repositories.yml` 为对应算例填写完整的 GitHub 目录地址：
+`_data/benchmark_repositories.yml` 维护各算例的 GitHub 目录。当前全部指向公开的 `CMSL-HKUST/Opt-IS` 仓库 `main` 分支：
 
-```yaml
-single-track: ""
-thin-wall: ""
-bridge: "https://github.com/OWNER/REPOSITORY/tree/main/path/to/bridge"
-cantilever: ""
-double-cantilever: ""
-```
+| 算例                       | 仓库内目录                  |
+| :------------------------- | :-------------------------- |
+| Single track               | `am_solver/cases/track1`    |
+| Thin-wall                  | `am_solver/cases/thin_wall` |
+| Bridge                     | `workflow/cases/bridge`     |
+| Cantilever                 | `workflow/cases/cantilever` |
+| Double-cantilever（IN718） | `workflow/cases/dc`         |
 
-上面的 Bridge 地址只是格式示例。五个实际字段目前均为空，按钮显示 “GitHub directory · Coming soon” 且禁用；填入地址后自动成为可点击的链接，在新标签页打开对应目录。键名与算例地址的最后一段一致，新算例也按此规则添加。不需要修改页面模板。`/benchmarks/` 和旧 `/projects/` 共用这份数据。
+Single track 和 Thin-wall 使用独立热力求解器的算例目录；另三个使用包含标定与宏观分析配置的 workflow 目录。Double-cantilever 对应 IN718 的 `dc`，不链接到 Ti-6Al-4V 的 `dc2`。目录已按仓库树和 README 核对。
+
+按钮在新标签页打开目录，封面及标题仍进入本站详情页。数据键名与算例地址的最后一段一致，新算例按此规则添加；留空时按钮显示 “Coming soon” 并禁用。`/benchmarks/` 和旧 `/projects/` 共用这份数据，无需修改页面模板。
 
 ### 3. 详情页中的结果图和表格
 
