@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dongdaoyang.github.io/sitemap.xml
+Sitemap: https://rshub-am.github.io/sitemap.xml
