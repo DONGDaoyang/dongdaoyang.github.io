@@ -249,16 +249,6 @@ body > .container[role="main"] {
   font-weight: 400;
 }
 
-.personal-tag {
-  display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0 0.35rem;
-  border: 1px solid var(--personal-line);
-  border-radius: 3px;
-  font-size: 0.72rem;
-  font-style: normal;
-}
-
 .personal-project-expanded {
   grid-template-columns: 260px minmax(0, 1fr);
   padding: 1.6rem 0;
@@ -266,12 +256,6 @@ body > .container[role="main"] {
 
 .personal-project-expanded h2 {
   margin-top: 0;
-}
-
-.personal-text-project {
-  margin-top: 1rem;
-  padding-top: 1.8rem;
-  border-top: 1px solid var(--personal-line);
 }
 
 @media (max-width: 700px) {
