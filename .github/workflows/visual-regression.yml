@@ -20,6 +20,7 @@ on:
 
 jobs:
   hub-browser-checks:
+    if: github.repository == 'rshub-am/rshub-am.github.io'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

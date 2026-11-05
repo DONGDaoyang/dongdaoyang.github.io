@@ -2,21 +2,22 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Residual Stress Hub # subject-first site identity
-first_name: Residual Stress Hub # the core theme also uses these fields for the footer and author metadata
+title: blank # Use the full name in the navbar and metadata.
+first_name: Daoyang
 middle_name:
-last_name:
+last_name: Dong
 contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Residual stress computational examples, benchmark specifications, simulation methods, and related sources for metal additive manufacturing.
+  Daoyang Dong is a PhD student at HKUST working on computational mechanics,
+  differentiable simulation, and residual stress in metal additive manufacturing.
 footer_text: >
-  Independently maintained research resource.
-keywords: residual stress, metal additive manufacturing, computational mechanics, process simulation, computational cases, benchmarks
+  Civil and Environmental Engineering · HKUST.
+keywords: Daoyang Dong, HKUST, computational mechanics, additive manufacturing, residual stress, differentiable simulation
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: residual-stress-hub/rs-favicon-metal.png # Metallic RS artwork, relative to /assets/img/.
-apple_touch_icon: /assets/img/residual-stress-hub/rs-apple-touch-metal.png # 180x180 PNG for iOS bookmarks.
+icon: personal/dd.svg
+apple_touch_icon:
 
-url: "https://rshub-am.github.io" # the base hostname & protocol for your site
+url: "https://dongdaoyang.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -93,14 +94,14 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: false
 
 # Dimensions
-max_width: 2200px
+max_width: 1040px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -133,17 +134,17 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Residual Stress Hub
-blog_description: Notes on residual stress modeling and benchmark cases
+blog_name: Research notes
+blog_description: Notes on computational mechanics and simulation
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -297,16 +298,6 @@ plugins:
 # Sitemap settings
 defaults:
   - scope:
-      path: ""
-      type: projects
-    values:
-      layout: page
-      nav: false
-      toc: false
-      related_publications: false
-      _styles: |
-        @import url("/assets/css/residual-stress-hub.css");
-  - scope:
       path: "assets"
     values:
       sitemap: false
@@ -444,7 +435,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # Original image assets are sufficient for this personal site.
   widths:
     - 480
     - 800
@@ -476,13 +467,13 @@ enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
 enable_masonry: true # enables automatic project cards arrangement
-enable_math: true # enables math typesetting (uses MathJax)
+enable_math: false # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
+enable_progressbar: false # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------

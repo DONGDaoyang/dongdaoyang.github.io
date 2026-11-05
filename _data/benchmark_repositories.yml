@@ -1,7 +1,0 @@
-# Case directories in the public CMSL-HKUST/Opt-IS repository.
-# An empty value keeps the button disabled and shows "Coming soon".
-single-track: https://github.com/CMSL-HKUST/Opt-IS/tree/main/am_solver/cases/track1
-thin-wall: https://github.com/CMSL-HKUST/Opt-IS/tree/main/am_solver/cases/thin_wall
-bridge: https://github.com/CMSL-HKUST/Opt-IS/tree/main/workflow/cases/bridge
-cantilever: https://github.com/CMSL-HKUST/Opt-IS/tree/main/workflow/cases/cantilever
-double-cantilever: https://github.com/CMSL-HKUST/Opt-IS/tree/main/workflow/cases/dc

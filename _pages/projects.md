@@ -1,76 +1,57 @@
 ---
 layout: page
-title: Benchmarks
-description: "Reproducible thermal-mechanical and inherent-strain simulation workflows, with complete process and material data. Contributions and discussion are welcome."
-permalink: /benchmarks/
+title: Projects
+description: Research software and open computational resources.
+permalink: /projects/
 nav: true
-nav_order: 1
-toc: false
+nav_order: 2
 ---
 
-{% assign hub = site.data.residual_stress_hub %}
+<link rel="stylesheet" href="{{ '/assets/css/personal-home.css' | relative_url | bust_file_cache }}">
 
-<div class="rsh rsh-page-brand rsh-process-banner" aria-hidden="true">
-<img src="{{ hub.page_background | relative_url }}" alt="" aria-hidden="true" width="2172" height="724" fetchpriority="high">
-</div>
+<div class="personal-projects" markdown="1">
 
-<!-- Edit headings, paragraphs, and lists in Markdown. Containers retain the page layout. -->
-
-<link rel="stylesheet" href="{{ '/assets/css/residual-stress-hub.css' | relative_url | bust_file_cache }}">
-{% assign cases = site.projects | where: "hub_case", true | where_exp: "case", "case.published != false" | sort: "importance" %}
-
-<div class="rsh" markdown="1">
-
-{% if cases.size > 0 %}
-
-<div class="rsh-grid rsh-section" markdown="1">
-
-{% for case in cases %}
-
-<article class="rsh-card rsh-benchmark-card" markdown="1">
-
-{% assign case_cover_path = case.img | split: "?" | first %}
-{% assign case_cover = site.static_files | where: "path", case_cover_path | first %}
-{% if case_cover %}
-
-<a class="rsh-case-cover" href="{{ case.url | relative_url }}" aria-label="{{ case.card_title | default: case.title | escape }}"><img class="rsh-case-image" src="{{ case.img | relative_url }}" alt="{{ case.image_alt | default: case.title | escape }}" loading="lazy"></a>
-{: .rsh-cover-wrap}
-
-{% endif %}
-
-## [{{ case.card_title | default: case.title | escape }}]({{ case.url | relative_url }})
-
-{% assign case_slug = case.url | split: '/' | last %}
-{% assign repository_url = site.data.benchmark_repositories[case_slug] | default: '' | strip %}
-
-<div class="rsh-case-repository">
-{% if repository_url != '' %}
-<a class="rsh-repository-button" href="{{ repository_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ case.title | escape }}: GitHub directory (opens in a new tab)">GitHub directory <span aria-hidden="true">↗</span></a>
-{% else %}
-<button class="rsh-repository-button" type="button" disabled aria-label="{{ case.title | escape }}: GitHub directory coming soon">GitHub directory <span class="rsh-repository-status">Coming soon</span></button>
-{% endif %}
-</div>
-
-</article>
-
-{% endfor %}
-
-</div>
-
-{% else %}
-
-<div class="rsh-empty rsh-section" markdown="1">
-
+<article class="personal-project personal-project-expanded">
+<a class="personal-project-preview" href="https://github.com/CMSL-HKUST/Opt-IS" aria-label="Opt-IS source code"><img src="{{ '/assets/img/personal/opt-is-simulation.png' | relative_url }}" alt="Temperature evolution during a single-track additive manufacturing simulation" width="1164" height="656" loading="lazy"></a>
 <div markdown="1">
 
-## The library is being assembled.
+## Opt-IS
 
-Cases will appear here when their materials are ready.
+**Optimization-based inherent strain modeling for additive manufacturing.**
+
+Opt-IS connects local thermal-mechanical process simulation, gradient-based calibration of inherent strain, and macroscale residual stress and distortion prediction. The workflow builds on JAX-FEM and JAX automatic differentiation, with case configurations and input meshes for reproducible simulations.
+
+[Source code ↗](https://github.com/CMSL-HKUST/Opt-IS)
+{: .personal-project-links}
 
 </div>
+</article>
+
+<article class="personal-project personal-project-expanded">
+<a class="personal-project-preview" href="https://rshub-am.github.io/" aria-label="Visit Residual Stress Hub"><img src="{{ '/assets/img/personal/residual-stress-hub.png' | relative_url }}" alt="Elastic strain distribution in an additively manufactured cantilever" width="1164" height="656" loading="lazy"></a>
+<div markdown="1">
+
+## Residual Stress Hub
+
+**Computational cases, methods, and related research resources.**
+
+Residual Stress Hub collects residual stress simulation cases across metal additive manufacturing and repair processes. It connects problem specifications, model setups, and results to their original sources, with a current emphasis on inherent strain methods based on differentiable finite element analysis.
+
+[Website ↗](https://rshub-am.github.io/) · [Source code ↗](https://github.com/rshub-am/rshub-am.github.io)
+{: .personal-project-links}
 
 </div>
+</article>
 
-{% endif %}
+<article class="personal-text-project" markdown="1">
+
+## Physics-guided diffusion for inverse design
+
+Collaborative research on using differentiable physical solvers to guide diffusion models for the inverse design of disordered metamaterials. The associated preprint studies effective thermal conductivity, load-displacement response, and energy absorption involving fractures.
+
+[Preprint ↗](https://arxiv.org/abs/2603.16209) · [Code ↗](https://github.com/CMSL-HKUST/physics-guidance)
+{: .personal-project-links}
+
+</article>
 
 </div>

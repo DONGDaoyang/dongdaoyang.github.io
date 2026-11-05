@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Physics-guided diffusion models for inverse design of disordered metamaterials",
+    "authors": ["Ziyuan Xie", "Weipeng Xu", "Dazhi Zhao", "Wenchang Zhang", "Daoyang Dong", "Bingbing Xu", "Ning Liu", "Sheng Mao", "Tianju Xue"],
+    "journal": "arXiv:2603.16209",
+    "year": 2026,
+    "doi": "10.48550/arXiv.2603.16209",
+    "url": "https://arxiv.org/abs/2603.16209",
+    "code": "https://github.com/CMSL-HKUST/physics-guidance",
+    "kind": "preprint",
+    "selected": true
+  },
+  {
+    "title": "A planar orthotropic mechanical metamaterial with isotropic deviatoric elasticity",
+    "authors": ["Guangjin Mou", "Daoyang Dong", "Jun Chen", "Shenghan Zhang", "Shishuo Liu", "Yanglong Lu", "Nicolas Auffray", "Tianju Xue"],
+    "journal": "International Journal of Mechanical Sciences",
+    "year": 2026,
+    "doi": "10.1016/j.ijmecsci.2026.111832",
+    "url": "https://doi.org/10.1016/j.ijmecsci.2026.111832",
+    "volume": "325",
+    "pages": "111832",
+    "kind": "journal",
+    "selected": true
+  }
+]

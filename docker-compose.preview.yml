@@ -1,3 +1,5 @@
+name: daoyang-personal
+
 # Local preview only; production deployment still uses the normal site config.
 services:
   preview:
@@ -25,7 +27,7 @@ services:
       - --destination
       - /tmp/_site
     ports:
-      - "127.0.0.1:4000:4000"
-      - "127.0.0.1:35729:35729"
+      - "127.0.0.1:4002:4000"
+      - "127.0.0.1:35731:35729"
     volumes:
       - .:/srv/jekyll:ro

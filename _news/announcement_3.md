@@ -1,8 +1,0 @@
----
-layout: post
-date: "2025-12-20 07:59:00 -0400"
-inline: true
-related_posts: false
----
-
-1st Place in _CHAL-AMB2025-04-BD_ (Baseplate Deflection Prediction for Laser Hot-Wire DED of Alloy 718) by Daoyang Dong, Shuheng Liao (collaborator from CUHK), and Tianju Xue (corresponding author).
