@@ -28,7 +28,6 @@ I received my B.S. and M.S. degrees in Civil Engineering from [Southeast Univers
 <a href="mailto:ddongac@connect.ust.hk">Email</a>
 <a href="https://github.com/DONGDaoyang">GitHub</a>
 <a href="https://orcid.org/0009-0002-8854-9964">ORCID</a>
-<a href="https://rshub-am.github.io/">Residual Stress Hub ↗</a>
 </nav>
 
 </div>
@@ -68,19 +67,6 @@ A finite element workflow connecting local thermal-mechanical simulation, optimi
 </div>
 </article>
 
-<article class="personal-project">
-<a class="personal-project-preview" href="https://rshub-am.github.io/" aria-label="Visit Residual Stress Hub"><img src="{{ '/assets/img/personal/residual-stress-hub.png' | relative_url }}" alt="Elastic strain field in an additively manufactured cantilever" width="1164" height="656" loading="lazy"></a>
-<div markdown="1">
-
-### [Residual Stress Hub](https://rshub-am.github.io/)
-
-An independently maintained research resource bringing together computational cases, modeling methods, and sources for residual stress simulation in metal additive manufacturing and repair.
-
-<p class="personal-project-meta">Computational cases · Methods · Research resources</p>
-
-</div>
-</article>
-
 </section>
 
 <section class="personal-section" aria-labelledby="selected-publications" markdown="1">
@@ -90,13 +76,13 @@ An independently maintained research resource bringing together computational ca
 <a href="{{ '/publications/' | relative_url }}">All publications →</a>
 </div>
 
-{% assign selected = site.data.personal_publications | where: 'selected', true %}
+{% assign selected = site.data.personal_publications | where: 'kind', 'journal' | where: 'selected', true %}
 {% for paper in selected %}
 
 <article class="personal-paper">
 <h3><a href="{{ paper.url }}">{{ paper.title | escape }}</a></h3>
 <p class="personal-authors">{% for author in paper.authors %}{% if author == 'Daoyang Dong' %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
-<p class="personal-venue"><em>{{ paper.journal }}</em>, {{ paper.year }}.{% if paper.kind == 'preprint' %} <span class="personal-tag">Preprint</span>{% endif %}</p>
+<p class="personal-venue"><em>{{ paper.journal }}</em>, {{ paper.year }}.</p>
 </article>
 {% endfor %}
 
